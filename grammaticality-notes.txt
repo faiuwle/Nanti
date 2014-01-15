@@ -1,0 +1,115 @@
+Word Order:
+
+
+Iryo kentakero Migero.iryo kent -ak -i =ro Migero 
+3m.foc.pro shoot -perf -real.i =3nmO personal.name
+‘He shot it, Migero.’
+
+*MigeroS tera kentero.
+*Tera MigeroTOP inkentero.*IryoFOC,S tera kentero. 
+*Tera iriroTOP inkentero.*IriroTOP tera kentero.
+
+G
+kemari hatake
+kemari ha-ak -i
+tapir  go -perf -real.i
+'The tapir went.'
+
+U
+hatake kemari
+ha-ak -i kemari
+go -perf -real.i tapir
+'The tapir went.'
+
+G
+kemari tagake pitotsi
+kemari tag -ak -i pitotsi
+tapir burn -perf -real.i boat
+'the tapir burned the boat'
+
+
+U
+tagake kemari pitotsi
+tagake pitotsi kemari
+
+
+FOCUS/TOPIC:
+pitotsi kemari tagake
+kemari pitotsi tagake
+
+Transitive:
+
+Nonehake omarate pankotsi.no= neh -ak -i omarate pankotsi1S= see -perf -real.i big.inan house
+‘I saw a big house.’
+
+Ohatake.o= ha-ak -i3nmS= go -perf -real.i
+‘She went.’
+
+p.344
+Otagakero.o=tag-ak-i=ro3nmS=burn-perf-real.i=3nmO
+‘She burned it.’
+
+Shima opakiNpi?shima o= p -ak -i =Npifish 3nmS= give -perf -real.i =2O
+‘Did she give you fish?’
+
+Noke ikentabetaka kemari.no- ke i= kent -be -ak -a kemari.1- rep 3mS= pierce -frus -perf -real.a tapir‘He wounded (that is, shot without killing) a tapir.’ (reportive)
+
+Inoshihatakena oga pitotsi.i= noshik -ha -ak -i =na o- oga pitotsi3mS= haul -cl:fluid -perf -real.i =1O 3nm- that boat 
+‘He hauled the boat for me.’ (Not: ‘He hauled the boat to me.’)
+
+pitotsi - boat
+matsigeNka - person
+
+
+(6.157) Nantabageta oka osahari.no= antabaget -a oka osahari 1S= work -real.i this clearing 
+‘I am working the clearing.’
+
+	SUBJ	OBJ
+1	no=	=na
+2	pi=	=Npi
+3M	i=	=ri, =ni
+3NM	o=	=ro, =ni
+1INC	a=	
+
+
+
+	TOPIC			FOCUS
+	SG	PL		SG	PL
+1	naro	narohegi	naro
+2	biro	birohegi	biro
+3masc	iriro	irirohegi	iryo
+3NM	iroro	irorohegi	iro
+1INCL		harohegi		haro
+
+
+	RECENT		FIRST		OVERLAP
+1	natya		naketyo	natyara
+2	bitya		biketyo	bityara
+3M	itya		iketyo		ityara
+3NM	otya		oketyo		otyara
+
+	REFLEXIVE
+1	nakiro
+2	bikiro
+3M	ikiro
+3NM	okiro
+
+=tya - recent, =ra - overlap, =ketyo - first
+
+aNtarini 'adult male'   - p 295
+aNtaroni 'adult female' - p 295
+
+(6.416) Ityara mantsigatake amakerime.i- tyara mantsiga -ak -i o= am -ak -e3mS- when be.sick -perf -real.i 3nmS= bring -perf -irreal.i =ri =me=3mO =deont‘When he was ill, she should have brought him.’(6.417) Ityara yogakero aka, aka te onake isekane.i- tyara i= og -ak -i =ro aka aka te3mS when 3mS= put -perf -real.i =3nmO here here neg.real o= n -ak -i i- seka -ne3nmS loc.cop -perf -real.i 3mP- manioc -poss‘When he put it (i.e. built his house) here, he didn’t have any manioc here.’
+
+
+p.342
+Naro shintaro.naro ashint-a=ro1.foc.pro own-real.a=3nmO
+‘I (and not anyone else) own it.’
+
+
+Determiners
+
+NM	M		
+oNta	yoNta	speaker & addressee proximal
+oka	yoka	speaker proximal
+oga	yoga	speaker distal

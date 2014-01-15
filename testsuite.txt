@@ -1,0 +1,180 @@
+Language: Nanti
+Language code: cox
+Lines: translit translit-seg gloss translat
+Author: Ruth Morrison, David Inman
+Date: January 14, 2014
+Source a: http://www.cabeceras.org/ldm_publications/michael_nanti_2008_dissertation.pdf
+
+
+#1 Intransitive Verb
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+kemari hatake
+kemari ha-ak-i
+tapir go-PERF-REAL.i
+'The tapir went.'
+
+#2 Intransitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+hatake kemari
+ha-ak-i kemari
+go-PERF-REAL.i tapir
+'The tapir went.'
+
+#3 Transitive Verb
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+kemari tagake pitotsi
+kemari tag-ak-i pitotsi
+tapir burn-PERF-REAL.i boat
+'The tapir burned the boat.'
+
+#4 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+tagake pitotsi kemari
+tag-ak-i pitotsi kemari
+burn-PERF-REAL.i boat tapir
+'The tapir burned the boat.'
+
+#5 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+tagake kemari pitotsi
+tag-ak-i kemari pitotsi
+burn-PERF-REAL.i tapir boat
+'The tapir burned the boat.'
+
+#6 Transitive Verb FOCUS BOAT
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+pitotsi kemari tagake
+pitotsi kemari tag-ak-i
+boat tapir burn-PERF-REAL.i
+'The tapir burned the boat.'
+
+#7 Intransitive Verb Pronoun
+Source: a:344
+Vetted: s
+Judgment: g
+Phenomena: wo
+Otagakero.o=tag-ak-i=ro3nmS=burn-perf-real.i=3nmO
+‘She burned it.’
+
+#8 Intransitive Verb Pronoun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+notagake_npi.no=tag-ak-i=_npi1S=burn-perf-real.i=2O
+‘I burned you.’
+
+#9 Intransitive Verb Pronoun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+itagakena.i=tag-ak-i=na3MS=burn-perf-real.i=1O
+‘He burned me.’
+
+#10 Intransitive Verb Pronoun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+pitagakeri.pi=tag-ak-i=ri2S=burn-perf-real.i=3MO
+‘You burned him.’
+
+#11 Intransitive Verb Pronoun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+atagakeri.a=tag-ak-i=ri1.Pl.Inc.S=burn-perf-real.i=3MO
+‘We all burned him.’
+
+#12 Intransitive Verb Pronoun
+Source: a:344
+Vetted: f
+Judgment: u
+Phenomena: wo
+Orotagake.o=ro=tag-ak-i3nmS=3nmO=burn-perf-real.i
+‘She burned it.’
+
+#13 Intransitive Verb Pronoun
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+tagakeno_npi.tag-ak-i=no=_npiburn-perf-real.i=1S=2O
+‘I burned you.’
+
+#14 Intransitive Verb Pronoun
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+ritagakeno.ri=tag-ak-i=no3MO=burn-perf-real.i=1S
+‘He burned me.’
+
+#15 Transitive Verb Focus Position
+Source: a:342
+Vetted: s
+Judgment: g
+Phenomena: wo, pn, info
+naro shi_ntaro.naro ashi_nt-a=ro1.foc.pro own-real.a=3nmO
+‘I (and not anyone else) own it.’
+
+#16 Transitive Verb Focus Position
+Source: a:342
+Vetted: f
+Judgment: u
+Phenomena: wo, pn, info
+shi_ntaro naro.ashi_nt-a=ro naroown-real.a=3nmO 1.foc.pro
+‘I (and not anyone else) own it.’
+
+#17 Transitive Verb Focus Position
+Source: a:342
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+biro shi_ntaro.biro ashi_nt-a=ro2.foc.pro own-real.a=3nmO
+‘You (and not anyone else) own it.’
+
+#18 Transitive Verb Focus Position
+Source: a:342
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+iryo shi_ntaro.iryo ashi_nt-a=ro3M.foc.pro own-real.a=3nmO
+‘He (and not anyone else) own it.’
+
+#19 Transitive Verb Focus Position
+Source: a:342
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+iro shi_ntaro.iro ashi_nt-a=ro3NM.foc.pro own-real.a=3nmO
+‘She (and not anyone else) own it.’
+
+#20 Transitive Verb Focus Position
+Source: a:342
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+haro shi_ntaro.haro ashi_nt-a=ro1.Pl.Incl.foc.pro own-real.a=3nmO
+‘We all (and not anyone else) own it.’
+
