@@ -29,7 +29,7 @@ go-PERF-REAL.i tapir
 #3 Transitive Verb
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: wo
 kemari tagake pitotsi
 kemari tag-ak-i pitotsi
@@ -59,12 +59,52 @@ burn-PERF-REAL.i tapir boat
 #6 Transitive Verb FOCUS BOAT
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: wo
 pitotsi kemari tagake
 pitotsi kemari tag-ak-i
 boat tapir burn-PERF-REAL.i
 'The tapir burned the boat.'
+
+#6.1 Transitive with one argument
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+kemari tagakero
+kemari tag-ak-i=ro
+tapir burn-PERF-REAL.i=3nmO
+'The tapir burned it.'
+
+#6.2 Transitive with one argument
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+itagake pitotsi
+i=tag-ak-i pitotsi
+3mS=burn-PERF-REAL.i boat
+'He burned the boat.'
+
+#6.3 Transitive one argument FOCUS
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, info
+pitotsi itagake
+pitotsi i=tag-ak-i
+boat 3mS=burn-PERF-REAL.i
+'He burned the boat.'
+
+#6.4 Transitive one argument ungrammatical
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+tagakero kemari
+tag-ak-i=ro kemari
+burn-PERF-REAL.i=3nmO tapir
+'The tapir burned it.'
 
 #7 Intransitive Verb Pronoun
 Source: a:344
