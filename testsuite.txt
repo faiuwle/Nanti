@@ -26,6 +26,26 @@ ha-ak-i kemari
 go-PERF-REAL.i tapir
 'The tapir went.'
 
+#2.1 Intransitive Verb: Clitic Pronoun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+ihatake
+i=ha-ak-i
+3mS=go-PERF-REAL.i
+'He went.'
+
+#2.2 Intransitive Verb: Clitic Pronoun
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+hatakeri
+ha-ak-i=ri
+go-PERF-REAL.i=3mO
+'He went.'
+
 #3 Transitive Verb
 Source: author
 Vetted: f
@@ -173,7 +193,7 @@ Judgment: u
 Phenomena: wo
 tagakeno_npi.
 tag-ak-i=no=_npi
-burn-perf-real.i=1S=2O
+burn-perf-REAL.i=1S=2O
 ‘I burned you.’
 
 #14 Intransitive Verb Pronoun
@@ -183,7 +203,7 @@ Judgment: u
 Phenomena: wo
 ritagakeno.
 ri=tag-ak-i=no
-3MO=burn-perf-real.i=1S
+3MO=burn-perf-REAL.i=1S
 ‘He burned me.’
 
 #15 Transitive Verb Focus Position
@@ -193,56 +213,155 @@ Judgment: g
 Phenomena: wo, pn, info
 naro shi_ntaro.
 naro ashi_nt-a=ro
-1.foc.pro own-real.a=3nmO
+1.foc.pro own-REAL.a=3nmO
 ‘I (and not anyone else) own it.’
 
 #16 Transitive Verb Focus Position
-Source: a:342
+Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, pn, info
 shi_ntaro naro.
 ashi_nt-a=ro naro
-own-real.a=3nmO 1.foc.pro
+own-REAL.a=3nmO 1.foc.pro
 ‘I (and not anyone else) own it.’
 
 #17 Transitive Verb Focus Position
-Source: a:342
+Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info
 biro shi_ntaro.
 biro ashi_nt-a=ro
-2.foc.pro own-real.a=3nmO
+2.foc.pro own-REAL.a=3nmO
 ‘You (and not anyone else) own it.’
 
 #18 Transitive Verb Focus Position
-Source: a:342
+Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info
 iryo shi_ntaro.
 iryo ashi_nt-a=ro
-3M.foc.pro own-real.a=3nmO
+3M.foc.pro own-REAL.a=3nmO
 ‘He (and not anyone else) own it.’
 
 #19 Transitive Verb Focus Position
-Source: a:342
+Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info
 iro shi_ntaro.
 iro ashi_nt-a=ro
-3NM.foc.pro own-real.a=3nmO
+3NM.foc.pro own-REAL.a=3nmO
 ‘She (and not anyone else) own it.’
 
 #20 Transitive Verb Focus Position
-Source: a:342
+Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info
 haro shi_ntaro.
 haro ashi_nt-a=ro
-1.Pl.Incl.foc.pro own-real.a=3nmO
+1.Pl.Incl.foc.pro own-REAL.a=3nmO
 ‘We all (and not anyone else) own it.’
 
+#21 Recent Pronoun 1st person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+natya shi_ntaro.
+natya ashi_nt-a=ro
+1.RECENT.PRO own-REAL.a=3nmO
+'I recently owned it.'
+
+#22 Recent Pronoun 2nd person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+bitya shi_ntaro.
+bitya ashi_nt-a=ro
+2.RECENT.PRO own-REAL.a=3nmO
+'You recently owned it.'
+
+#23 Recent Pronoun 3rd person masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+itya shi_ntaro.
+itya ashi_nt-a=ro
+3m.RECENT.PRO own-REAL.a=3nmO
+'He recently owned it.'
+
+#24 Recent Pronoun 3rd person non-masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+otya shi_ntaro.
+otya ashi_nt-a=ro
+3nm.RECENT.PRO own-REAL.a=3nmO
+'She recently owned it.'
+
+#25 Recent Pronoun 1st person wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pn
+shi_ntaro natya.
+ashi_nt-a=ro natya
+own-REAL.a=3nmO 1.RECENT.PRO
+'I recently owned it.'
+
+#26 First Pronoun 1st person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+naketyo shi_ntaro.
+naketyo ashi_nt-a=ro
+1.FIRST.PRO own-REAL.a=3nmO
+'I owned it first.'
+
+#27 First Pronoun 2nd person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+biketyo shi_ntaro.
+biketyo ashi_nt-a=ro
+2.FIRST.PRO own-REAL.a=3nmO
+'You owned it first.'
+
+#28 First Pronoun 3rd person masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+iketyo shi_ntaro.
+iketyo ashi_nt-a=ro
+3m.FIRST.PRO own-REAL.a=3nmO
+'He owned it first.'
+
+#29 First Pronoun 3rd person non-masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info
+oketyo shi_ntaro.
+oketyo ashi_nt-a=ro
+3nm.FIRST.PRO own-REAL.a=3nmO
+'She owned it first.'
+
+#30 First Pronoun wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pn
+shi_ntaro biketyo.
+ashi_nt-a=ro biketyo
+own-REAL.a=3nmO 2.FIRST.PRO
+'You owned it first.'
