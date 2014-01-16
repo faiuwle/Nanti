@@ -365,3 +365,73 @@ shi_ntaro biketyo.
 ashi_nt-a=ro biketyo
 own-REAL.a=3nmO 2.FIRST.PRO
 'You owned it first.'
+
+#31 Determiners
+Source: author 
+Vetted: f
+Judgment: g
+Phenomena: wo, det
+yo_nta kemari hatake
+yo_nta kemari ha-ak-i
+this.SA.m tapir go-PERF-REAL.i
+'This tapir went.'
+
+#32 Determiners
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, det
+o_nta kemari hatake
+o_nta kemari ha-ak-i
+this.SA.nm tapir go-PERF-REAL.i
+'This tapir went.'
+
+#33 Determiners
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, det
+yoka kemari hatake
+yoka kemari ha-ak-i
+this.S.m tapir go-PERF-REAL.i
+'This tapir went.'
+
+#34 Determiners
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, det
+oka kemari hatake
+oka kemari ha-ak-i
+this.S.nm tapir go-PERF-REAL.i
+'This tapir went.'
+
+#35 Determiners
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, det
+yoga kemari hatake
+yoga kemari ha-ak-i
+that.m tapir go-PERF-REAL.i
+'That tapir went.'
+
+#36 Determiners
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, det
+oga kemari hatake
+oga kemari ha-ak-i
+that.nm tapir go-PERF-REAL.i
+'That tapir went.'
+
+#37 Determiners ungrammatical
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, det
+kemari oga hatake
+kemari oga ha-ak-i
+tapir that.nm go-PERF-REAL.i
+'That tapir went.'
