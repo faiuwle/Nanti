@@ -83,8 +83,8 @@ matsigeNka - person
 
 
 	RECENT		FIRST		OVERLAP
-1	natya		naketyo	natyara
-2	bitya		biketyo	bityara
+1	natya		naketyo		natyara
+2	bitya		biketyo		bityara
 3M	itya		iketyo		ityara
 3NM	otya		oketyo		otyara
 
