@@ -1,0 +1,110 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+naro := 1st-PRO-FOCUS-noun-lex &
+  [ STEM < "naro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+biro := 2nd-PRO-FOCUS-noun-lex &
+  [ STEM < "biro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+iryo := 3rd-M-PRO-FOCUS-noun-lex &
+  [ STEM < "iryo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+iro := 3rd-NM-PRO-FOCUS-noun-lex &
+  [ STEM < "iro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+haro := 1st-INCL-PRO-FOCUS-noun-lex &
+  [ STEM < "haro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+natya := 1st-RECENT-PRO-noun-lex &
+  [ STEM < "natya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+bitya := 2nd-RECENT-PRO-noun-lex &
+  [ STEM < "bitya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+itya := 3rd-M-RECENT-PRO-noun-lex &
+  [ STEM < "itya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+otya := 3rd-NM-RECENT-PRO-noun-lex &
+  [ STEM < "otya" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+naketyo := 1st-FIRST-PRO-noun-lex &
+  [ STEM < "naketyo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+biketyo := 2nd-FIRST-PRO-noun-lex &
+  [ STEM < "biketyo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+iketyo := 3rd-M-FIRST-PRO-noun-lex &
+  [ STEM < "iketyo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+oketyo := 3rd-NM-FIRST-PRO-noun-lex &
+  [ STEM < "oketyo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+kemari_1 := common-noun-m-noun-lex &
+  [ STEM < "kemari" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
+
+kemari_2 := common-noun-nm-anim-noun-lex &
+  [ STEM < "kemari" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
+
+pitotsi := common-noun-nm-inan-noun-lex &
+  [ STEM < "pitotsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_boat_n_rel" ].
+
+;;; Verbs
+
+hatake := intransitive-verb-verb-lex &
+  [ STEM < "hatake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+itagake := transitive-verb-verb-lex &
+  [ STEM < "itagake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
+
+tagakero := transitive-verb-verb-lex &
+  [ STEM < "tagakero" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
+
+shi_ntaro := transitive-verb-verb-lex &
+  [ STEM < "shi_ntaro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
+
+;;; Determiners
+
+yo_nta := speaker-addressee-prox-det-M-determiner-lex &
+  [ STEM < "yo_nta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+
+o_nta := speaker-adressee-prox-det-NM-determiner-lex &
+  [ STEM < "o_nta" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+
+yoka := speaker-prox-det-M-determiner-lex &
+  [ STEM < "yoka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+
+oka := speaker-prox-det-NM-determiner-lex &
+  [ STEM < "oka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+
+yoga := speaker-dist-det-M-determiner-lex &
+  [ STEM < "yoga" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
+
+oga := speaker-dist-det-NM-determiner-lex &
+  [ STEM < "oga" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
