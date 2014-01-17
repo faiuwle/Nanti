@@ -4,7 +4,9 @@ Lines: translit translit-seg gloss translat
 Author: Ruth Morrison, David Inman
 Date: January 14, 2014
 Source a: http://www.cabeceras.org/ldm_publications/michael_nanti_2008_dissertation.pdf
+# Examples 1, 9, 10 and 42 were vetted by our field linguist.
 
+# Intransitives without determiners
 
 #1 Intransitive Verb
 Source: author
@@ -26,177 +28,183 @@ ha-ak-i kemari
 go-PERF-REAL.i tapir
 'The tapir went.'
 
-#2.1 Intransitive Verb: Clitic Pronoun
+#3 Intransitive Verb: Clitic Pronoun
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo
+Phenomena: pro-d
 ihatake
 i=ha-ak-i
 3mS=go-PERF-REAL.i
 'He went.'
 
-#2.2 Intransitive Verb: Clitic Pronoun
+#4 Intransitive Verb: Clitic Pronoun
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo
+Phenomena: pro-d
 hatakeri
 ha-ak-i=ri
 go-PERF-REAL.i=3mO
 'He went.'
 
-#3 Transitive Verb
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: wo
-kemari tagake pitotsi
-kemari tag-ak-i pitotsi
-tapir burn-PERF-REAL.i boat
-'The tapir burned the boat.'
-
-#4 Transitive Verb
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: wo
-tagake pitotsi kemari
-tag-ak-i pitotsi kemari
-burn-PERF-REAL.i boat tapir
-'The tapir burned the boat.'
+# Transitives with two free NPs
 
 #5 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo
+Phenomena: pro-d
+kemari tagake pitotsi
+kemari tag-ak-i pitotsi
+tapir burn-PERF-REAL.i boat
+'The tapir burned the boat.'
+
+#6 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
+tagake pitotsi kemari
+tag-ak-i pitotsi kemari
+burn-PERF-REAL.i boat tapir
+'The tapir burned the boat.'
+
+#7 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
 tagake kemari pitotsi
 tag-ak-i kemari pitotsi
 burn-PERF-REAL.i tapir boat
 'The tapir burned the boat.'
 
-#6 Transitive Verb FOCUS BOAT
+#8 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo
+Phenomena: pro-d
 pitotsi kemari tagake
 pitotsi kemari tag-ak-i
 boat tapir burn-PERF-REAL.i
 'The tapir burned the boat.'
 
-#6.1 Transitive with one argument
+# Transitives with one argument
+
+#9 Transitive with one argument
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo
+Phenomena: wo, pro-d
 kemari tagakero
 kemari tag-ak-i=ro
 tapir burn-PERF-REAL.i=3nmO
 'The tapir burned it.'
 
-#6.2 Transitive with one argument
+#10 Transitive with one argument
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo
+Phenomena: wo, pro-d
 itagake pitotsi
 i=tag-ak-i pitotsi
 3mS=burn-PERF-REAL.i boat
 'He burned the boat.'
 
-#6.3 Transitive one argument FOCUS
+#11 Transitive one argument FOCUS
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, info
+Phenomena: wo, info, pro-d
 pitotsi itagake
 pitotsi i=tag-ak-i
 boat 3mS=burn-PERF-REAL.i
 'He burned the boat.'
 
-#6.4 Transitive one argument ungrammatical
+#12 Transitive one argument ungrammatical
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo
+Phenomena: wo, pro-d
 tagakero kemari
 tag-ak-i=ro kemari
 burn-PERF-REAL.i=3nmO tapir
 'The tapir burned it.'
 
-#7 Intransitive Verb Pronoun
+# Transitives with only clitics
+
+#13 Transitive Verb
 Source: a:344
 Vetted: s
 Judgment: g
-Phenomena: wo
+Phenomena: pro-d
 Otagakero.
 o=tag-ak-i=ro
 3nmS=burn-PERF-REAL.i=3nmO
 `She burned it.'
 
-#8 Intransitive Verb Pronoun
+#14 Transitive Verb
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo
+Phenomena: pro-d
 notagake_npi.
 no=tag-ak-i=_npi
 1S=burn-PERF-REAL.i=2O
 'I burned you.'
 
-#9 Intransitive Verb Pronoun
+#15 Transitive Verb
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo
+Phenomena: pro-d
 itagakena.
 i=tag-ak-i=na
 3mS=burn-PERF-REAL.i=1O
 'He burned me.'
 
-#10 Intransitive Verb Pronoun
+#16 Transitive Verb
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo
+Phenomena: pro-d
 pitagakeri.
 pi=tag-ak-i=ri
 2S=burn-PERF-REAL.i=3MO
 'You burned him.'
 
-#11 Intransitive Verb Pronoun
+#17 Transitive Verb
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo
+Phenomena: pro-d
 atagakeri.
 a=tag-ak-i=ri
 1.Pl.Inc.S=burn-PERF-REAL.i=3MO
 'We all burned him.'
 
-#12 Intransitive Verb Pronoun
+#18 Transitive Verb
 Source: a:344
 Vetted: f
 Judgment: u
-Phenomena: wo
+Phenomena: pro-d
 Orotagake.
 o=ro=tag-ak-i
 3nmS=3nmO=burn-PERF-REAL.i
 'She burned it.'
 
-#13 Intransitive Verb Pronoun
+#19 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo
+Phenomena: pro-d
 tagakeno_npi.
 tag-ak-i=no=_npi
 burn-PERF-REAL.i=1S=2O
 'I burned you.'
 
-#14 Intransitive Verb Pronoun
+#20 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
@@ -206,167 +214,175 @@ ri=tag-ak-i=no
 3mO=burn-PERF-REAL.i=1S
 'He burned me.'
 
-#15 Transitive Verb Focus Position
+# Transitives with pronouns in focus position
+
+#21 Transitive Verb Focus Position
 Source: a:342
 Vetted: s
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 naro shi_ntaro.
 naro ashi_nt-a=ro
 1.FOC.PRO own-REAL.a=3nmO
 'I (and not anyone else) own it.'
 
-#16 Transitive Verb Focus Position
+#22 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 shi_ntaro naro.
 ashi_nt-a=ro naro
 own-REAL.a=3nmO 1.FOC.PRO
 'I (and not anyone else) own it.'
 
-#17 Transitive Verb Focus Position
+#23 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 biro shi_ntaro.
 biro ashi_nt-a=ro
 2.FOC.PRO own-REAL.a=3nmO
 'You (and not anyone else) own it.'
 
-#18 Transitive Verb Focus Position
+#24 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 iryo shi_ntaro.
 iryo ashi_nt-a=ro
 3M.FOC.PRO own-REAL.a=3nmO
-'He (and not anyone else) own it.'
+'He (and not anyone else) owns it.'
 
-#19 Transitive Verb Focus Position
+#25 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 iro shi_ntaro.
 iro ashi_nt-a=ro
 3NM.FOC.PRO own-REAL.a=3nmO
-'She (and not anyone else) own it.'
+'She (and not anyone else) owns it.'
 
-#20 Transitive Verb Focus Position
+#26 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 haro shi_ntaro.
 haro ashi_nt-a=ro
 1.Pl.Incl.FOC.PRO own-REAL.a=3nmO
 'We all (and not anyone else) own it.'
 
-#21 Recent Pronoun 1st person
+# "Recent" pronouns in focus position
+
+#27 Recent Pronoun 1st person
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 natya shi_ntaro.
 natya ashi_nt-a=ro
 1.RECENT.PRO own-REAL.a=3nmO
 'I recently owned it.'
 
-#22 Recent Pronoun 2nd person
+#28 Recent Pronoun 2nd person
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 bitya shi_ntaro.
 bitya ashi_nt-a=ro
 2.RECENT.PRO own-REAL.a=3nmO
 'You recently owned it.'
 
-#23 Recent Pronoun 3rd person masc
+#29 Recent Pronoun 3rd person masc
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 itya shi_ntaro.
 itya ashi_nt-a=ro
 3m.RECENT.PRO own-REAL.a=3nmO
 'He recently owned it.'
 
-#24 Recent Pronoun 3rd person non-masc
+#30 Recent Pronoun 3rd person non-masc
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 otya shi_ntaro.
 otya ashi_nt-a=ro
 3nm.RECENT.PRO own-REAL.a=3nmO
 'She recently owned it.'
 
-#25 Recent Pronoun 1st person wrong position
+#31 Recent Pronoun 1st person wrong position
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo, pn
+Phenomena: wo, pn, pro-d
 shi_ntaro natya.
 ashi_nt-a=ro natya
 own-REAL.a=3nmO 1.RECENT.PRO
 'I recently owned it.'
 
-#26 First Pronoun 1st person
+# "First" pronouns in focus position
+
+#32 First Pronoun 1st person
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 naketyo shi_ntaro.
 naketyo ashi_nt-a=ro
 1.FIRST.PRO own-REAL.a=3nmO
 'I owned it first.'
 
-#27 First Pronoun 2nd person
+#33 First Pronoun 2nd person
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 biketyo shi_ntaro.
 biketyo ashi_nt-a=ro
 2.FIRST.PRO own-REAL.a=3nmO
 'You owned it first.'
 
-#28 First Pronoun 3rd person masc
+#34 First Pronoun 3rd person masc
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 iketyo shi_ntaro.
 iketyo ashi_nt-a=ro
 3m.FIRST.PRO own-REAL.a=3nmO
 'He owned it first.'
 
-#29 First Pronoun 3rd person non-masc
+#35 First Pronoun 3rd person non-masc
 Source: author
 Vetted: f
 Judgment: g
-Phenomena: wo, pn, info
+Phenomena: wo, pn, info, pro-d
 oketyo shi_ntaro.
 oketyo ashi_nt-a=ro
 3nm.FIRST.PRO own-REAL.a=3nmO
 'She owned it first.'
 
-#30 First Pronoun wrong position
+#36 First Pronoun wrong position
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: wo, pn
+Phenomena: wo, pn, pro-d
 shi_ntaro biketyo.
 ashi_nt-a=ro biketyo
 own-REAL.a=3nmO 2.FIRST.PRO
 'You owned it first.'
 
-#31 Determiners
+# Determiners
+
+#37 Determiners
 Source: author 
 Vetted: f
 Judgment: g
@@ -376,7 +392,7 @@ yo_nta kemari ha-ak-i
 this.SA.m tapir go-PERF-REAL.i
 'This tapir went.'
 
-#32 Determiners
+#38 Determiners
 Source: author
 Vetted: f
 Judgment: g
@@ -386,7 +402,7 @@ o_nta kemari ha-ak-i
 this.SA.nm tapir go-PERF-REAL.i
 'This tapir went.'
 
-#33 Determiners
+#39 Determiners
 Source: author
 Vetted: f
 Judgment: g
@@ -396,7 +412,7 @@ yoka kemari ha-ak-i
 this.S.m tapir go-PERF-REAL.i
 'This tapir went.'
 
-#34 Determiners
+#40 Determiners
 Source: author
 Vetted: f
 Judgment: g
@@ -406,7 +422,7 @@ oka kemari ha-ak-i
 this.S.nm tapir go-PERF-REAL.i
 'This tapir went.'
 
-#35 Determiners
+#41 Determiners
 Source: author
 Vetted: f
 Judgment: g
@@ -416,7 +432,7 @@ yoga kemari ha-ak-i
 that.m tapir go-PERF-REAL.i
 'That tapir went.'
 
-#36 Determiners
+#42 Determiners
 Source: author
 Vetted: f
 Judgment: g
@@ -426,7 +442,7 @@ oga kemari ha-ak-i
 that.nm tapir go-PERF-REAL.i
 'That tapir went.'
 
-#37 Determiners ungrammatical
+#43 Determiners ungrammatical
 Source: author
 Vetted: f
 Judgment: u
