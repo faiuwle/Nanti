@@ -83,6 +83,10 @@ shi_ntaro := transitive-verb-verb-lex &
   [ STEM < "shi_ntaro" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
 
+tagake := transitive-verb-verb-lex &
+  [ STEM < "tagake" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
+
 ;;; Determiners
 
 yo_nta := speaker-addressee-prox-det-M-determiner-lex &
