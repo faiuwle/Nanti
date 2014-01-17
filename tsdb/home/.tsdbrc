@@ -1,0 +1,2 @@
+(tsdb:tsdb  :home  "/home/ubuntu/nanti/tsdb/home")
+(tsdb:tsdb  :skeleton "/home/ubuntu/nanti/tsdb/skeleton")
