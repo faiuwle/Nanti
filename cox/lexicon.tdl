@@ -53,30 +53,26 @@ oketyo := 3rd-NM-FIRST-PRO-noun-lex &
   [ STEM < "oketyo" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-kemari_1 := common-noun-m-noun-lex &
-  [ STEM < "kemari" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
-
-kemari_2 := common-noun-nm-anim-noun-lex &
-  [ STEM < "kemari" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
-
 pitotsi := common-noun-nm-inan-noun-lex &
   [ STEM < "pitotsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_boat_n_rel" ].
 
+kemari := common-noun-anim-noun-lex &
+  [ STEM < "kemari" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
+
 ;;; Verbs
 
-hat := i-intransitive-verb-verb-lex &
-  [ STEM < "hat" >,
+ha := i-intransitive-verb-verb-lex &
+  [ STEM < "ha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
 
 tag := i-transitive-verb-verb-lex &
   [ STEM < "tag" >,
     SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
 
-shi_nt := a-transitive-verb-verb-lex &
-  [ STEM < "shi_nt" >,
+ashi_nt := a-transitive-verb-verb-lex &
+  [ STEM < "ashi_nt" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
 
 ;;; Determiners
