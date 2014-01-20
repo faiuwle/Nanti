@@ -67,3 +67,8 @@ PNG.GEND : PNG.GEND
   NM-NON-ANIMATE <> NM-NON-ANIMATE
   NON-MASC <> NON-MASC
   * <> !
+
+E.MOOD : MOOD
+  Realis <> Realis
+  Irrealis <> Irrealis
+  * <> !

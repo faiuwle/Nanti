@@ -1,1 +1,10 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+subject-no-drop-lex := subject-no-drop-lex-rule.
+
+object-no-drop-lex := object-no-drop-lex-rule.
+
+imperfective-lex := imperfective-lex-rule.
+
+i-verb-realis-prefix-lex := i-verb-realis-prefix-lex-rule.
+
+a-verb-realis-prefix-lex := a-verb-realis-prefix-lex-rule.

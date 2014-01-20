@@ -67,25 +67,17 @@ pitotsi := common-noun-nm-inan-noun-lex &
 
 ;;; Verbs
 
-hatake := intransitive-verb-verb-lex &
-  [ STEM < "hatake" >,
+hat := i-intransitive-verb-verb-lex &
+  [ STEM < "hat" >,
     SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
 
-itagake := transitive-verb-verb-lex &
-  [ STEM < "itagake" >,
+tag := i-transitive-verb-verb-lex &
+  [ STEM < "tag" >,
     SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
 
-tagakero := transitive-verb-verb-lex &
-  [ STEM < "tagakero" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
-
-shi_ntaro := transitive-verb-verb-lex &
-  [ STEM < "shi_ntaro" >,
+shi_nt := a-transitive-verb-verb-lex &
+  [ STEM < "shi_nt" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
-
-tagake := transitive-verb-verb-lex &
-  [ STEM < "tagake" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
 
 ;;; Determiners
 

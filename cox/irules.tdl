@@ -1,1 +1,64 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+add-1st-subj-prefix :=
+%prefix (* no)
+add-1st-subj-lex-rule.
+
+add-2nd-subj-prefix :=
+%prefix (* pi)
+add-2nd-subj-lex-rule.
+
+add-3rd-m-subj-prefix :=
+%prefix (* i)
+add-3rd-m-subj-lex-rule.
+
+add-3rd-nm-subj-prefix :=
+%prefix (* o)
+add-3rd-nm-subj-lex-rule.
+
+add-1st-incl-subj-prefix :=
+%prefix (* a)
+add-1st-incl-subj-lex-rule.
+
+add-1st-obj-suffix :=
+%suffix (* na)
+add-1st-obj-lex-rule.
+
+add-2nd-obj-suffix :=
+%suffix (* _npi)
+add-2nd-obj-lex-rule.
+
+add-3rd-m-obj-suffix :=
+%suffix (* ri)
+add-3rd-m-obj-lex-rule.
+
+add-3rd-nm-obj-suffix :=
+%suffix (* ro)
+add-3rd-nm-obj-lex-rule.
+
+perfective-suffix :=
+%suffix (* ak)
+perfective-lex-rule.
+
+i-verb-realis-suffix-suffix :=
+%suffix (* i)
+i-verb-realis-suffix-lex-rule.
+
+i-verb-irrealis-suffix-suffix :=
+%suffix (* e)
+i-verb-irrealis-suffix-lex-rule.
+
+a-verb-realis-suffix-suffix :=
+%suffix (* a)
+a-verb-realis-suffix-lex-rule.
+
+a-verb-irrealis-suffix-suffix :=
+%suffix (* e_npa)
+a-verb-irrealis-suffix-lex-rule.
+
+i-verb-irrealis-prefix-prefix :=
+%prefix (* _n)
+i-verb-irrealis-prefix-lex-rule.
+
+a-verb-irrealis-prefix-prefix :=
+%prefix (* _n)
+a-verb-irrealis-prefix-lex-rule.
