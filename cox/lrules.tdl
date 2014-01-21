@@ -8,3 +8,7 @@ imperfective-lex := imperfective-lex-rule.
 i-verb-realis-prefix-lex := i-verb-realis-prefix-lex-rule.
 
 a-verb-realis-prefix-lex := a-verb-realis-prefix-lex-rule.
+
+singular-subject-lex := singular-subject-lex-rule.
+
+singular-subject-object-lex := singular-subject-object-lex-rule.
