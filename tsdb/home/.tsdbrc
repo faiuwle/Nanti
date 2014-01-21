@@ -1,2 +1,3 @@
-(tsdb:tsdb  :home  "/home/ubuntu/nanti/tsdb/home")
-(tsdb:tsdb  :skeleton "/home/ubuntu/nanti/tsdb/skeleton")
+(in-package :tsdb)
+(setf *tsdb-home* "/home/ubuntu/nanti/tsdb/home")
+(setf *tsdb-skeleton-directory* "/home/ubuntu/nanti/tsdb/skeletons")
