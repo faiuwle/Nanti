@@ -735,3 +735,45 @@ kemarihegi hageti.
 kemari-hegi ha-ge-0-i
 tapir-PL go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
+
+# Irrealis Morphology
+
+#72 Irrealis with prefix and null suffix
+Source: a:252
+Vetted: t
+Judgment: g
+Phenomena: agr
+Onorihe.
+o=_n-norih-0-e
+3nmS=IRREAL-lie.down-IMPF-IRREAL.i
+'She will lie down.'
+
+#73 No prefix and irrealis null suffix (ungrammatical)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Onorihe.
+o=norih-0-e
+3nmS=lie.down-IMPF-IRREAL.i
+'She will lie down.'
+
+#74 Irrealis prefix and realis suffix (ungrammatical)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Onorihi.
+o=_n-norih-0-i
+3nmS=IRREAL-lie.down-IMPF-REAL.i
+'She will lie down.'
+
+#75 Irrealis A-ending on I-verb (ungrammatical)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Onorihe_npa.
+o=_n-norih-0-e_npa
+3nmS=IRREAL-lie.down-IMPF-IRREAL.a
+'She will lie down.'
