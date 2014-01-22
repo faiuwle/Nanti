@@ -5,7 +5,7 @@ section=general
 language=Nanti
 iso-code=cox
 punctuation-chars=keep-list
-punctuation-chars-list=_
+punctuation-chars-list=_-=
 archive=yes
 email=davinman@uw.edu
 affiliation=University of Washington
@@ -53,6 +53,10 @@ section=other-features
 
 section=sentential-negation
 neg-exp=1
+adv-neg=on
+neg-mod=s
+neg-order=before
+neg-adv-orth=matsi
 
 section=coordination
 
@@ -208,6 +212,8 @@ section=lexicon
   verb1_valence=intrans
     verb1_stem1_orth=ha
     verb1_stem1_pred=_go_v_rel
+    verb1_stem2_orth=norih
+    verb1_stem2_pred=_lie_down_v_rel
   verb2_name=i-transitive-verb
   verb2_valence=trans
     verb2_stem4_orth=tag

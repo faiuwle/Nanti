@@ -67,6 +67,10 @@ ha := i-intransitive-verb-verb-lex &
   [ STEM < "ha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
 
+norih := i-intransitive-verb-verb-lex &
+  [ STEM < "norih" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_lie_down_v_rel" ].
+
 tag := i-transitive-verb-verb-lex &
   [ STEM < "tag" >,
     SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
@@ -100,3 +104,7 @@ yoga := speaker-dist-det-M-determiner-lex &
 oga := speaker-dist-det-NM-determiner-lex &
   [ STEM < "oga" >,
     SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
+
+matsi := neg-adv-lex &
+  [ STEM < "matsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
