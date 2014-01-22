@@ -13,7 +13,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo
-kemari haaki
+kemari hatake
 kemari ha-ak-i
 tapir go-PERF-REAL.i
 'The tapir went.'
@@ -23,7 +23,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo
-haaki kemari
+hatake kemari
 ha-ak-i kemari
 go-PERF-REAL.i tapir
 'The tapir went.'
@@ -33,7 +33,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pro-d
-ihaaki
+ihatake
 i=ha-ak-i
 3mS=go-PERF-REAL.i
 'He went.'
@@ -43,7 +43,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: pro-d
-haakiri
+hatakeri
 ha-ak-i=ri
 go-PERF-REAL.i=3mO
 'He went.'
@@ -55,7 +55,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: pro-d
-kemari tagaki pitotsi
+kemari tagake pitotsi
 kemari tag-ak-i pitotsi
 tapir burn-PERF-REAL.i boat
 'The tapir burned the boat.'
@@ -65,7 +65,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: pro-d
-tagaki pitotsi kemari
+tagake pitotsi kemari
 tag-ak-i pitotsi kemari
 burn-PERF-REAL.i boat tapir
 'The tapir burned the boat.'
@@ -75,7 +75,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: pro-d
-tagaki kemari pitotsi
+tagake kemari pitotsi
 tag-ak-i kemari pitotsi
 burn-PERF-REAL.i tapir boat
 'The tapir burned the boat.'
@@ -85,7 +85,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: pro-d
-pitotsi kemari tagaki
+pitotsi kemari tagake
 pitotsi kemari tag-ak-i
 boat tapir burn-PERF-REAL.i
 'The tapir burned the boat.'
@@ -97,7 +97,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pro-d
-kemari tagakiro
+kemari tagakero
 kemari tag-ak-i=ro
 tapir burn-PERF-REAL.i=3nmO
 'The tapir burned it.'
@@ -107,7 +107,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pro-d
-itagaki pitotsi
+itagake pitotsi
 i=tag-ak-i pitotsi
 3mS=burn-PERF-REAL.i boat
 'He burned the boat.'
@@ -117,7 +117,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, info, pro-d
-pitotsi itagaki
+pitotsi itagake
 pitotsi i=tag-ak-i
 boat 3mS=burn-PERF-REAL.i
 'He burned the boat.'
@@ -127,7 +127,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, pro-d
-tagakiro kemari
+tagakero kemari
 tag-ak-i=ro kemari
 burn-PERF-REAL.i=3nmO tapir
 'The tapir burned it.'
@@ -139,7 +139,7 @@ Source: a:344
 Vetted: s
 Judgment: g
 Phenomena: pro-d
-Otagakiro.
+Otagakero.
 o=tag-ak-i=ro
 3nmS=burn-PERF-REAL.i=3nmO
 `She burned it.'
@@ -149,7 +149,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pro-d
-notagaki_npi.
+notagake_npi.
 no=tag-ak-i=_npi
 1S=burn-PERF-REAL.i=2O
 'I burned you.'
@@ -159,7 +159,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pro-d
-itagakina.
+itagakena.
 i=tag-ak-i=na
 3mS=burn-PERF-REAL.i=1O
 'He burned me.'
@@ -169,7 +169,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pro-d
-pitagakiri.
+pitagakeri.
 pi=tag-ak-i=ri
 2S=burn-PERF-REAL.i=3MO
 'You burned him.'
@@ -179,7 +179,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pro-d
-atagakiri.
+atagakeri.
 a=tag-ak-i=ri
 1.Pl.Inc.S=burn-PERF-REAL.i=3MO
 'We all burned him.'
@@ -189,7 +189,7 @@ Source: a:344
 Vetted: f
 Judgment: u
 Phenomena: pro-d
-Orotagaki.
+Orotagake.
 o=ro=tag-ak-i
 3nmS=3nmO=burn-PERF-REAL.i
 'She burned it.'
@@ -199,7 +199,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: pro-d
-tagakino_npi.
+tagakeno_npi.
 tag-ak-i=no=_npi
 burn-PERF-REAL.i=1S=2O
 'I burned you.'
@@ -209,7 +209,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo
-ritagakino.
+ritagakeno.
 ri=tag-ak-i=no
 3mO=burn-PERF-REAL.i=1S
 'He burned me.'
@@ -221,7 +221,7 @@ Source: a:342
 Vetted: s
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-naro ashi_ntaro.
+naro shi_ntaro.
 naro ashi_nt-a=ro
 1.FOC.PRO own-REAL.a=3nmO
 'I (and not anyone else) own it.'
@@ -231,7 +231,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, pn, info, pro-d
-ashi_ntaro naro.
+shi_ntaro naro.
 ashi_nt-a=ro naro
 own-REAL.a=3nmO 1.FOC.PRO
 'I (and not anyone else) own it.'
@@ -241,7 +241,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-biro ashi_ntaro.
+biro shi_ntaro.
 biro ashi_nt-a=ro
 2.FOC.PRO own-REAL.a=3nmO
 'You (and not anyone else) own it.'
@@ -251,7 +251,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-iryo ashi_ntaro.
+iryo shi_ntaro.
 iryo ashi_nt-a=ro
 3M.FOC.PRO own-REAL.a=3nmO
 'He (and not anyone else) owns it.'
@@ -261,7 +261,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-iro ashi_ntaro.
+iro shi_ntaro.
 iro ashi_nt-a=ro
 3NM.FOC.PRO own-REAL.a=3nmO
 'She (and not anyone else) owns it.'
@@ -271,7 +271,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-haro ashi_ntaro.
+haro shi_ntaro.
 haro ashi_nt-a=ro
 1.Pl.Incl.FOC.PRO own-REAL.a=3nmO
 'We all (and not anyone else) own it.'
@@ -283,7 +283,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-natya ashi_ntaro.
+natya shi_ntaro.
 natya ashi_nt-a=ro
 1.RECENT.PRO own-REAL.a=3nmO
 'I recently owned it.'
@@ -293,7 +293,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-bitya ashi_ntaro.
+bitya shi_ntaro.
 bitya ashi_nt-a=ro
 2.RECENT.PRO own-REAL.a=3nmO
 'You recently owned it.'
@@ -303,7 +303,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-itya ashi_ntaro.
+itya shi_ntaro.
 itya ashi_nt-a=ro
 3m.RECENT.PRO own-REAL.a=3nmO
 'He recently owned it.'
@@ -313,7 +313,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-otya ashi_ntaro.
+otya shi_ntaro.
 otya ashi_nt-a=ro
 3nm.RECENT.PRO own-REAL.a=3nmO
 'She recently owned it.'
@@ -323,7 +323,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, pn, pro-d
-ashi_ntaro natya.
+shi_ntaro natya.
 ashi_nt-a=ro natya
 own-REAL.a=3nmO 1.RECENT.PRO
 'I recently owned it.'
@@ -335,7 +335,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-naketyo ashi_ntaro.
+naketyo shi_ntaro.
 naketyo ashi_nt-a=ro
 1.FIRST.PRO own-REAL.a=3nmO
 'I owned it first.'
@@ -345,7 +345,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-biketyo ashi_ntaro.
+biketyo shi_ntaro.
 biketyo ashi_nt-a=ro
 2.FIRST.PRO own-REAL.a=3nmO
 'You owned it first.'
@@ -355,7 +355,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-iketyo ashi_ntaro.
+iketyo shi_ntaro.
 iketyo ashi_nt-a=ro
 3m.FIRST.PRO own-REAL.a=3nmO
 'He owned it first.'
@@ -365,7 +365,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
-oketyo ashi_ntaro.
+oketyo shi_ntaro.
 oketyo ashi_nt-a=ro
 3nm.FIRST.PRO own-REAL.a=3nmO
 'She owned it first.'
@@ -375,7 +375,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, pn, pro-d
-ashi_ntaro biketyo.
+shi_ntaro biketyo.
 ashi_nt-a=ro biketyo
 own-REAL.a=3nmO 2.FIRST.PRO
 'You owned it first.'
@@ -387,7 +387,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, det
-yo_nta kemari haaki
+yo_nta kemari hatake
 yo_nta kemari ha-ak-i
 this.SA.m tapir go-PERF-REAL.i
 'This tapir went.'
@@ -397,7 +397,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, det
-o_nta kemari haaki
+o_nta kemari hatake
 o_nta kemari ha-ak-i
 this.SA.nm tapir go-PERF-REAL.i
 'This tapir went.'
@@ -407,7 +407,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, det
-yoka kemari haaki
+yoka kemari hatake
 yoka kemari ha-ak-i
 this.S.m tapir go-PERF-REAL.i
 'This tapir went.'
@@ -417,7 +417,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, det
-oka kemari haaki
+oka kemari hatake
 oka kemari ha-ak-i
 this.S.nm tapir go-PERF-REAL.i
 'This tapir went.'
@@ -427,7 +427,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, det
-yoga kemari haaki
+yoga kemari hatake
 yoga kemari ha-ak-i
 that.m tapir go-PERF-REAL.i
 'That tapir went.'
@@ -437,7 +437,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, det
-oga kemari haaki
+oga kemari hatake
 oga kemari ha-ak-i
 that.nm tapir go-PERF-REAL.i
 'That tapir went.'
@@ -447,7 +447,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, det
-kemari oga haaki
+kemari oga hatake
 kemari oga ha-ak-i
 tapir that.nm go-PERF-REAL.i
 'That tapir went.'
@@ -457,7 +457,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-naro ashi_ntiro.
+naro shi_ntiro.
 naro ashi_nt-i=ro
 1.FOC.PRO own-REAL.i=3nmO
 'I (and not anyone else) own it.'
@@ -467,7 +467,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-kemari haaka
+kemari hataka
 kemari ha-ak-a
 tapir go-PERF-REAL.a
 'The tapir went.'
@@ -477,7 +477,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: tam
-kemari haiak
+kemari hatitak
 kemari ha-i-ak
 tapir go-REAL.i-PERF
 'The tapir went.'
@@ -487,7 +487,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, agr
-kemari haakiro
+kemari hatakero
 kemari ha-ak-i=ro
 tapir go-PERF-REAL.i=3nmO
 'The tapir went it.'
@@ -497,7 +497,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, agr
-ihaaki pitotsi
+ihatake pitotsi
 i=ha-ak-i pitotsi
 3mS=go-PERF-REAL.i boat
 'He went the boat.'
@@ -507,7 +507,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, agr
-haaki
+hatake
 ha-ak-i
 go-PERF-REAL.i
 'Went.'
@@ -517,7 +517,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-Tagakiro.
+Tagakero.
 tag-ak-i=ro
 burn-PERF-REAL.i=3nmO
 `Burned it.'
@@ -527,7 +527,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-Otagaki.
+Otagake.
 o=tag-ak-i
 3nmS=burn-PERF-REAL.i
 'She burned.'
@@ -539,7 +539,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-Itagaki o_nta pitotsi.
+Itagake o_nta pitotsi.
 i=tag-ak-i o_nta pitotsi
 3mS=burn-PERF-REAL.i this.SA.nm boat
 'He burned this boat.'
@@ -549,7 +549,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-Itagaki yo_nta pitotsi.
+Itagake yo_nta pitotsi.
 i=tag-ak-i yo_nta pitotsi
 3mS=burn-PERF-REAL.i this.SA.m boat
 'He burned this boat.'
@@ -561,7 +561,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-Ihagei.
+Ihageti.
 i=ha-ge-0-i
 3mS=go-DSTR-IMPF-REAL.i
 'They went (in separate groups, at different times).'
@@ -581,7 +581,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-kemari hagei.
+kemari hageti.
 kemari ha-ge-0-i
 tapir go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
@@ -591,7 +591,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-kemaripage hagei.
+kemaripage hageti.
 kemari-page ha-ge-0-i
 tapir-DSTR go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
@@ -601,7 +601,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-kemaripage hai.
+kemaripage hati.
 kemari-page ha-0-i
 tapir-DSTR go-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
@@ -651,7 +651,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-Otaghigakiri.
+Otagahigakeri.
 o=tag-hig-ak-i=ri
 3nmS=burn-PL-PERF-REAL.i=3mO
 'She burned them (male)./They (female) burned him./They (female) burned them (male).'
@@ -661,7 +661,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-Kemari taghigakiri.
+Kemari tagahigakeri.
 kemari tag-hig-ak-i=ri
 tapir burn-PL-PERF-REAL.i=3mO
 'The tapir burned them (male)./The tapirs burned him./The tapirs burned them (male).'
@@ -671,7 +671,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-Kemarihegi taghigakiri.
+Kemarihegi tagahigakeri.
 kemari-hegi tag-hig-ak-i=ri
 tapir-PL burn-PL-PERF-REAL.i=3mO
 'The tapirs burned him./The tapirs burned them (male).'
@@ -681,7 +681,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-Otaghigaki pitotsi
+Otagahigake pitotsi
 o=tag-hig-ak-i pitotsi
 3nmS=burn-PL-PERF-REAL.i boat
 'She burned the boats./They (fem) burned the boat./They (fem) burned the boats.'
@@ -691,7 +691,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-Otaghigaki pitotsihegi
+Otagahigake pitotsihegi
 o=tag-hig-ak-i pitotsi-hegi
 3nmS=burn-PL-PERF-REAL.i boat-PL
 'She burned the boats./They (fem) burned the boats.'
@@ -701,7 +701,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-Otaghigaki pitotsipage
+Otagahigake pitotsipage
 o=tag-hig-ak-i pitotsi-page
 3nmS=burn-PL-PERF-REAL.i boat-DSTR
 'She burned the boats./They (fem) burned the boats.'
@@ -711,7 +711,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-kemari hagei.
+kemari hageti.
 kemari ha-ge-0-i
 tapir go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
@@ -721,7 +721,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: agr
-kemaripage hagei.
+kemaripage hageti.
 kemari-page ha-ge-0-i
 tapir-DSTR go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
@@ -731,7 +731,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-kemarihegi hagei.
+kemarihegi hageti.
 kemari-hegi ha-ge-0-i
 tapir-PL go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
