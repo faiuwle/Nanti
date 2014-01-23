@@ -326,6 +326,7 @@ section=morphology
       verb-pc1_lrt5_lri1_inflecting=yes
       verb-pc1_lrt5_lri1_orth=a=
   verb-pc2_name=object
+  verb-pc2_obligatory=on
   verb-pc2_order=suffix
   verb-pc2_inputs=verb-pc6, verb-pc7
     verb-pc2_require1_others=tverb
