@@ -132,5 +132,5 @@
 ;;;
 
 (if (eq (length *last-parses*) 1)
-(setf *last-parses* '("")))
+(setf *last-parses* '("i=ha-ak-i" "ha-ak-i" "kemari ha-ak-i" "i=tag-ak-i=ro" "i=tag-ak-i" "i=tag-ak-i pitotsi" "tag-ak-i=ro" "kemari tag-ak-i=ro" )))
 

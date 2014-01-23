@@ -270,8 +270,9 @@ section=morphology
       noun-pc1_lrt2_lri1_inflecting=yes
       noun-pc1_lrt2_lri1_orth=-page
   verb-pc1_name=subject
+  verb-pc1_obligatory=on
   verb-pc1_order=prefix
-  verb-pc1_inputs=verb, verb-pc2, verb-pc4, verb-pc5, verb-pc6, verb-pc7
+  verb-pc1_inputs=verb-pc2, verb-pc6, verb-pc7
     verb-pc1_require1_others=verb
     verb-pc1_lrt1_name=add-1st-subj
       verb-pc1_lrt1_feat1_name=pernum
@@ -326,7 +327,7 @@ section=morphology
       verb-pc1_lrt5_lri1_orth=a=
   verb-pc2_name=object
   verb-pc2_order=suffix
-  verb-pc2_inputs=verb-pc4, verb-pc5, verb-pc6, verb-pc7
+  verb-pc2_inputs=verb-pc6, verb-pc7
     verb-pc2_require1_others=tverb
     verb-pc2_lrt1_name=add-1st-obj
       verb-pc2_lrt1_feat1_name=pernum
@@ -517,6 +518,17 @@ section=morphology
 section=toolbox-import
 
 section=test-sentences
+  sentence1_orth=i=ha-ak-i
+  sentence2_orth=ha-ak-i
+  sentence2_star=on
+  sentence3_orth=kemari ha-ak-i
+  sentence4_orth=i=tag-ak-i=ro
+  sentence5_orth=i=tag-ak-i
+  sentence5_star=on
+  sentence6_orth=i=tag-ak-i pitotsi
+  sentence7_orth=tag-ak-i=ro
+  sentence7_star=on
+  sentence8_orth=kemari tag-ak-i=ro
 
 section=gen-options
 
