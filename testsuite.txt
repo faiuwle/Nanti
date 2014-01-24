@@ -222,8 +222,8 @@ Vetted: s
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 naro shi_ntaro.
-naro ashi_nt-a=ro
-1.FOC.PRO own-REAL.a=3nmO
+naro ashi_nt-0-a=ro
+1.FOC.PRO own-IMPF-REAL.a=3nmO
 'I (and not anyone else) own it.'
 
 #22 Transitive Verb Focus Position
@@ -232,8 +232,8 @@ Vetted: f
 Judgment: u
 Phenomena: wo, pn, info, pro-d
 shi_ntaro naro.
-ashi_nt-a=ro naro
-own-REAL.a=3nmO 1.FOC.PRO
+ashi_nt-0-a=ro naro
+own-IMPF-REAL.a=3nmO 1.FOC.PRO
 'I (and not anyone else) own it.'
 
 #23 Transitive Verb Focus Position
@@ -242,8 +242,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 biro shi_ntaro.
-biro ashi_nt-a=ro
-2.FOC.PRO own-REAL.a=3nmO
+biro ashi_nt-0-a=ro
+2.FOC.PRO own-IMPF-REAL.a=3nmO
 'You (and not anyone else) own it.'
 
 #24 Transitive Verb Focus Position
@@ -252,8 +252,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 iryo shi_ntaro.
-iryo ashi_nt-a=ro
-3M.FOC.PRO own-REAL.a=3nmO
+iryo ashi_nt-0-a=ro
+3M.FOC.PRO own-IMPF-REAL.a=3nmO
 'He (and not anyone else) owns it.'
 
 #25 Transitive Verb Focus Position
@@ -262,8 +262,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 iro shi_ntaro.
-iro ashi_nt-a=ro
-3NM.FOC.PRO own-REAL.a=3nmO
+iro ashi_nt-0-a=ro
+3NM.FOC.PRO own-IMPF-REAL.a=3nmO
 'She (and not anyone else) owns it.'
 
 #26 Transitive Verb Focus Position
@@ -272,8 +272,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 haro shi_ntaro.
-haro ashi_nt-a=ro
-1.Pl.Incl.FOC.PRO own-REAL.a=3nmO
+haro ashi_nt-0-a=ro
+1.Pl.Incl.FOC.PRO own-IMPF-REAL.a=3nmO
 'We all (and not anyone else) own it.'
 
 # "Recent" pronouns in focus position
@@ -284,8 +284,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 natya shi_ntaro.
-natya ashi_nt-a=ro
-1.RECENT.PRO own-REAL.a=3nmO
+natya ashi_nt-0-a=ro
+1.RECENT.PRO own-IMPF-REAL.a=3nmO
 'I recently owned it.'
 
 #28 Recent Pronoun 2nd person
@@ -294,8 +294,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 bitya shi_ntaro.
-bitya ashi_nt-a=ro
-2.RECENT.PRO own-REAL.a=3nmO
+bitya ashi_nt-0-a=ro
+2.RECENT.PRO own-IMPF-REAL.a=3nmO
 'You recently owned it.'
 
 #29 Recent Pronoun 3rd person masc
@@ -304,8 +304,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 itya shi_ntaro.
-itya ashi_nt-a=ro
-3m.RECENT.PRO own-REAL.a=3nmO
+itya ashi_nt-0-a=ro
+3m.RECENT.PRO own-IMPF-REAL.a=3nmO
 'He recently owned it.'
 
 #30 Recent Pronoun 3rd person non-masc
@@ -314,8 +314,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 otya shi_ntaro.
-otya ashi_nt-a=ro
-3nm.RECENT.PRO own-REAL.a=3nmO
+otya ashi_nt-0-a=ro
+3nm.RECENT.PRO own-IMPF-REAL.a=3nmO
 'She recently owned it.'
 
 #31 Recent Pronoun 1st person wrong position
@@ -324,8 +324,8 @@ Vetted: f
 Judgment: u
 Phenomena: wo, pn, pro-d
 shi_ntaro natya.
-ashi_nt-a=ro natya
-own-REAL.a=3nmO 1.RECENT.PRO
+ashi_nt-0-a=ro natya
+own-IMPF-REAL.a=3nmO 1.RECENT.PRO
 'I recently owned it.'
 
 # "First" pronouns in focus position
@@ -336,8 +336,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 naketyo shi_ntaro.
-naketyo ashi_nt-a=ro
-1.FIRST.PRO own-REAL.a=3nmO
+naketyo ashi_nt-0-a=ro
+1.FIRST.PRO own-IMPF-REAL.a=3nmO
 'I owned it first.'
 
 #33 First Pronoun 2nd person
@@ -346,8 +346,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 biketyo shi_ntaro.
-biketyo ashi_nt-a=ro
-2.FIRST.PRO own-REAL.a=3nmO
+biketyo ashi_nt-0-a=ro
+2.FIRST.PRO own-IMPF-REAL.a=3nmO
 'You owned it first.'
 
 #34 First Pronoun 3rd person masc
@@ -356,8 +356,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 iketyo shi_ntaro.
-iketyo ashi_nt-a=ro
-3m.FIRST.PRO own-REAL.a=3nmO
+iketyo ashi_nt-0-a=ro
+3m.FIRST.PRO own-IMPF-REAL.a=3nmO
 'He owned it first.'
 
 #35 First Pronoun 3rd person non-masc
@@ -366,8 +366,8 @@ Vetted: f
 Judgment: g
 Phenomena: wo, pn, info, pro-d
 oketyo shi_ntaro.
-oketyo ashi_nt-a=ro
-3nm.FIRST.PRO own-REAL.a=3nmO
+oketyo ashi_nt-0-a=ro
+3nm.FIRST.PRO own-IMPF-REAL.a=3nmO
 'She owned it first.'
 
 #36 First Pronoun wrong position
@@ -376,8 +376,8 @@ Vetted: f
 Judgment: u
 Phenomena: wo, pn, pro-d
 shi_ntaro biketyo.
-ashi_nt-a=ro biketyo
-own-REAL.a=3nmO 2.FIRST.PRO
+ashi_nt-0-a=ro biketyo
+own-IMPF-REAL.a=3nmO 2.FIRST.PRO
 'You owned it first.'
 
 # Determiners
@@ -777,3 +777,107 @@ Onorihe_npa.
 o=_n-norih-0-e_npa
 3nmS=IRREAL-lie.down-IMPF-IRREAL.a
 'She will lie down.'
+
+# Ditransitives
+
+#76 Ditransitive with DO preverbal
+Source: a:390
+Vetted: t
+Judgment: g
+Phenomena: wo
+shima opakiNpi?
+shima o=p-ak-i=Npi
+fish 3nmS=give-PERF-REAL.i=2O
+'Did she give you fish?'
+
+#77 Ditransitive with DO postverbal
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+opakiNpi shima?
+o=p-ak-i=Npi shima
+3nmS=give-PERF-REAL.i=2O fish
+'Did she give you fish?'
+
+#78 Ditransitive with clitic objects, IDO not overt
+Source: a:368
+Vetted: t
+Judgment: g
+Phenomena: wo
+nopakeri.
+no=p-ak-i=ri
+1S=give-PERF-REAL.i=3mO
+'I gave (it) to him.'
+
+#79 Ditransitive with clitic objects, IDO not overt
+Source: a:368
+Vetted: t
+Judgment: g
+Phenomena: wo
+nopakero.
+no=p-ak-i=ro
+1S=give-PERF-REAL.i=3nmO
+'I gave (it) to her.'
+
+#80 Ditransitive with clitic objects, IDO not overt
+Source: a:368
+Vetted: t
+Judgment: g
+Phenomena: wo
+ipakena otsiko.
+i=p-ak-i=na otsiko
+3mS=give-PERF-REAL.i=1O fishhook
+'He gave me a fishhook.'
+
+#81 Ditransitive with clitic objects, Subj, Obj, IDObj
+Source: a:369
+Vetted: t
+Judgment: g
+Phenomena: wo
+nopakiniri.
+no=p-ak-i=ni=ri
+1S=give-PERF-REAL.i=THM=3nmO
+'I gave it to him.'
+
+# Negation
+
+#82 Negated clause
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg
+matsi pitotsi kemari tagakero.
+matsi pitotsi kemari tag-ak-i=ro
+NEG.EXT boat tapir burn-PERF-REAL.i=3nmO
+'The tapir didn't burn the boat.'
+
+#83 Negated clause - bad location for negator
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg
+pitotsi matsi kemari tagakero.
+pitotsi matsi kemari tag-ak-i=ro
+boat NEG.EXT tapir burn-PERF-REAL.i=3nmO
+'The tapir didn't burn the boat.'
+
+#84 Negated clause - bad location for negator
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg
+pitotsi kemari matsi tagakero.
+pitotsi kemari matsi tag-ak-i=ro
+boat tapir NEG.EXT burn-PERF-REAL.i=3nmO
+'The tapir didn't burn the boat.'
+
+#85 Negated clause - bad location for negator
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg
+pitotsi kemari tagakero matsi.
+pitotsi kemari tag-ak-i=ro matsi
+boat tapir burn-PERF-REAL.i=3nmO NEG.EXT
+'The tapir didn't burn the boat.'
