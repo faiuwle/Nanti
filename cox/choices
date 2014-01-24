@@ -519,6 +519,11 @@ section=morphology
       verb-pc8_lrt8_require1_others=tverb
       verb-pc8_lrt8_lri1_inflecting=yes
       verb-pc8_lrt8_lri1_orth=-ge
+    verb-pc8_lrt9_name=singular-object
+      verb-pc8_lrt9_feat1_name=pernum
+      verb-pc8_lrt9_feat1_value=SG
+      verb-pc8_lrt9_feat1_head=obj
+      verb-pc8_lrt9_lri1_inflecting=no
 
 section=toolbox-import
 
