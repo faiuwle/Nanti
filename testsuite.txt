@@ -54,7 +54,7 @@ go-PERF-REAL.i=3mO
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: pro-d
+Phenomena: wo
 kemari tagake pitotsi
 kemari tag-ak-i pitotsi
 tapir burn-PERF-REAL.i boat

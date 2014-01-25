@@ -44,7 +44,7 @@ Within the morphology, we created a series of position classes for aspective and
 
 Argument-number (the first position), and subject and object (the last positions) are addressed later in the write-up.
 
-The aspect class takes the output of the argument-number class (see below); the reality suffix classes take the aspect class, along with a morphosyntactic constraint a-intransitive/a-transitive, or i-intransitive/i-transitive, as appropriate. E.g., i-verb-reality-suffix has a morphotactic constraint requiring i-intransitive or i-transitive. The reality prefix classes take only their respective i-verb or a-verb reality suffix classes, thus guaranteeing that any verb has both the prefix and suffix applied. Lastly, subject and object positions take the output of the reality prefixes.
+The aspect class takes the output of the argument-number class (see below); the reality suffix classes take the aspect class, along with a morphosyntactic constraint a-intransitive/a-transitive, or i-intransitive/i-transitive, as appropriate. E.g., i-verb-reality-suffix has a morphotactic constraint requiring i-intransitive or i-transitive. The reality prefix classes take only their respective i-verb or a-verb reality suffix classes, thus guaranteeing that any verb has both the prefix and suffix applied. We made reality prefixes and suffixes require each other. Lastly, subject and object positions take the output of the reality prefixes.
 
 *There are other aspective-like suffixes in Nanti, but they are somewhat more complex and can contain locative information as well. For this reason we have not yet included them.
 
@@ -156,6 +156,8 @@ i=tag-ak-i yo_nta pitotsi
 3mS=burn-PERF-REAL.i this.SA.m boat
 'He burned this boat.'
 
+The demonstratives agree only on masculine/non-masculine, and this agreement pattern was taken care of under the determiner section of lab 2 (since demonstratives are also used as Nanti's only determiners).
+
 --------------------------
 
 Argument Optionality: Testsuite and Grammar Matrix Choices
@@ -176,7 +178,7 @@ i=ha-ak-i
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: pro-d
+Phenomena: wo
 kemari tagake pitotsi
 kemari tag-ak-i pitotsi
 tapir burn-PERF-REAL.i boat
@@ -307,7 +309,7 @@ The only choices that needed to be made in the grammar matrix were selecting a s
  Performance on Testsuite, Incorrect Ambiguity
 +++++++++++++++++++++++++++++++++++++++++++++++
 
-Test suite performance overall was good, although this is because a lot of the sentences we have are tailored to what we know we are covering. Coverage is 85.5%, overgeneration is 3.2% (using itsdb metrics).
+Test suite performance overall was good, although this is because a lot of the sentences we have are tailored to what we know we are covering. Coverage is 87%, overgeneration is 3.1% (using itsdb metrics).
 
 The sole illformed sentence that our testsuite parsed was a sentence with two overt NPs, #5 above.
 
@@ -322,3 +324,13 @@ As mentioned above, we have not yet included rules for managing ditransitives, s
 The fairly-late addition of the singular-object rule in the argument-numbering system (see above) caused inappropriate ambiguity in several places, where a parse could be made either by going through the singular-subject-object rule or the singular-object rule. The reason this was added was to cover cases where the subject was plural due to the plural inclusive pronoun clitic (there is no objective first person inclusive clitic). This is something we need to run by the field linguist to make sure it is correct, but while we now parse these sentences correctly, we have generated ambiguity elsewhere. We however ran out of time for fixing this.
 
 Other than that, ambiguity only occurred where valid.
+
++++++++++++++++++++
+ Additional Issues
++++++++++++++++++++
+
+We had a problem with the Grammar Matrix's output. We had to make the following modifications to nanti.tdl in order to parse intransitives:
+
+1) Removed OBJECT-FLAG - from verb-lex
+2) Added OBJECT-FLAG - to transitive-verb-lex
+3) Added OBJECT-FLAG na to intransitive-verb-lex
