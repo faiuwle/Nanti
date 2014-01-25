@@ -4,7 +4,7 @@ Lines: translit translit-seg gloss translat
 Author: Ruth Morrison, David Inman
 Date: January 14, 2014
 Source a: http://www.cabeceras.org/ldm_publications/michael_nanti_2008_dissertation.pdf
-# Examples 1, 9, 10 and 42 were vetted by our field linguist.
+# Examples 1, 9, 10, 42, 68 were vetted by our field linguist.
 
 # Intransitives without determiners
 
@@ -639,7 +639,7 @@ tapir-PL go-PL-IMPF-REAL.i
 #62 Plural on intransitive with distributive-marked NP subj
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: agr
 kemaripage hahigi.
 kemari-page ha-hig-0-i
@@ -699,7 +699,7 @@ o=tag-hig-ak-i pitotsi-hegi
 #68 Plural on transitive with dstr-marked NP obj
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: agr
 Otagahigake pitotsipage
 o=tag-hig-ak-i pitotsi-page
@@ -820,7 +820,7 @@ no=p-ak-i=ro
 1S=give-PERF-REAL.i=3nmO
 'I gave (it) to her.'
 
-#80 Ditransitive with clitic objects, IDO not overt
+#80 Ditransitive with clitic objects, IDO separate NP
 Source: a:368
 Vetted: t
 Judgment: g
@@ -847,37 +847,47 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo, neg
-matsi pitotsi kemari tagakero.
-matsi pitotsi kemari tag-ak-i=ro
-NEG.EXT boat tapir burn-PERF-REAL.i=3nmO
-'The tapir didn't burn the boat.'
+matsi kemari tagakero.
+matsi kemari tag-ak-i=ro
+NEG.EXT tapir burn-PERF-REAL.i=3nmO
+'The tapir didn't burn it.'
 
 #83 Negated clause - bad location for negator
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, neg
-pitotsi matsi kemari tagakero.
-pitotsi matsi kemari tag-ak-i=ro
-boat NEG.EXT tapir burn-PERF-REAL.i=3nmO
-'The tapir didn't burn the boat.'
+kemari matsi tagakero.
+kemari matsi tag-ak-i=ro
+tapir NEG.EXT burn-PERF-REAL.i=3nmO
+'The tapir didn't burn it.'
 
 #84 Negated clause - bad location for negator
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, neg
-pitotsi kemari matsi tagakero.
-pitotsi kemari matsi tag-ak-i=ro
-boat tapir NEG.EXT burn-PERF-REAL.i=3nmO
-'The tapir didn't burn the boat.'
+kemari tagakero matsi.
+kemari tag-ak-i=ro matsi
+tapir burn-PERF-REAL.i=3nmO NEG.EXT
+'The tapir didn't burn it.'
 
-#85 Negated clause - bad location for negator
+#85 Negated clause - all clitics
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg
+matsi itagakero
+matsi i=tag-ak-i=ro
+NEG.EXT 3mS=burn-PERF-REAL.i=3nmO
+'He didn't burn it.'
+
+#86 Negated clause - all clitics, wrong position
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: wo, neg
-pitotsi kemari tagakero matsi.
-pitotsi kemari tag-ak-i=ro matsi
-boat tapir burn-PERF-REAL.i=3nmO NEG.EXT
-'The tapir didn't burn the boat.'
+itagakero matsi
+i=tag-ak-i=ro matsi
+3mS=burn-PERF-REAL.i=3nmO NEG.EXT
+'He didn't burn it.'
