@@ -105,7 +105,7 @@ tapir-PL go-PL-IMPF-REAL.i
 #62 Plural on intransitive with distributive-marked NP subj
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: agr
 kemaripage hahigi.
 kemari-page ha-hig-0-i
@@ -316,8 +316,6 @@ There were several sentences that didn't parse. One was a sentence with a focuse
 pitotsi itagake
 
 and we are not doing focus yet.
-
-Another important one was an edge-case with plural/distributive affixes, #62 above. We only found out relatively late from the field linguist that this sentence that this is actually grammatical (we initially thought it wasn't). We will need to do some modification to the number-marking to accommodate this (perhaps just more homophony).
 
 As mentioned above, we have not yet included rules for managing ditransitives, so all of these grammatical cases also failed to parse.
 

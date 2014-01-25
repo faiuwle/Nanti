@@ -639,7 +639,7 @@ tapir-PL go-PL-IMPF-REAL.i
 #62 Plural on intransitive with distributive-marked NP subj
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: agr
 kemaripage hahigi.
 kemari-page ha-hig-0-i
