@@ -1,0 +1,326 @@
+Nanti (cox)
+David Inman, Ruth Morrison
+
++++++++++++++++++++++++++++++++++++
+ Phenomena: Test Suite and Choices
++++++++++++++++++++++++++++++++++++
+
+Tense and Verb Agreement: Testsuite and Grammar Matrix Choices
+
+We have added to the testsuite a series of differently incorrectly conjugated verbs, including verb-type-agreement and wrongly-ordered affixing. We did not need to add much in the way of correctly-ordered affixing, as these examples already were present from Lab 2. We simply updated the lexicon and grammar to properly take care of the affixes individually.
+
+#44 A-verb with i-suffix
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+naro shi_ntiro.
+naro ashi_nt-i=ro
+1.FOC.PRO own-REAL.i=3nmO
+'I (and not anyone else) own it.'
+
+#46 Reality and Aspect Suffixes Swapped
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: tam
+kemari hatitak
+kemari ha-i-ak
+tapir go-REAL.i-PERF
+'The tapir went.'
+
+Nanti has no tense information, and only two* aspects and two moods. We simply selected the perfective/imperfective hierarchy in the grammar matrix, and created a binary set of moods, realis and irrealis.
+
+Within the morphology, we created a series of position classes for aspective and mood affixes. For realis/irrealis, there are two verb declensions, a-verbs and i-verbs, so we split the verb positions appropriately. The irrealis morphology is also a circumfix, so we created another split prefix/suffix, one taking the other, to properly account for circumfixing. The verbal morphology positions are:
+
+- subject
+- object
+- aspect
+- i-verb reality suffix
+- i-verb reality prefix
+- a-verb reality suffix
+- a-verb reality prefix
+- argument-number
+
+Argument-number (the first position), and subject and object (the last positions) are addressed later in the write-up.
+
+The aspect class takes the output of the argument-number class (see below); the reality suffix classes take the aspect class, along with a morphosyntactic constraint a-intransitive/a-transitive, or i-intransitive/i-transitive, as appropriate. E.g., i-verb-reality-suffix has a morphotactic constraint requiring i-intransitive or i-transitive. The reality prefix classes take only their respective i-verb or a-verb reality suffix classes, thus guaranteeing that any verb has both the prefix and suffix applied. Lastly, subject and object positions take the output of the reality prefixes.
+
+*There are other aspective-like suffixes in Nanti, but they are somewhat more complex and can contain locative information as well. For this reason we have not yet included them.
+
+--------------------------
+
+Argument agreement: Testsuite
+
+We have also added ungrammatical transitives and intransitives, with too many arguments or too few:
+
+#47 Intransitive Verb with Object Clitic
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+kemari hatakero
+kemari ha-ak-i=ro
+tapir go-PERF-REAL.i=3nmO
+'The tapir went it.'
+
+#51 Transitive Verb with No Object
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Otagake.
+o=tag-ak-i
+3nmS=burn-PERF-REAL.i
+'She burned.'
+
+These cases are (ideally) taken care of by the transitive/intransitive classes present in the grammar matrix.
+
+--------------------------
+
+Plurality Agreement: Testsuite and Grammar Matrix Choices
+
+We have added a series of test cases dealing with plurality agreement. Nanti has plural markers on both verbs and nouns, although in speech the noun markers are rare. Verb number markers are obligatory. There are two number markers, plural and distributive. The verbal markers are unspecified for argument, only saying that at least one of the verb's arguments agrees with it on number. NPs can be underspecified for number, but if specified there must be one argument which matches the (obligatory) verbal number affix.
+
+#60 Plural on intransitive with unmarked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+kemari hahigi.
+kemari ha-hig-0-i
+tapir go-PL-IMPF-REAL.i
+'The tapirs went.'
+
+#61 Plural on intransitive with plural-marked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+kemarihegi hahigi.
+kemari-hegi ha-hig-0-i
+tapir-PL go-PL-IMPF-REAL.i
+'The tapirs went.'
+
+#62 Plural on intransitive with distributive-marked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+kemaripage hahigi.
+kemari-page ha-hig-0-i
+tapir-DSTR go-PL-IMPF-REAL.i
+'The tapirs went.'
+
+To capture this in the grammar matrix, we added an argument-number position class in the morphology. To capture the argument ambiguity, each of the two verbal number markers (0=SG, hig=PL, ge=DSTR) each of the morphemes was entered under the position class as multiple homophonous forms:
+
+ 0  = singular-subject
+ 0  = singular-subject, singular-object
+hig = plural-subject
+hig = plural-object
+hig = plural-subject, plural-object
+ge  = distributive-subject
+ge  = distributive-object
+ge  = distributive-subject, distributive-object
+
+ 0  = singular-object, unspecified subject
+
+Finally, an optional number class was included on nouns as a suffix. These suffixes can only apply to common-nouns (thus excluding pronouns) The two affixes are:
+
+-hegi : PL
+-page : DSTR
+
+--------------------------
+
+Demonstrative Agreement: Testsuite
+
+We have also, following feedback from Lab 2, added properly and improperly agreeing demonstratives:
+
+#52 Proper agreement that-boat matched
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+Itagake o_nta pitotsi.
+i=tag-ak-i o_nta pitotsi
+3mS=burn-PERF-REAL.i this.SA.nm boat
+'He burned this boat.'
+
+#53 Proper agreement that-boat mismatched
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Itagake yo_nta pitotsi.
+i=tag-ak-i yo_nta pitotsi
+3mS=burn-PERF-REAL.i this.SA.m boat
+'He burned this boat.'
+
+--------------------------
+
+Argument Optionality: Testsuite and Grammar Matrix Choices
+
+With the exception of ditransitives (see below), all verbal arguments must be realized in Nanti, either as a clitic pronoun or as a free NP.
+
+#3 Intransitive Verb: Clitic Pronoun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+ihatake
+i=ha-ak-i
+3mS=go-PERF-REAL.i
+'He went.'
+
+#5 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
+kemari tagake pitotsi
+kemari tag-ak-i pitotsi
+tapir burn-PERF-REAL.i boat
+'The tapir burned the boat.
+
+#9 Transitive with one argument
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pro-d
+kemari tagakero
+kemari tag-ak-i=ro
+tapir burn-PERF-REAL.i=3nmO
+'The tapir burned it.'
+
+#10 Transitive with one argument
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pro-d
+itagake pitotsi
+i=tag-ak-i pitotsi
+3mS=burn-PERF-REAL.i boat
+'He burned the boat.'
+
+We are incapable of capturing the free NP restriction using the grammar matrix. This will have to come later. To capture the complementary distribution of the clitics, the following choices were used in the matrix:
+
+Subject dropping occurs can occur:
+
+> with any verb
+> in all contexts
+
+When a subject is dropped, a subject marker on the verb is:
+
+> required
+
+When a subject is overt, a subject marker on the verb is:
+
+> not permitted
+
+Object dropping is:
+
+> always allowed
+
+When an object is dropped, an object marker on the verb is:
+
+> required
+
+When an object is overt, an object marker on the verb is:
+
+> not permitted
+
+--------------------------
+
+Extra: Ditransitives
+
+We added a series of ditransitives, although our grammar does not yet cover ditransitives. Ditransitives allow pro-dropping of the "theme" role (here I simply call it IDO for indirect object), and have separate 3rd-person clitics when themes are included. There are additional questions we have for the field linguist here, so hope to cover them later.
+
+#76 Ditransitive with DO preverbal
+Source: a:390
+Vetted: t
+Judgment: g
+Phenomena: wo
+shima opakiNpi?
+shima o=p-ak-i=Npi
+fish 3nmS=give-PERF-REAL.i=2O
+'Did she give you fish?'
+
+#79 Ditransitive with clitic objects, IDO not overt
+Source: a:368
+Vetted: t
+Judgment: g
+Phenomena: wo
+nopakero.
+no=p-ak-i=ro
+1S=give-PERF-REAL.i=3nmO
+'I gave (it) to her.'
+
+#80 Ditransitive with clitic objects, IDO separate NP
+Source: a:368
+Vetted: t
+Judgment: g
+Phenomena: wo
+ipakena otsiko.
+i=p-ak-i=na otsiko
+3mS=give-PERF-REAL.i=1O fishhook
+'He gave me a fishhook.'
+
+#81 Ditransitive with clitic objects, Subj, Obj, IDObj
+Source: a:369
+Vetted: t
+Judgment: g
+Phenomena: wo
+nopakiniri.
+no=p-ak-i=ni=ri
+1S=give-PERF-REAL.i=THM=3nmO
+'I gave it to him.'
+
+--------------------------
+
+Sentential Negation: Testsuite and Grammar Matrix
+
+Finally, we added the sentential negator. The sentential negator is fairly simple and doesn't require agreement. It occurs before any focused elements, but after topics. Since we haven't covered topics yet, we didn't include those examples. We have included tests with the negator in various positions.
+
+#82 Negated clause
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg
+matsi kemari tagakero.
+matsi kemari tag-ak-i=ro
+NEG.EXT tapir burn-PERF-REAL.i=3nmO
+'The tapir didn't burn it.'
+
+#83 Negated clause - bad location for negator
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg
+kemari matsi tagakero.
+kemari matsi tag-ak-i=ro
+tapir NEG.EXT burn-PERF-REAL.i=3nmO
+'The tapir didn't burn it.'
+
+The only choices that needed to be made in the grammar matrix were selecting a simple adverb, appearing before the S, spelled "matsi". This was sufficient to capture these examples.
+
++++++++++++++++++++++++++++++++++++++++++++++++
+ Performance on Testsuite, Incorrect Ambiguity
++++++++++++++++++++++++++++++++++++++++++++++++
+
+Test suite performance overall was good, although this is because a lot of the sentences we have are tailored to what we know we are covering. Coverage is 85.5%, overgeneration is 3.2% (using itsdb metrics).
+
+The sole illformed sentence that our testsuite parsed was a sentence with two overt NPs, #5 above.
+
+There were several sentences that didn't parse. One was a sentence with a focused NP object (#11):
+
+pitotsi itagake
+
+and we are not doing focus yet.
+
+Another important one was an edge-case with plural/distributive affixes, #62 above. We only found out relatively late from the field linguist that this sentence that this is actually grammatical (we initially thought it wasn't). We will need to do some modification to the number-marking to accommodate this (perhaps just more homophony).
+
+As mentioned above, we have not yet included rules for managing ditransitives, so all of these grammatical cases also failed to parse.
+
+The fairly-late addition of the singular-object rule in the argument-numbering system (see above) caused inappropriate ambiguity in several places, where a parse could be made either by going through the singular-subject-object rule or the singular-object rule. The reason this was added was to cover cases where the subject was plural due to the plural inclusive pronoun clitic (there is no objective first person inclusive clitic). This is something we need to run by the field linguist to make sure it is correct, but while we now parse these sentences correctly, we have generated ambiguity elsewhere. We however ran out of time for fixing this.
+
+Other than that, ambiguity only occurred where valid.
