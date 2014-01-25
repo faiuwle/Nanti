@@ -19,3 +19,8 @@ How would it look for declarative:
 can non-clitic pronouns occur resumptively with common nouns and proper nouns? It looks like oketyo is modifying oroma.
 
 - 1st Person Pronoun: is it underspecified for incl/excl or is it excl?
+
+
+- ditransitives: still only 1 overt NP?
+- ditransitives: is 'free np' theme maybe in focus position?
+- for 1.PL.INCL subject clitic, must it cooccur with -hig- or -ge- ?
