@@ -1,0 +1,29 @@
+to add:
+
+topic pronouns
+Bare_ntin - masc proper name
+Bisarota - "
+Rerpin - "
+neh - see
+pa_nkotsi - house (inanimate, nm)
+a_ntarini - adult male (man)
+a_ntaroni - adult female (woman)
+
+
+ADJ
+
+big
+imarane	- masc/anim
+omarane	- nm/anim
+omarate	- nm/nonanimate
+
+
+ADV
+
+maika		- now
+
+
+
+TO DO:
+
+undo singular-object

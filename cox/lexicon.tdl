@@ -1,11 +1,11 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-naro := 1st-PRO-FOCUS-noun-lex &
+naro_1 := 1st-PRO-FOCUS-noun-lex &
   [ STEM < "naro" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-biro := 2nd-PRO-FOCUS-noun-lex &
+biro_1 := 2nd-PRO-FOCUS-noun-lex &
   [ STEM < "biro" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
@@ -53,13 +53,73 @@ oketyo := 3rd-NM-FIRST-PRO-noun-lex &
   [ STEM < "oketyo" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
+a_ntarini := common-noun-m-noun-lex &
+  [ STEM < "a_ntarini" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_man_n_rel" ].
+
+a_ntaroni := common-noun-nm-anim-noun-lex &
+  [ STEM < "a_ntaroni" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
+
 pitotsi := common-noun-nm-inan-noun-lex &
   [ STEM < "pitotsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_boat_n_rel" ].
 
+pa_nkotsi := common-noun-nm-inan-noun-lex &
+  [ STEM < "pa_nkotsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_house_n_rel" ].
+
 kemari := common-noun-anim-noun-lex &
   [ STEM < "kemari" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
+
+Bare_ntin := proper-noun-m-noun-lex &
+  [ STEM < "Bare_ntin" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Barentin_n_rel" ].
+
+Bisarota := proper-noun-m-noun-lex &
+  [ STEM < "Bisarota" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Bisarota_n_rel" ].
+
+Rerpin := proper-noun-m-noun-lex &
+  [ STEM < "Rerpin" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Rerpin_n_rel" ].
+
+naro_2 := 1st-SG-TOPIC-PRO-noun-lex &
+  [ STEM < "naro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+narohegi := 1st-EXCL-TOPIC-PRO-noun-lex &
+  [ STEM < "narohegi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+biro_2 := 2nd-SG-TOPIC-PRO-noun-lex &
+  [ STEM < "biro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+birohegi := 2nd-PL-TOPIC-PRO-noun-lex &
+  [ STEM < "birohegi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+iriro := 3rd-M-SG-TOPIC-PRO-noun-lex &
+  [ STEM < "iriro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+irirohegi := 3rd-M-PL-TOPIC-PRO-noun-lex &
+  [ STEM < "irirohegi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+iroro := 3rd-NM-SG-TOPIC-PRO-noun-lex &
+  [ STEM < "iroro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+irorohegi := 3rd-NM-PL-TOPIC-PRO-noun-lex &
+  [ STEM < "irorohegi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+harohegi := 1st-INCL-TOPIC-PRO-noun-lex &
+  [ STEM < "harohegi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 ;;; Verbs
 
@@ -74,6 +134,10 @@ norih := i-intransitive-verb-verb-lex &
 tag := i-transitive-verb-verb-lex &
   [ STEM < "tag" >,
     SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
+
+neh := i-transitive-verb-verb-lex &
+  [ STEM < "neh" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
 
 ashi_nt := a-transitive-verb-verb-lex &
   [ STEM < "ashi_nt" >,
@@ -108,3 +172,13 @@ oga := speaker-dist-det-NM-determiner-lex &
 matsi := neg-adv-lex &
   [ STEM < "matsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+i_ntiri1 := conj-lex &
+  [ STEM < "i_ntiri" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "1" ].
+
+o_ntiri2 := conj-lex &
+  [ STEM < "o_ntiri" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "2" ].

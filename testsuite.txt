@@ -185,7 +185,7 @@ a=tag-ak-i=ri
 'We all burned him.'
 
 #18 Transitive Verb
-Source: a:344
+Source: a:author
 Vetted: f
 Judgment: u
 Phenomena: pro-d
@@ -740,7 +740,7 @@ tapir-PL go-DSTR-IMPF-REAL.i
 
 #72 Irrealis with prefix and null suffix
 Source: a:252
-Vetted: t
+Vetted: s
 Judgment: g
 Phenomena: agr
 Onorihe.
@@ -782,7 +782,7 @@ o=_n-norih-0-e_npa
 
 #76 Ditransitive with DO preverbal
 Source: a:390
-Vetted: t
+Vetted: s
 Judgment: g
 Phenomena: wo
 shima opakiNpi?
@@ -802,7 +802,7 @@ o=p-ak-i=Npi shima
 
 #78 Ditransitive with clitic objects, IDO not overt
 Source: a:368
-Vetted: t
+Vetted: s
 Judgment: g
 Phenomena: wo
 nopakeri.
@@ -812,7 +812,7 @@ no=p-ak-i=ri
 
 #79 Ditransitive with clitic objects, IDO not overt
 Source: a:368
-Vetted: t
+Vetted: s
 Judgment: g
 Phenomena: wo
 nopakero.
@@ -822,7 +822,7 @@ no=p-ak-i=ro
 
 #80 Ditransitive with clitic objects, IDO separate NP
 Source: a:368
-Vetted: t
+Vetted: s
 Judgment: g
 Phenomena: wo
 ipakena otsiko.
@@ -832,7 +832,7 @@ i=p-ak-i=na otsiko
 
 #81 Ditransitive with clitic objects, Subj, Obj, IDObj
 Source: a:369
-Vetted: t
+Vetted: s
 Judgment: g
 Phenomena: wo
 nopakiniri.
@@ -891,3 +891,159 @@ itagakero matsi
 i=tag-ak-i=ro matsi
 3mS=burn-PERF-REAL.i=3nmO NEG.EXT
 'He didn't burn it.'
+
+# Coordination
+
+#87 Coordinated NPs post-verbal, nm coordinator
+Source: a:371
+Vetted: s
+Judgment: g
+Phenomena: crd
+Nohahigake, iriro o_ntiri naro.
+no=ha-hig-ak-i iriro o_ntiri naro
+1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.nm 1.TOP.PRO
+'We went, he and I (fem).'
+
+#88 Coordinated NPs post-verbal, m coordinator
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: crd
+Nohahigake, iriro i_ntiri naro.
+no=ha-hig-ak-i iriro i_ntiri naro
+1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.m 1.TOP.PRO
+'We went, he and I (masc).'
+
+#89 Coordinated NPs post-verbal, proper names
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: crd
+Ihati Bare_ntin i_ntiri Bisarota i_ntiri Rerpin.
+i=ha-i Bare_ntin i_ntiri Bisatora i_ntiri Rerpin
+1mS=go-REAL.i Bare_ntin COORD.m Bisatora COORD.m Rerpin
+'Bare_ntin and Bisarota and Rerpin went there.'
+
+#90 Coordinated NPs post-verbal, coordinator in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: crd
+Nohahigake, iriro naro i_ntiri.
+no=ha-hig-ak-i iriro naro i_ntiri
+1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO COORD.m
+'We went, he and I (masc).'
+
+#91 Coordinated NPs post-verbal, no coordinator
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: crd
+Nohahigake, iriro naro.
+no=ha-hig-ak-i iriro naro
+1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO
+'We went, he and I (masc).'
+
+#92 Coordinated sentences
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: crd
+kemari hatake o_ntiri itagake pitotsi.
+kemari ha-ak-i o_ntiri i=tag-ak-i pitotsi
+tapir go-PERF-REAL.i COORD.S 3mS=burn-PERF-REAL.i boat
+'The tapir went and he burned the boat.'
+
+#93 Coordinated sentences, coordinator wrong
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: crd
+kemari hatake itagake pitotsi o_ntiri.
+kemari ha-ak-i i=tag-ak-i pitotsi o_ntiri
+tapir go-PERF-REAL.i 3mS=burn-PERF-REAL.i boat COORD.S
+'The tapir went and he burned the boat.'
+
+#94 Coordinated sentences, coordinator wrong
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: crd
+o_ntiri kemari hatake o_ntiri itagake pitotsi.
+o_ntiri kemari ha-ak-i o_ntiri i=tag-ak-i pitotsi
+COORD.S tapir go-PERF-REAL.i COORD.S 3mS=burn-PERF-REAL.i boat
+'The tapir went and he burned the boat.'
+
+# Adjectives
+
+#95 Adjective, NM-inanim
+Source: a:369
+Vetted: s
+Judgment: g
+Phenomena: adj, agr, wo
+Nonehake omarate pa_nkotsi.
+no=neh-ak-i omarate pa_nkotsi
+1S=see-PERF-REAL.i big.INAN house
+'I saw a big house.'
+
+#96 Adjective, non-agreement
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adj, agr, wo
+Nonehake omarane pa_nkotsi.
+no=neh-ak-i omarane pa_nkotsi
+1S=see-PERF-REAL.i big.NM.ANIM house
+'I saw a big house.'
+
+#97 Adjective, non-agreement
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adj, agr, wo
+Nonehake imarane pa_nkotsi.
+no=neh-ak-i imarane pa_nkotsi
+1S=see-PERF-REAL.i big.M.ANIM house
+'I saw a big house.'
+
+#98 Adjective, wrong location
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adj, agr, wo
+Nonehake pa_nkotsi omarate.
+no=neh-ak-i pa_nkotsi omarate
+1S=see-PERF-REAL.i house big.M.ANIM
+'I saw a big house.'
+
+#99 Adjective, M
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adj, agr, wo
+Nonehake imarane a_ntarini.
+no=neh-ak-i imarane a_ntarini
+1S=see-PERF-REAL.i big.INAN man
+'I saw a big man.'
+
+#100 Adjective, NM-anim
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adj, agr, wo
+Nonehake omarane a_ntaroni.
+no=neh-ak-i omarane a_ntaroni
+1S=see-PERF-REAL.i big.INAN woman
+'I saw a big woman.'
+
+# Adverbs
+
+#101 Adverb
+Source: a:142
+Vetted: s
+Judgment: g
+Phenomena: adv
+Otya maika nonehake.
+otya maika no=neh-ak-i
+3nm.RECENT.PRO now 1S=see-PERF-REAL.i
+'I saw (it) just now.'

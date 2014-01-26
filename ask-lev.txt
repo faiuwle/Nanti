@@ -24,3 +24,16 @@ can non-clitic pronouns occur resumptively with common nouns and proper nouns? I
 - ditransitives: still only 1 overt NP?
 - ditransitives: is 'free np' theme maybe in focus position?
 - for 1.PL.INCL subject clitic, must it cooccur with -hig- or -ge- ?
+- p. 396 Barentin etc Why no plural???????? Is plural marking on verb not obligatory?
+- Adverbs: Can they occur anywhere in a clause? Is there anywhere they cannot occur? (Between determiner/noun, verb/direct object, etc?)
+- Nti vs n: As we understand it:
+	- Nti
+		: instance IS class
+	- n
+		: instance is not class
+		: attribute is noun
+		: noun is location
+	: is "noun is attribute" attested? we could not find any. (give fake)
+		Kirahari oni nosapiro. (p 318)
+		Nosapiro oni kirahari. <-- okay?
+		: does this verb require the subjective clitic?
