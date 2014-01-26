@@ -281,14 +281,14 @@ verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality
                 SUBJECT-FLAG -,
                 VERB-FLAG +,
                 ASPECT-FLAG -,
-                OBJECT-FLAG -,
                 ARGUMENT-NUMBER-FLAG - ] ].
 
 intransitive-verb-lex := verb-lex & intransitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
     ARG-ST.FIRST.LOCAL.CAT.HEAD noun,
     INFLECTED [ TRANSITIVE-VERB-FLAG na-or--,
-                INTRANSITIVE-VERB-FLAG + ] ].
+                INTRANSITIVE-VERB-FLAG +,
+                OBJECT-FLAG na ] ].
 
 transitive-verb-lex := verb-lex & transitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
@@ -298,7 +298,8 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
                                  COMPS < > ],
                            HEAD noun ] ] >,
     INFLECTED [ INTRANSITIVE-VERB-FLAG na-or--,
-                TRANSITIVE-VERB-FLAG + ] ].
+                TRANSITIVE-VERB-FLAG +,
+                OBJECT-FLAG -, ] ].
 
 i-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
