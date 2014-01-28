@@ -299,7 +299,7 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
                            HEAD noun ] ] >,
     INFLECTED [ INTRANSITIVE-VERB-FLAG na-or--,
                 TRANSITIVE-VERB-FLAG +,
-                OBJECT-FLAG -, ] ].
+                OBJECT-FLAG - ] ].
 
 i-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
