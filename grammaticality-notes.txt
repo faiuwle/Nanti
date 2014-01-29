@@ -113,3 +113,15 @@ NM	M
 oNta	yoNta	speaker & addressee proximal
 oka	yoka	speaker proximal
 oga	yoga	speaker distal
+
+
+Copulas & Existentials
+
+ainyo	exist, animate (no inflection & no clitics, unless frustrative -be, in which case it inflects, but no person clitics)
+aityo	exist, inanimate ( "" )
+mameri	not exist (no inflection & no clitics)
+-Nti 	Noun IS class (irregular clitics, only subject clitics, no other morphology)
+-n- 	regular inflection
+	noun IS NOT class (along with negative)
+	attribute IS noun
+	noun IS location-noun (in/on)

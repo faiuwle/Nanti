@@ -1047,3 +1047,7 @@ Otya maika nonehake.
 otya maika no=neh-ak-i
 3nm.RECENT.PRO now 1S=see-PERF-REAL.i
 'I saw (it) just now.'
+
+#Copula
+
+#102 Copula

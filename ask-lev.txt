@@ -20,7 +20,6 @@ can non-clitic pronouns occur resumptively with common nouns and proper nouns? I
 
 - 1st Person Pronoun: is it underspecified for incl/excl or is it excl?
 
-
 - ditransitives: still only 1 overt NP?
 - ditransitives: is 'free np' theme maybe in focus position?
 - for 1.PL.INCL subject clitic, must it cooccur with -hig- or -ge- ?
@@ -37,3 +36,8 @@ can non-clitic pronouns occur resumptively with common nouns and proper nouns? I
 		Kirahari oni nosapiro. (p 318)
 		Nosapiro oni kirahari. <-- okay?
 		: does this verb require the subjective clitic?
+
+
+
+
+- For ogo and piNtsa: these verbs in all examples take complement clauses whose subject is the same as the subject in the matrix clause. Is this a restriction?
