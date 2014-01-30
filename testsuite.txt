@@ -1050,4 +1050,308 @@ otya maika no=neh-ak-i
 
 #Copula
 
-#102 Copula
+#102 'n' Copula
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+kirahari oni sapiro_ntsi.
+kirahari o=n-i sapiro_ntsi
+red 3nmS=COP-REAL.i clothing
+'The article of clothing is red.'
+
+#103 'n' Copula class IS attribute //TODO: is ungrmamatical? lev email
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+sapiro_ntsi oni kirahari.
+sapiro_ntsi o=n-i kirahari
+clothing 3nmS=COP-REAL.i red
+'The article of clothing is red.'
+
+#104 'n' Copula IS attribute class
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop, wo
+oni kirahari sapiro_ntsi.
+o=n-i kirahari sapiro_ntsi
+3nmS=COP-REAL.i red clothing
+'The article of clothing is red.'
+
+#105 'n' Copula attribute class IS
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop, wo
+kirahari sapiro_ntsi oni.
+kirahari sapiro_ntsi o=n-i
+red clothing 3nmS=COP-REAL.i
+'The article of clothing is red.'
+
+#106 'Nti' copula noun is noun
+Source: a:292
+Vetted: s
+Judgment: g
+Phenomena: cop
+i_nti surari
+i=_nti surari
+3mS=COP.EQ man
+'He is male.'
+
+#107 'n' copula noun is noun - ungrammatical
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+ini surari
+i=n-0-i surari
+3mS=COP-IMPF-REAL.i man
+'He is male.'
+
+#108 'n' Copula negative equality
+Source: a:293
+Vetted: s
+Judgment: g
+Phenomena: cop
+tera surari one.
+tera surari o=n-e
+NEG.REAL male 3nmS=COP-IRREAL.i
+'She is not male.'
+
+# Embedded clauses
+
+#109 "know" embedding
+Source: a:417
+Vetted: s
+Judgment: g
+Phenomena: emb-d
+Pogoti pikitsogi?
+pi=ogo-i pi=kitsog-i
+2S=know-REAL.i 2S=know.weave-REAL.i
+'Do you know how to knot-weave?'
+
+#110 "see" embedding, realis agreement
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: emb-d, agr
+Nonehake Rerisuha go_nketi
+no=neh-ak-i Rerisuha ogo_nke-i
+1S=see-PERF-REAL.i Rerisuha arrive-REAL.i
+'I saw Rerisuha arrive.'
+
+#111 "see" embedding, non-agreement
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: emb-d, agr
+Nonehake Rerisuha go_nkete
+no=neh-ak-i Rerisuha ogo_nke-e
+1S=see-PERF-REAL.i Rerisuha arrive-IRREAL.i
+'I saw Rerisuha arrive.'
+
+#112 "see" embedding, negation and irrealis
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: emb-d, agr, neg
+Tera nonehe Rerisuha go_nkete
+tera no=_n-neh-e Rerisuha ogo_nke-e
+NEG.REAL 1S=IRREAL-see-IRREAL.i Rerisuha arrive-IRREAL.i
+'I didn't see Rerisuha arrive.'
+
+#Focus, Topic Construction
+
+#113 tapir=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari itagake pitotsi.
+kemari i=tag-ak-i pitotsi
+tapir 3mS=burn-PERF-REAL.i boat
+'The tapir, he burned the boat.'
+
+#114 tapir=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+itagake pitotsi kemari
+i=tag-ak-i pitotsi kemari
+3mS=burn-PERF-REAL.i boat tapir
+'The tapir, he burned the boat.'
+
+#115 tapir=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari itagakero.
+kemari i=tag-ak-i=ro
+tapir 3mS=burn-PERF-REAL.i=3nmO
+'The tapir, he burned it.'
+
+#116 boat=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+pitotsi kemari tagakero
+pitotsi kemari tag-ak-i=ro
+boat tapir burn-PERF-REAL.i=3nmO
+'The boat, the tapir burned it.'
+
+#117 boat=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari tagakero pitotsi.
+kemari tag-ak-i=ro pitotsi
+tapir burn-PERF-REAL.i=3nmO boat
+'The boat, the tapir burned it.'
+
+#118 boat=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+itagakero pitotsi.
+i=tag-ak-i=ro pitotsi
+3mS=burn-PERF-REAL.i=3nmO boat
+'The boat, he burned it.'
+
+#119 predicate focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+o_nti itagakero
+o_nti i=tag-ak-i=ro
+PRED.FOC 3mS=burn-PERF-REAL.i=3nmO
+'He BURNED it.'
+
+#120 predicate focus w/ overt arg
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+o_nti itagake pitotsi
+o_nti i=tag-ak-i pitotsi
+PRED.FOC 3mS=burn-PERF-REAL.i boat
+'He BURNED the boat.'
+
+#121 predicate focus w/ argument focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+o_nti pitotsi itagake
+o_nti pitotsi i=tag-ak-i
+PRED.FOC boat 3mS=burn-PERF-REAL.i
+'The boat, he BURNED it.'
+
+#122 predicate focus w/ topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+pitotsi o_nti itagakero
+pitotsi o_nti i=tag-ak-i=ro
+boat PRED.FOC 3mS=burn-PERF-REAL.i=3nmO
+'The boat is the thing that he BURNED.'
+
+#123 predicate focus w/ topic & arg focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari o_nti pitotsi itagake
+kemari o_nti pitotsi i=tag-ak-i
+tapir PRED.FOC boat 3mS=burn-PERF-REAL.i
+'The boat, the tapir is the one who BURNED it.'
+
+#124 predicate focus w/ focus, wrong location of pred focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info
+o_nti kemari itagakero
+o_nti kemari i=tag-ak-i=ro
+PRED.FOC tapir 3mS=burn-PERF-REAL.i=3nmO
+'the tapir, he BURNED it.'
+
+#125 topic in the wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+kemari pitotsi tagakero
+kemari pitotsi tag-ak-i=ro
+tapir boat burn-PERF-REAL.i=3nmO
+'The boat, the tapir burned it.'
+
+#126 focus in the wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+tagakero iryo
+tag-ak-i=ro iryo
+burn-PERF-REAL.i=3nmO 3rd.M.FOC
+'HE burned it.'
+
+#127 focus coreferencing
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+iryo itagakero
+iryo i=tag-ak-i=ro
+3rd.M.FOC 3mS=burn-PERF-REAL.i=3nmO
+'HE burned it.'
+
+# Cleft Focus
+
+#128 -tsi imperfective focus
+Source: a:386
+Vetted: s
+Judgment: g
+Phenomena: info, wo
+iro magatsi
+iro mag-tsi
+3nm.FOC.PRO sleep-DERANK.REL.IMPF
+'SHE is sleeping.'
+
+#129 -aNkicha perfective focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+iro maga_nkicha
+iro mag-a_nkicha
+3nm.FOC.PRO sleep-DERANK.REL.PERF
+'SHE slept.'
+
+#130 cleft focus on a transitive (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info
+kemari taga_nkicha
+kemari tag-a_nkicha
+tapir burn-DERANK.REL.PERF
+'THE TAPIR burned.'
+
+#131 cleft focus on a transitive (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info
+kemari taga_nkicharo
+kemari tag-a_nkicha=ro
+tapir burn-DERANK.REL.PERF=3nmO
+'THE TAPIR burned it.'
