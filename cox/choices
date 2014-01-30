@@ -636,7 +636,7 @@ section=morphology
       verb-pc9_lrt1_feat2_value=focus
       verb-pc9_lrt1_feat2_head=subj
       verb-pc9_lrt1_lri1_inflecting=yes
-      verb-pc9_lrt1_lri1_orth=tsi
+      verb-pc9_lrt1_lri1_orth=-tsi
     verb-pc9_lrt2_name=perfective-focus-cleft
       verb-pc9_lrt2_feat1_name=aspect
       verb-pc9_lrt2_feat1_value=perfective
@@ -645,7 +645,7 @@ section=morphology
       verb-pc9_lrt2_feat2_value=focus
       verb-pc9_lrt2_feat2_head=subj
       verb-pc9_lrt2_lri1_inflecting=yes
-      verb-pc9_lrt2_lri1_orth=a_nkicha
+      verb-pc9_lrt2_lri1_orth=-a_nkicha
 
 section=toolbox-import
 

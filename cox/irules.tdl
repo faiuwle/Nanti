@@ -100,9 +100,9 @@ distributive-subject-object-suffix :=
 distributive-subject-object-lex-rule.
 
 imperfective-focus-cleft-suffix :=
-%suffix (* tsi)
+%suffix (* -tsi)
 imperfective-focus-cleft-lex-rule.
 
 perfective-focus-cleft-suffix :=
-%suffix (* a_nkicha)
+%suffix (* -a_nkicha)
 perfective-focus-cleft-lex-rule.
