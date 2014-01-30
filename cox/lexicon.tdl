@@ -69,6 +69,10 @@ pa_nkotsi := common-noun-nm-inan-noun-lex &
   [ STEM < "pa_nkotsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_house_n_rel" ].
 
+sapiro_ntsi := common-noun-nm-inan-noun-lex &
+  [ STEM < "sapiro_ntsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_clothes_n_rel" ].
+
 kemari := common-noun-anim-noun-lex &
   [ STEM < "kemari" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
@@ -121,6 +125,10 @@ harohegi := 1st-INCL-TOPIC-PRO-noun-lex &
   [ STEM < "harohegi" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
+Rerisuha := proper-noun-nm-noun-lex &
+  [ STEM < "Rerisuha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Rerisuha_n_rel" ].
+
 ;;; Verbs
 
 ha := i-intransitive-verb-verb-lex &
@@ -138,6 +146,10 @@ tag := i-transitive-verb-verb-lex &
 neh := i-transitive-verb-verb-lex &
   [ STEM < "neh" >,
     SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
+
+n := i-transitive-verb-verb-lex &
+  [ STEM < "n" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cop_v_rel" ].
 
 ashi_nt := a-transitive-verb-verb-lex &
   [ STEM < "ashi_nt" >,

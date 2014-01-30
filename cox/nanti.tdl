@@ -2,9 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Nanti
 ;;; created at:
-;;;     Sun Jan 26 00:26:19 UTC 2014
+;;;     Thu Jan 30 01:57:17 UTC 2014
 ;;; based on Matrix customization system version of:
-;;;     Mon Jan 20 03:51:25 UTC 2014
+;;;     Tue Jan 28 19:17:59 UTC 2014
 ;;;
 ;;; This is Version 1
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -32,37 +32,33 @@ basic-head-comp-phrase :+ [ SYNSEM.LOCAL.CAT.MC #mc,
 
 +nvcdmo :+ [ MOD < > ].
 
-inflected :+ [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG luk,
-    A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG luk,
-    VERB-FLAG luk,
-    I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG luk,
-    OBJECT-FLAG luk,
-    ARGUMENT-NUMBER-FLAG luk,
-    A-VERB-IRREALIS-PREFIX-FLAG luk,
-    I-VERB-IRREALIS-PREFIX-FLAG luk,
-    A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG luk,
+inflected :+ [ TRANSITIVE-VERB-FLAG luk,
+    A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG luk,
     I-VERB-IRREALIS-SUFFIX-FLAG luk,
-    SUBJECT-FLAG luk,
-    TRANSITIVE-VERB-FLAG luk,
     A-VERB-IRREALIS-SUFFIX-FLAG luk,
+    VERB-FLAG luk,
+    OBJECT-FLAG luk,
+    A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG luk,
     ASPECT-FLAG luk,
-    INTRANSITIVE-VERB-FLAG luk ].
+    A-VERB-IRREALIS-PREFIX-FLAG luk,
+    SUBJECT-FLAG luk,
+    I-VERB-IRREALIS-PREFIX-FLAG luk,
+    I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG luk,
+    A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG luk ].
 
-infl-satisfied :+ [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG na-or-+,
-    A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG na-or-+,
-    VERB-FLAG na-or-+,
-    I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-+,
-    OBJECT-FLAG na-or-+,
-    ARGUMENT-NUMBER-FLAG na-or-+,
-    A-VERB-IRREALIS-PREFIX-FLAG na-or-+,
-    I-VERB-IRREALIS-PREFIX-FLAG na-or-+,
-    A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-+,
+infl-satisfied :+ [ TRANSITIVE-VERB-FLAG na-or-+,
+    A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG na-or-+,
     I-VERB-IRREALIS-SUFFIX-FLAG na-or-+,
-    SUBJECT-FLAG na-or-+,
-    TRANSITIVE-VERB-FLAG na-or-+,
     A-VERB-IRREALIS-SUFFIX-FLAG na-or-+,
+    VERB-FLAG na-or-+,
+    OBJECT-FLAG na-or-+,
+    A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-+,
     ASPECT-FLAG na-or-+,
-    INTRANSITIVE-VERB-FLAG na-or-+ ].
+    A-VERB-IRREALIS-PREFIX-FLAG na-or-+,
+    SUBJECT-FLAG na-or-+,
+    I-VERB-IRREALIS-PREFIX-FLAG na-or-+,
+    I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-+,
+    A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG na-or-+ ].
 
 png :+ [ PERNUM pernum,
     GEND gender ].
@@ -258,6 +254,8 @@ TOPIC-PRO-noun-lex := no-spr-noun-lex &
 1st-INCL-TOPIC-PRO-noun-lex := TOPIC-PRO-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1PL_incl ].
 
+proper-noun-nm-noun-lex := nm-noun-noun-lex & proper-noun-noun-lex.
+
 ;;; Verbs
 
 ; verb-lex is HC-LIGHT - to allow us to pick out
@@ -274,21 +272,19 @@ verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality
                                SPEC < >,
                                SUBJ < #subj > ],
                          HC-LIGHT - ] ],
-    INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG na-or--,
-                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG -,
-                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG -,
+    INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG -,
                 I-VERB-IRREALIS-SUFFIX-FLAG na-or--,
-                SUBJECT-FLAG -,
-                VERB-FLAG +,
                 ASPECT-FLAG -,
-                ARGUMENT-NUMBER-FLAG - ] ].
+                VERB-FLAG +,
+                OBJECT-FLAG -,
+                SUBJECT-FLAG -,
+                A-VERB-IRREALIS-SUFFIX-FLAG na-or--,
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG - ] ].
 
 intransitive-verb-lex := verb-lex & intransitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
     ARG-ST.FIRST.LOCAL.CAT.HEAD noun,
-    INFLECTED [ TRANSITIVE-VERB-FLAG na-or--,
-                INTRANSITIVE-VERB-FLAG +,
-                OBJECT-FLAG na ] ].
+    INFLECTED.TRANSITIVE-VERB-FLAG na-or-- ].
 
 transitive-verb-lex := verb-lex & transitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
@@ -297,9 +293,7 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
              [ LOCAL.CAT [ VAL [ SPR < >,
                                  COMPS < > ],
                            HEAD noun ] ] >,
-    INFLECTED [ INTRANSITIVE-VERB-FLAG na-or--,
-                TRANSITIVE-VERB-FLAG +,
-                OBJECT-FLAG - ] ].
+    INFLECTED.TRANSITIVE-VERB-FLAG + ].
 
 i-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
@@ -310,12 +304,12 @@ i-transitive-verb-verb-lex := transitive-verb-lex &
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
 a-intransitive-verb-verb-lex := intransitive-verb-lex &
-  [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or--,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG + ] ].
+  [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
 a-transitive-verb-verb-lex := transitive-verb-lex &
-  [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or--,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG + ] ].
+  [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
 ;;; Others
 
@@ -387,35 +381,31 @@ distributive-lex-rule := number-lex-rule-super &
 
 subject-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED [ SUBJECT-FLAG +,
-                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                ARGUMENT-NUMBER-FLAG #argument-number,
-                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                VERB-FLAG #verb,
+                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                 ASPECT-FLAG #aspect,
-                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                OBJECT-FLAG #object ],
+                OBJECT-FLAG #object,
+                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                VERB-FLAG #verb,
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ],
     DTR subject-rule-dtr &
-        [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                      INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                      ARGUMENT-NUMBER-FLAG #argument-number,
-                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+        [ INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                       TRANSITIVE-VERB-FLAG #transitive-verb,
                       A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                      VERB-FLAG #verb & +,
+                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       ASPECT-FLAG #aspect,
-                      A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                      OBJECT-FLAG #object ] ] ].
+                      OBJECT-FLAG #object,
+                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                      VERB-FLAG #verb & +,
+                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ] ] ].
 
 add-1st-subj-lex-rule := infl-lex-rule & subject-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR,
@@ -444,35 +434,31 @@ subject-no-drop-lex-rule := const-lex-rule & subject-lex-rule-super &
 
 object-lex-rule-super := add-only-no-ccont-rule & subject-rule-dtr &
   [ INFLECTED [ OBJECT-FLAG +,
-                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                ARGUMENT-NUMBER-FLAG #argument-number,
-                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                SUBJECT-FLAG #subject,
+                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                 TRANSITIVE-VERB-FLAG #transitive-verb,
-                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
                 VERB-FLAG #verb,
                 ASPECT-FLAG #aspect,
-                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ],
+                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                SUBJECT-FLAG #subject,
+                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ],
     DTR object-rule-dtr &
-        [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                      INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                      ARGUMENT-NUMBER-FLAG #argument-number,
-                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                      SUBJECT-FLAG #subject,
+        [ INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                       TRANSITIVE-VERB-FLAG #transitive-verb & +,
-                      A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
                       VERB-FLAG #verb,
                       ASPECT-FLAG #aspect,
-                      A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ] ] ].
+                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                      SUBJECT-FLAG #subject,
+                      A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ] ] ].
 
 add-1st-obj-lex-rule := infl-lex-rule & object-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR,
@@ -497,35 +483,31 @@ object-no-drop-lex-rule := const-lex-rule & object-lex-rule-super &
 
 Aspect-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ ASPECT-FLAG +,
-                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                ARGUMENT-NUMBER-FLAG #argument-number,
-                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                SUBJECT-FLAG #subject,
+                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                OBJECT-FLAG #object,
+                SUBJECT-FLAG #subject,
+                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                 VERB-FLAG #verb,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                OBJECT-FLAG #object ],
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ],
     DTR Aspect-rule-dtr &
-        [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                      ARGUMENT-NUMBER-FLAG #argument-number,
-                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                      SUBJECT-FLAG #subject,
+        [ INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                       TRANSITIVE-VERB-FLAG #transitive-verb,
                       A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                      OBJECT-FLAG #object,
+                      SUBJECT-FLAG #subject,
+                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                       VERB-FLAG #verb,
-                      INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                      A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                      OBJECT-FLAG #object ] ] ].
+                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ] ] ].
 
 imperfective-lex-rule := Aspect-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT imperfective ].
@@ -535,35 +517,31 @@ perfective-lex-rule := Aspect-lex-rule-super &
 
 i-verb-reality-suffix-lex-rule-super := add-only-no-ccont-rule & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG +,
-                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                ARGUMENT-NUMBER-FLAG #argument-number,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                SUBJECT-FLAG #subject,
-                TRANSITIVE-VERB-FLAG #transitive-verb,
                 A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                VERB-FLAG #verb,
-                ASPECT-FLAG #aspect,
+                TRANSITIVE-VERB-FLAG #transitive-verb,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                OBJECT-FLAG #object ],
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                OBJECT-FLAG #object,
+                ASPECT-FLAG #aspect,
+                SUBJECT-FLAG #subject,
+                VERB-FLAG #verb,
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ],
     DTR a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr &
-        [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                      INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                      ARGUMENT-NUMBER-FLAG #argument-number,
-                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                      SUBJECT-FLAG #subject,
+        [ INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                       TRANSITIVE-VERB-FLAG #transitive-verb,
-                      A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                      VERB-FLAG #verb,
-                      ASPECT-FLAG #aspect,
+                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb & +,
-                      OBJECT-FLAG #object ] ] ].
+                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                      OBJECT-FLAG #object,
+                      ASPECT-FLAG #aspect,
+                      SUBJECT-FLAG #subject,
+                      VERB-FLAG #verb,
+                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ] ] ].
 
 i-verb-irrealis-suffix-lex-rule := i-verb-reality-suffix-lex-rule-super &
-  [ INFLECTED [ I-VERB-IRREALIS-SUFFIX-FLAG +,
-                I-VERB-IRREALIS-PREFIX-FLAG - ],
+  [ INFLECTED [ I-VERB-IRREALIS-PREFIX-FLAG -,
+                I-VERB-IRREALIS-SUFFIX-FLAG + ],
     SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD Irrealis ].
 
 i-verb-realis-suffix-lex-rule := i-verb-reality-suffix-lex-rule-super &
@@ -575,73 +553,65 @@ i-verb-realis-suffix-lex-rule := i-verb-reality-suffix-lex-rule-super &
 
 a-verb-reality-suffix-lex-rule-super := a-verb-reality-prefix-rule-dtr & add-only-no-ccont-rule & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG +,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                ARGUMENT-NUMBER-FLAG #argument-number,
+                TRANSITIVE-VERB-FLAG #transitive-verb,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                ASPECT-FLAG #aspect,
+                OBJECT-FLAG #object,
                 I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
                 SUBJECT-FLAG #subject,
-                TRANSITIVE-VERB-FLAG #transitive-verb,
-                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                 VERB-FLAG #verb,
-                ASPECT-FLAG #aspect,
-                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                OBJECT-FLAG #object ],
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ],
     DTR a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr &
-        [ INFLECTED [ INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                      ARGUMENT-NUMBER-FLAG #argument-number,
+        [ INFLECTED [ TRANSITIVE-VERB-FLAG #transitive-verb,
                       A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb & +,
+                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                      ASPECT-FLAG #aspect,
+                      OBJECT-FLAG #object,
                       I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
                       SUBJECT-FLAG #subject,
-                      TRANSITIVE-VERB-FLAG #transitive-verb,
-                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                       VERB-FLAG #verb,
-                      ASPECT-FLAG #aspect,
-                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                      OBJECT-FLAG #object ] ] ].
+                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix ] ] ].
 
 a-verb-irrealis-suffix-lex-rule := a-verb-reality-suffix-lex-rule-super &
-  [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG +,
-                A-VERB-IRREALIS-PREFIX-FLAG - ],
+  [ INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG -,
+                A-VERB-IRREALIS-SUFFIX-FLAG + ],
     SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD Irrealis ].
 
 a-verb-realis-suffix-lex-rule := a-verb-reality-suffix-lex-rule-super &
-  [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ],
-    DTR.INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                    A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ],
+  [ INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix ],
+    DTR.INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
+                    A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix ],
     SYNSEM.LOCAL.CONT.HOOK.INDEX.E.MOOD Realis ].
 
 i-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG +,
-                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                ARGUMENT-NUMBER-FLAG #argument-number,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                SUBJECT-FLAG #subject,
-                TRANSITIVE-VERB-FLAG #transitive-verb,
                 A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                VERB-FLAG #verb,
-                ASPECT-FLAG #aspect,
+                TRANSITIVE-VERB-FLAG #transitive-verb,
+                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                OBJECT-FLAG #object ],
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                ASPECT-FLAG #aspect,
+                OBJECT-FLAG #object,
+                SUBJECT-FLAG #subject,
+                VERB-FLAG #verb ],
     DTR i-verb-reality-prefix-rule-dtr &
-        [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                      INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                      A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                      ARGUMENT-NUMBER-FLAG #argument-number,
-                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                      SUBJECT-FLAG #subject,
+        [ INFLECTED [ A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                       TRANSITIVE-VERB-FLAG #transitive-verb,
-                      A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                      VERB-FLAG #verb,
-                      ASPECT-FLAG #aspect,
+                      A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
                       I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                      OBJECT-FLAG #object ] ] ].
+                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                      ASPECT-FLAG #aspect,
+                      OBJECT-FLAG #object,
+                      SUBJECT-FLAG #subject,
+                      VERB-FLAG #verb ] ] ].
 
 i-verb-irrealis-prefix-lex-rule := i-verb-reality-prefix-lex-rule-super & infl-lex-rule &
   [ DTR.INFLECTED.I-VERB-IRREALIS-SUFFIX-FLAG +,
@@ -654,33 +624,29 @@ i-verb-realis-prefix-lex-rule := const-lex-rule & i-verb-reality-prefix-lex-rule
 
 a-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG +,
-                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                ARGUMENT-NUMBER-FLAG #argument-number,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                SUBJECT-FLAG #subject,
                 TRANSITIVE-VERB-FLAG #transitive-verb,
-                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                VERB-FLAG #verb,
-                ASPECT-FLAG #aspect,
+                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                OBJECT-FLAG #object ],
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                ASPECT-FLAG #aspect,
+                OBJECT-FLAG #object,
+                SUBJECT-FLAG #subject,
+                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                VERB-FLAG #verb ],
     DTR a-verb-reality-prefix-rule-dtr &
-        [ INFLECTED [ A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                      INTRANSITIVE-VERB-FLAG #intransitive-verb,
+        [ INFLECTED [ TRANSITIVE-VERB-FLAG #transitive-verb,
                       A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                      ARGUMENT-NUMBER-FLAG #argument-number,
-                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                      SUBJECT-FLAG #subject,
-                      TRANSITIVE-VERB-FLAG #transitive-verb,
-                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                      VERB-FLAG #verb,
-                      ASPECT-FLAG #aspect,
                       I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                      OBJECT-FLAG #object ] ] ].
+                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                      ASPECT-FLAG #aspect,
+                      OBJECT-FLAG #object,
+                      SUBJECT-FLAG #subject,
+                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                      VERB-FLAG #verb ] ] ].
 
 a-verb-irrealis-prefix-lex-rule := a-verb-reality-prefix-lex-rule-super & infl-lex-rule &
   [ DTR.INFLECTED.A-VERB-IRREALIS-SUFFIX-FLAG +,
@@ -691,73 +657,34 @@ a-verb-realis-prefix-lex-rule := a-verb-reality-prefix-lex-rule-super & const-le
   [ INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
     DTR.INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ].
 
-argument-number-lex-rule-super := Aspect-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & i-verb-reality-prefix-rule-dtr & object-rule-dtr & subject-rule-dtr &
-  [ INFLECTED [ ARGUMENT-NUMBER-FLAG +,
-                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                SUBJECT-FLAG #subject,
-                TRANSITIVE-VERB-FLAG #transitive-verb,
-                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                VERB-FLAG #verb,
-                ASPECT-FLAG #aspect,
-                OBJECT-FLAG #object ],
+argument-number-lex-rule-super := Aspect-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
+  [ INFLECTED #infl,
     DTR verb-lex &
-        [ INFLECTED [ A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
-                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
-                      INTRANSITIVE-VERB-FLAG #intransitive-verb,
-                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
-                      A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
-                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
-                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
-                      SUBJECT-FLAG #subject,
-                      TRANSITIVE-VERB-FLAG #transitive-verb,
-                      A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-                      VERB-FLAG #verb,
-                      ASPECT-FLAG #aspect,
-                      OBJECT-FLAG #object ] ] ].
+        [ INFLECTED #infl ] ].
 
-distributive-subject-object-lex-rule := argument-number-lex-rule-super & infl-lex-rule &
+distributive-subject-object-lex-rule := argument-number-lex-rule-super &
   [ DTR.INFLECTED.TRANSITIVE-VERB-FLAG +,
     SYNSEM.LOCAL.CAT.VAL [ SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM DSTR,
                            COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM DSTR ] ].
 
-singular-subject-object-lex-rule := argument-number-lex-rule-super & const-lex-rule &
-  [ DTR.INFLECTED.TRANSITIVE-VERB-FLAG +,
-    SYNSEM.LOCAL.CAT.VAL [ COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM SG,
-                           SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM SG ] ].
-
-singular-subject-lex-rule := argument-number-lex-rule-super & const-lex-rule &
-  [ DTR.INFLECTED.INTRANSITIVE-VERB-FLAG +,
-    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM SG ].
-
-distributive-object-lex-rule := argument-number-lex-rule-super & infl-lex-rule &
+distributive-object-lex-rule := argument-number-lex-rule-super &
   [ DTR.INFLECTED.TRANSITIVE-VERB-FLAG +,
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM DSTR ].
 
-plural-subject-object-lex-rule := argument-number-lex-rule-super & infl-lex-rule &
+plural-subject-object-lex-rule := argument-number-lex-rule-super &
   [ DTR.INFLECTED.TRANSITIVE-VERB-FLAG +,
     SYNSEM.LOCAL.CAT.VAL [ SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM PL,
                            COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM PL ] ].
 
-plural-object-lex-rule := argument-number-lex-rule-super & infl-lex-rule &
+plural-object-lex-rule := argument-number-lex-rule-super &
   [ DTR.INFLECTED.TRANSITIVE-VERB-FLAG +,
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM PL ].
 
-plural-subject-lex-rule := argument-number-lex-rule-super & infl-lex-rule &
+plural-subject-lex-rule := argument-number-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM PL ].
 
-distributive-subject-lex-rule := argument-number-lex-rule-super & infl-lex-rule &
+distributive-subject-lex-rule := argument-number-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM DSTR ].
-
-singular-object-lex-rule := argument-number-lex-rule-super & const-lex-rule &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM SG ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
