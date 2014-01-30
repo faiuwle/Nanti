@@ -1355,3 +1355,13 @@ kemari taga_nkicharo
 kemari tag-a_nkicha=ro
 tapir burn-DERANK.REL.PERF=3nmO
 'THE TAPIR burned it.'
+
+#132 cleft focus with a clitic (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info
+omaga_nkicha
+o=mag-a_nkicha
+3nmO=sleep-DERANK.REL.IMPF
+'SHE slept.'
