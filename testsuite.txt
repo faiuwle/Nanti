@@ -920,8 +920,8 @@ Vetted: f
 Judgment: g
 Phenomena: crd
 Ihati Bare_ntin i_ntiri Bisarota i_ntiri Rerpin.
-i=ha-i Bare_ntin i_ntiri Bisatora i_ntiri Rerpin
-1mS=go-REAL.i Bare_ntin COORD.m Bisatora COORD.m Rerpin
+i=ha-i Bare_ntin i_ntiri Bisarota i_ntiri Rerpin
+1mS=go-REAL.i Bare_ntin COORD.m Bisarota COORD.m Rerpin
 'Bare_ntin and Bisarota and Rerpin went there.'
 
 #90 Coordinated NPs post-verbal, coordinator in wrong position
@@ -967,7 +967,7 @@ tapir go-PERF-REAL.i 3mS=burn-PERF-REAL.i boat COORD.S
 #94 Coordinated sentences, coordinator wrong
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: crd
 o_ntiri kemari hatake o_ntiri itagake pitotsi.
 o_ntiri kemari ha-ak-i o_ntiri i=tag-ak-i pitotsi
