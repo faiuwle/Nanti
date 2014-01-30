@@ -596,10 +596,10 @@ kemari-page ha-ge-0-i
 tapir-DSTR go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
 
-#58 No number marking on intransitive with distributive-marked NP subj
+#58 No number marking on intransitive with distributive-marked NP subj //TODO really?
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: agr
 kemaripage hati.
 kemari-page ha-0-i
