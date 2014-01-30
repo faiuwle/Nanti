@@ -1,0 +1,131 @@
+1@author@@@1@wo@kemari ha-ak-i@@@@1@2@tapir go-PERF-REAL.i'The tapir went.'@ruth morrison, david inman@january 14, 2014
+2@author@@@1@wo@ha-ak-i kemari@@@@0@2@go-PERF-REAL.i tapir'The tapir went.'@ruth morrison, david inman@january 14, 2014
+3@author@@@1@pro-d@i=ha-ak-i@@@@1@1@3mS=go-PERF-REAL.i'He went.'@ruth morrison, david inman@january 14, 2014
+4@author@@@1@pro-d@ha-ak-i=ri@@@@0@1@go-PERF-REAL.i=3mO'He went.'@ruth morrison, david inman@january 14, 2014
+5@author@@@1@wo@kemari tag-ak-i pitotsi@@@@0@3@tapir burn-PERF-REAL.i boat'The tapir burned the boat.'@ruth morrison, david inman@january 14, 2014
+6@author@@@1@pro-d@tag-ak-i pitotsi kemari@@@@0@3@burn-PERF-REAL.i boat tapir'The tapir burned the boat.'@ruth morrison, david inman@january 14, 2014
+7@author@@@1@pro-d@tag-ak-i kemari pitotsi@@@@0@3@burn-PERF-REAL.i tapir boat'The tapir burned the boat.'@ruth morrison, david inman@january 14, 2014
+8@author@@@1@pro-d@pitotsi kemari tag-ak-i@@@@0@3@boat tapir burn-PERF-REAL.i'The tapir burned the boat.'@ruth morrison, david inman@january 14, 2014
+9@author@@@1@wo,pro-d@kemari tag-ak-i=ro@@@@1@2@tapir burn-PERF-REAL.i=3nmO'The tapir burned it.'@ruth morrison, david inman@january 14, 2014
+10@author@@@1@wo,pro-d@i=tag-ak-i pitotsi@@@@1@2@3mS=burn-PERF-REAL.i boat'He burned the boat.'@ruth morrison, david inman@january 14, 2014
+11@author@@@1@wo,info,pro-d@pitotsi i=tag-ak-i@@@@1@2@boat 3mS=burn-PERF-REAL.i'He burned the boat.'@ruth morrison, david inman@january 14, 2014
+12@author@@@1@wo,pro-d@tag-ak-i=ro kemari@@@@0@2@burn-PERF-REAL.i=3nmO tapir'The tapir burned it.'@ruth morrison, david inman@january 14, 2014
+13@a:344@@@1@pro-d@o=tag-ak-i=ro@@@@1@1@3nmS=burn-PERF-REAL.i=3nmO`She burned it.'@ruth morrison, david inman@january 14, 2014
+14@author@@@1@pro-d@no=tag-ak-i=_npi@@@@1@1@1S=burn-PERF-REAL.i=2O'I burned you.'@ruth morrison, david inman@january 14, 2014
+15@author@@@1@pro-d@i=tag-ak-i=na@@@@1@1@3mS=burn-PERF-REAL.i=1O'He burned me.'@ruth morrison, david inman@january 14, 2014
+16@author@@@1@pro-d@pi=tag-ak-i=ri@@@@1@1@2S=burn-PERF-REAL.i=3MO'You burned him.'@ruth morrison, david inman@january 14, 2014
+17@author@@@1@pro-d@a=tag-ak-i=ri@@@@1@1@1.Pl.Inc.S=burn-PERF-REAL.i=3MO'We all burned him.'@ruth morrison, david inman@january 14, 2014
+18@a:author@@@1@pro-d@o=ro=tag-ak-i@@@@0@1@3nmS=3nmO=burn-PERF-REAL.i'She burned it.'@ruth morrison, david inman@january 14, 2014
+19@author@@@1@pro-d@tag-ak-i=no=_npi@@@@0@1@burn-PERF-REAL.i=1S=2O'I burned you.'@ruth morrison, david inman@january 14, 2014
+20@author@@@1@wo@ri=tag-ak-i=no@@@@0@1@3mO=burn-PERF-REAL.i=1S'He burned me.'@ruth morrison, david inman@january 14, 2014
+21@a:342@@@1@wo,pn,info,pro-d@naro ashi_nt-0-a=ro@@@@1@2@1.FOC.PRO own-IMPF-REAL.a=3nmO'I (and not anyone else) own it.'@ruth morrison, david inman@january 14, 2014
+22@author@@@1@wo,pn,info,pro-d@ashi_nt-0-a=ro naro@@@@0@2@own-IMPF-REAL.a=3nmO 1.FOC.PRO'I (and not anyone else) own it.'@ruth morrison, david inman@january 14, 2014
+23@author@@@1@wo,pn,info,pro-d@biro ashi_nt-0-a=ro@@@@1@2@2.FOC.PRO own-IMPF-REAL.a=3nmO'You (and not anyone else) own it.'@ruth morrison, david inman@january 14, 2014
+24@author@@@1@wo,pn,info,pro-d@iryo ashi_nt-0-a=ro@@@@1@2@3M.FOC.PRO own-IMPF-REAL.a=3nmO'He (and not anyone else) owns it.'@ruth morrison, david inman@january 14, 2014
+25@author@@@1@wo,pn,info,pro-d@iro ashi_nt-0-a=ro@@@@1@2@3NM.FOC.PRO own-IMPF-REAL.a=3nmO'She (and not anyone else) owns it.'@ruth morrison, david inman@january 14, 2014
+26@author@@@1@wo,pn,info,pro-d@haro ashi_nt-0-a=ro@@@@1@2@1.Pl.Incl.FOC.PRO own-IMPF-REAL.a=3nmO'We all (and not anyone else) own it.'@ruth morrison, david inman@january 14, 2014
+27@author@@@1@wo,pn,info,pro-d@natya ashi_nt-0-a=ro@@@@1@2@1.RECENT.PRO own-IMPF-REAL.a=3nmO'I recently owned it.'@ruth morrison, david inman@january 14, 2014
+28@author@@@1@wo,pn,info,pro-d@bitya ashi_nt-0-a=ro@@@@1@2@2.RECENT.PRO own-IMPF-REAL.a=3nmO'You recently owned it.'@ruth morrison, david inman@january 14, 2014
+29@author@@@1@wo,pn,info,pro-d@itya ashi_nt-0-a=ro@@@@1@2@3m.RECENT.PRO own-IMPF-REAL.a=3nmO'He recently owned it.'@ruth morrison, david inman@january 14, 2014
+30@author@@@1@wo,pn,info,pro-d@otya ashi_nt-0-a=ro@@@@1@2@3nm.RECENT.PRO own-IMPF-REAL.a=3nmO'She recently owned it.'@ruth morrison, david inman@january 14, 2014
+31@author@@@1@wo,pn,pro-d@ashi_nt-0-a=ro natya@@@@0@2@own-IMPF-REAL.a=3nmO 1.RECENT.PRO'I recently owned it.'@ruth morrison, david inman@january 14, 2014
+32@author@@@1@wo,pn,info,pro-d@naketyo ashi_nt-0-a=ro@@@@1@2@1.FIRST.PRO own-IMPF-REAL.a=3nmO'I owned it first.'@ruth morrison, david inman@january 14, 2014
+33@author@@@1@wo,pn,info,pro-d@biketyo ashi_nt-0-a=ro@@@@1@2@2.FIRST.PRO own-IMPF-REAL.a=3nmO'You owned it first.'@ruth morrison, david inman@january 14, 2014
+34@author@@@1@wo,pn,info,pro-d@iketyo ashi_nt-0-a=ro@@@@1@2@3m.FIRST.PRO own-IMPF-REAL.a=3nmO'He owned it first.'@ruth morrison, david inman@january 14, 2014
+35@author@@@1@wo,pn,info,pro-d@oketyo ashi_nt-0-a=ro@@@@1@2@3nm.FIRST.PRO own-IMPF-REAL.a=3nmO'She owned it first.'@ruth morrison, david inman@january 14, 2014
+36@author@@@1@wo,pn,pro-d@ashi_nt-0-a=ro biketyo@@@@0@2@own-IMPF-REAL.a=3nmO 2.FIRST.PRO'You owned it first.'@ruth morrison, david inman@january 14, 2014
+37@author@@@1@wo,det@yo_nta kemari ha-ak-i@@@@1@3@this.SA.m tapir go-PERF-REAL.i'This tapir went.'@ruth morrison, david inman@january 14, 2014
+38@author@@@1@wo,det@o_nta kemari ha-ak-i@@@@1@3@this.SA.nm tapir go-PERF-REAL.i'This tapir went.'@ruth morrison, david inman@january 14, 2014
+39@author@@@1@wo,det@yoka kemari ha-ak-i@@@@1@3@this.S.m tapir go-PERF-REAL.i'This tapir went.'@ruth morrison, david inman@january 14, 2014
+40@author@@@1@wo,det@oka kemari ha-ak-i@@@@1@3@this.S.nm tapir go-PERF-REAL.i'This tapir went.'@ruth morrison, david inman@january 14, 2014
+41@author@@@1@wo,det@yoga kemari ha-ak-i@@@@1@3@that.m tapir go-PERF-REAL.i'That tapir went.'@ruth morrison, david inman@january 14, 2014
+42@author@@@1@wo,det@oga kemari ha-ak-i@@@@1@3@that.nm tapir go-PERF-REAL.i'That tapir went.'@ruth morrison, david inman@january 14, 2014
+43@author@@@1@wo,det@kemari oga ha-ak-i@@@@0@3@tapir that.nm go-PERF-REAL.i'That tapir went.'@ruth morrison, david inman@january 14, 2014
+44@author@@@1@agr@naro ashi_nt-i=ro@@@@0@2@1.FOC.PRO own-REAL.i=3nmO'I (and not anyone else) own it.'@ruth morrison, david inman@january 14, 2014
+45@author@@@1@agr@kemari ha-ak-a@@@@0@2@tapir go-PERF-REAL.a'The tapir went.'@ruth morrison, david inman@january 14, 2014
+46@author@@@1@tam@kemari ha-i-ak@@@@0@2@tapir go-REAL.i-PERF'The tapir went.'@ruth morrison, david inman@january 14, 2014
+47@author@@@1@wo,agr@kemari ha-ak-i=ro@@@@0@2@tapir go-PERF-REAL.i=3nmO'The tapir went it.'@ruth morrison, david inman@january 14, 2014
+48@author@@@1@wo,agr@i=ha-ak-i pitotsi@@@@0@2@3mS=go-PERF-REAL.i boat'He went the boat.'@ruth morrison, david inman@january 14, 2014
+49@author@@@1@wo,agr@ha-ak-i@@@@0@1@go-PERF-REAL.i'Went.'@ruth morrison, david inman@january 14, 2014
+50@author@@@1@agr@tag-ak-i=ro@@@@0@1@burn-PERF-REAL.i=3nmO`Burned it.'@ruth morrison, david inman@january 14, 2014
+51@author@@@1@agr@o=tag-ak-i@@@@0@1@3nmS=burn-PERF-REAL.i'She burned.'@ruth morrison, david inman@january 14, 2014
+52@author@@@1@agr@i=tag-ak-i o_nta pitotsi@@@@1@3@3mS=burn-PERF-REAL.i this.SA.nm boat'He burned this boat.'@ruth morrison, david inman@january 14, 2014
+53@author@@@1@agr@i=tag-ak-i yo_nta pitotsi@@@@0@3@3mS=burn-PERF-REAL.i this.SA.m boat'He burned this boat.'@ruth morrison, david inman@january 14, 2014
+54@author@@@1@agr@i=ha-ge-0-i@@@@1@1@3mS=go-DSTR-IMPF-REAL.i'They went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
+55@author@@@1@agr@i=ha-hig-0-i@@@@1@1@3mS=go-PL-IMPF-REAL.i'They went.'@ruth morrison, david inman@january 14, 2014
+56@author@@@1@agr@kemari ha-ge-0-i@@@@1@2@tapir go-DSTR-IMPF-REAL.i'The tapirs went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
+57@author@@@1@agr@kemari-page ha-ge-0-i@@@@1@2@tapir-DSTR go-DSTR-IMPF-REAL.i'The tapirs went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
+58@author@@@1@agr@kemari-page ha-0-i@@@@0@2@tapir-DSTR go-IMPF-REAL.i'The tapirs went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
+59@author@@@1@pro-d@i=ha-hig-0-i@@@@1@1@3mS=go-PL-IMPF-REAL.i'They went.'@ruth morrison, david inman@january 14, 2014
+60@author@@@1@agr@kemari ha-hig-0-i@@@@1@2@tapir go-PL-IMPF-REAL.i'The tapirs went.'@ruth morrison, david inman@january 14, 2014
+61@author@@@1@agr@kemari-hegi ha-hig-0-i@@@@1@2@tapir-PL go-PL-IMPF-REAL.i'The tapirs went.'@ruth morrison, david inman@january 14, 2014
+62@author@@@1@agr@kemari-page ha-hig-0-i@@@@0@2@tapir-DSTR go-PL-IMPF-REAL.i'The tapirs went.'@ruth morrison, david inman@january 14, 2014
+63@author@@@1@agr@o=tag-hig-ak-i=ri@@@@1@1@3nmS=burn-PL-PERF-REAL.i=3mO'She burned them (male)./They (female) burned him./They (female) burned them (male).'@ruth morrison, david inman@january 14, 2014
+64@author@@@1@agr@kemari tag-hig-ak-i=ri@@@@1@2@tapir burn-PL-PERF-REAL.i=3mO'The tapir burned them (male)./The tapirs burned him./The tapirs burned them (male).'@ruth morrison, david inman@january 14, 2014
+65@author@@@1@agr@kemari-hegi tag-hig-ak-i=ri@@@@1@2@tapir-PL burn-PL-PERF-REAL.i=3mO'The tapirs burned him./The tapirs burned them (male).'@ruth morrison, david inman@january 14, 2014
+66@author@@@1@agr@o=tag-hig-ak-i pitotsi@@@@1@2@3nmS=burn-PL-PERF-REAL.i boat'She burned the boats./They (fem) burned the boat./They (fem) burned the boats.'@ruth morrison, david inman@january 14, 2014
+67@author@@@1@agr@o=tag-hig-ak-i pitotsi-hegi@@@@1@2@3nmS=burn-PL-PERF-REAL.i boat-PL'She burned the boats./They (fem) burned the boats.'@ruth morrison, david inman@january 14, 2014
+68@author@@@1@agr@o=tag-hig-ak-i pitotsi-page@@@@1@2@3nmS=burn-PL-PERF-REAL.i boat-DSTR'She burned the boats./They (fem) burned the boats.'@ruth morrison, david inman@january 14, 2014
+69@author@@@1@agr@kemari ha-ge-0-i@@@@1@2@tapir go-DSTR-IMPF-REAL.i'The tapirs went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
+70@author@@@1@agr@kemari-page ha-ge-0-i@@@@1@2@tapir-DSTR go-DSTR-IMPF-REAL.i'The tapirs went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
+71@author@@@1@agr@kemari-hegi ha-ge-0-i@@@@0@2@tapir-PL go-DSTR-IMPF-REAL.i'The tapirs went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
+72@a:252@@@1@agr@o=_n-norih-0-e@@@@1@1@3nmS=IRREAL-lie.down-IMPF-IRREAL.i'She will lie down.'@ruth morrison, david inman@january 14, 2014
+73@author@@@1@agr@o=norih-0-e@@@@0@1@3nmS=lie.down-IMPF-IRREAL.i'She will lie down.'@ruth morrison, david inman@january 14, 2014
+74@author@@@1@agr@o=_n-norih-0-i@@@@0@1@3nmS=IRREAL-lie.down-IMPF-REAL.i'She will lie down.'@ruth morrison, david inman@january 14, 2014
+75@author@@@1@agr@o=_n-norih-0-e_npa@@@@0@1@3nmS=IRREAL-lie.down-IMPF-IRREAL.a'She will lie down.'@ruth morrison, david inman@january 14, 2014
+76@a:390@@@1@wo@shima o=p-ak-i=Npi@@@@1@2@fish 3nmS=give-PERF-REAL.i=2O'Did she give you fish?'@ruth morrison, david inman@january 14, 2014
+77@author@@@1@wo@o=p-ak-i=Npi shima@@@@1@2@3nmS=give-PERF-REAL.i=2O fish'Did she give you fish?'@ruth morrison, david inman@january 14, 2014
+78@a:368@@@1@wo@no=p-ak-i=ri@@@@1@1@1S=give-PERF-REAL.i=3mO'I gave (it) to him.'@ruth morrison, david inman@january 14, 2014
+79@a:368@@@1@wo@no=p-ak-i=ro@@@@1@1@1S=give-PERF-REAL.i=3nmO'I gave (it) to her.'@ruth morrison, david inman@january 14, 2014
+80@a:368@@@1@wo@i=p-ak-i=na otsiko@@@@1@2@3mS=give-PERF-REAL.i=1O fishhook'He gave me a fishhook.'@ruth morrison, david inman@january 14, 2014
+81@a:369@@@1@wo@no=p-ak-i=ni=ri@@@@1@1@1S=give-PERF-REAL.i=THM=3nmO'I gave it to him.'@ruth morrison, david inman@january 14, 2014
+82@author@@@1@wo,neg@matsi kemari tag-ak-i=ro@@@@1@3@NEG.EXT tapir burn-PERF-REAL.i=3nmO'The tapir didn't burn it.'@ruth morrison, david inman@january 14, 2014
+83@author@@@1@wo,neg@kemari matsi tag-ak-i=ro@@@@0@3@tapir NEG.EXT burn-PERF-REAL.i=3nmO'The tapir didn't burn it.'@ruth morrison, david inman@january 14, 2014
+84@author@@@1@wo,neg@kemari tag-ak-i=ro matsi@@@@0@3@tapir burn-PERF-REAL.i=3nmO NEG.EXT'The tapir didn't burn it.'@ruth morrison, david inman@january 14, 2014
+85@author@@@1@wo,neg@matsi i=tag-ak-i=ro@@@@1@2@NEG.EXT 3mS=burn-PERF-REAL.i=3nmO'He didn't burn it.'@ruth morrison, david inman@january 14, 2014
+86@author@@@1@wo,neg@i=tag-ak-i=ro matsi@@@@0@2@3mS=burn-PERF-REAL.i=3nmO NEG.EXT'He didn't burn it.'@ruth morrison, david inman@january 14, 2014
+87@a:371@@@1@crd@no=ha-hig-ak-i iriro o_ntiri naro@@@@1@4@1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.nm 1.TOP.PRO'We went, he and I (fem).'@ruth morrison, david inman@january 14, 2014
+88@author@@@1@crd@no=ha-hig-ak-i iriro i_ntiri naro@@@@1@4@1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.m 1.TOP.PRO'We went, he and I (masc).'@ruth morrison, david inman@january 14, 2014
+89@author@@@1@crd@i=ha-i Bare_ntin i_ntiri Bisarota i_ntiri Rerpin@@@@1@6@1mS=go-REAL.i Bare_ntin COORD.m Bisarota COORD.m Rerpin'Bare_ntin and Bisarota and Rerpin went there.'@ruth morrison, david inman@january 14, 2014
+90@author@@@1@crd@no=ha-hig-ak-i iriro naro i_ntiri@@@@0@4@1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO COORD.m'We went, he and I (masc).'@ruth morrison, david inman@january 14, 2014
+91@author@@@1@crd@no=ha-hig-ak-i iriro naro@@@@0@3@1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO'We went, he and I (masc).'@ruth morrison, david inman@january 14, 2014
+92@author@@@1@crd@kemari ha-ak-i o_ntiri i=tag-ak-i pitotsi@@@@1@5@tapir go-PERF-REAL.i COORD.S 3mS=burn-PERF-REAL.i boat'The tapir went and he burned the boat.'@ruth morrison, david inman@january 14, 2014
+93@author@@@1@crd@kemari ha-ak-i i=tag-ak-i pitotsi o_ntiri@@@@0@5@tapir go-PERF-REAL.i 3mS=burn-PERF-REAL.i boat COORD.S'The tapir went and he burned the boat.'@ruth morrison, david inman@january 14, 2014
+94@author@@@1@crd@o_ntiri kemari ha-ak-i o_ntiri i=tag-ak-i pitotsi@@@@0@6@COORD.S tapir go-PERF-REAL.i COORD.S 3mS=burn-PERF-REAL.i boat'The tapir went and he burned the boat.'@ruth morrison, david inman@january 14, 2014
+95@a:369@@@1@adj,agr,wo@no=neh-ak-i omarate pa_nkotsi@@@@1@3@1S=see-PERF-REAL.i big.INAN house'I saw a big house.'@ruth morrison, david inman@january 14, 2014
+96@author@@@1@adj,agr,wo@no=neh-ak-i omarane pa_nkotsi@@@@0@3@1S=see-PERF-REAL.i big.NM.ANIM house'I saw a big house.'@ruth morrison, david inman@january 14, 2014
+97@author@@@1@adj,agr,wo@no=neh-ak-i imarane pa_nkotsi@@@@0@3@1S=see-PERF-REAL.i big.M.ANIM house'I saw a big house.'@ruth morrison, david inman@january 14, 2014
+98@author@@@1@adj,agr,wo@no=neh-ak-i pa_nkotsi omarate@@@@0@3@1S=see-PERF-REAL.i house big.M.ANIM'I saw a big house.'@ruth morrison, david inman@january 14, 2014
+99@author@@@1@adj,agr,wo@no=neh-ak-i imarane a_ntarini@@@@1@3@1S=see-PERF-REAL.i big.INAN man'I saw a big man.'@ruth morrison, david inman@january 14, 2014
+100@author@@@1@adj,agr,wo@no=neh-ak-i omarane a_ntaroni@@@@1@3@1S=see-PERF-REAL.i big.INAN woman'I saw a big woman.'@ruth morrison, david inman@january 14, 2014
+101@a:142@@@1@adv@otya maika no=neh-ak-i@@@@1@3@3nm.RECENT.PRO now 1S=see-PERF-REAL.i'I saw (it) just now.'@ruth morrison, david inman@january 14, 2014
+102@author@@@1@cop@kirahari o=n-i sapiro_ntsi@@@@1@3@red 3nmS=COP-REAL.i clothing'The article of clothing is red.'@ruth morrison, david inman@january 14, 2014
+103@author@@@1@cop@sapiro_ntsi o=n-i kirahari@@@@0@3@clothing 3nmS=COP-REAL.i red'The article of clothing is red.'@ruth morrison, david inman@january 14, 2014
+104@author@@@1@cop,wo@o=n-i kirahari sapiro_ntsi@@@@0@3@3nmS=COP-REAL.i red clothing'The article of clothing is red.'@ruth morrison, david inman@january 14, 2014
+105@author@@@1@cop,wo@kirahari sapiro_ntsi o=n-i@@@@0@3@red clothing 3nmS=COP-REAL.i'The article of clothing is red.'@ruth morrison, david inman@january 14, 2014
+106@a:292@@@1@cop@i=_nti surari@@@@1@2@3mS=COP.EQ man'He is male.'@ruth morrison, david inman@january 14, 2014
+107@author@@@1@cop@i=n-0-i surari@@@@0@2@3mS=COP-IMPF-REAL.i man'He is male.'@ruth morrison, david inman@january 14, 2014
+108@a:293@@@1@cop@tera surari o=n-e@@@@1@3@NEG.REAL male 3nmS=COP-IRREAL.i'She is not male.'@ruth morrison, david inman@january 14, 2014
+109@a:417@@@1@emb-d@pi=ogo-i pi=kitsog-i@@@@1@2@2S=know-REAL.i 2S=know.weave-REAL.i'Do you know how to knot-weave?'@ruth morrison, david inman@january 14, 2014
+110@author@@@1@emb-d,agr@no=neh-ak-i Rerisuha ogo_nke-i@@@@1@3@1S=see-PERF-REAL.i Rerisuha arrive-REAL.i'I saw Rerisuha arrive.'@ruth morrison, david inman@january 14, 2014
+111@author@@@1@emb-d,agr@no=neh-ak-i Rerisuha ogo_nke-e@@@@0@3@1S=see-PERF-REAL.i Rerisuha arrive-IRREAL.i'I saw Rerisuha arrive.'@ruth morrison, david inman@january 14, 2014
+112@author@@@1@emb-d,agr,neg@tera no=_n-neh-e Rerisuha ogo_nke-e@@@@1@4@NEG.REAL 1S=IRREAL-see-IRREAL.i Rerisuha arrive-IRREAL.i'I didn't see Rerisuha arrive.'@ruth morrison, david inman@january 14, 2014
+113@author@@@1@info,wo@kemari i=tag-ak-i pitotsi@@@@1@3@tapir 3mS=burn-PERF-REAL.i boat'The tapir, he burned the boat.'@ruth morrison, david inman@january 14, 2014
+114@author@@@1@info,wo@i=tag-ak-i pitotsi kemari@@@@1@3@3mS=burn-PERF-REAL.i boat tapir'The tapir, he burned the boat.'@ruth morrison, david inman@january 14, 2014
+115@author@@@1@info,wo@kemari i=tag-ak-i=ro@@@@1@2@tapir 3mS=burn-PERF-REAL.i=3nmO'The tapir, he burned it.'@ruth morrison, david inman@january 14, 2014
+116@author@@@1@info,wo@pitotsi kemari tag-ak-i=ro@@@@1@3@boat tapir burn-PERF-REAL.i=3nmO'The boat, the tapir burned it.'@ruth morrison, david inman@january 14, 2014
+117@author@@@1@info,wo@kemari tag-ak-i=ro pitotsi@@@@1@3@tapir burn-PERF-REAL.i=3nmO boat'The boat, the tapir burned it.'@ruth morrison, david inman@january 14, 2014
+118@author@@@1@info,wo@i=tag-ak-i=ro pitotsi@@@@1@2@3mS=burn-PERF-REAL.i=3nmO boat'The boat, he burned it.'@ruth morrison, david inman@january 14, 2014
+119@author@@@1@info,wo@o_nti i=tag-ak-i=ro@@@@1@2@PRED.FOC 3mS=burn-PERF-REAL.i=3nmO'He BURNED it.'@ruth morrison, david inman@january 14, 2014
+120@author@@@1@info,wo@o_nti i=tag-ak-i pitotsi@@@@1@3@PRED.FOC 3mS=burn-PERF-REAL.i boat'He BURNED the boat.'@ruth morrison, david inman@january 14, 2014
+121@author@@@1@info,wo@o_nti pitotsi i=tag-ak-i@@@@1@3@PRED.FOC boat 3mS=burn-PERF-REAL.i'The boat, he BURNED it.'@ruth morrison, david inman@january 14, 2014
+122@author@@@1@info,wo@pitotsi o_nti i=tag-ak-i=ro@@@@1@3@boat PRED.FOC 3mS=burn-PERF-REAL.i=3nmO'The boat is the thing that he BURNED.'@ruth morrison, david inman@january 14, 2014
+123@author@@@1@info,wo@kemari o_nti pitotsi i=tag-ak-i@@@@1@4@tapir PRED.FOC boat 3mS=burn-PERF-REAL.i'The boat, the tapir is the one who BURNED it.'@ruth morrison, david inman@january 14, 2014
+124@author@@@1@info@o_nti kemari i=tag-ak-i=ro@@@@1@3@PRED.FOC tapir 3mS=burn-PERF-REAL.i=3nmO'the tapir, he BURNED it.'@ruth morrison, david inman@january 14, 2014
+125@author@@@1@info,wo@kemari pitotsi tag-ak-i=ro@@@@0@3@tapir boat burn-PERF-REAL.i=3nmO'The boat, the tapir burned it.'@ruth morrison, david inman@january 14, 2014
+126@author@@@1@info,wo@tag-ak-i=ro iryo@@@@0@2@burn-PERF-REAL.i=3nmO 3rd.M.FOC'HE burned it.'@ruth morrison, david inman@january 14, 2014
+127@author@@@1@info,wo@iryo i=tag-ak-i=ro@@@@0@2@3rd.M.FOC 3mS=burn-PERF-REAL.i=3nmO'HE burned it.'@ruth morrison, david inman@january 14, 2014
+128@a:386@@@1@info,wo@iro mag-tsi@@@@1@2@3nm.FOC.PRO sleep-DERANK.REL.IMPF'SHE is sleeping.'@ruth morrison, david inman@january 14, 2014
+129@author@@@1@info,wo@iro mag-a_nkicha@@@@1@2@3nm.FOC.PRO sleep-DERANK.REL.PERF'SHE slept.'@ruth morrison, david inman@january 14, 2014
+130@author@@@1@info@kemari tag-a_nkicha@@@@0@2@tapir burn-DERANK.REL.PERF'THE TAPIR burned.'@ruth morrison, david inman@january 14, 2014
+131@author@@@1@info@kemari tag-a_nkicha=ro@@@@0@2@tapir burn-DERANK.REL.PERF=3nmO'THE TAPIR burned it.'@ruth morrison, david inman@january 14, 2014
