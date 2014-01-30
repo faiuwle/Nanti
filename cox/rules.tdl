@@ -1,4 +1,8 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+nf-comp-head := nf-comp-head-phrase.
+
+narrow-focused-phrase := narrow-focused-phrase.
+
 decl-head-opt-subj := decl-head-opt-subj-phrase.
 
 basic-head-opt-comp := basic-head-opt-comp-phrase.

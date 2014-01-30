@@ -73,6 +73,8 @@ section=coordination
 section=matrix-yes-no
 
 section=info-str
+focus-pos=preverbal
+c-focus=on
 
 section=arg-opt
 subj-drop=subj-drop-all
