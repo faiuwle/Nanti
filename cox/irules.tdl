@@ -98,3 +98,11 @@ distributive-object-lex-rule.
 distributive-subject-object-suffix :=
 %suffix (* -ge)
 distributive-subject-object-lex-rule.
+
+imperfective-focus-cleft-suffix :=
+%suffix (* tsi)
+imperfective-focus-cleft-lex-rule.
+
+perfective-focus-cleft-suffix :=
+%suffix (* a_nkicha)
+perfective-focus-cleft-lex-rule.

@@ -57,6 +57,14 @@ a_ntarini := common-noun-m-noun-lex &
   [ STEM < "a_ntarini" >,
     SYNSEM.LKEYS.KEYREL.PRED "_man_n_rel" ].
 
+shima := common-noun-m-noun-lex &
+  [ STEM < "shima" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fish_n_rel" ].
+
+surari := common-noun-m-noun-lex &
+  [ STEM < "surari" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_man_n_rel" ].
+
 a_ntaroni := common-noun-nm-anim-noun-lex &
   [ STEM < "a_ntaroni" >,
     SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
@@ -138,6 +146,14 @@ ha := i-intransitive-verb-verb-lex &
 norih := i-intransitive-verb-verb-lex &
   [ STEM < "norih" >,
     SYNSEM.LKEYS.KEYREL.PRED "_lie_down_v_rel" ].
+
+ogo_nke := i-intransitive-verb-verb-lex &
+  [ STEM < "ogo_nke" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arrive_v_rel" ].
+
+mag := i-intransitive-verb-verb-lex &
+  [ STEM < "mag" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
 
 tag := i-transitive-verb-verb-lex &
   [ STEM < "tag" >,
