@@ -716,7 +716,7 @@ kemari-page ha-ge-0-i
 tapir-DSTR go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
 
-#70 No number marking on intransitive with distributive-marked NP subj //TODO really is this grammatical - lev question?
+#70 No number marking on intransitive with distributive-marked NP subj
 Source: author
 Vetted: f
 Judgment: g
@@ -1250,7 +1250,7 @@ kirahari o=n-i sapiro_ntsi
 red 3nmS=COP-REAL.i clothing
 'The article of clothing is red.'
 
-#122 'n' Copula class IS attribute //TODO: is ungrmamatical? lev email
+#122 'n' Copula class IS attribute
 Source: author
 Vetted: f
 Judgment: u
@@ -1260,7 +1260,7 @@ sapiro_ntsi o=n-i kirahari
 clothing 3nmS=COP-REAL.i red
 'The article of clothing is red.'
 
-#123 'n' Copula IS attribute class //TODO: are we sure?? lev email
+#123 'n' Copula IS attribute class
 Source: author
 Vetted: f
 Judgment: u
@@ -1345,8 +1345,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: cop
-onake ba_nkoku
-o=n-ak-i ba_nko-ku
+onake pa_nkotsiku
+o=n-ak-i pa_nkotsi-ku
 3nmS=COP-PERF-REAL.i house-LOC
 'It is in my house.'
 
@@ -1355,8 +1355,8 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: cop
-o_nti ba_nkoku
-o=_nti ba_nko-ku
+o_nti pa_nkotsiku
+o=_nti pa_nkotsi-ku
 3nmS=COP.EQ house-LOC
 'It is in my house.'
 
