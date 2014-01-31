@@ -28,7 +28,27 @@ ha-ak-i kemari
 go-PERF-REAL.i tapir
 'The tapir went.'
 
-#3 Intransitive Verb: Clitic Pronoun
+#3 Intransitive Verb with object NP
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+kemari hatake pitotsi
+kemari ha-ak-i pitotsi
+tapir go-PERF-REAL.i boat
+'The tapir went the boat.'
+
+#4 Intransitive Verb with object clitic
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+kemari hatakero
+kemari ha-ak-i=ro
+tapir go-PERF-REAL.i=3nmO
+'The tapir went it.'
+
+#5 Intransitive Verb: Clitic Pronoun
 Source: author
 Vetted: f
 Judgment: g
@@ -38,7 +58,7 @@ i=ha-ak-i
 3mS=go-PERF-REAL.i
 'He went.'
 
-#4 Intransitive Verb: Clitic Pronoun
+#6 Intransitive Verb: Clitic Pronoun (objective clitic in objective place)
 Source: author
 Vetted: f
 Judgment: u
@@ -48,9 +68,19 @@ ha-ak-i=ri
 go-PERF-REAL.i=3mO
 'He went.'
 
+#7 Intransitive Verb: Clitic Pronoun (objective clitic in subject place)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
+rihatake
+ri=ha-ak-i
+3mO=go-PERF-REAL.i
+'He went.'
+
 # Transitives with two free NPs
 
-#5 Transitive Verb
+#8 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
@@ -60,7 +90,7 @@ kemari tag-ak-i pitotsi
 tapir burn-PERF-REAL.i boat
 'The tapir burned the boat.'
 
-#6 Transitive Verb
+#9 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
@@ -70,7 +100,7 @@ tag-ak-i pitotsi kemari
 burn-PERF-REAL.i boat tapir
 'The tapir burned the boat.'
 
-#7 Transitive Verb
+#10 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
@@ -80,7 +110,7 @@ tag-ak-i kemari pitotsi
 burn-PERF-REAL.i tapir boat
 'The tapir burned the boat.'
 
-#8 Transitive Verb
+#11 Transitive Verb
 Source: author
 Vetted: f
 Judgment: u
@@ -92,7 +122,7 @@ boat tapir burn-PERF-REAL.i
 
 # Transitives with one argument
 
-#9 Transitive with one argument
+#12 Transitive with subject NP (correct position)
 Source: author
 Vetted: f
 Judgment: g
@@ -102,27 +132,7 @@ kemari tag-ak-i=ro
 tapir burn-PERF-REAL.i=3nmO
 'The tapir burned it.'
 
-#10 Transitive with one argument
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: wo, pro-d
-itagake pitotsi
-i=tag-ak-i pitotsi
-3mS=burn-PERF-REAL.i boat
-'He burned the boat.'
-
-#11 Transitive one argument FOCUS
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: wo, info, pro-d
-pitotsi itagake
-pitotsi i=tag-ak-i
-boat 3mS=burn-PERF-REAL.i
-'He burned the boat.'
-
-#12 Transitive one argument ungrammatical
+#13 Transitive with subject NP (incorrect position)
 Source: author
 Vetted: f
 Judgment: u
@@ -132,9 +142,49 @@ tag-ak-i=ro kemari
 burn-PERF-REAL.i=3nmO tapir
 'The tapir burned it.'
 
+#14 Transitive with object NP
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pro-d
+itagake pitotsi
+i=tag-ak-i pitotsi
+3mS=burn-PERF-REAL.i boat
+'He burned the boat.'
+
+#15 Transitive with object FOCUS
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, info, pro-d
+pitotsi itagake
+pitotsi i=tag-ak-i
+boat 3mS=burn-PERF-REAL.i
+'He burned the boat.'
+
+#16 Transitive with object NP and no subj clitic
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pro-d
+tagake pitotsi
+tag-ak-i pitotsi
+burn-PERF-REAL.i boat
+'The boat burned.'
+
+#17 Transitive with subject NP and no obj clitic
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pro-d
+kemari tagake
+kemari tag-ak-i
+tapir burn-PERF-REAL.i
+'The tapir burned it.'
+
 # Transitives with only clitics
 
-#13 Transitive Verb
+#18 Transitive Verb (3nmS, 3nmO)
 Source: a:344
 Vetted: s
 Judgment: g
@@ -144,7 +194,7 @@ o=tag-ak-i=ro
 3nmS=burn-PERF-REAL.i=3nmO
 `She burned it.'
 
-#14 Transitive Verb
+#19 Transitive Verb (1S, 2O)
 Source: author
 Vetted: f
 Judgment: g
@@ -154,7 +204,7 @@ no=tag-ak-i=_npi
 1S=burn-PERF-REAL.i=2O
 'I burned you.'
 
-#15 Transitive Verb
+#20 Transitive Verb (3mS, 1O)
 Source: author
 Vetted: f
 Judgment: g
@@ -164,7 +214,7 @@ i=tag-ak-i=na
 3mS=burn-PERF-REAL.i=1O
 'He burned me.'
 
-#16 Transitive Verb
+#21 Transitive Verb (2S, 3mO)
 Source: author
 Vetted: f
 Judgment: g
@@ -174,7 +224,7 @@ pi=tag-ak-i=ri
 2S=burn-PERF-REAL.i=3MO
 'You burned him.'
 
-#17 Transitive Verb
+#22 Transitive Verb (1IncS, 3mO)
 Source: author
 Vetted: f
 Judgment: g
@@ -184,7 +234,7 @@ a=tag-ak-i=ri
 1.Pl.Inc.S=burn-PERF-REAL.i=3MO
 'We all burned him.'
 
-#18 Transitive Verb
+#23 Transitive Verb (wrong place, both at beginning)
 Source: a:author
 Vetted: f
 Judgment: u
@@ -194,7 +244,7 @@ o=ro=tag-ak-i
 3nmS=3nmO=burn-PERF-REAL.i
 'She burned it.'
 
-#19 Transitive Verb
+#24 Transitive Verb (wrong place, both at end)
 Source: author
 Vetted: f
 Judgment: u
@@ -204,7 +254,7 @@ tag-ak-i=no=_npi
 burn-PERF-REAL.i=1S=2O
 'I burned you.'
 
-#20 Transitive Verb
+#25 Transitive Verb (wrong order, obj first, subj last)
 Source: author
 Vetted: f
 Judgment: u
@@ -214,9 +264,29 @@ ri=tag-ak-i=no
 3mO=burn-PERF-REAL.i=1S
 'He burned me.'
 
+#26 Transitive Verb (only subject clitic, no obj)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+itagake
+i=tag-ak-i
+3mS=burn-PERF-REAL.i
+'He burned it.'
+
+#27 Transitive Verb (no subj, only object clitic)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+tagakero
+tag-ak-i=ro
+burn-PERF-REAL.i=3nmO
+'Someone burned it.'
+
 # Transitives with pronouns in focus position
 
-#21 Transitive Verb Focus Position
+#28 Transitive Verb Focus Position
 Source: a:342
 Vetted: s
 Judgment: g
@@ -226,7 +296,7 @@ naro ashi_nt-0-a=ro
 1.FOC.PRO own-IMPF-REAL.a=3nmO
 'I (and not anyone else) own it.'
 
-#22 Transitive Verb Focus Position
+#29 Transitive Verb Focus Position (focus pronoun in wrong position)
 Source: author
 Vetted: f
 Judgment: u
@@ -236,7 +306,17 @@ ashi_nt-0-a=ro naro
 own-IMPF-REAL.a=3nmO 1.FOC.PRO
 'I (and not anyone else) own it.'
 
-#23 Transitive Verb Focus Position
+#30 Transitive Verb Topic Pronoun in Focus position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pn, info, pro-d
+narohegi shi_ntaro.
+narohegi ashi_nt-0-a=ro
+1.PL.TOP.PRO own-IMPF-REAL.a=3nmO
+'We (and not anyone else) own it.'
+
+#31 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
@@ -246,7 +326,7 @@ biro ashi_nt-0-a=ro
 2.FOC.PRO own-IMPF-REAL.a=3nmO
 'You (and not anyone else) own it.'
 
-#24 Transitive Verb Focus Position
+#32 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
@@ -256,7 +336,7 @@ iryo ashi_nt-0-a=ro
 3M.FOC.PRO own-IMPF-REAL.a=3nmO
 'He (and not anyone else) owns it.'
 
-#25 Transitive Verb Focus Position
+#33 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
@@ -266,7 +346,7 @@ iro ashi_nt-0-a=ro
 3NM.FOC.PRO own-IMPF-REAL.a=3nmO
 'She (and not anyone else) owns it.'
 
-#26 Transitive Verb Focus Position
+#34 Transitive Verb Focus Position
 Source: author
 Vetted: f
 Judgment: g
@@ -278,7 +358,7 @@ haro ashi_nt-0-a=ro
 
 # "Recent" pronouns in focus position
 
-#27 Recent Pronoun 1st person
+#35 Recent Pronoun 1st person
 Source: author
 Vetted: f
 Judgment: g
@@ -288,7 +368,7 @@ natya ashi_nt-0-a=ro
 1.RECENT.PRO own-IMPF-REAL.a=3nmO
 'I recently owned it.'
 
-#28 Recent Pronoun 2nd person
+#36 Recent Pronoun 2nd person
 Source: author
 Vetted: f
 Judgment: g
@@ -298,7 +378,7 @@ bitya ashi_nt-0-a=ro
 2.RECENT.PRO own-IMPF-REAL.a=3nmO
 'You recently owned it.'
 
-#29 Recent Pronoun 3rd person masc
+#37 Recent Pronoun 3rd person masc
 Source: author
 Vetted: f
 Judgment: g
@@ -308,7 +388,7 @@ itya ashi_nt-0-a=ro
 3m.RECENT.PRO own-IMPF-REAL.a=3nmO
 'He recently owned it.'
 
-#30 Recent Pronoun 3rd person non-masc
+#38 Recent Pronoun 3rd person non-masc
 Source: author
 Vetted: f
 Judgment: g
@@ -318,7 +398,7 @@ otya ashi_nt-0-a=ro
 3nm.RECENT.PRO own-IMPF-REAL.a=3nmO
 'She recently owned it.'
 
-#31 Recent Pronoun 1st person wrong position
+#39 Recent Pronoun 1st person wrong position
 Source: author
 Vetted: f
 Judgment: u
@@ -330,7 +410,7 @@ own-IMPF-REAL.a=3nmO 1.RECENT.PRO
 
 # "First" pronouns in focus position
 
-#32 First Pronoun 1st person
+#40 First Pronoun 1st person
 Source: author
 Vetted: f
 Judgment: g
@@ -340,7 +420,7 @@ naketyo ashi_nt-0-a=ro
 1.FIRST.PRO own-IMPF-REAL.a=3nmO
 'I owned it first.'
 
-#33 First Pronoun 2nd person
+#41 First Pronoun 2nd person
 Source: author
 Vetted: f
 Judgment: g
@@ -350,7 +430,7 @@ biketyo ashi_nt-0-a=ro
 2.FIRST.PRO own-IMPF-REAL.a=3nmO
 'You owned it first.'
 
-#34 First Pronoun 3rd person masc
+#42 First Pronoun 3rd person masc
 Source: author
 Vetted: f
 Judgment: g
@@ -360,7 +440,7 @@ iketyo ashi_nt-0-a=ro
 3m.FIRST.PRO own-IMPF-REAL.a=3nmO
 'He owned it first.'
 
-#35 First Pronoun 3rd person non-masc
+#43 First Pronoun 3rd person non-masc
 Source: author
 Vetted: f
 Judgment: g
@@ -370,7 +450,7 @@ oketyo ashi_nt-0-a=ro
 3nm.FIRST.PRO own-IMPF-REAL.a=3nmO
 'She owned it first.'
 
-#36 First Pronoun wrong position
+#44 First Pronoun wrong position
 Source: author
 Vetted: f
 Judgment: u
@@ -382,7 +462,7 @@ own-IMPF-REAL.a=3nmO 2.FIRST.PRO
 
 # Determiners
 
-#37 Determiners
+#45 Determiner Speaker+Addressee Proximate, Masculine
 Source: author 
 Vetted: f
 Judgment: g
@@ -392,7 +472,7 @@ yo_nta kemari ha-ak-i
 this.SA.m tapir go-PERF-REAL.i
 'This tapir went.'
 
-#38 Determiners
+#46 Determiner Speaker+Addressee Proximate, Non-Masc
 Source: author
 Vetted: f
 Judgment: g
@@ -402,7 +482,7 @@ o_nta kemari ha-ak-i
 this.SA.nm tapir go-PERF-REAL.i
 'This tapir went.'
 
-#39 Determiners
+#47 Determiner Speaker-Proximate, Masculine
 Source: author
 Vetted: f
 Judgment: g
@@ -412,7 +492,7 @@ yoka kemari ha-ak-i
 this.S.m tapir go-PERF-REAL.i
 'This tapir went.'
 
-#40 Determiners
+#48 Determiner Speaker-Proximate, Non-Masculine
 Source: author
 Vetted: f
 Judgment: g
@@ -422,7 +502,7 @@ oka kemari ha-ak-i
 this.S.nm tapir go-PERF-REAL.i
 'This tapir went.'
 
-#41 Determiners
+#49 Determiner Speaker-distant, Masculine
 Source: author
 Vetted: f
 Judgment: g
@@ -432,7 +512,7 @@ yoga kemari ha-ak-i
 that.m tapir go-PERF-REAL.i
 'That tapir went.'
 
-#42 Determiners
+#50 Determiners Speaker-distant, Non-masc
 Source: author
 Vetted: f
 Judgment: g
@@ -442,7 +522,7 @@ oga kemari ha-ak-i
 that.nm tapir go-PERF-REAL.i
 'That tapir went.'
 
-#43 Determiners ungrammatical
+#51 Determiner wrong order (N det)
 Source: author
 Vetted: f
 Judgment: u
@@ -452,89 +532,7 @@ kemari oga ha-ak-i
 tapir that.nm go-PERF-REAL.i
 'That tapir went.'
 
-#44 A-verb with i-suffix
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: agr
-naro shi_ntiro.
-naro ashi_nt-i=ro
-1.FOC.PRO own-REAL.i=3nmO
-'I (and not anyone else) own it.'
-
-#45 I-verb with a-suffix
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: agr
-kemari hataka
-kemari ha-ak-a
-tapir go-PERF-REAL.a
-'The tapir went.'
-
-#46 Reality and Aspect Suffixes Swapped
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: tam
-kemari hatitak
-kemari ha-i-ak
-tapir go-REAL.i-PERF
-'The tapir went.'
-
-#47 Intransitive Verb with Object Clitic
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: wo, agr
-kemari hatakero
-kemari ha-ak-i=ro
-tapir go-PERF-REAL.i=3nmO
-'The tapir went it.'
-
-#48 Intransitive Verb with Object NP
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: wo, agr
-ihatake pitotsi
-i=ha-ak-i pitotsi
-3mS=go-PERF-REAL.i boat
-'He went the boat.'
-
-#49 Intransitive Verb with No Subject
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: wo, agr
-hatake
-ha-ak-i
-go-PERF-REAL.i
-'Went.'
-
-#50 Transitive Verb with No Subject
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: agr
-Tagakero.
-tag-ak-i=ro
-burn-PERF-REAL.i=3nmO
-`Burned it.'
-
-#51 Transitive Verb with No Object
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: agr
-Otagake.
-o=tag-ak-i
-3nmS=burn-PERF-REAL.i
-'She burned.'
-
-# Determiner agreement
-
-#52 Proper agreement that-boat matched
+#52 Determiner that-boat matched gender
 Source: author
 Vetted: f
 Judgment: g
@@ -544,7 +542,7 @@ i=tag-ak-i o_nta pitotsi
 3mS=burn-PERF-REAL.i this.SA.nm boat
 'He burned this boat.'
 
-#53 Proper agreement that-boat mismatched
+#53 Determiner that-boat mismatched gender
 Source: author
 Vetted: f
 Judgment: u
@@ -554,9 +552,111 @@ i=tag-ak-i yo_nta pitotsi
 3mS=burn-PERF-REAL.i this.SA.m boat
 'He burned this boat.'
 
+#54 Determiner this-man matched gender
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+yoga a_ntarini hati.
+yoga a_ntarini ha-0-i
+that.m man go-IMPF-REAL.i
+'That man is going.'
+
+#55 Determiner this-man mismatched gender
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+oga a_ntarini hati.
+oga a_ntarini ha-0-i
+that.nm man go-IMPF-REAL.i
+'That man is going.'
+
+# Verbal agreement matching
+
+#56 A-verb with i-suffix
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+naro shi_ntiro.
+naro ashi_nt-i=ro
+1.FOC.PRO own-REAL.i=3nmO
+'I (and not anyone else) own it.'
+
+#57 I-verb with a-suffix
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+kemari hataka
+kemari ha-ak-a
+tapir go-PERF-REAL.a
+'The tapir went.'
+
+#58 Reality and Aspect Suffixes Swapped
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: tam
+kemari hatitak
+kemari ha-i-ak
+tapir go-REAL.i-PERF
+'The tapir went.'
+
+#59 Intransitive Verb with Object Clitic
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+kemari hatakero
+kemari ha-ak-i=ro
+tapir go-PERF-REAL.i=3nmO
+'The tapir went it.'
+
+#60 Intransitive Verb with Object NP
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+ihatake pitotsi
+i=ha-ak-i pitotsi
+3mS=go-PERF-REAL.i boat
+'He went the boat.'
+
+#61 Intransitive Verb with No Subject
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, agr
+hatake
+ha-ak-i
+go-PERF-REAL.i
+'Went.'
+
+#62 Transitive Verb with No Subject
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Tagakero.
+tag-ak-i=ro
+burn-PERF-REAL.i=3nmO
+`Burned it.'
+
+#63 Transitive Verb with No Object
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Otagake.
+o=tag-ak-i
+3nmS=burn-PERF-REAL.i
+'She burned.'
+
 # Plural Agreement
 
-#54 Distributive on intransitive with clitic subj
+#64 Distributive on intransitive with clitic subj
 Source: author
 Vetted: f
 Judgment: g
@@ -566,7 +666,17 @@ i=ha-ge-0-i
 3mS=go-DSTR-IMPF-REAL.i
 'They went (in separate groups, at different times).'
 
-#55 Plural on intransitive with clitic subj
+#65 Plural affix in wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr, wo
+Ihatige.
+i=ha-0-i-ge
+3mS=go-IMPF-REAL.i-DSTR
+'They went (in separate groups, at different times.)'
+
+#66 Plural on intransitive with clitic subj
 Source: author
 Vetted: f
 Judgment: g
@@ -576,7 +686,17 @@ i=ha-hig-0-i
 3mS=go-PL-IMPF-REAL.i
 'They went.'
 
-#56 Distributive on intransitive with unmarked NP subj
+#67 Plural in wrong position on intransitive with clitic subj
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+Ihigahati.
+i=hig-ha-0-i
+3mS=PL-go-IMPF-REAL.i
+'They went.'
+
+#68 Distributive on intransitive with unmarked NP subj
 Source: author
 Vetted: f
 Judgment: g
@@ -586,7 +706,7 @@ kemari ha-ge-0-i
 tapir go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
 
-#57 Distributive on intransitive with distributive-marked NP subj
+#69 Distributive on intransitive with distributive-marked NP subj
 Source: author
 Vetted: f
 Judgment: g
@@ -596,7 +716,7 @@ kemari-page ha-ge-0-i
 tapir-DSTR go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
 
-#58 No number marking on intransitive with distributive-marked NP subj //TODO really?
+#70 No number marking on intransitive with distributive-marked NP subj //TODO really is this grammatical - lev question?
 Source: author
 Vetted: f
 Judgment: g
@@ -604,126 +724,6 @@ Phenomena: agr
 kemaripage hati.
 kemari-page ha-0-i
 tapir-DSTR go-IMPF-REAL.i
-'The tapirs went (in separate groups, at different times).'
-
-#59 Plural on intransitive with clitic subj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: pro-d
-ihahigi.
-i=ha-hig-0-i
-3mS=go-PL-IMPF-REAL.i
-'They went.'
-
-#60 Plural on intransitive with unmarked NP subj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-kemari hahigi.
-kemari ha-hig-0-i
-tapir go-PL-IMPF-REAL.i
-'The tapirs went.'
-
-#61 Plural on intransitive with plural-marked NP subj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-kemarihegi hahigi.
-kemari-hegi ha-hig-0-i
-tapir-PL go-PL-IMPF-REAL.i
-'The tapirs went.'
-
-#62 Plural on intransitive with distributive-marked NP subj
-Source: author
-Vetted: f
-Judgment: u
-Phenomena: agr
-kemaripage hahigi.
-kemari-page ha-hig-0-i
-tapir-DSTR go-PL-IMPF-REAL.i
-'The tapirs went.'
-
-#63 Plural on transitive with clitics
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-Otagahigakeri.
-o=tag-hig-ak-i=ri
-3nmS=burn-PL-PERF-REAL.i=3mO
-'She burned them (male)./They (female) burned him./They (female) burned them (male).'
-
-#64 Plural on transitive with unmarked NP subj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-Kemari tagahigakeri.
-kemari tag-hig-ak-i=ri
-tapir burn-PL-PERF-REAL.i=3mO
-'The tapir burned them (male)./The tapirs burned him./The tapirs burned them (male).'
-
-#65 Plural on transitive with plural-marked NP subj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-Kemarihegi tagahigakeri.
-kemari-hegi tag-hig-ak-i=ri
-tapir-PL burn-PL-PERF-REAL.i=3mO
-'The tapirs burned him./The tapirs burned them (male).'
-
-#66 Plural on transitive with unmarked NP obj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-Otagahigake pitotsi
-o=tag-hig-ak-i pitotsi
-3nmS=burn-PL-PERF-REAL.i boat
-'She burned the boats./They (fem) burned the boat./They (fem) burned the boats.'
-
-#67 Plural on transitive with plural-marked NP obj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-Otagahigake pitotsihegi
-o=tag-hig-ak-i pitotsi-hegi
-3nmS=burn-PL-PERF-REAL.i boat-PL
-'She burned the boats./They (fem) burned the boats.'
-
-#68 Plural on transitive with dstr-marked NP obj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-Otagahigake pitotsipage
-o=tag-hig-ak-i pitotsi-page
-3nmS=burn-PL-PERF-REAL.i boat-DSTR
-'She burned the boats./They (fem) burned the boats.'
-
-#69 Distributive on intransitive with unmarked NP subj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-kemari hageti.
-kemari ha-ge-0-i
-tapir go-DSTR-IMPF-REAL.i
-'The tapirs went (in separate groups, at different times).'
-
-#70 Distributive on intransitive with dstr-marked NP subj
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: agr
-kemaripage hageti.
-kemari-page ha-ge-0-i
-tapir-DSTR go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
 
 #71 Distributive on intransitive with plural-marked NP subj
@@ -736,51 +736,191 @@ kemari-hegi ha-ge-0-i
 tapir-PL go-DSTR-IMPF-REAL.i
 'The tapirs went (in separate groups, at different times).'
 
-# Irrealis Morphology
+#72 Plural on intransitive with clitic subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+ihahigi.
+i=ha-hig-0-i
+3mS=go-PL-IMPF-REAL.i
+'They went.'
 
-#72 Irrealis with prefix and null suffix
-Source: a:252
-Vetted: s
+#73 Plural on intransitive with unmarked NP subj
+Source: author
+Vetted: f
 Judgment: g
 Phenomena: agr
-Onorihe.
-o=_n-norih-0-e
-3nmS=IRREAL-lie.down-IMPF-IRREAL.i
-'She will lie down.'
+kemari hahigi.
+kemari ha-hig-0-i
+tapir go-PL-IMPF-REAL.i
+'The tapirs went.'
 
-#73 No prefix and irrealis null suffix (ungrammatical)
+#74 Plural on intransitive with plural-marked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+kemarihegi hahigi.
+kemari-hegi ha-hig-0-i
+tapir-PL go-PL-IMPF-REAL.i
+'The tapirs went.'
+
+#75 Plural on intransitive with distributive-marked NP subj
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-Onorihe.
-o=norih-0-e
-3nmS=lie.down-IMPF-IRREAL.i
-'She will lie down.'
+kemaripage hahigi.
+kemari-page ha-hig-0-i
+tapir-DSTR go-PL-IMPF-REAL.i
+'The tapirs went.'
 
-#74 Irrealis prefix and realis suffix (ungrammatical)
+#76 Plural on transitive with clitics
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+Otagahigakeri.
+o=tag-hig-ak-i=ri
+3nmS=burn-PL-PERF-REAL.i=3mO
+'She burned them (male)./They (female) burned him./They (female) burned them (male).'
+
+#77 Plural on transitive with unmarked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+Kemari tagahigakeri.
+kemari tag-hig-ak-i=ri
+tapir burn-PL-PERF-REAL.i=3mO
+'The tapir burned them (male)./The tapirs burned him./The tapirs burned them (male).'
+
+#78 Plural on transitive with plural-marked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+Kemarihegi tagahigakeri.
+kemari-hegi tag-hig-ak-i=ri
+tapir-PL burn-PL-PERF-REAL.i=3mO
+'The tapirs burned him./The tapirs burned them (male).'
+
+#79 Plural on transitive with unmarked NP obj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+Otagahigake pitotsi
+o=tag-hig-ak-i pitotsi
+3nmS=burn-PL-PERF-REAL.i boat
+'She burned the boats./They (fem) burned the boat./They (fem) burned the boats.'
+
+#80 Plural on transitive with plural-marked NP obj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+Otagahigake pitotsihegi
+o=tag-hig-ak-i pitotsi-hegi
+3nmS=burn-PL-PERF-REAL.i boat-PL
+'She burned the boats./They (fem) burned the boats.'
+
+#81 Plural on transitive with dstr-marked NP obj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+Otagahigake pitotsipage
+o=tag-hig-ak-i pitotsi-page
+3nmS=burn-PL-PERF-REAL.i boat-DSTR
+'She burned the boats./They (fem) burned the boats.'
+
+#82 Distributive on intransitive with unmarked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+kemari hageti.
+kemari ha-ge-0-i
+tapir go-DSTR-IMPF-REAL.i
+'The tapirs went (in separate groups, at different times).'
+
+#83 Distributive on intransitive with dstr-marked NP subj
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+kemaripage hageti.
+kemari-page ha-ge-0-i
+tapir-DSTR go-DSTR-IMPF-REAL.i
+'The tapirs went (in separate groups, at different times).'
+
+# Irrealis Morphology
+
+#84 Irrealis with imperfective
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: agr
+i_npoke
+i=_n-pok-0-e
+3mS=IRREAL-come-IMPF-IRREAL.i
+'He will come.'
+
+#85 Lacking irrealis prefix (ungrammatical)
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-Onorihi.
-o=_n-norih-0-i
-3nmS=IRREAL-lie.down-IMPF-REAL.i
-'She will lie down.'
+ipoke
+i=pok-0-e
+3mS=come-IMPF-IRREAL.i
+'He will come.'
 
-#75 Irrealis A-ending on I-verb (ungrammatical)
+#86 No suffix and irrealis prefix (ungrammatical)
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: agr
-Onorihe_npa.
-o=_n-norih-0-e_npa
-3nmS=IRREAL-lie.down-IMPF-IRREAL.a
-'She will lie down.'
+i_mpok.
+i=_n-pok-0
+3mS=IRREAL-come-IMPF
+'He will come.'
+
+#87 Irrealis prefix and realis suffix (ungrammatical)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+i_npoki.
+i=_n-pok-0-i
+3mS=IRREAL-come-IMPF-REAL.i
+'He will come.'
+
+#88 Irrealis A-ending on I-verb (ungrammatical)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+i_npoke_npa.
+i=_n-pok-0-e_npa
+3mS=IRREAL-come-IMPF-IRREAL.a
+'He will come.'
+
+#89 Realis I-ending on A-verb (ungrammatical)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agr
+otashi_ntiro
+o=ashi_nt-0-i=ro
+3nmS=own-IMPF-REAL.i=3nmO
+'She owns it.'
 
 # Ditransitives
 
-#76 Ditransitive with DO preverbal
+#90 Ditransitive with direct object preverbal
 Source: a:390
 Vetted: s
 Judgment: g
@@ -790,7 +930,7 @@ shima o=p-ak-i=Npi
 fish 3nmS=give-PERF-REAL.i=2O
 'Did she give you fish?'
 
-#77 Ditransitive with DO postverbal
+#91 Ditransitive with DO postverbal
 Source: author
 Vetted: f
 Judgment: g
@@ -800,7 +940,7 @@ o=p-ak-i=Npi shima
 3nmS=give-PERF-REAL.i=2O fish
 'Did she give you fish?'
 
-#78 Ditransitive with clitic objects, IDO not overt
+#92 Ditransitive with clitic objects, IDO not overt
 Source: a:368
 Vetted: s
 Judgment: g
@@ -810,7 +950,7 @@ no=p-ak-i=ri
 1S=give-PERF-REAL.i=3mO
 'I gave (it) to him.'
 
-#79 Ditransitive with clitic objects, IDO not overt
+#93 Ditransitive with clitic objects, IDO not overt
 Source: a:368
 Vetted: s
 Judgment: g
@@ -820,7 +960,7 @@ no=p-ak-i=ro
 1S=give-PERF-REAL.i=3nmO
 'I gave (it) to her.'
 
-#80 Ditransitive with clitic objects, IDO separate NP
+#94 Ditransitive with clitic objects, IDO separate NP
 Source: a:368
 Vetted: s
 Judgment: g
@@ -830,7 +970,7 @@ i=p-ak-i=na otsiko
 3mS=give-PERF-REAL.i=1O fishhook
 'He gave me a fishhook.'
 
-#81 Ditransitive with clitic objects, Subj, Obj, IDObj
+#95 Ditransitive with clitic objects, Subj, Obj, IDObj
 Source: a:369
 Vetted: s
 Judgment: g
@@ -842,7 +982,7 @@ no=p-ak-i=ni=ri
 
 # Negation
 
-#82 Negated clause
+#96 Negated clause
 Source: author
 Vetted: f
 Judgment: g
@@ -852,7 +992,7 @@ matsi kemari tag-ak-i=ro
 NEG.EXT tapir burn-PERF-REAL.i=3nmO
 'The tapir didn't burn it.'
 
-#83 Negated clause - bad location for negator
+#97 Negated clause - bad location for negator
 Source: author
 Vetted: f
 Judgment: u
@@ -862,7 +1002,7 @@ kemari matsi tag-ak-i=ro
 tapir NEG.EXT burn-PERF-REAL.i=3nmO
 'The tapir didn't burn it.'
 
-#84 Negated clause - bad location for negator
+#98 Negated clause - bad location for negator
 Source: author
 Vetted: f
 Judgment: u
@@ -872,7 +1012,7 @@ kemari tag-ak-i=ro matsi
 tapir burn-PERF-REAL.i=3nmO NEG.EXT
 'The tapir didn't burn it.'
 
-#85 Negated clause - all clitics
+#99 Negated clause - all clitics
 Source: author
 Vetted: f
 Judgment: g
@@ -882,7 +1022,7 @@ matsi i=tag-ak-i=ro
 NEG.EXT 3mS=burn-PERF-REAL.i=3nmO
 'He didn't burn it.'
 
-#86 Negated clause - all clitics, wrong position
+#100 Negated clause - all clitics, wrong position
 Source: author
 Vetted: f
 Judgment: u
@@ -892,9 +1032,59 @@ i=tag-ak-i=ro matsi
 3mS=burn-PERF-REAL.i=3nmO NEG.EXT
 'He didn't burn it.'
 
+#101 Negated clause - negator coming after topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg, info
+pitotsi matsi itagakero
+pitotsi matsi i=tag-ak-i=ro
+boat NEG.EXT 3mS=burn-PERF-REAL.i=3nmO
+'The boat, he didn't burn it.'
+
+#102 Negated clause - negator coming before topic (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg, info
+matsi pitotsi itagakero
+matsi pitotsi i=tag-ak-i=ro
+NEG.EXT boat 3mS=burn-PERF-REAL.i=3nmO
+'The boat, he didn't burn it.'
+
+#103 Negated clause - negator splitting topic and focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg, info
+pitotsi matsi kemari tagakero.
+pitotsi matsi kemari tag-ak-i=ro
+boat NEG.EXT tapir burn-PERF-REAL.i=3nmO
+'The boat, the tapir didn't burn it.'
+
+#104 Negated clause - negator coming before topic and focus
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg, info
+matsi pitotsi kemari tagakero.
+matsi pitotsi kemari tag-ak-i=ro
+NEG.EXT boat tapir burn-PERF-REAL.i=3nmO
+'The boat, the tapir didn't burn it.'
+
+#105 Negated clause - negator coming after topic and focus
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg, info
+pitotsi kemari matsi tagakero.
+pitotsi kemari matsi tag-ak-i=ro
+boat tapir NEG.EXT burn-PERF-REAL.i=3nmO
+'The boat, the tapir didn't burn it.'
+
 # Coordination
 
-#87 Coordinated NPs post-verbal, nm coordinator
+#106 Coordinated NPs post-verbal, nm coordinator
 Source: a:371
 Vetted: s
 Judgment: g
@@ -904,7 +1094,7 @@ no=ha-hig-ak-i iriro o_ntiri naro
 1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.nm 1.TOP.PRO
 'We went, he and I (fem).'
 
-#88 Coordinated NPs post-verbal, m coordinator
+#107 Coordinated NPs post-verbal, m coordinator
 Source: author
 Vetted: f
 Judgment: g
@@ -914,7 +1104,7 @@ no=ha-hig-ak-i iriro i_ntiri naro
 1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.m 1.TOP.PRO
 'We went, he and I (masc).'
 
-#89 Coordinated NPs post-verbal, proper names
+#108 Coordinated NPs post-verbal, proper names
 Source: author
 Vetted: f
 Judgment: g
@@ -924,7 +1114,7 @@ i=ha-i Bare_ntin i_ntiri Bisarota i_ntiri Rerpin
 1mS=go-REAL.i Bare_ntin COORD.m Bisarota COORD.m Rerpin
 'Bare_ntin and Bisarota and Rerpin went there.'
 
-#90 Coordinated NPs post-verbal, coordinator in wrong position
+#109 Coordinated NPs post-verbal, coordinator in wrong position
 Source: author
 Vetted: f
 Judgment: u
@@ -934,7 +1124,7 @@ no=ha-hig-ak-i iriro naro i_ntiri
 1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO COORD.m
 'We went, he and I (masc).'
 
-#91 Coordinated NPs post-verbal, no coordinator
+#110 Coordinated NPs post-verbal, no coordinator
 Source: author
 Vetted: f
 Judgment: u
@@ -944,7 +1134,7 @@ no=ha-hig-ak-i iriro naro
 1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO
 'We went, he and I (masc).'
 
-#92 Coordinated sentences
+#111 Coordinated sentences
 Source: author
 Vetted: f
 Judgment: g
@@ -954,7 +1144,7 @@ kemari ha-ak-i o_ntiri i=tag-ak-i pitotsi
 tapir go-PERF-REAL.i COORD.S 3mS=burn-PERF-REAL.i boat
 'The tapir went and he burned the boat.'
 
-#93 Coordinated sentences, coordinator wrong
+#112 Coordinated sentences, coordinator wrong
 Source: author
 Vetted: f
 Judgment: u
@@ -964,7 +1154,7 @@ kemari ha-ak-i i=tag-ak-i pitotsi o_ntiri
 tapir go-PERF-REAL.i 3mS=burn-PERF-REAL.i boat COORD.S
 'The tapir went and he burned the boat.'
 
-#94 Coordinated sentences, coordinator wrong
+#113 Coordinated sentences, coordinator wrong
 Source: author
 Vetted: f
 Judgment: u
@@ -976,7 +1166,7 @@ COORD.S tapir go-PERF-REAL.i COORD.S 3mS=burn-PERF-REAL.i boat
 
 # Adjectives
 
-#95 Adjective, NM-inanim
+#114 Adjective, NM-inanim
 Source: a:369
 Vetted: s
 Judgment: g
@@ -986,7 +1176,7 @@ no=neh-ak-i omarate pa_nkotsi
 1S=see-PERF-REAL.i big.INAN house
 'I saw a big house.'
 
-#96 Adjective, non-agreement
+#115 Adjective, non-agreement
 Source: author
 Vetted: f
 Judgment: u
@@ -996,7 +1186,7 @@ no=neh-ak-i omarane pa_nkotsi
 1S=see-PERF-REAL.i big.NM.ANIM house
 'I saw a big house.'
 
-#97 Adjective, non-agreement
+#116 Adjective, non-agreement
 Source: author
 Vetted: f
 Judgment: u
@@ -1006,27 +1196,27 @@ no=neh-ak-i imarane pa_nkotsi
 1S=see-PERF-REAL.i big.M.ANIM house
 'I saw a big house.'
 
-#98 Adjective, wrong location
+#117 Adjective, wrong location
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: adj, agr, wo
 Nonehake pa_nkotsi omarate.
 no=neh-ak-i pa_nkotsi omarate
-1S=see-PERF-REAL.i house big.M.ANIM
+1S=see-PERF-REAL.i house big.INAN
 'I saw a big house.'
 
-#99 Adjective, M
+#118 Adjective, M
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: adj, agr, wo
 Nonehake imarane a_ntarini.
 no=neh-ak-i imarane a_ntarini
-1S=see-PERF-REAL.i big.INAN man
+1S=see-PERF-REAL.i big.M.ANIM man
 'I saw a big man.'
 
-#100 Adjective, NM-anim
+#119 Adjective, NM-anim
 Source: author
 Vetted: f
 Judgment: g
@@ -1038,7 +1228,7 @@ no=neh-ak-i omarane a_ntaroni
 
 # Adverbs
 
-#101 Adverb
+#120 Adverb
 Source: a:142
 Vetted: s
 Judgment: g
@@ -1050,7 +1240,7 @@ otya maika no=neh-ak-i
 
 #Copula
 
-#102 'n' Copula
+#121 'n' Copula
 Source: author
 Vetted: f
 Judgment: g
@@ -1060,7 +1250,7 @@ kirahari o=n-i sapiro_ntsi
 red 3nmS=COP-REAL.i clothing
 'The article of clothing is red.'
 
-#103 'n' Copula class IS attribute //TODO: is ungrmamatical? lev email
+#122 'n' Copula class IS attribute //TODO: is ungrmamatical? lev email
 Source: author
 Vetted: f
 Judgment: u
@@ -1070,7 +1260,7 @@ sapiro_ntsi o=n-i kirahari
 clothing 3nmS=COP-REAL.i red
 'The article of clothing is red.'
 
-#104 'n' Copula IS attribute class
+#123 'n' Copula IS attribute class //TODO: are we sure?? lev email
 Source: author
 Vetted: f
 Judgment: u
@@ -1080,7 +1270,7 @@ o=n-i kirahari sapiro_ntsi
 3nmS=COP-REAL.i red clothing
 'The article of clothing is red.'
 
-#105 'n' Copula attribute class IS
+#124 'n' Copula attribute class IS
 Source: author
 Vetted: f
 Judgment: u
@@ -1090,7 +1280,17 @@ kirahari sapiro_ntsi o=n-i
 red clothing 3nmS=COP-REAL.i
 'The article of clothing is red.'
 
-#106 'Nti' copula noun is noun
+#125 'Nti' Copula attribute IS class (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop, wo
+kirahari o_nti sapiro_ntsi.
+kirahari o=_nti sapiro_ntsi
+red 3nmS=COP.EQ clothing
+'The article of clothing is red.'
+
+#126 'Nti' copula noun is noun
 Source: a:292
 Vetted: s
 Judgment: g
@@ -1100,7 +1300,7 @@ i=_nti surari
 3mS=COP.EQ man
 'He is male.'
 
-#107 'n' copula noun is noun - ungrammatical
+#127 'n' copula noun is noun - ungrammatical
 Source: author
 Vetted: f
 Judgment: u
@@ -1110,29 +1310,69 @@ i=n-0-i surari
 3mS=COP-IMPF-REAL.i man
 'He is male.'
 
-#108 'n' Copula negative equality
+#128 'n' Copula negative equality //TODO: are there different orders? -lev question
 Source: a:293
 Vetted: s
 Judgment: g
 Phenomena: cop
 tera surari one.
 tera surari o=n-e
-NEG.REAL male 3nmS=COP-IRREAL.i
+NEG.REAL man 3nmS=COP-IRREAL.i
 'She is not male.'
+
+#129 'Nti' Copula negative equality (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+tera surari o_nti.
+tera surari o=_nti
+NEG.REAL man 3nmS=COP.EQ
+'She is not male.'
+
+#130 'Nti' Copula negative equality (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+tera o_nti surari.
+tera o=_nti surari
+NEG.REAL 3nmS=COP.EQ man
+'She is not male.'
+
+#131 'n' Copula for locative existential
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+onake ba_nkoku
+o=n-ak-i ba_nko-ku
+3nmS=COP-PERF-REAL.i house-LOC
+'It is in my house.'
+
+#132 'Nti' copula for locative existential (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+o_nti ba_nkoku
+o=_nti ba_nko-ku
+3nmS=COP.EQ house-LOC
+'It is in my house.'
 
 # Embedded clauses
 
-#109 "know" embedding
+#133 "know" embedding, realis agreement
 Source: a:417
 Vetted: s
 Judgment: g
-Phenomena: emb-d
+Phenomena: emb-d, agr
 Pogoti pikitsogi?
 pi=ogo-i pi=kitsog-i
-2S=know-REAL.i 2S=know.weave-REAL.i
+2S=know-REAL.i 2S=knot.weave-REAL.i
 'Do you know how to knot-weave?'
 
-#110 "see" embedding, realis agreement
+#134 "see" embedding, realis agreement
 Source: author
 Vetted: f
 Judgment: g
@@ -1142,7 +1382,7 @@ no=neh-ak-i Rerisuha ogo_nke-i
 1S=see-PERF-REAL.i Rerisuha arrive-REAL.i
 'I saw Rerisuha arrive.'
 
-#111 "see" embedding, non-agreement
+#135 "see" embedding, non-agreement
 Source: author
 Vetted: f
 Judgment: u
@@ -1152,7 +1392,17 @@ no=neh-ak-i Rerisuha ogo_nke-e
 1S=see-PERF-REAL.i Rerisuha arrive-IRREAL.i
 'I saw Rerisuha arrive.'
 
-#112 "see" embedding, negation and irrealis
+#136 "see" embedding, clause order reversed
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: emb-d, agr
+Rerisuha go_nketi nonehake
+Rerisuha ogo_nke-i no=neh-ak-i
+Rerisuha arrive-REAL.i 1S=see-PERF-REAL.i
+'I saw Rerisuha arrive.'
+
+#137 "see" embedding, negation and irrealis
 Source: author
 Vetted: f
 Judgment: g
@@ -1162,9 +1412,29 @@ tera no=_n-neh-e Rerisuha ogo_nke-e
 NEG.REAL 1S=IRREAL-see-IRREAL.i Rerisuha arrive-IRREAL.i
 'I didn't see Rerisuha arrive.'
 
+#138 "think" embedding, requires irrealis complement
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: emb-d, agr
+Pisuretakaro pi_npokake
+pi=sure-ak-a=ro pi=_n-pok-ak-e
+2S=think-PERF-REAL.a=3nmO 2S=IRREAL-come-PERF-IRREAL.i
+'You thought you would come.'
+
+#139 "think" embedding, realis complement (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: emb-d, agr
+Pisuretakaro pipokaki
+pi=sure-ak-a=ro pi=pok-ak-i
+2S=think-PERF-REAL.a=3nmO 2S=come-PERF-REAL.i
+'You thought you would come.'
+
 #Focus, Topic Construction
 
-#113 tapir=topic
+#140 tapir=topic
 Source: author
 Vetted: f
 Judgment: g
@@ -1174,7 +1444,7 @@ kemari i=tag-ak-i pitotsi
 tapir 3mS=burn-PERF-REAL.i boat
 'The tapir, he burned the boat.'
 
-#114 tapir=topic
+#141 tapir=topic
 Source: author
 Vetted: f
 Judgment: g
@@ -1184,7 +1454,7 @@ i=tag-ak-i pitotsi kemari
 3mS=burn-PERF-REAL.i boat tapir
 'The tapir, he burned the boat.'
 
-#115 tapir=topic
+#142 tapir=topic
 Source: author
 Vetted: f
 Judgment: g
@@ -1194,7 +1464,7 @@ kemari i=tag-ak-i=ro
 tapir 3mS=burn-PERF-REAL.i=3nmO
 'The tapir, he burned it.'
 
-#116 boat=topic
+#143 boat=topic
 Source: author
 Vetted: f
 Judgment: g
@@ -1204,7 +1474,7 @@ pitotsi kemari tag-ak-i=ro
 boat tapir burn-PERF-REAL.i=3nmO
 'The boat, the tapir burned it.'
 
-#117 boat=topic
+#144 boat=topic
 Source: author
 Vetted: f
 Judgment: g
@@ -1214,7 +1484,7 @@ kemari tag-ak-i=ro pitotsi
 tapir burn-PERF-REAL.i=3nmO boat
 'The boat, the tapir burned it.'
 
-#118 boat=topic
+#145 boat=topic
 Source: author
 Vetted: f
 Judgment: g
@@ -1224,7 +1494,7 @@ i=tag-ak-i=ro pitotsi
 3mS=burn-PERF-REAL.i=3nmO boat
 'The boat, he burned it.'
 
-#119 predicate focus
+#146 predicate focus
 Source: author
 Vetted: f
 Judgment: g
@@ -1234,7 +1504,7 @@ o_nti i=tag-ak-i=ro
 PRED.FOC 3mS=burn-PERF-REAL.i=3nmO
 'He BURNED it.'
 
-#120 predicate focus w/ overt arg
+#147 predicate focus w/ overt arg
 Source: author
 Vetted: f
 Judgment: g
@@ -1244,7 +1514,7 @@ o_nti i=tag-ak-i pitotsi
 PRED.FOC 3mS=burn-PERF-REAL.i boat
 'He BURNED the boat.'
 
-#121 predicate focus w/ argument focus
+#148 predicate focus w/ argument focus
 Source: author
 Vetted: f
 Judgment: g
@@ -1254,7 +1524,7 @@ o_nti pitotsi i=tag-ak-i
 PRED.FOC boat 3mS=burn-PERF-REAL.i
 'The boat, he BURNED it.'
 
-#122 predicate focus w/ topic
+#149 predicate focus w/ topic
 Source: author
 Vetted: f
 Judgment: g
@@ -1264,7 +1534,7 @@ pitotsi o_nti i=tag-ak-i=ro
 boat PRED.FOC 3mS=burn-PERF-REAL.i=3nmO
 'The boat is the thing that he BURNED.'
 
-#123 predicate focus w/ topic & arg focus
+#150 predicate focus w/ topic & arg focus
 Source: author
 Vetted: f
 Judgment: g
@@ -1274,7 +1544,7 @@ kemari o_nti pitotsi i=tag-ak-i
 tapir PRED.FOC boat 3mS=burn-PERF-REAL.i
 'The boat, the tapir is the one who BURNED it.'
 
-#124 predicate focus w/ focus, wrong location of pred focus
+#151 predicate focus w/ focus, wrong location of pred focus
 Source: author
 Vetted: f
 Judgment: g
@@ -1284,7 +1554,7 @@ o_nti kemari i=tag-ak-i=ro
 PRED.FOC tapir 3mS=burn-PERF-REAL.i=3nmO
 'the tapir, he BURNED it.'
 
-#125 topic in the wrong position
+#152 topic in the wrong position
 Source: author
 Vetted: f
 Judgment: u
@@ -1294,7 +1564,7 @@ kemari pitotsi tag-ak-i=ro
 tapir boat burn-PERF-REAL.i=3nmO
 'The boat, the tapir burned it.'
 
-#126 focus in the wrong position
+#153 focus in the wrong position
 Source: author
 Vetted: f
 Judgment: u
@@ -1304,7 +1574,7 @@ tag-ak-i=ro iryo
 burn-PERF-REAL.i=3nmO 3rd.M.FOC
 'HE burned it.'
 
-#127 focus coreferencing
+#154 focus coreferencing
 Source: author
 Vetted: f
 Judgment: u
@@ -1314,9 +1584,29 @@ iryo i=tag-ak-i=ro
 3rd.M.FOC 3mS=burn-PERF-REAL.i=3nmO
 'HE burned it.'
 
+#155 topic NOT coreferencing
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+iriro tagake pitotsi
+iriro tag-ak-i pitotsi
+3m.TOP.PRO burn-PERF-REAL.i boat
+'He, he burned the boat.'
+
+#156 topic NOT coreferencing
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+iriro tagakero
+iriro tag-ak-i=ro
+3m.TOP.PRO burn-PERF-REAL.i=3nmO
+'He, he burned it.'
+
 # Cleft Focus
 
-#128 -tsi imperfective focus
+#157 -tsi imperfective focus
 Source: a:386
 Vetted: s
 Judgment: g
@@ -1326,7 +1616,7 @@ iro mag-tsi
 3nm.FOC.PRO sleep-DERANK.REL.IMPF
 'SHE is sleeping.'
 
-#129 -aNkicha perfective focus
+#158 -aNkicha perfective focus
 Source: author
 Vetted: f
 Judgment: g
@@ -1336,7 +1626,7 @@ iro mag-a_nkicha
 3nm.FOC.PRO sleep-DERANK.REL.PERF
 'SHE slept.'
 
-#130 cleft focus on a transitive (u)
+#159 cleft focus on a transitive (u)
 Source: author
 Vetted: f
 Judgment: u
@@ -1346,7 +1636,7 @@ kemari tag-a_nkicha
 tapir burn-DERANK.REL.PERF
 'THE TAPIR burned.'
 
-#131 cleft focus on a transitive (u)
+#160 cleft focus on a transitive (u)
 Source: author
 Vetted: f
 Judgment: u
@@ -1356,7 +1646,7 @@ kemari tag-a_nkicha=ro
 tapir burn-DERANK.REL.PERF=3nmO
 'THE TAPIR burned it.'
 
-#132 cleft focus with a clitic (u)
+#161 cleft focus with a clitic (u)
 Source: author
 Vetted: f
 Judgment: u
