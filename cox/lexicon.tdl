@@ -175,6 +175,26 @@ ashi_nt := a-transitive-verb-verb-lex &
   [ STEM < "ashi_nt" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
 
+;;; Adjectives
+
+omarate := adjective-inan-lex &
+  [ STEM < "omarate" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_big_adj_rel" ].
+
+omarane := adjective-anim-nonmasc-lex &
+  [ STEM < "omarane" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_big_adj_rel" ].
+
+imarane := adjective-masc-lex &
+  [ STEM < "imarane" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_big_adj_rel" ].
+
+;;; Adverbs
+
+maika := adverb-lex &
+  [ STEM < "maika" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_now_adv_rel" ].
+
 ;;; Determiners
 
 yo_nta := speaker-addressee-prox-det-M-determiner-lex &

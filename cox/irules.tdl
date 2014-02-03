@@ -106,3 +106,7 @@ imperfective-focus-cleft-lex-rule.
 perfective-focus-cleft-suffix :=
 %suffix (* -a_nkicha)
 perfective-focus-cleft-lex-rule.
+
+3rd-person-ditransitive-object-suffix :=
+%suffix (* =ni)
+3rd-person-ditransitive-object-lex-rule.
