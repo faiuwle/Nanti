@@ -314,7 +314,7 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
                                  COMPS < > ],
                            HEAD noun ] ] >,
     INFLECTED [ TRANSITIVE-VERB-FLAG +,
-                OBJECT-FLAG -,
+                OBJECT-FLAG na-or--,
                 ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG - ] ].
 
 i-intransitive-verb-verb-lex := intransitive-verb-lex &
