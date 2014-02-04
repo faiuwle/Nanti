@@ -12,41 +12,59 @@ Source: a:168
 Vetted: s
 Judgment: g
 Phenomena:
-Pine maika oka_ntaka ha_nta naro, ha_nta.Pine maika o=kant-ak-a ha_nta naro ha_nta
+Pine maika oka_ntaka ha_nta naro, ha_nta.
+Pine maika o=kant-ak-a ha_nta naro ha_nta
 you.see now 3nmS=happen-PERF-REAL.a there 1PRO there
-‘You see what happened there, I, there,’#2 Bikotoro
+'You see what happened there, I, there,'
+
+#2 Bikotoro
 Source: a:168
 Vetted: s
 Judgment: g
-Phenomena:noka_nti irobe_nti, o_nti pishi_nkitara.no=ka_nt-i irobe_nti o-_nti pi=shi_nki-a=ra1S=say-REQL.i because.of.that 3nmS-COP 2S=be.intoxicated-REAL.a=DEP'I said, "It’s because of that, because you (the participants in the Marankehari manioc beer feast) were intoxicated."'
+Phenomena:
+noka_nti irobe_nti, o_nti pishi_nkitara.
+no=ka_nt-i irobe_nti o-_nti pi=shi_nki-a=ra
+1S=say-REQL.i because.of.that 3nmS-COP 2S=be.intoxicated-REAL.a=DEP
+'I said, "It’s because of that, because you (the participants in the Marankehari manioc beer feast) were intoxicated."'
 
 #3 Anteres
 Source: a:168
 Vetted: s
 Judgment: g
-Phenomena:Ka_ntira aryo.ka_nt-i-ra aryosay-real.i=DEP right'Uh-huh.'
+Phenomena:
+Ka_ntira aryo.
+ka_nt-i-ra aryo
+say-real.i=DEP right
+'Uh-huh.'
 
 #4 Bikotoro
 Source: a:169
 Vetted: s
 Judgment: g
-Phenomena:Iro arisano paita opi_ntsatake ohatahe.iro arisano paita o=pi_ntsa-ak-i o=ha-ah-e
-3NM.PRO indeed later 3nmS=decide-PERF-REAL.i 3nmS=go-REG-IRREAL.i'Because of that, she subsequently decided to return (to Montetoni).'
+Phenomena:
+Iro arisano paita opi_ntsatake ohatahe.
+iro arisano paita o=pi_ntsa-ak-i o=ha-ah-e
+3NM.PRO indeed later 3nmS=decide-PERF-REAL.i 3nmS=go-REG-IRREAL.i
+'Because of that, she subsequently decided to return (to Montetoni).'
 
 #5 Bikotoro
 Source: a:169
 Vetted: s
 Judgment: g
 Phenomena:
-Iro pi_nka ari noka_nti.iro pinka ari no=ka_nt-i
+Iro pi_nka ari noka_nti.
+iro pinka ari no=ka_nt-i
 3nm.PRO actually truly 1S=say-REAL.i
 'Yeah, that’s what I say.'
-#6. Anteres
+
+#6. Anteres
 Source: a:169
 Vetted: s
 Judgment: g
 Phenomena:
-Ari pikanti.ari pi=kant-itruly 2S=say-real.i
+Ari pikanti.
+ari pi=kant-i
+truly 2S=say-real.i
 'Truly you say.'
 
 #7 Bikotoro
@@ -54,67 +72,100 @@ Source: a:169
 Vetted: s
 Judgment: g
 Phenomena:
-Oga oka_ntaka kogapagero.o=oga o=ka_nt-ak-a kogapagero3nm=that 3nmS=happen-PERF-REAL.a no.reason'That (Soira’s return to Montetoni) happened for no reason (i.e. withoutforethought).'
+Oga oka_ntaka kogapagero.
+o=oga o=ka_nt-ak-a kogapagero
+3nm=that 3nmS=happen-PERF-REAL.a no.reason
+'That (Soira’s return to Montetoni) happened for no reason (i.e. without forethought).'
 
 #8 Bikotoro
 Source: a:169
 Vetted: s
 Judgment: g
-Phenomena:Matsi o_npi_ntsate o_nka_nte nohatahera ha_nta, o_npokahe aka.matsi o=_n-pintsa-e o=_n-ka_nt-e no=ha-ah-e=ra ha_nta o=n-pok-ah-e aka
-NEG 3nmS=IRREAL-decide-IRREAL.i 3nmS=IRREAL-say-IRREAL.i 1S=go-REG-IRREAL.i=DEP there 3nmS=IRREAL-come-REG-irreal.i here'Its not as if she decided, that she said, "I’m going back there (to Montetoni to live)" and came back here.'#9 Anteres?
+Phenomena:
+Matsi o_npi_ntsate o_nka_nte nohatahera ha_nta, o_npokahe aka.
+matsi o=_n-pintsa-e o=_n-ka_nt-e no=ha-ah-e=ra ha_nta o=n-pok-ah-e aka
+NEG 3nmS=IRREAL-decide-IRREAL.i 3nmS=IRREAL-say-IRREAL.i 1S=go-REG-IRREAL.i=DEP there 3nmS=IRREAL-come-REG-irreal.i here
+'Its not as if she decided, that she said, "I’m going back there (to Montetoni to live)" and came back here.'
+
+#9 Anteres?
 Source: a:170
 Vetted: s
 Judgment: g
 Phenomena:
-Tya_npa no_nka_nte?tya=_npa no=_n-ka_nt-eINTERROG=ADVR 1S=IRREAL-say-IRREAL.i'What could I have said?' (i.e. there was nothing I could/should say, becauseSoira’s actions were reasonable)
+Tya_npa no_nka_nte?
+tya=_npa no=_n-ka_nt-e
+INTERROG=ADVR 1S=IRREAL-say-IRREAL.i
+'What could I have said?' (i.e. there was nothing I could/should say, because Soira’s actions were reasonable)
 
 #10 Bikotoro?
 Source: a:170
 Vetted: s
 Judgment: g
 Phenomena:
-Oga oka_ntaka maika o_nti oburoki.o-oga o=ka_nt-ak-a maika o-_nti oburoki
-3nm-that 3nmS=happen-PERF-REAL.a now 3nmS-COP manioc.beer'What happened was due to the manioc beer (i.e. the events at the manioc beer feast).'
+Oga oka_ntaka maika o_nti oburoki.
+o-oga o=ka_nt-ak-a maika o-_nti oburoki
+3nm-that 3nmS=happen-PERF-REAL.a now 3nmS-COP manioc.beer
+'What happened was due to the manioc beer (i.e. the events at the manioc beer feast).'
 
 #11 Bikotoro?
 Source: a:170
 Vetted: s
 Judgment: g
-Phenomena:Agabehi oka_nti nohatahera ha_nta, inaku.o=agabeh-i o=ka_nt-i no=ha-ah-e=ra ha_nta ina-ku3nmS=be.able-REAL.i 3nmS=say-REAL.i 1S-go-REG-IRREAL.i=DEP there my.mother-loc'It was appropriate for her to say, "I'm going back there to my mother's (to Montetoni).'"#12. Bikotoro?
+Phenomena:
+Agabehi oka_nti nohatahera ha_nta, inaku.
+o=agabeh-i o=ka_nt-i no=ha-ah-e=ra ha_nta ina-ku
+3nmS=be.able-REAL.i 3nmS=say-REAL.i 1S-go-REG-IRREAL.i=DEP there my.mother-loc
+'It was appropriate for her to say, "I'm going back there to my mother's (to Montetoni).'"
+
+#12. Bikotoro?
 Source: a:170
 Vetted: s
 Judgment: g
 Phenomena:
-ari pi_nka ari noka_nti.ari pi_nka ari no=ka_nt-itruly actually truly 1S=say-REAL.i
-'Yeah, that’s what I say.'#13. Anteres?
+ari pi_nka ari noka_nti.
+ari pi_nka ari no=ka_nt-i
+truly actually truly 1S=say-REAL.i
+'Yeah, that’s what I say.'
+
+#13. Anteres?
 Source: a:170
 Vetted: s
 Judgment: g
 Phenomena:
-ari pika_nti.ari pi=ka_nt-itruly 2S=say-REAL.i
-'Truly you say.'#14 Bikotoro
+ari pika_nti.
+ari pi=ka_nt-i
+truly 2S=say-REAL.i
+'Truly you say.'
+
+#14 Bikotoro
 Source: a:171
 Vetted: s
 Judgment: g
 Phenomena:
 ari noka_nti.
-ari no=ka_nt-itruly 1S=say-REAL.i
+ari no=ka_nt-i
+truly 1S=say-REAL.i
 'Yeah, that’s what I say.'
-#15. Anteres
+
+#15. Anteres
 Source: a:171
 Vetted: s
 Judgment: g
 Phenomena:
 ari pi_nka i_nkahara noka_nti pikema?
-ari pi_nka i_nkahara no=ka_nt-i pikema?truly actually earlier 1S=say-REAL.i you.hear
+ari pi_nka i_nkahara no=ka_nt-i pikema?
+truly actually earlier 1S=say-REAL.i you.hear
 'Indeed I said earlier, did you hear?'
-#17. Bikotoro
+
+#17. Bikotoro
 Source: a:171
 Vetted: s
 Judgment: g
 Phenomena:
-iro, iro patiro noka_nti.iro iro patiro no=kant-i
-3nm.PRO 3nm.PRO one.INAN 1S=say-REAL.i'That, that one (thing) I say.'
+iro, iro patiro noka_nti.
+iro iro patiro no=kant-i
+3nm.PRO 3nm.PRO one.INAN 1S=say-REAL.i
+'That, that one (thing) I say.'
 
 ## Interaction w/ Chabera asking about Rosa's burn
 
@@ -123,36 +174,50 @@ Source: a:141
 Vetted: s
 Judgment: g
 Phenomena:
-Tya oka_ntaka oka?tya o=ka_nt-ak-a o-okawhere/how 3nmS=happen-PERF-REAL.a 3nm-this
+Tya oka_ntaka oka?
+tya o=ka_nt-ak-a o-oka
+where/how 3nmS=happen-PERF-REAL.a 3nm-this
 'Where/how13 did this happen?' (indicating Rosa’s burn)
-#19 Mecha
+
+#19 Mecha
 Source: a:142
 Vetted: s
 Judgment: g
 Phenomena:
-Kara chapi shi_npenashi.kara chapi shi_npena-shi
-there yesterday grass-cl:leaf'Over there, yesterday, in the grass.'
+Kara chapi shi_npenashi.
+kara chapi shi_npena-shi
+there yesterday grass-cl:leaf
+'Over there, yesterday, in the grass.'
 
 #20 Mecha
 Source: a:142
 Vetted: s
 Judgment: g
-Phenomena:Otya maika oburoki nonehanake.o-tya maika oburoki no=neh-an-ak-i3nm-recently now yuca.beer 1S=see-ABL-PERF-REAL.i
+Phenomena:
+Otya maika oburoki nonehanake.
+o-tya maika oburoki no=neh-an-ak-i
+3nm-recently now yuca.beer 1S=see-ABL-PERF-REAL.i
 'I saw (it) just now, (when I was making) yuca beer.'
 
 #21 Mecha
 Source: a:142
 Vetted: s
 Judgment: g
-Phenomena:Otya maika nonehake.o-tya maika no=neh-ak-i3nm-recently now 1S=see-PERF-REAL.i
+Phenomena:
+Otya maika nonehake.
+o-tya maika no=neh-ak-i
+3nm-recently now 1S=see-PERF-REAL.i
 'I saw (it) just now.'
 
 #22 Pasotoro
 Source: a:142
 Vetted: s
 Judgment: g
-Phenomena:Oburoki ochapinitanahi.
-oburoki ochapini-an-ah-iyuca.beer evening-ABL-REG-REAL.i'When she was making oburoki, in the late afternoon.'
+Phenomena:
+Oburoki ochapinitanahi.
+oburoki ochapini-an-ah-i
+yuca.beer evening-ABL-REG-REAL.i
+'When she was making oburoki, in the late afternoon.'
 
 #23 Mecha
 Source: a:142
@@ -160,27 +225,38 @@ Vetted: s
 Judgment: g
 Phenomena:
 Noka tata gi_npi?
-no-ka tata og-i-_npi1-quot what get-real.i-2O
-‘I said, what got you?’#24 Chabera
+no-ka tata og-i-_npi
+1-quot what get-real.i-2O
+‘I said, what got you?’
+
+#24 Chabera
 Source: a:142
 Vetted: s
 Judgment: g
 Phenomena:
-Tya iro?tya irowhere/how 3nm.FOC.PRO
+Tya iro?
+tya iro
+where/how 3nm.FOC.PRO
 'Where did it happen?'
 
 #25 Mecha
 Source: a:143
 Vetted: s
 Judgment: g
-Phenomena:Oga ogimatira, iroka agapokihiro.o-oga o=ogima-i=ra iro=ka agapokih-i=ro3nm-that 3nmS=burn-REAL.i=sub 3nm.PRO=INFR step.on-REAL.i=3nmO'That (grass) which was burning, she presumably stepped on it.'
+Phenomena:
+Oga ogimatira, iroka agapokihiro.
+o-oga o=ogima-i=ra iro=ka agapokih-i=ro
+3nm-that 3nmS=burn-REAL.i=sub 3nm.PRO=INFR step.on-REAL.i=3nmO
+'That (grass) which was burning, she presumably stepped on it.'
 
 #26 Mecha
 Source: a:143
 Vetted: s
 Judgment: g
 Phenomena:
-O–o–otsararaha.o=o=o=tsararah-a3nmS=3nmS=3nmS=horse.around-real.a
+O–o–otsararaha.
+o=o=o=tsararah-a
+3nmS=3nmS=3nmS=horse.around-real.a
 'She– she– she was horsing around.'
 
 #27 Mecha
@@ -189,88 +265,126 @@ Vetted: s
 Judgment: g
 Phenomena:
 Otya i_nkahara nonehake.
-o-tya i_nkahara no=neh-ak-i3nm-recently earlier 1S=see-PERF-REAL.i
+o-tya i_nkahara no=neh-ak-i
+3nm-recently earlier 1S=see-PERF-REAL.i
 'I saw (the burn) just a little earlier.'
 
 #28 Mecha
 Source: a:143
 Vetted: s
 Judgment: g
-Phenomena:Noka tata gi_npi?no-ka tata og-i=_npi1S-quot what get-REAL.i-2O
+Phenomena:
+Noka tata gi_npi?
+no-ka tata og-i=_npi
+1S-quot what get-REAL.i-2O
 'I said, what got you?'
 
 #29 Mecha
 Source: a:143
 Vetted: s
 Judgment: g
-Phenomena:Oka o_nti tsitsi oga.o-ka o-_nti tsitsi o-oga3nm-QUOT 3nm-COP fire 3nm-that
-'She said, this is (due to) fire.'#30 Mecha
+Phenomena:
+Oka o_nti tsitsi oga.
+o-ka o-_nti tsitsi o-oga
+3nm-QUOT 3nm-COP fire 3nm-that
+'She said, this is (due to) fire.'
+
+#30 Mecha
 Source: a:144
 Vetted: s
 Judgment: g
 Phenomena:
-O_ntini oga merokake.o-_nti=ni o-oga merok-ak-i3nmS-CPO=CNSQ 3nm-that scorch.skin-PERF-REAL.i
-'So that is why that (i.e. Rosa’s skin) is scorched.'#31 Chabera
+O_ntini oga merokake.
+o-_nti=ni o-oga merok-ak-i
+3nmS-CPO=CNSQ 3nm-that scorch.skin-PERF-REAL.i
+'So that is why that (i.e. Rosa’s skin) is scorched.'
+
+#31 Chabera
 Source: a:144
 Vetted: s
 Judgment: g
-Phenomena:Magatiro ogamaika tagake?magatiro o-oga=maika tag-ak-iall.INAN 3nm-that=HEST burn-PERF-REAL.i
+Phenomena:
+Magatiro ogamaika tagake?
+magatiro o-oga=maika tag-ak-i
+all.INAN 3nm-that=HEST burn-PERF-REAL.i
 'All that, uh, is burned?'
 
 #32 Mecha
 Source: a:144
 Vetted: s
 Judgment: g
-Phenomena:Magatiro aka, aka, nero oka.magatiro aka aka nero o-okaall.INAN here here see.imper 3nm-this
+Phenomena:
+Magatiro aka, aka, nero oka.
+magatiro aka aka nero o-oka
+all.INAN here here see.imper 3nm-this
 'All over here, here, see this.'
 
 #33 Chabera
 Source: a:144
 Vetted: s
 Judgment: g
-Phenomena:Oga tera ityara pi_nkeme?
-o-oga tera i-tya=ra pi=_n-kem-e3nm-that NEG.REAL 3m-when=TEMP 2S-IRREAL-hear-IRREAL.i
+Phenomena:
+Oga tera ityara pi_nkeme?
+o-oga tera i-tya=ra pi=_n-kem-e
+3nm-that NEG.REAL 3m-when=TEMP 2S-IRREAL-hear-IRREAL.i
 'You didn’t hear it at the time?'
 
 #34 Mecha
 Source: a:144
 Vetted: s
 Judgment: g
-Phenomena:Tera. yoga iryo yo–, otya maika ika maikatera i-oga iryo i=o o-tya maika i-ka maikaNEG.REAL 3m-that 3m.PRO 3mS=fragment 3nm-when now 3nm-quot now'No. This one, he-, just recently he said now.'
+Phenomena:
+Tera. yoga iryo yo–, otya maika ika maika
+tera i-oga iryo i=o o-tya maika i-ka maika
+NEG.REAL 3m-that 3m.PRO 3mS=fragment 3nm-when now 3nm-quot now
+'No. This one, he-, just recently he said now.'
 
 #35 A (???)
 Source: a:145
 Vetted: s
 Judgment: g
 Phenomena:
-O– otya maika oka notsi–, notsibuhokake tsitsi oka tsitsi osakake.o- o-tya maika o-ka no=tsi no=tsibuhok-ak-i tsitsi o-ka tsitsi o=sak-ak-i3nm- 3nm-TEMP now 3nm-QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT-fire 3nmS=burn.person-PERF-REALIS.i'She- she just now she said, I stirred up the fire. She said the fire burned (me).'
+O– otya maika oka notsi–, notsibuhokake tsitsi oka tsitsi osakake.
+o- o-tya maika o-ka no=tsi no=tsibuhok-ak-i tsitsi o-ka tsitsi o=sak-ak-i
+3nm- 3nm-TEMP now 3nm-QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT-fire 3nmS=burn.person-PERF-REALIS.i
+'She- she just now she said, I stirred up the fire. She said the fire burned (me).'
 
 #36 A (???)
 Source: a:145
 Vetted: s
 Judgment: g
-Phenomena:Oka tsitsi osakake.
-o-ka tsitsi o=sak-ak-i3nm-QUOT fire 3nmS=burn.person-PERF-REAL.i
+Phenomena:
+Oka tsitsi osakake.
+o-ka tsitsi o=sak-ak-i
+3nm-QUOT fire 3nmS=burn.person-PERF-REAL.i
 'She said, the fire burned (me).'
 
 #37 Chabera
 Source: a:145
 Vetted: s
 Judgment: g
-Phenomena:Ari te pi_nkeme irage?ari te pi=_n-kem-e o=irag-e
-really NEG.REAL 2S=IRREAL-hear-IRREAL.i 3nmS=cry-IRREAL.i'Really, you didn’t hear her cry?'
+Phenomena:
+Ari te pi_nkeme irage?
+ari te pi=_n-kem-e o=irag-e
+really NEG.REAL 2S=IRREAL-hear-IRREAL.i 3nmS=cry-IRREAL.i
+'Really, you didn’t hear her cry?'
 
 #38 Mecha
 Source: a:145
 Vetted: s
 Judgment: g
 Phenomena:
-Te_nka_nki irage.te_nka_nki o=irag-e
+Te_nka_nki irage.
+te_nka_nki o=irag-e
 NEG.FOC 3nmS=cry-IRREAL.i
-'She didn’t cry at all.'#39 Pasotoro
+'She didn’t cry at all.'
+
+#39 Pasotoro
 Source: a:146
 Vetted: s
 Judgment: g
 Phenomena:
-Te irage.te o=irag-eNEG.REAL 3nmS=cry-IRREAL.i
+Te irage.
+te o=irag-e
+NEG.REAL 3nmS=cry-IRREAL.i
 'She didn’t cry.'
