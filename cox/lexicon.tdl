@@ -175,11 +175,14 @@ ashi_nt := a-transitive-verb-verb-lex &
   [ STEM < "ashi_nt" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
 
+;;; REM Added this verb
+
 kiraha := i-intransitive-verb-verb-lex &
   [ STEM < "kiraha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be_red_v_rel" ].
 
 ;;; Adjectives
+;;; REM Added all these adjectives
 
 omarate := adjective-inan-lex &
   [ STEM < "omarate" >,
@@ -194,6 +197,7 @@ imarane := adjective-masc-lex &
     SYNSEM.LKEYS.KEYREL.PRED "_big_adj_rel" ].
 
 ;;; Adverbs
+;;; REM Added this adverb
 
 maika := adverb-lex &
   [ STEM < "maika" >,
