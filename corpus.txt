@@ -33,7 +33,7 @@ Vetted: s
 Judgment: g
 Phenomena:
 Ka_ntira aryo.
-ka_nt-i-ra aryo
+ka_nt-i=ra aryo
 say-real.i=DEP right
 'Uh-huh.'
 
@@ -114,8 +114,8 @@ Judgment: g
 Phenomena:
 Agabehi oka_nti nohatahera ha_nta, inaku.
 o=agabeh-i o=ka_nt-i no=ha-ah-e=ra ha_nta ina-ku
-3nmS=be.able-REAL.i 3nmS=say-REAL.i 1S-go-REG-IRREAL.i=DEP there my.mother-loc
-'It was appropriate for her to say, "I'm going back there to my mother's (to Montetoni).'"
+3nmS=be.able-REAL.i 3nmS=say-REAL.i 1S=go-REG-IRREAL.i=DEP there my.mother-loc
+'It was appropriate for her to say, "I'm going back there to my mother's (to Montetoni).'
 
 #12. Bikotoro?
 Source: a:170
@@ -225,9 +225,9 @@ Vetted: s
 Judgment: g
 Phenomena:
 Noka tata gi_npi?
-no-ka tata og-i-_npi
-1-quot what get-real.i-2O
-‘I said, what got you?’
+no=ka tata og-i=_npi
+1=quot what get-real.i=2O
+'I said, what got you?'
 
 #24 Chabera
 Source: a:142
@@ -275,8 +275,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Noka tata gi_npi?
-no-ka tata og-i=_npi
-1S-quot what get-REAL.i-2O
+no=ka tata og-i=_npi
+1S=quot what get-REAL.i=2O
 'I said, what got you?'
 
 #29 Mecha
@@ -326,7 +326,7 @@ Judgment: g
 Phenomena:
 Oga tera ityara pi_nkeme?
 o-oga tera i-tya=ra pi=_n-kem-e
-3nm-that NEG.REAL 3m-when=TEMP 2S-IRREAL-hear-IRREAL.i
+3nm-that NEG.REAL 3m-when=TEMP 2S=IRREAL-hear-IRREAL.i
 'You didn’t hear it at the time?'
 
 #34 Mecha
@@ -346,7 +346,7 @@ Judgment: g
 Phenomena:
 O– otya maika oka notsi–, notsibuhokake tsitsi oka tsitsi osakake.
 o- o-tya maika o-ka no=tsi no=tsibuhok-ak-i tsitsi o-ka tsitsi o=sak-ak-i
-3nm- 3nm-TEMP now 3nm-QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT-fire 3nmS=burn.person-PERF-REALIS.i
+3nm- 3nm-TEMP now 3nm-QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT fire 3nmS=burn.person-PERF-REALIS.i
 'She- she just now she said, I stirred up the fire. She said the fire burned (me).'
 
 #36 A (???)
