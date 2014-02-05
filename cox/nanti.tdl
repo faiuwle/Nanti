@@ -306,6 +306,8 @@ intransitive-verb-lex := verb-lex & intransitive-lex-item &
     INFLECTED.TRANSITIVE-VERB-FLAG na-or--,
     INFLECTED.OBJECT-FLAG na ].
 
+;;; REM Added na-or-- for OBJECT-FLAG
+
 transitive-verb-lex := verb-lex & transitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
     ARG-ST < [ LOCAL.CAT.HEAD noun ],
@@ -336,6 +338,7 @@ a-transitive-verb-verb-lex := transitive-verb-lex &
 ;;; Others
 
 ;;; Adjectives
+;;; REM Added all stuff in this section
 
 adjective-lex := basic-adjective-lex & intersective-mod-lex &
                  norm-ltop-lex-item &
@@ -363,6 +366,7 @@ adjective-anim-nonmasc-lex := adjective-lex &
   [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CONT.HOOK.INDEX.PNG.GEND NM-ANIMATE ]> ]]]].
 
 ;;; Adverbs
+;;; REM Also this section
 
 adverb-lex := basic-adverb-lex & intersective-mod-lex &
   [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ]>,
@@ -787,6 +791,8 @@ direct-ditransitive-object-lex-rule-super := add-only-no-ccont-rule & infl-lex-r
 
 3rd-person-ditransitive-object-lex-rule := direct-ditransitive-object-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 3rd ].
+
+;;; REM Added this lexical rule
 
 deverbal-adjective-lex-rule := cat-change-only-lex-rule &
   [ SYNSEM [ LOCAL [ CAT [ HEAD adj &
