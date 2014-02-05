@@ -175,6 +175,10 @@ ashi_nt := a-transitive-verb-verb-lex &
   [ STEM < "ashi_nt" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
 
+kiraha := i-intransitive-verb-verb-lex &
+  [ STEM < "kiraha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be_red_v_rel" ].
+
 ;;; Adjectives
 
 omarate := adjective-inan-lex &
