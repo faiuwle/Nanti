@@ -1,0 +1,656 @@
+Language: Nanti
+Language code: cox
+Lines: translit translit-seg gloss translat
+Author: Ruth Morrison, David Inman
+Date: January 14, 2014
+Source a: http://www.cabeceras.org/ldm_publications/michael_nanti_2008_dissertation.pdf
+
+# Intransitives without determiners
+
+#1 Intransitive Verb
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+kemari hatake
+kemari ha-ak-i
+tapir go-PERF-REAL.i
+'The tapir went.'
+
+#2 Intransitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+hatake kemari
+ha-ak-i kemari
+go-PERF-REAL.i tapir
+'The tapir went.'
+
+#3 Intransitive Verb: Clitic Pronoun
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+ihatake
+i=ha-ak-i
+3mS=go-PERF-REAL.i
+'He went.'
+
+# 2 free non-coreferenced NPs, not allowed in any order
+
+#4 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo
+kemari tagake pitotsi
+kemari tag-ak-i pitotsi
+tapir burn-PERF-REAL.i boat
+'The tapir burned the boat.'
+
+#5 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
+tagake pitotsi kemari
+tag-ak-i pitotsi kemari
+burn-PERF-REAL.i boat tapir
+'The tapir burned the boat.'
+
+#6 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
+tagake kemari pitotsi
+tag-ak-i kemari pitotsi
+burn-PERF-REAL.i tapir boat
+'The tapir burned the boat.'
+
+#7 Transitive Verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pro-d
+pitotsi kemari tagake
+pitotsi kemari tag-ak-i
+boat tapir burn-PERF-REAL.i
+'The tapir burned the boat.'
+
+# Transitives with one argument
+
+#8 Transitive with subject NP (correct position)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pro-d
+kemari tagakero
+kemari tag-ak-i=ro
+tapir burn-PERF-REAL.i=3nmO
+'The tapir burned it.'
+
+#9 Transitive with subject NP (incorrect position)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pro-d
+tagakero kemari
+tag-ak-i=ro kemari
+burn-PERF-REAL.i=3nmO tapir
+'The tapir burned it.'
+
+#10 Transitive with object NP, NON-focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pro-d
+itagake pitotsi
+i=tag-ak-i pitotsi
+3mS=burn-PERF-REAL.i boat
+'He burned the boat.'
+
+#11 Transitive with object NP, FOCUS
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, info, pro-d
+pitotsi itagake
+pitotsi i=tag-ak-i
+boat 3mS=burn-PERF-REAL.i
+'He burned the boat.'
+
+# Transitives with only clitics
+
+#12 Transitive Verb (3nmS, 3nmO)
+Source: a:344
+Vetted: s
+Judgment: g
+Phenomena: pro-d
+Otagakero.
+o=tag-ak-i=ro
+3nmS=burn-PERF-REAL.i=3nmO
+`She burned it.'
+
+#13 Transitive Verb (1S, 2O)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+notagake_npi.
+no=tag-ak-i=_npi
+1S=burn-PERF-REAL.i=2O
+'I burned you.'
+
+#14 Transitive Verb (3mS, 1O)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+itagakena.
+i=tag-ak-i=na
+3mS=burn-PERF-REAL.i=1O
+'He burned me.'
+
+#15 Transitive Verb (2S, 3mO)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+pitagakeri.
+pi=tag-ak-i=ri
+2S=burn-PERF-REAL.i=3MO
+'You burned him.'
+
+#16 Transitive Verb (1IncS, 3mO)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pro-d
+atagakeri.
+a=tag-ak-i=ri
+1.Pl.Inc.S=burn-PERF-REAL.i=3MO
+'We all burned him.'
+
+# Transitives with pronouns in focus position
+
+#17 Transitive Verb Focus Position
+Source: a:342
+Vetted: s
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+naro shi_ntaro.
+naro ashi_nt-0-a=ro
+1.FOC.PRO own-IMPF-REAL.a=3nmO
+'I (and not anyone else) own it.'
+
+#18 Transitive Verb Focus Position (focus pronoun in wrong position)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pn, info, pro-d
+shi_ntaro naro.
+ashi_nt-0-a=ro naro
+own-IMPF-REAL.a=3nmO 1.FOC.PRO
+'I (and not anyone else) own it.'
+
+#19 Transitive Verb Topic Pronoun in Focus position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pn, info, pro-d
+narohegi shi_ntaro.
+narohegi ashi_nt-0-a=ro
+1.PL.TOP.PRO own-IMPF-REAL.a=3nmO
+'We (and not anyone else) own it.'
+
+#20 Transitive Verb Focus Position
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+biro shi_ntaro.
+biro ashi_nt-0-a=ro
+2.FOC.PRO own-IMPF-REAL.a=3nmO
+'You (and not anyone else) own it.'
+
+#21 Transitive Verb Focus Position
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+iryo shi_ntaro.
+iryo ashi_nt-0-a=ro
+3M.FOC.PRO own-IMPF-REAL.a=3nmO
+'He (and not anyone else) owns it.'
+
+#22 Transitive Verb Focus Position
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+iro shi_ntaro.
+iro ashi_nt-0-a=ro
+3NM.FOC.PRO own-IMPF-REAL.a=3nmO
+'She (and not anyone else) owns it.'
+
+#23 Transitive Verb Focus Position
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+haro shi_ntaro.
+haro ashi_nt-0-a=ro
+1.Pl.Incl.FOC.PRO own-IMPF-REAL.a=3nmO
+'We all (and not anyone else) own it.'
+
+# "Recent" pronouns in focus position
+
+#24 Recent Pronoun 1st person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+natya shi_ntaro.
+natya ashi_nt-0-a=ro
+1.RECENT.PRO own-IMPF-REAL.a=3nmO
+'I recently owned it.'
+
+#25 Recent Pronoun 2nd person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+bitya shi_ntaro.
+bitya ashi_nt-0-a=ro
+2.RECENT.PRO own-IMPF-REAL.a=3nmO
+'You recently owned it.'
+
+#26 Recent Pronoun 3rd person masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+itya shi_ntaro.
+itya ashi_nt-0-a=ro
+3m.RECENT.PRO own-IMPF-REAL.a=3nmO
+'He recently owned it.'
+
+#27 Recent Pronoun 3rd person non-masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+otya shi_ntaro.
+otya ashi_nt-0-a=ro
+3nm.RECENT.PRO own-IMPF-REAL.a=3nmO
+'She recently owned it.'
+
+#28 Recent Pronoun 1st person wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pn, pro-d
+shi_ntaro natya.
+ashi_nt-0-a=ro natya
+own-IMPF-REAL.a=3nmO 1.RECENT.PRO
+'I recently owned it.'
+
+# "First" pronouns in focus position
+
+#29 First Pronoun 1st person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+naketyo shi_ntaro.
+naketyo ashi_nt-0-a=ro
+1.FIRST.PRO own-IMPF-REAL.a=3nmO
+'I owned it first.'
+
+#30 First Pronoun 2nd person
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+biketyo shi_ntaro.
+biketyo ashi_nt-0-a=ro
+2.FIRST.PRO own-IMPF-REAL.a=3nmO
+'You owned it first.'
+
+#31 First Pronoun 3rd person masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+iketyo shi_ntaro.
+iketyo ashi_nt-0-a=ro
+3m.FIRST.PRO own-IMPF-REAL.a=3nmO
+'He owned it first.'
+
+#32 First Pronoun 3rd person non-masc
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, pn, info, pro-d
+oketyo shi_ntaro.
+oketyo ashi_nt-0-a=ro
+3nm.FIRST.PRO own-IMPF-REAL.a=3nmO
+'She owned it first.'
+
+#33 First Pronoun wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, pn, pro-d
+shi_ntaro biketyo.
+ashi_nt-0-a=ro biketyo
+own-IMPF-REAL.a=3nmO 2.FIRST.PRO
+'You owned it first.'
+
+# Negation
+
+#34 Negated clause
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg
+matsi kemari tagakero.
+matsi kemari tag-ak-i=ro
+NEG.EXT tapir burn-PERF-REAL.i=3nmO
+'The tapir didn't burn it.'
+
+#35 Negated clause - bad location for negator
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg
+kemari matsi tagakero.
+kemari matsi tag-ak-i=ro
+tapir NEG.EXT burn-PERF-REAL.i=3nmO
+'The tapir didn't burn it.'
+
+#36 Negated clause - bad location for negator
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg
+kemari tagakero matsi.
+kemari tag-ak-i=ro matsi
+tapir burn-PERF-REAL.i=3nmO NEG.EXT
+'The tapir didn't burn it.'
+
+#37 Negated clause - negator coming after topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg, info
+pitotsi matsi itagakero
+pitotsi matsi i=tag-ak-i=ro
+boat NEG.EXT 3mS=burn-PERF-REAL.i=3nmO
+'The boat, he didn't burn it.'
+
+#38 Negated clause - negator coming before topic (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg, info
+matsi pitotsi itagakero
+matsi pitotsi i=tag-ak-i=ro
+NEG.EXT boat 3mS=burn-PERF-REAL.i=3nmO
+'The boat, he didn't burn it.'
+
+#39 Negated clause - negator splitting topic and focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo, neg, info
+pitotsi matsi kemari tagakero.
+pitotsi matsi kemari tag-ak-i=ro
+boat NEG.EXT tapir burn-PERF-REAL.i=3nmO
+'The boat, the tapir didn't burn it.'
+
+#40 Negated clause - negator coming before topic and focus
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg, info
+matsi pitotsi kemari tagakero.
+matsi pitotsi kemari tag-ak-i=ro
+NEG.EXT boat tapir burn-PERF-REAL.i=3nmO
+'The boat, the tapir didn't burn it.'
+
+#41 Negated clause - negator coming after topic and focus
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wo, neg, info
+pitotsi kemari matsi tagakero.
+pitotsi kemari matsi tag-ak-i=ro
+boat tapir NEG.EXT burn-PERF-REAL.i=3nmO
+'The boat, the tapir didn't burn it.'
+
+#Focus, Topic Construction
+
+#42 tapir=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari itagake pitotsi.
+kemari i=tag-ak-i pitotsi
+tapir 3mS=burn-PERF-REAL.i boat
+'The tapir, he burned the boat.'
+
+#43 tapir=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+itagake pitotsi kemari
+i=tag-ak-i pitotsi kemari
+3mS=burn-PERF-REAL.i boat tapir
+'The tapir, he burned the boat.'
+
+#44 tapir=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari itagakero.
+kemari i=tag-ak-i=ro
+tapir 3mS=burn-PERF-REAL.i=3nmO
+'The tapir, he burned it.'
+
+#45 boat=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+pitotsi kemari tagakero
+pitotsi kemari tag-ak-i=ro
+boat tapir burn-PERF-REAL.i=3nmO
+'The boat, the tapir burned it.'
+
+#46 boat=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari tagakero pitotsi.
+kemari tag-ak-i=ro pitotsi
+tapir burn-PERF-REAL.i=3nmO boat
+'The boat, the tapir burned it.'
+
+#47 boat=topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+itagakero pitotsi.
+i=tag-ak-i=ro pitotsi
+3mS=burn-PERF-REAL.i=3nmO boat
+'The boat, he burned it.'
+
+#48 predicate focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+o_nti itagakero
+o_nti i=tag-ak-i=ro
+PRED.FOC 3mS=burn-PERF-REAL.i=3nmO
+'He BURNED it.'
+
+#49 predicate focus w/ overt arg
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+o_nti itagake pitotsi
+o_nti i=tag-ak-i pitotsi
+PRED.FOC 3mS=burn-PERF-REAL.i boat
+'He BURNED the boat.'
+
+#50 predicate focus w/ argument focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+o_nti pitotsi itagake
+o_nti pitotsi i=tag-ak-i
+PRED.FOC boat 3mS=burn-PERF-REAL.i
+'The boat, he BURNED it.'
+
+#51 predicate focus w/ topic
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+pitotsi o_nti itagakero
+pitotsi o_nti i=tag-ak-i=ro
+boat PRED.FOC 3mS=burn-PERF-REAL.i=3nmO
+'The boat is the thing that he BURNED.'
+
+#52 predicate focus w/ topic & arg focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+kemari o_nti pitotsi itagake
+kemari o_nti pitotsi i=tag-ak-i
+tapir PRED.FOC boat 3mS=burn-PERF-REAL.i
+'The boat, the tapir is the one who BURNED it.'
+
+#53 predicate focus w/ focus, wrong location of pred focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info
+o_nti kemari itagakero
+o_nti kemari i=tag-ak-i=ro
+PRED.FOC tapir 3mS=burn-PERF-REAL.i=3nmO
+'the tapir, he BURNED it.'
+
+#54 topic in the wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+kemari pitotsi tagakero
+kemari pitotsi tag-ak-i=ro
+tapir boat burn-PERF-REAL.i=3nmO
+'The boat, the tapir burned it.'
+
+#55 focus in the wrong position
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+tagakero iryo
+tag-ak-i=ro iryo
+burn-PERF-REAL.i=3nmO 3rd.M.FOC
+'HE burned it.'
+
+#56 focus coreferencing
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+iryo itagakero
+iryo i=tag-ak-i=ro
+3rd.M.FOC 3mS=burn-PERF-REAL.i=3nmO
+'HE burned it.'
+
+#57 topic NOT coreferencing
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+iriro tagake pitotsi
+iriro tag-ak-i pitotsi
+3m.TOP.PRO burn-PERF-REAL.i boat
+'He, he burned the boat.'
+
+#58 topic NOT coreferencing
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info, wo
+iriro tagakero
+iriro tag-ak-i=ro
+3m.TOP.PRO burn-PERF-REAL.i=3nmO
+'He, he burned it.'
+
+# Cleft Focus
+
+#59 -tsi imperfective focus
+Source: a:386
+Vetted: s
+Judgment: g
+Phenomena: info, wo
+iro magatsi
+iro mag-tsi
+3nm.FOC.PRO sleep-DERANK.REL.IMPF
+'SHE is sleeping.'
+
+#60 -aNkicha perfective focus
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: info, wo
+iro maga_nkicha
+iro mag-a_nkicha
+3nm.FOC.PRO sleep-DERANK.REL.PERF
+'SHE slept.'
+
+#61 cleft focus on a transitive (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info
+kemari taga_nkicha
+kemari tag-a_nkicha
+tapir burn-DERANK.REL.PERF
+'THE TAPIR burned.'
+
+#62 cleft focus on a transitive (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info
+kemari taga_nkicharo
+kemari tag-a_nkicha=ro
+tapir burn-DERANK.REL.PERF=3nmO
+'THE TAPIR burned it.'
+
+#63 cleft focus with a clitic (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: info
+omaga_nkicha
+o=mag-a_nkicha
+3nmO=sleep-DERANK.REL.IMPF
+'SHE slept.'
