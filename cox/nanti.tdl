@@ -788,6 +788,19 @@ direct-ditransitive-object-lex-rule-super := add-only-no-ccont-rule & infl-lex-r
 3rd-person-ditransitive-object-lex-rule := direct-ditransitive-object-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 3rd ].
 
+deverbal-adjective-lex-rule := cat-change-only-lex-rule &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD adj &
+                                  [ MOD < [ LOCAL [ CAT [ HEAD noun,
+                                                          VAL.SPR cons ], 
+                                                    CONT.HOOK.INDEX #index ]]> ],
+                           VAL [ SPR < >,
+                                 SUBJ < >,
+                                 COMPS < >,
+                                 SPEC < > ],
+                           POSTHEAD - ]]],
+    DTR verb-lex &
+          [ SYNSEM.LOCAL.CONT.HOOK.XARG #index ]].
+
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
 ;;;;;;;;;;;;;;;;;;;
