@@ -1677,3 +1677,25 @@ nonehake oka maika pitotsi.
 no=neh-ak-i oka maika pitotsi
 1S=saw-PERF-REAL.i this.S.nm now boat
 'I saw the boat just now.'
+
+# Adjectives should not modify verbs or dets!
+
+#164 Adjective modifying verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adj
+kirahari ohatake.
+kiraha-ri o=hat-ak-i
+be.red-ADJZ 3nmS=go-PERF-REAL.i
+'She went redly.'
+
+#165 Adjective modifying demonstrative
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adj
+kirahari yoga kemari tagake.
+kirahar-i yoga kemari tag-ak-e
+be.red-ADJZ that.3m tapir go-PERF-REAL.i
+'Redly that tapir went.'
