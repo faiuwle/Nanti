@@ -110,3 +110,7 @@ perfective-focus-cleft-lex-rule.
 3rd-person-ditransitive-object-suffix :=
 %suffix (* =ni)
 3rd-person-ditransitive-object-lex-rule.
+
+deverbal-adjective-suffix :=
+%suffix (* -ri)
+deverbal-adjective-lex-rule.
