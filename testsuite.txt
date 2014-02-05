@@ -172,10 +172,10 @@ tag-ak-i pitotsi
 burn-PERF-REAL.i boat
 'The boat burned.'
 
-#17 Transitive with subject NP and no obj clitic
+#17 Transitive with subject NP and no obj clitic  - UPDATE: is grammatical, OBJ-dropping
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: wo, pro-d
 kemari tagake
 kemari tag-ak-i
@@ -264,10 +264,10 @@ ri=tag-ak-i=no
 3mO=burn-PERF-REAL.i=1S
 'He burned me.'
 
-#26 Transitive Verb (only subject clitic, no obj)
+#26 Transitive Verb (only subject clitic, no obj) - UPDATE: is grammatical, OBJ-dropping
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: wo
 itagake
 i=tag-ak-i
@@ -1246,8 +1246,8 @@ Vetted: f
 Judgment: g
 Phenomena: cop
 kirahari oni sapiro_ntsi.
-kirahari o=n-i sapiro_ntsi
-red 3nmS=COP-REAL.i clothing
+kiraha-ri o=n-i sapiro_ntsi
+be.red-ADJZ 3nmS=COP-REAL.i clothing
 'The article of clothing is red.'
 
 #122 'n' Copula class IS attribute
@@ -1256,8 +1256,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop
 sapiro_ntsi oni kirahari.
-sapiro_ntsi o=n-i kirahari
-clothing 3nmS=COP-REAL.i red
+sapiro_ntsi o=n-i kiraha-ri
+clothing 3nmS=COP-REAL.i be.red-ADJZ
 'The article of clothing is red.'
 
 #123 'n' Copula IS attribute class
@@ -1266,8 +1266,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop, wo
 oni kirahari sapiro_ntsi.
-o=n-i kirahari sapiro_ntsi
-3nmS=COP-REAL.i red clothing
+o=n-i kiraha-ri sapiro_ntsi
+3nmS=COP-REAL.i be.red-ADJZ clothing
 'The article of clothing is red.'
 
 #124 'n' Copula attribute class IS
@@ -1276,8 +1276,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop, wo
 kirahari sapiro_ntsi oni.
-kirahari sapiro_ntsi o=n-i
-red clothing 3nmS=COP-REAL.i
+kiraha-ri sapiro_ntsi o=n-i
+be.red-ADJZ clothing 3nmS=COP-REAL.i
 'The article of clothing is red.'
 
 #125 'Nti' Copula attribute IS class (u)
@@ -1286,8 +1286,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop, wo
 kirahari o_nti sapiro_ntsi.
-kirahari o=_nti sapiro_ntsi
-red 3nmS=COP.EQ clothing
+kiraha-ri o=_nti sapiro_ntsi
+be.red-ADJZ 3nmS=COP.EQ clothing
 'The article of clothing is red.'
 
 #126 'Nti' copula noun is noun
@@ -1655,3 +1655,25 @@ omaga_nkicha
 o=mag-a_nkicha
 3nmO=sleep-DERANK.REL.IMPF
 'SHE slept.'
+
+# Adverbs
+
+#162 Adverb - normal sentence order
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adv
+nonehake oka pitotsi maika.
+no=neh-ak-i oka pitotsi maika
+1S=saw-PERF-REAL.i this.S.nm boat now
+'I saw the boat just now.'
+
+#163 Adverb - wrong position, between Det & Noun
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adv
+nonehake oka maika pitotsi.
+no=neh-ak-i oka maika pitotsi
+1S=saw-PERF-REAL.i this.S.nm now boat
+'I saw the boat just now.'
