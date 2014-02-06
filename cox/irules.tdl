@@ -43,6 +43,9 @@ add-3rd-nm-obj-suffix :=
 %suffix (* =ro)
 add-3rd-nm-obj-lex-rule.
 
+no-object-clitic-suffix :=
+no-object-clitic-lex-rule.
+
 imperfective-suffix :=
 %suffix (* -0)
 imperfective-lex-rule.

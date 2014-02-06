@@ -593,6 +593,13 @@ add-3rd-nm-obj-lex-rule := infl-lex-rule & object-lex-rule-super &
                                                                    GEND NON-MASC ],
                                        OPT + ] ].
 
+;;; REM Added no-affix lexrule so we can drop objects again.
+
+no-object-clitic-lex-rule := object-lex-rule-super & nocoord &
+  [ INFLECTED.ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG +,
+    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ OPT +,
+                                       LOCAL.CONT.HOOK.INDEX.COG-ST in-foc ]].
+
 ;;;object-no-drop-lex-rule := const-lex-rule & object-lex-rule-super &
 ;;;  [ INFLECTED.ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
 ;;;    DTR.INFLECTED.ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
@@ -879,7 +886,10 @@ narrow-focused-phrase := head-only & no-rels-hcons-rule &
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
 
-head-comp-phrase := basic-head-1st-comp-phrase & head-initial.
+;;; REM added OPT - constraint so that we can drop objects again
+
+head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
+  [ NON-HEAD-DTR.SYNSEM.OPT - ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
   [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
