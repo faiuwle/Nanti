@@ -644,10 +644,10 @@ tag-ak-i=ro
 burn-PERF-REAL.i=3nmO
 `Burned it.'
 
-#63 Transitive Verb with No Object
+#63 Transitive Verb with No Object (is grammatical - yay obj dropping)
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: agr
 Otagake.
 o=tag-ak-i

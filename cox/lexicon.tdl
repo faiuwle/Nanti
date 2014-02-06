@@ -206,12 +206,12 @@ maika := adverb-lex &
 ;;; Determiners
 
 yo_nta := speaker-addressee-prox-det-M-determiner-lex &
-  [ STEM < "yo_nta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+  [ STEM < "yo_nta" > ].
+;    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
 
 o_nta := speaker-adressee-prox-det-NM-determiner-lex &
-  [ STEM < "o_nta" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+  [ STEM < "o_nta" > ].
+;    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
 
 yoka := speaker-prox-det-M-determiner-lex &
   [ STEM < "yoka" >,
