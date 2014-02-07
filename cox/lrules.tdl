@@ -2,8 +2,9 @@
 subject-no-drop-lex := subject-no-drop-lex-rule.
 
 ;;; DAI removing object-no-drop 2/5/14
+;;; DAI readding object-no-drop 2/6/14
 
-;;;object-no-drop-lex := object-no-drop-lex-rule.
+object-no-drop-lex := object-no-drop-lex-rule.
 
 i-verb-realis-prefix-lex := i-verb-realis-prefix-lex-rule.
 
