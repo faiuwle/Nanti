@@ -58,6 +58,7 @@ inflected :+ [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG luk,
     I-VERB-IRREALIS-PREFIX-FLAG luk,
     A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG luk,
     SUBJECT-FLAG luk,
+    OBJECT-FLAG luk,
     ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG luk,
     ASPECT-FLAG luk,
     A-VERB-IRREALIS-PREFIX-FLAG luk,
@@ -72,6 +73,7 @@ infl-satisfied :+ [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG na-or-+,
     I-VERB-IRREALIS-PREFIX-FLAG na-or-+,
     A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG na-or-+,
     SUBJECT-FLAG na-or-+,
+    OBJECT-FLAG na-or-+,
     ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG na-or-+,
     ASPECT-FLAG na-or-+,
     A-VERB-IRREALIS-PREFIX-FLAG na-or-+,
@@ -309,10 +311,10 @@ verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality
 intransitive-verb-lex := verb-lex & intransitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
     ARG-ST.FIRST.LOCAL.CAT.HEAD noun,
-    INFLECTED.TRANSITIVE-VERB-FLAG na-or-- ].
+    INFLECTED.TRANSITIVE-VERB-FLAG na-or--,
+    INFLECTED.OBJECT-FLAG na ].
 
 ;;; REM Added na-or-- for OBJECT-FLAG
-;;; DAI Removing OBJECT-FLAG 2/5/14
 
 transitive-verb-lex := verb-lex & transitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
@@ -322,7 +324,8 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
                                  COMPS < > ],
                            HEAD noun ] ] >,
     INFLECTED [ TRANSITIVE-VERB-FLAG +,
-                ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG - ] ].
+                ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG -,
+                OBJECT-FLAG - ] ].
 
 i-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
@@ -351,6 +354,7 @@ adjective-lex := basic-adjective-lex & intersective-mod-lex &
                                                     VAL.SPR cons ]]>,
                            VAL [ SPR < >,
                                  SUBJ < >,
+
                                  COMPS < >,
                                  SPEC < > ],
                            POSTHEAD - ]]]].
@@ -497,6 +501,7 @@ subject-lex-rule-super := add-only-no-ccont-rule &
                 A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                 VERB-FLAG #verb,
+                OBJECT-FLAG #object,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                 TRANSITIVE-VERB-FLAG #transitive-verb ],
     DTR subject-rule-dtr &
@@ -509,6 +514,7 @@ subject-lex-rule-super := add-only-no-ccont-rule &
                       A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
                       A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       VERB-FLAG #verb & +,
+                      OBJECT-FLAG #object,
                       I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                       TRANSITIVE-VERB-FLAG #transitive-verb ] ] ].
 
@@ -545,7 +551,8 @@ subject-no-drop-lex-rule := const-lex-rule & subject-lex-rule-super &
     SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.OPT - ].
 
 object-lex-rule-super := add-only-no-ccont-rule & subject-rule-dtr &
-  [ INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+  [ INFLECTED [ OBJECT-FLAG +,
+                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                 I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                 A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
                 SUBJECT-FLAG #subject,
@@ -600,10 +607,10 @@ no-object-clitic-lex-rule := object-lex-rule-super & nocoord &
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ OPT +,
                                        LOCAL.CONT.HOOK.INDEX.COG-ST in-foc ]].
 
-;;;object-no-drop-lex-rule := const-lex-rule & object-lex-rule-super &
-;;;  [ INFLECTED.ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
-;;;    DTR.INFLECTED.ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
-;;;    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT - ].
+object-no-drop-lex-rule := const-lex-rule & object-lex-rule-super &
+  [ INFLECTED.ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
+    DTR.INFLECTED.ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
+    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT - ].
 
 Aspect-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ ASPECT-FLAG +,
@@ -617,6 +624,7 @@ Aspect-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                 ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                 VERB-FLAG #verb,
+                OBJECT-FLAG #object,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                 TRANSITIVE-VERB-FLAG #transitive-verb ],
     DTR Aspect-rule-dtr &
@@ -630,6 +638,7 @@ Aspect-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-
                       A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                       VERB-FLAG #verb,
+                      OBJECT-FLAG #object,
                       I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                       TRANSITIVE-VERB-FLAG #transitive-verb ] ] ].
 
@@ -646,6 +655,7 @@ i-verb-reality-suffix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                 SUBJECT-FLAG #subject,
                 A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                 VERB-FLAG #verb,
+                OBJECT-FLAG #object,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                 ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                 ASPECT-FLAG #aspect,
@@ -657,6 +667,7 @@ i-verb-reality-suffix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                       SUBJECT-FLAG #subject,
                       A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
                       VERB-FLAG #verb,
+                      OBJECT-FLAG #object,
                       A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                       ASPECT-FLAG #aspect,
@@ -682,6 +693,7 @@ a-verb-reality-suffix-lex-rule-super := a-verb-reality-prefix-rule-dtr & add-onl
                 SUBJECT-FLAG #subject,
                 I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
                 VERB-FLAG #verb,
+                OBJECT-FLAG #object,
                 A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
                 ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                 ASPECT-FLAG #aspect,
@@ -693,6 +705,7 @@ a-verb-reality-suffix-lex-rule-super := a-verb-reality-prefix-rule-dtr & add-onl
                       SUBJECT-FLAG #subject,
                       I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
                       VERB-FLAG #verb,
+                      OBJECT-FLAG #object,
                       A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
                       ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                       ASPECT-FLAG #aspect,
@@ -722,6 +735,7 @@ i-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                 ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                 VERB-FLAG #verb,
+                OBJECT-FLAG #object,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                 TRANSITIVE-VERB-FLAG #transitive-verb ],
     DTR i-verb-reality-prefix-rule-dtr &
@@ -734,6 +748,7 @@ i-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                       A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                       VERB-FLAG #verb,
+                      OBJECT-FLAG #object,
                       I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                       TRANSITIVE-VERB-FLAG #transitive-verb ] ] ].
 
@@ -757,6 +772,7 @@ a-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                 ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                 VERB-FLAG #verb,
+                OBJECT-FLAG #object,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                 TRANSITIVE-VERB-FLAG #transitive-verb ],
     DTR a-verb-reality-prefix-rule-dtr &
@@ -769,6 +785,7 @@ a-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                       A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
                       ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG #add-1st-incl-subj-or-add-1st-obj-or-add-1st-subj-or-add-2nd-obj-or-add-2nd-subj-or-add-3rd-m-obj-or-add-3rd-m-subj-or-add-3rd-nm-obj-or-add-3rd-nm-subj,
                       VERB-FLAG #verb,
+                      OBJECT-FLAG #object,
                       I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
                       TRANSITIVE-VERB-FLAG #transitive-verb ] ] ].
 
