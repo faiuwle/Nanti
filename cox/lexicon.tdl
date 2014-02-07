@@ -206,28 +206,28 @@ maika := adverb-lex &
 ;;; Determiners
 
 yo_nta := speaker-addressee-prox-det-M-determiner-lex &
-  [ STEM < "yo_nta" > ].
-;    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+  [ STEM < "yo_nta" >,
+    SYNSEM.LKEYS.ALTKEYREL.PRED hearer+dem_a_rel ].
 
 o_nta := speaker-adressee-prox-det-NM-determiner-lex &
-  [ STEM < "o_nta" > ].
-;    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+  [ STEM < "o_nta" >,
+    SYNSEM.LKEYS.ALTKEYREL.PRED hearer+dem_a_rel ].
 
 yoka := speaker-prox-det-M-determiner-lex &
   [ STEM < "yoka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+    SYNSEM.LKEYS.ALTKEYREL.PRED proximal+dem_a_rel ].
 
 oka := speaker-prox-det-NM-determiner-lex &
   [ STEM < "oka" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_this_q_rel" ].
+    SYNSEM.LKEYS.ALTKEYREL.PRED proximal+dem_a_rel ].
 
 yoga := speaker-dist-det-M-determiner-lex &
   [ STEM < "yoga" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
+    SYNSEM.LKEYS.ALTKEYREL.PRED distal+dem_a_rel ].
 
 oga := speaker-dist-det-NM-determiner-lex &
   [ STEM < "oga" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_that_q_rel" ].
+    SYNSEM.LKEYS.ALTKEYREL.PRED distal+dem_a_rel ].
 
 matsi := neg-adv-lex &
   [ STEM < "matsi" >,
