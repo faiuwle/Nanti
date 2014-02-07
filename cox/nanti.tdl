@@ -384,9 +384,9 @@ adverb-lex := basic-adverb-lex & intersective-mod-lex &
 ;;; PREDSORT for Determiners
 
 demonstrative_a_rel := predsort.
-speaker+dem_a_rel := demonstrative_a_rel. ; close to speaker
-hearer+dem_a_rel := speaker+dem_a_rel.    ; close to speaker+hearer
-distal+dem_a_rel := demonstrative_a_rel.  ; far from speaker
+proximal+dem_a_rel := demonstrative_a_rel. ; close to speaker
+hearer+dem_a_rel := proximal+dem_a_rel.    ; close to speaker+hearer
+distal+dem_a_rel := demonstrative_a_rel.   ; far from speaker
 
 ;;; Determiners
 ;;; SPEC is non-empty, and already specified by basic-determiner-lex.
@@ -407,43 +407,43 @@ determiner-lex-supertype := norm-hook-lex-item & basic-zero-arg &
 	     LKEYS [ KEYREL quant-relation &
 		     [ ARG0 #ind,
 		       RSTR #harg ],
-                     ALTKEYREL arg1-ev-relation & #lkalt ] ] ].
+                       ALTKEYREL arg1-ev-relation & #lkalt & 
+                          [ LBL #larg,
+                            ARG1 #ind ] ] ] ].
 
 determiner-lex := basic-determiner-lex & basic-zero-arg & non-mod-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
                            COMPS < >,
                            SUBJ < > ] ].
 
-;;; DAI 2/5/14 inheriting from supertype instead of determiner-lex
+cog-st-activated := no-icons-lex-item &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.COG-ST activated ].
 
-masculine-determiner-lex := no-icons-lex-item
+cog-st-uniq-id := no-icons-lex-item &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.COG-ST uniq-id ].
+
+cog-st-familiar := no-icons-lex-item &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.COG-ST familiar ].
+
+;;; DAI 2/5/14 inheriting from supertype instead of determiner-lex-supertype
+
+masculine-determiner-lex := determiner-lex-supertype
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND MASC ].
 
-nonmasculine-determiner-lex := no-icons-lex-item
+nonmasculine-determiner-lex := determiner-lex-supertype
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND NON-MASC ].
 
-;speaker-hearer-prox-determiner-lex := determiner-lex-supertype &
-;  [ LKEYS.ALTKEYREL.PRED hearer+dem_a_rel,
-;    SYNSEM.LOCAL.CONT.HOOK.INDEX [ COG-ST activated,
-;                                   SPECI + ]].
+speaker-addressee-prox-det-M-determiner-lex := masculine-determiner-lex & cog-st-activated.
 
-speaker-addressee-prox-det-M-determiner-lex := determiner-lex & no-icons-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND MASC ].
+speaker-adressee-prox-det-NM-determiner-lex := nonmasculine-determiner-lex & cog-st-activated.
 
-speaker-adressee-prox-det-NM-determiner-lex := determiner-lex & no-icons-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND NON-MASC ].
+speaker-prox-det-M-determiner-lex := masculine-determiner-lex & cog-st-uniq-id.
 
-speaker-prox-det-M-determiner-lex := determiner-lex & no-icons-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND MASC ].
+speaker-prox-det-NM-determiner-lex := nonmasculine-determiner-lex & cog-st-uniq-id.
 
-speaker-prox-det-NM-determiner-lex := determiner-lex & no-icons-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND NON-MASC ].
+speaker-dist-det-M-determiner-lex := masculine-determiner-lex & cog-st-familiar.
 
-speaker-dist-det-M-determiner-lex := determiner-lex & no-icons-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND MASC ].
-
-speaker-dist-det-NM-determiner-lex := determiner-lex & no-icons-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND NON-MASC ].
+speaker-dist-det-NM-determiner-lex := nonmasculine-determiner-lex & cog-st-familiar.
 
 ; Type for negative adverbs.
 ; 
