@@ -851,7 +851,7 @@ direct-ditransitive-object-lex-rule-super := add-only-no-ccont-rule & infl-lex-r
 
 ;;; REM Added this lexical rule
 
-deverbal-adjective-lex-rule := cat-change-only-lex-rule &
+deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
   [ SYNSEM [ LOCAL [ CAT [ HEAD adj &
                                   [ MOD < [ LOCAL [ CAT [ HEAD noun,
                                                           VAL.SPR cons ], 
