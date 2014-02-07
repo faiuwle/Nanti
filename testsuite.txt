@@ -1699,3 +1699,43 @@ kirahari yoga kemari tagake.
 kirahar-i yoga kemari tag-ak-e
 be.red-ADJZ that.3m tapir go-PERF-REAL.i
 'Redly that tapir went.'
+
+#166 Deverbal adjective used in non-copular sentence.
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adj
+onehake kirahari kemari
+o=neh-ak-i kiraha-ri kemari
+3nmS=see-PERF-REAL.i be.red-ADJZ tapir
+'She saw the red tapir.'
+
+#168 Verb used as adjective w/o going through deverbal lexical rule
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adj
+onehake kiraha kemari
+o=neh-ak-i kiraha kemari
+3nmS=see-PERF-REAL.i be.red tapir
+'She saw the red tapir.'
+
+#169 Deverbal adjective used in non-copular sentence after demonstrative
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adj
+nonehi kirahari pa_nkotsi
+no=neh-0-i oga kiraha-ri pa_nkotsi
+1S=see-IMPF-REAL.i that.nm be.red-ADJZ house
+'I see that red house.'
+
+#170 Deverbal adjective used after noun (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adj
+nonehi kirahari pa_nkotsi
+no=neh-0-i oga pa_nkotsi kiraha-ri
+1S=see-IMPF-REAL.i that.nm house be.red-ADJZ
+'I see that red house.'
