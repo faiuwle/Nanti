@@ -60,7 +60,7 @@
 60@author@@@1@wo,agr@i=ha-ak-i pitotsi@@@@0@2@3mS=go-PERF-REAL.i boat'He went the boat.'@ruth morrison, david inman@january 14, 2014
 61@author@@@1@wo,agr@ha-ak-i@@@@0@1@go-PERF-REAL.i'Went.'@ruth morrison, david inman@january 14, 2014
 62@author@@@1@agr@tag-ak-i=ro@@@@0@1@burn-PERF-REAL.i=3nmO`Burned it.'@ruth morrison, david inman@january 14, 2014
-63@author@@@1@agr@o=tag-ak-i@@@@1@1@3nmS=burn-PERF-REAL.i'She burned.'@ruth morrison, david inman@january 14, 2014
+63@author@@@1@agr@o=tag-ak-i@@@@1@1@3nmS=burn-PERF-REAL.i'She burned it.'@ruth morrison, david inman@january 14, 2014
 64@author@@@1@agr@i=ha-ge-0-i@@@@1@1@3mS=go-DSTR-IMPF-REAL.i'They went (in separate groups, at different times).'@ruth morrison, david inman@january 14, 2014
 65@author@@@1@agr,wo@i=ha-0-i-ge@@@@0@1@3mS=go-IMPF-REAL.i-DSTR'They went (in separate groups, at different times.)'@ruth morrison, david inman@january 14, 2014
 66@author@@@1@agr@i=ha-hig-0-i@@@@1@1@3mS=go-PL-IMPF-REAL.i'They went.'@ruth morrison, david inman@january 14, 2014
@@ -163,3 +163,7 @@
 163@author@@@1@adv@no=neh-ak-i oka maika pitotsi@@@@0@4@1S=saw-PERF-REAL.i this.S.nm now boat'I saw the boat just now.'@ruth morrison, david inman@january 14, 2014
 164@author@@@1@adj@kiraha-ri o=hat-ak-i@@@@0@2@be.red-ADJZ 3nmS=go-PERF-REAL.i'She went redly.'@ruth morrison, david inman@january 14, 2014
 165@author@@@1@adj@kirahar-i yoga kemari tag-ak-e@@@@0@4@be.red-ADJZ that.3m tapir go-PERF-REAL.i'Redly that tapir went.'@ruth morrison, david inman@january 14, 2014
+166@author@@@1@adj@o=neh-ak-i kiraha-ri kemari@@@@1@3@3nmS=see-PERF-REAL.i be.red-ADJZ tapir'She saw the red tapir.'@ruth morrison, david inman@january 14, 2014
+167@author@@@1@adj@o=neh-ak-i kiraha kemari@@@@0@3@3nmS=see-PERF-REAL.i be.red tapir'She saw the red tapir.'@ruth morrison, david inman@january 14, 2014
+168@author@@@1@adj@no=neh-0-i oga kiraha-ri pa_nkotsi@@@@1@4@1S=see-IMPF-REAL.i that.nm be.red-ADJZ house'I see that red house.'@ruth morrison, david inman@january 14, 2014
+169@author@@@1@adj@no=neh-0-i oga pa_nkotsi kiraha-ri@@@@0@4@1S=see-IMPF-REAL.i that.nm house be.red-ADJZ'I see that red house.'@ruth morrison, david inman@january 14, 2014
