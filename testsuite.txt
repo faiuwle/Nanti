@@ -652,7 +652,7 @@ Phenomena: agr
 Otagake.
 o=tag-ak-i
 3nmS=burn-PERF-REAL.i
-'She burned.'
+'She burned it.'
 
 # Plural Agreement
 
