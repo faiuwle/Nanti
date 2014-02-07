@@ -1710,7 +1710,7 @@ o=neh-ak-i kiraha-ri kemari
 3nmS=see-PERF-REAL.i be.red-ADJZ tapir
 'She saw the red tapir.'
 
-#168 Verb used as adjective w/o going through deverbal lexical rule
+#167 Verb used as adjective w/o going through deverbal lexical rule
 Source: author
 Vetted: f
 Judgment: u
@@ -1720,7 +1720,7 @@ o=neh-ak-i kiraha kemari
 3nmS=see-PERF-REAL.i be.red tapir
 'She saw the red tapir.'
 
-#169 Deverbal adjective used in non-copular sentence after demonstrative
+#168 Deverbal adjective used in non-copular sentence after demonstrative
 Source: author
 Vetted: f
 Judgment: g
@@ -1730,7 +1730,7 @@ no=neh-0-i oga kiraha-ri pa_nkotsi
 1S=see-IMPF-REAL.i that.nm be.red-ADJZ house
 'I see that red house.'
 
-#170 Deverbal adjective used after noun (u)
+#169 Deverbal adjective used after noun (u)
 Source: author
 Vetted: f
 Judgment: u
