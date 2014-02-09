@@ -18,7 +18,7 @@ non-mod-lex-item := lex-item &
 ;;; Matrix Type Addenda
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
-lex-or-phrase-synsem :+ [ INFOSTR-FLAG luk ].
+lex-or-phrase-synsem :+ [ INFOSTR-FLAG luk, COPULA bool ].
 
 decl-head-subj-phrase :+ [ SYNSEM.INFOSTR-FLAG -, NON-HEAD-DTR.SYNSEM.INFOSTR-FLAG - ].
 
@@ -295,11 +295,12 @@ verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality
                  [ LOCAL [ CAT.VAL [ SPR < >,
                                      COMPS < > ],
                            CONT.HOOK.INDEX #xarg ] ],
-    SYNSEM.LOCAL [ CONT.HOOK.XARG #xarg,
-                   CAT [ VAL [ SPR < >,
-                               SPEC < >,
-                               SUBJ < #subj > ],
-                         HC-LIGHT - ] ],
+    SYNSEM [ LOCAL [ CONT.HOOK.XARG #xarg,
+                     CAT [ VAL [ SPR < >,
+                                 SPEC < >,
+                                 SUBJ < #subj > ],
+                           HC-LIGHT - ] ],
+             COPULA - ],
     INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG -,
                 A-VERB-IRREALIS-SUFFIX-FLAG na-or--,
                 SUBJECT-FLAG -,
@@ -334,7 +335,8 @@ nti-copula-verb-lex := basic-verb-lex & non-mod-lex-item & transitive-lex-item &
                                  SUBJ < #subj > ],
                            HC-LIGHT - ],
                      CONT.HOOK.XARG #xarg ],
-             LKEYS.KEYREL.PRED "_be_v_id_rel" ],
+             LKEYS.KEYREL.PRED "_be_v_id_rel",
+             COPULA - ],
     ARG-ST < #subj & 
                [ LOCAL [ CAT [ HEAD noun,
                                VAL [ SPR < >,
@@ -345,7 +347,8 @@ nti-copula-verb-lex := basic-verb-lex & non-mod-lex-item & transitive-lex-item &
                                  COMPS < > ],
                            HEAD noun ] ] >,
     INFLECTED infl-satisfied ].
-                
+
+
 
 ;;; DAI 2/8/14 adding clausal verbs
 
@@ -962,12 +965,24 @@ narrow-focused-phrase := head-only & no-rels-hcons-rule &
 ;;it applies to all wo implementations, except for v2
 
 ;;; REM added OPT - constraint so that we can drop objects again
+;;; Also adding head-subj-phrase and comp-head-phrase for adjective copulas
+;;; 2/9/14
 
 head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
-  [ NON-HEAD-DTR.SYNSEM.OPT - ].
+  [ NON-HEAD-DTR.SYNSEM.OPT -,
+    HEAD-DTR.SYNSEM.COPULA - ].
+
+comp-head-phrase := basic-head-1st-comp-phrase & head-final &
+  [ NON-HEAD-DTR.SYNSEM.OPT -,
+    HEAD-DTR.SYNSEM.COPULA + ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
-  [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
+  [ HEAD-DTR.SYNSEM [ LOCAL.CAT.VAL.COMPS < >,
+                      COPULA - ]].
+
+head-subj-phrase := decl-head-subj-phrase & head-initial &
+  [ HEAD-DTR.SYNSEM [ LOCAL.CAT.VAL.COMPS < >,
+                      COPULA + ]].
 
 ; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
 ; introduced to match the semantic effect of bare NPs in your language.
