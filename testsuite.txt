@@ -1739,3 +1739,23 @@ nonehi kirahari pa_nkotsi
 no=neh-0-i oga pa_nkotsi kiraha-ri
 1S=see-IMPF-REAL.i that.nm house be.red-ADJZ
 'I see that red house.'
+
+#170 Copula with negative adjective
+Source: a:313
+Vetted: s
+Judgment: g
+Phenomena: adj,neg
+Tera kiraha-ri one.
+tera kiraha-ri o=n-e
+neg.real be.red-ADJZ 3nmS=COP-IRREAL.i
+'It is not red.'
+
+#171 Copula with negative adjective
+Source: a:313
+Vetted: s
+Judgment: g
+Phenomena: adj,neg
+Tera kiraha-ri o_nti.
+tera kiraha-ri o=_nti
+neg.real be.red-ADJZ 3nmS=COP
+'It is not red.'

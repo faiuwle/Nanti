@@ -338,6 +338,13 @@ clausal-verb-lex := verb-lex & clausal-second-arg-trans-lex-item &
     INFLECTED [ OBJECT-FLAG na,
                 TRANSITIVE-VERB-FLAG na-or-- ] ].
 
+clausal-reality-matching-verb-lex := clausal-verb-lex &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.MOOD #mood,
+                   CAT.VAL.COMPS < [ LOCAL.CONT.HOOK.INDEX.E.MOOD #mood ] > ] ].
+
+clausal-irrealis-verb-lex := clausal-verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL.CONT.HOOK.INDEX.E.MOOD Irrealis ] > ].
+
 i-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
@@ -346,9 +353,14 @@ i-transitive-verb-verb-lex := transitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
-i-clausal-verb-verb-lex := clausal-verb-lex &
+i-clausal-matching-verb-verb-lex := clausal-reality-matching-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
+
+i-clausal-irrealis-verb-verb-lex := clausal-irrealis-verb-lex &
+  [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
+
 
 a-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
@@ -358,7 +370,11 @@ a-transitive-verb-verb-lex := transitive-verb-lex &
   [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
-a-clausal-verb-verb-lex := clausal-verb-lex & 
+a-clausal-matching-verb-verb-lex := clausal-reality-matching-verb-lex & 
+  [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
+
+a-clausal-irrealis-verb-verb-lex := clausal-irrealis-verb-lex &
   [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 

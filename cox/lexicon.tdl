@@ -167,15 +167,15 @@ neh := i-transitive-verb-verb-lex &
   [ STEM < "neh" >,
     SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
 
-neh2 := i-clausal-verb-verb-lex &
+neh2 := i-clausal-matching-verb-verb-lex &
   [ STEM < "neh" >,
     SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
 
-ogo := i-clausal-verb-verb-lex &
+ogo := i-clausal-matching-verb-verb-lex &
   [ STEM < "ogo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
-sure := a-clausal-verb-verb-lex &
+sure := a-clausal-irrealis-verb-verb-lex &
   [ STEM < "sure" >,
     SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
 
