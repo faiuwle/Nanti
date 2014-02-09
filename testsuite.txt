@@ -1368,8 +1368,8 @@ Vetted: s
 Judgment: g
 Phenomena: emb-d, agr
 Pogoti pikitsogi?
-pi=ogo-i pi=kitsog-i
-2S=know-REAL.i 2S=knot.weave-REAL.i
+pi=ogo-0-i pi=kitsog-0-i
+2S=know-IMPF-REAL.i 2S=knot.weave-IMPF-REAL.i
 'Do you know how to knot-weave?'
 
 #134 "see" embedding, realis agreement
@@ -1378,8 +1378,8 @@ Vetted: f
 Judgment: g
 Phenomena: emb-d, agr
 Nonehake Rerisuha go_nketi
-no=neh-ak-i Rerisuha ogo_nke-i
-1S=see-PERF-REAL.i Rerisuha arrive-REAL.i
+no=neh-ak-i Rerisuha ogo_nke-0-i
+1S=see-PERF-REAL.i Rerisuha arrive-IMPF-REAL.i
 'I saw Rerisuha arrive.'
 
 #135 "see" embedding, non-agreement
@@ -1388,8 +1388,8 @@ Vetted: f
 Judgment: u
 Phenomena: emb-d, agr
 Nonehake Rerisuha go_nkete
-no=neh-ak-i Rerisuha ogo_nke-e
-1S=see-PERF-REAL.i Rerisuha arrive-IRREAL.i
+no=neh-ak-i Rerisuha ogo_nke-0-e
+1S=see-PERF-REAL.i Rerisuha arrive-IMPF-IRREAL.i
 'I saw Rerisuha arrive.'
 
 #136 "see" embedding, clause order reversed
@@ -1398,8 +1398,8 @@ Vetted: f
 Judgment: u
 Phenomena: emb-d, agr
 Rerisuha go_nketi nonehake
-Rerisuha ogo_nke-i no=neh-ak-i
-Rerisuha arrive-REAL.i 1S=see-PERF-REAL.i
+Rerisuha ogo_nke-0-i no=neh-ak-i
+Rerisuha arrive-IMPF-REAL.i 1S=see-PERF-REAL.i
 'I saw Rerisuha arrive.'
 
 #137 "see" embedding, negation and irrealis
@@ -1408,8 +1408,8 @@ Vetted: f
 Judgment: g
 Phenomena: emb-d, agr, neg
 Tera nonehe Rerisuha go_nkete
-tera no=_n-neh-e Rerisuha ogo_nke-e
-NEG.REAL 1S=IRREAL-see-IRREAL.i Rerisuha arrive-IRREAL.i
+tera no=_n-neh-e Rerisuha ogo_nke-0-e
+NEG.REAL 1S=IRREAL-see-IRREAL.i Rerisuha arrive-IMPF-IRREAL.i
 'I didn't see Rerisuha arrive.'
 
 #138 "think" embedding, requires irrealis complement
