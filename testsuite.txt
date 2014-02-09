@@ -1286,8 +1286,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop, wo
 kirahari o_nti sapiro_ntsi.
-kiraha-ri o=_nti sapiro_ntsi
-be.red-ADJZ 3nmS=COP.EQ clothing
+kiraha-ri o_nti sapiro_ntsi
+be.red-ADJZ 3nmS.COP.EQ clothing
 'The article of clothing is red.'
 
 #126 'Nti' copula noun is noun
@@ -1296,8 +1296,8 @@ Vetted: s
 Judgment: g
 Phenomena: cop
 i_nti surari
-i=_nti surari
-3mS=COP.EQ man
+i_nti surari
+3mS.COP.EQ man
 'He is male.'
 
 #127 'n' copula noun is noun - ungrammatical
@@ -1326,8 +1326,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop
 tera surari o_nti.
-tera surari o=_nti
-NEG.REAL man 3nmS=COP.EQ
+tera surari o_nti
+NEG.REAL man 3nmS.COP.EQ
 'She is not male.'
 
 #130 'Nti' Copula negative equality (u)
@@ -1336,8 +1336,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop
 tera o_nti surari.
-tera o=_nti surari
-NEG.REAL 3nmS=COP.EQ man
+tera o_nti surari
+NEG.REAL 3nmS.COP.EQ man
 'She is not male.'
 
 #131 'n' Copula for locative existential
@@ -1356,8 +1356,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop
 o_nti pa_nkotsiku
-o=_nti pa_nkotsi-ku
-3nmS=COP.EQ house-LOC
+o_nti pa_nkotsi-ku
+3nmS.COP.EQ house-LOC
 'It is in my house.'
 
 # Embedded clauses
@@ -1740,22 +1740,52 @@ no=neh-0-i oga pa_nkotsi kiraha-ri
 1S=see-IMPF-REAL.i that.nm house be.red-ADJZ
 'I see that red house.'
 
-#170 Copula with negative adjective
-Source: a:313
-Vetted: s
+#170 Nti copula : should have focus obj (should be only 1 parse)
+Source: author
+Vetted: f
 Judgment: g
-Phenomena: adj,neg
-Tera kiraha-ri one.
-tera kiraha-ri o=n-e
-neg.real be.red-ADJZ 3nmS=COP-IRREAL.i
-'It is not red.'
+Phenomena: cop,info
+surari i_nti
+surari i_nti
+man 3mS.COP.EQ
+'He is male.'
 
-#171 Copula with negative adjective
-Source: a:313
-Vetted: s
+#171 Nti copula : should REQUIRE object (no obj drop)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+i_nti
+i_nti
+3mS.COP.EQ
+'He is.'
+
+#172 Nti copula: 1pers
+Source: author
+Vetted: f
 Judgment: g
-Phenomena: adj,neg
-Tera kiraha-ri o_nti.
-tera kiraha-ri o=_nti
-neg.real be.red-ADJZ 3nmS=COP
-'It is not red.'
+Phenomena: cop
+na_nti kemari
+na_nti kemari
+1S.COP.EQ tapir
+'I am a tapir.'
+
+#173 Nti copula: 2pers
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+bi_nti a_ntaroni
+bi_nti a_ntaroni
+2S.COP.EQ a_ntaroni
+'You are a woman.'
+
+#174 Nti copula: 3pers-nm
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+o_nti a_ntaroni
+o_nti a_ntaroni
+3nmS.COP.EQ a_ntaroni
+'She is a woman.''
