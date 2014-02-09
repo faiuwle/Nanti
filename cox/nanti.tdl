@@ -325,6 +325,28 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
                 ADD-1ST-INCL-SUBJ-OR-ADD-1ST-OBJ-OR-ADD-1ST-SUBJ-OR-ADD-2ND-OBJ-OR-ADD-2ND-SUBJ-OR-ADD-3RD-M-OBJ-OR-ADD-3RD-M-SUBJ-OR-ADD-3RD-NM-OBJ-OR-ADD-3RD-NM-SUBJ-FLAG -,
                 OBJECT-FLAG - ] ].
 
+;;; REM 2/9/14 Nti copula verb lex
+
+nti-copula-verb-lex := basic-verb-lex & non-mod-lex-item & transitive-lex-item &
+  [ SYNSEM [ LOCAL [ CAT [ VAL [ COMPS < #comps & [ OPT - ] >,
+                                 SPR < >,
+                                 SPEC < >,
+                                 SUBJ < #subj > ],
+                           HC-LIGHT - ],
+                     CONT.HOOK.XARG #xarg ],
+             LKEYS.KEYREL.PRED "_be_v_id_rel" ],
+    ARG-ST < #subj & 
+               [ LOCAL [ CAT [ HEAD noun,
+                               VAL [ SPR < >,
+                                     COMPS < > ]],
+                         CONT.HOOK.INDEX #xarg ]],
+             #comps &
+             [ LOCAL.CAT [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun ] ] >,
+    INFLECTED infl-satisfied ].
+                
+
 ;;; DAI 2/8/14 adding clausal verbs
 
 clausal-verb-lex := verb-lex & clausal-second-arg-trans-lex-item &

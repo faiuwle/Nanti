@@ -193,6 +193,30 @@ kiraha := i-intransitive-verb-verb-lex &
   [ STEM < "kiraha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be_red_v_rel" ].
 
+;;; REM Nti copulas
+
+iNti := nti-copula-verb-lex &
+  [ STEM < "i_nti" >,
+    ARG-ST.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+                                             GEND MASC ]].
+
+oNti := nti-copula-verb-lex &
+  [ STEM < "o_nti" >,
+    ARG-ST.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+                                             GEND NON-MASC ]].
+
+naNti := nti-copula-verb-lex &
+  [ STEM < "na_nti" >,
+    ARG-ST.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR ].
+
+biNti := nti-copula-verb-lex &
+  [ STEM < "bi_nti" >,
+    ARG-ST.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd ].
+
+haNti := nti-copula-verb-lex &
+  [ STEM < "ha_nti" >,
+    ARG-ST.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1PL_incl ].
+
 ;;; Adjectives
 ;;; REM Added all these adjectives
 
