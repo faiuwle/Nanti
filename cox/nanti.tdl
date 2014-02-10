@@ -63,7 +63,8 @@ inflected :+ [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG luk,
     ASPECT-FLAG luk,
     A-VERB-IRREALIS-PREFIX-FLAG luk,
     I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG luk,
-    TRANSITIVE-VERB-FLAG luk ].
+    TRANSITIVE-VERB-FLAG luk,
+    REQUIRED-SUBJ luk ].
 
 infl-satisfied :+ [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG na-or-+,
     A-VERB-IRREALIS-SUFFIX-FLAG na-or-+,
@@ -78,7 +79,8 @@ infl-satisfied :+ [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG na-or-+,
     ASPECT-FLAG na-or-+,
     A-VERB-IRREALIS-PREFIX-FLAG na-or-+,
     I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-+,
-    TRANSITIVE-VERB-FLAG na-or-+ ].
+    TRANSITIVE-VERB-FLAG na-or-+,
+    REQUIRED-SUBJ na-or-+ ].
 
 png :+ [ PERNUM pernum,
     GEND gender ].
@@ -290,6 +292,18 @@ proper-noun-nm-noun-lex := nm-noun-noun-lex & proper-noun-noun-lex.
 ; 
 ;   lexical Vs for V-level attachment of negative adverbs.
 
+;;; REM 2/9/14 verb-lex-supertype
+
+verb-lex-supertype := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & i-verb-reality-prefix-rule-dtr & subject-rule-dtr &
+  [ INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG -,
+                A-VERB-IRREALIS-SUFFIX-FLAG na-or--,
+                SUBJECT-FLAG -,
+                VERB-FLAG +,
+                I-VERB-IRREALIS-SUFFIX-FLAG na-or--,
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG -,
+                ASPECT-FLAG -,
+                REQUIRED-SUBJ - ]].
+
 verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & object-rule-dtr & subject-rule-dtr &
   [ ARG-ST.FIRST #subj &
                  [ LOCAL [ CAT.VAL [ SPR < >,
@@ -307,7 +321,25 @@ verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality
                 VERB-FLAG +,
                 I-VERB-IRREALIS-SUFFIX-FLAG na-or--,
                 A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG -,
-                ASPECT-FLAG - ] ].
+                ASPECT-FLAG -,
+                REQUIRED-SUBJ na ] ].
+
+;;; REM copula-verb-lex 2/9/14
+
+copula-verb-lex := verb-lex-supertype & trans-first-arg-raising-lex-item-2 &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < #subj >,
+                             COMPS < #comps >,
+                             SPR < >,
+                             SPEC < > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                       CAT [ VAL [ SPR < >,
+                                   COMPS < > ],
+                             HEAD noun ] ] ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ COMPS < > ],
+                           HEAD +jp ] ] > ].
 
 intransitive-verb-lex := verb-lex & intransitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
@@ -537,6 +569,7 @@ subject-rule-dtr := word-or-lexrule.
 a-verb-reality-prefix-rule-dtr := word-or-lexrule.
 Aspect-rule-dtr := word-or-lexrule.
 direct-ditransitive-object-rule-dtr := word-or-lexrule.
+copula-overt-subj-rule-dtr := word-or-lexrule.
 
 ;;; Lexical rule types
 
@@ -551,7 +584,7 @@ plural-lex-rule := number-lex-rule-super &
 distributive-lex-rule := number-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM DSTR ].
 
-subject-lex-rule-super := add-only-no-ccont-rule &
+subject-lex-rule-super := add-only-no-ccont-rule & copula-overt-subj-rule-dtr &
   [ INFLECTED [ SUBJECT-FLAG +,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                 I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
@@ -924,6 +957,13 @@ deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
                            POSTHEAD - ]]],
     DTR verb-lex &
           [ SYNSEM.LOCAL.CONT.HOOK.XARG #index ]].
+
+;;; REM added this lexical rule 2/9/14
+
+copula-overt-subj-lex-rule := add-only-no-ccont-rule &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.OPT -,
+    DTR copula-overt-subj-rule-dtr &
+          [ INFLECTED.REQUIRED-SUBJ - ]].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
