@@ -179,7 +179,7 @@ sure := a-clausal-irrealis-verb-verb-lex &
   [ STEM < "sure" >,
     SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
 
-n := i-transitive-verb-verb-lex &
+n := copula-verb-lex &
   [ STEM < "n" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cop_v_rel" ].
 
@@ -191,7 +191,7 @@ ashi_nt := a-transitive-verb-verb-lex &
 
 kiraha := i-intransitive-verb-verb-lex &
   [ STEM < "kiraha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_be_red_v_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_red_v_rel" ].
 
 ;;; REM Nti copulas
 
@@ -222,15 +222,15 @@ haNti := nti-copula-verb-lex &
 
 omarate := adjective-inan-lex &
   [ STEM < "omarate" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_big_adj_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_big_a_rel" ].
 
 omarane := adjective-anim-nonmasc-lex &
   [ STEM < "omarane" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_big_adj_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_big_a_rel" ].
 
 imarane := adjective-masc-lex &
   [ STEM < "imarane" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_big_adj_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_big_a_rel" ].
 
 ;;; Adverbs
 ;;; REM Added this adverb
