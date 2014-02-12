@@ -1789,3 +1789,33 @@ o_nti a_ntaroni
 o_nti a_ntaroni
 3nmS.COP.EQ a_ntaroni
 'She is a woman.''
+
+#175 'n' Copula without subject
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: cop
+kirahari oni.
+kiraha-ri o=n-0-i
+be.red-ADJZ 3nmS=COP-IMPF-REAL.i
+'It is red.'
+
+#176 'n' Copula without object
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+oni sapiro_ntsi.
+o=n-0-i sapiro_ntsi
+3nmS=COP-IMPF-REAL.i clothing
+'The article of clothing is.'
+
+#176 'n' Copula must take subject marking morphology
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: cop
+kirahari ni sapiro_ntsi.
+kiraha-ri n-0-i sapiro_ntsi
+be.red-ADJZ COP-IMPF-REAL.i clothing
+'The article of clothing is red.'
