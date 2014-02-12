@@ -10,4 +10,5 @@ i-verb-realis-prefix-lex := i-verb-realis-prefix-lex-rule.
 
 a-verb-realis-prefix-lex := a-verb-realis-prefix-lex-rule.
 
-copula-overt-subj-lex := copula-overt-subj-lex-rule.
+no-object-clitic-suffix := no-object-clitic-lex-rule.
+

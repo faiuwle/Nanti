@@ -1246,8 +1246,8 @@ Vetted: f
 Judgment: g
 Phenomena: cop
 kirahari oni sapiro_ntsi.
-kiraha-ri o=n-i sapiro_ntsi
-be.red-ADJZ 3nmS=COP-REAL.i clothing
+kiraha-ri o=n-0-i sapiro_ntsi
+be.red-ADJZ 3nmS=COP-IMPF-REAL.i clothing
 'The article of clothing is red.'
 
 #122 'n' Copula class IS attribute
@@ -1256,8 +1256,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop
 sapiro_ntsi oni kirahari.
-sapiro_ntsi o=n-i kiraha-ri
-clothing 3nmS=COP-REAL.i be.red-ADJZ
+sapiro_ntsi o=n-0-i kiraha-ri
+clothing 3nmS=COP-IMPF-REAL.i be.red-ADJZ
 'The article of clothing is red.'
 
 #123 'n' Copula IS attribute class
@@ -1276,8 +1276,8 @@ Vetted: f
 Judgment: u
 Phenomena: cop, wo
 kirahari sapiro_ntsi oni.
-kiraha-ri sapiro_ntsi o=n-i
-be.red-ADJZ clothing 3nmS=COP-REAL.i
+kiraha-ri sapiro_ntsi o=n-0-i
+be.red-ADJZ clothing 3nmS=COP-IMPF-REAL.i
 'The article of clothing is red.'
 
 #125 'Nti' Copula attribute IS class (u)
@@ -1316,8 +1316,8 @@ Vetted: s
 Judgment: g
 Phenomena: cop
 tera surari one.
-tera surari o=n-e
-NEG.REAL man 3nmS=COP-IRREAL.i
+tera surari o=n-0-e
+NEG.REAL man 3nmS=COP-IMPF-IRREAL.i
 'She is not male.'
 
 #129 'Nti' Copula negative equality (u)
