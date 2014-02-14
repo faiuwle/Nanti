@@ -43,6 +43,10 @@ add-3rd-nm-obj-suffix :=
 %suffix (* =ro)
 add-3rd-nm-obj-lex-rule.
 
+3rd-nm-obj-suffix-for-clause-verbs :=
+%suffix (* =ro)
+3rd-nm-obj-lex-rule-for-clause-verbs.
+
 imperfective-suffix :=
 %suffix (* -0)
 imperfective-lex-rule.
