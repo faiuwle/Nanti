@@ -402,7 +402,7 @@ clausal-verb-lex := verb-lex & clausal-second-arg-trans-lex-item &
                 CONT.HOOK.INDEX.SF prop-or-ques ] ] >,
     ARG-ST.REST.FIRST #clause,
     INFLECTED [ OBJECT-FLAG na,
-                TRANSITIVE-VERB-FLAG na-or-- ] ].
+                TRANSITIVE-VERB-FLAG + ] ].
 
 clausal-reality-matching-verb-lex := clausal-verb-lex &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.MOOD #mood,
@@ -717,6 +717,14 @@ add-3rd-nm-obj-lex-rule := infl-lex-rule & object-lex-rule-super &
                                                                    GEND NON-masc ],
                                        OPT + ] ].
 
+;;; REM 3rd nm object rule for clausal verbs
+
+3rd-nm-obj-lex-rule-for-clause-verbs := infl-lex-rule & object-lex-rule-super &
+  [ DTR.SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT [ HEAD verb,
+                                                     VAL [ SUBJ < >,
+                                                           SPR < >,
+                                                           COMPS < > ]]].
+
 ;;; REM Added no-affix lexrule so we can drop objects again.
 
 no-object-clitic-lex-rule := object-lex-rule-super & nocoord &
@@ -724,9 +732,13 @@ no-object-clitic-lex-rule := object-lex-rule-super & nocoord &
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ OPT +,
                                        LOCAL.CONT.HOOK.INDEX.COG-ST in-foc ]].
 
+;;; REM DTR's complement's head must be noun to prevent clause verbs from going
+;;; through
+
 object-no-drop-lex-rule := const-lex-rule & object-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC #s-or-o-clitic,
-    DTR.INFLECTED.S-OR-O-CLITIC #s-or-o-clitic,
+    DTR [ INFLECTED.S-OR-O-CLITIC #s-or-o-clitic, 
+          SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD +nj ],
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT - ].
 
 Aspect-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &

@@ -1388,8 +1388,8 @@ Vetted: f
 Judgment: u
 Phenomena: emb-d, agr
 Nonehake Rerisuha go_nkete
-no=neh-ak-i Rerisuha ogo_nke-0-e
-1S=see-PERF-REAL.i Rerisuha arrive-IMPF-IRREAL.i
+no=neh-ak-i Rerisuha _n-ogo_nke-0-e
+1S=see-PERF-REAL.i Rerisuha IRREAL-arrive-IMPF-IRREAL.i
 'I saw Rerisuha arrive.'
 
 #136 "see" embedding, clause order reversed
@@ -1408,8 +1408,8 @@ Vetted: f
 Judgment: g
 Phenomena: emb-d, agr, neg
 Tera nonehe Rerisuha go_nkete
-tera no=_n-neh-e Rerisuha ogo_nke-0-e
-NEG.REAL 1S=IRREAL-see-IRREAL.i Rerisuha arrive-IMPF-IRREAL.i
+tera no=_n-neh-0-e Rerisuha _n-ogo_nke-0-e
+NEG.REAL 1S=IRREAL-see-IMPF-IRREAL.i Rerisuha IRREAL-arrive-IMPF-IRREAL.i
 'I didn't see Rerisuha arrive.'
 
 #138 "think" embedding, requires irrealis complement
