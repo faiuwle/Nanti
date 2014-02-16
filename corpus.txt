@@ -23,8 +23,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 noka_nti irobe_nti, o_nti pishi_nkitara.
-no=ka_nt-i irobe_nti o-_nti pi=shi_nki-a=ra
-1S=say-REQL.i because.of.that 3nmS-COP 2S=be.intoxicated-REAL.a=DEP
+no=ka_nt-i irobe_nti o_nti pi=shi_nki-a=ra
+1S=say-REQL.i because.of.that PRED.FOC 2S=be.intoxicated-REAL.a=DEP
 'I said, "It’s because of that, because you (the participants in the Marankehari manioc beer feast) were intoxicated."'
 
 #3 Anteres
@@ -73,8 +73,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Oga oka_ntaka kogapagero.
-o=oga o=ka_nt-ak-a kogapagero
-3nm=that 3nmS=happen-PERF-REAL.a no.reason
+oga o=ka_nt-ak-a kogapagero
+that.3nm 3nmS=happen-PERF-REAL.a no.reason
 'That (Soira’s return to Montetoni) happened for no reason (i.e. without forethought).'
 
 #8 Bikotoro
@@ -103,8 +103,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Oga oka_ntaka maika o_nti oburoki.
-o-oga o=ka_nt-ak-a maika o-_nti oburoki
-3nm-that 3nmS=happen-PERF-REAL.a now 3nmS-COP manioc.beer
+oga o=ka_nt-ak-a maika o_nti oburoki
+that.3nm 3nmS=happen-PERF-REAL.a now 3nmS.COP manioc.beer
 'What happened was due to the manioc beer (i.e. the events at the manioc beer feast).'
 
 #11 Bikotoro?
@@ -175,8 +175,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Tya oka_ntaka oka?
-tya o=ka_nt-ak-a o-oka
-where/how 3nmS=happen-PERF-REAL.a 3nm-this
+tya o=ka_nt-ak-a oka
+where/how 3nmS=happen-PERF-REAL.a this.S.3nm
 'Where/how13 did this happen?' (indicating Rosa’s burn)
 
 #19 Mecha
@@ -195,8 +195,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Otya maika oburoki nonehanake.
-o-tya maika oburoki no=neh-an-ak-i
-3nm-recently now yuca.beer 1S=see-ABL-PERF-REAL.i
+otya maika oburoki no=neh-an-ak-i
+3nm.RECENT.PRO now yuca.beer 1S=see-ABL-PERF-REAL.i
 'I saw (it) just now, (when I was making) yuca beer.'
 
 #21 Mecha
@@ -205,8 +205,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Otya maika nonehake.
-o-tya maika no=neh-ak-i
-3nm-recently now 1S=see-PERF-REAL.i
+otya maika no=neh-ak-i
+3nm.RECENT.PRO now 1S=see-PERF-REAL.i
 'I saw (it) just now.'
 
 #22 Pasotoro
@@ -245,8 +245,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Oga ogimatira, iroka agapokihiro.
-o-oga o=ogima-i=ra iro=ka agapokih-i=ro
-3nm-that 3nmS=burn-REAL.i=sub 3nm.PRO=INFR step.on-REAL.i=3nmO
+oga o=ogima-i=ra iro=ka agapokih-i=ro
+that.3nm 3nmS=burn-REAL.i=sub 3nm.PRO=INFR step.on-REAL.i=3nmO
 'That (grass) which was burning, she presumably stepped on it.'
 
 #26 Mecha
@@ -265,8 +265,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Otya i_nkahara nonehake.
-o-tya i_nkahara no=neh-ak-i
-3nm-recently earlier 1S=see-PERF-REAL.i
+otya i_nkahara no=neh-ak-i
+3nm.RECENT.PRO earlier 1S=see-PERF-REAL.i
 'I saw (the burn) just a little earlier.'
 
 #28 Mecha
@@ -285,8 +285,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Oka o_nti tsitsi oga.
-o-ka o-_nti tsitsi o-oga
-3nm-QUOT 3nm-COP fire 3nm-that
+o-ka o_nti tsitsi oga
+3nm-QUOT 3nmS.COP fire 3nm.that
 'She said, this is (due to) fire.'
 
 #30 Mecha
@@ -295,8 +295,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 O_ntini oga merokake.
-o-_nti=ni o-oga merok-ak-i
-3nmS-CPO=CNSQ 3nm-that scorch.skin-PERF-REAL.i
+o_nti=ni oga merok-ak-i
+3nmS.COP=CNSQ that.3nm scorch.skin-PERF-REAL.i
 'So that is why that (i.e. Rosa’s skin) is scorched.'
 
 #31 Chabera
@@ -305,8 +305,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Magatiro ogamaika tagake?
-magatiro o-oga=maika tag-ak-i
-all.INAN 3nm-that=HEST burn-PERF-REAL.i
+magatiro oga=maika tag-ak-i
+all.INAN that.3nm=HEST burn-PERF-REAL.i
 'All that, uh, is burned?'
 
 #32 Mecha
@@ -315,8 +315,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Magatiro aka, aka, nero oka.
-magatiro aka aka nero o-oka
-all.INAN here here see.imper 3nm-this
+magatiro aka aka nero oka
+all.INAN here here see.imper this.3nm
 'All over here, here, see this.'
 
 #33 Chabera
@@ -325,8 +325,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Oga tera ityara pi_nkeme?
-o-oga tera i-tya=ra pi=_n-kem-e
-3nm-that NEG.REAL 3m-when=TEMP 2S=IRREAL-hear-IRREAL.i
+oga tera i-tya=ra pi=_n-kem-e
+that.3nm NEG.REAL 3m-when=TEMP 2S=IRREAL-hear-IRREAL.i
 'You didn’t hear it at the time?'
 
 #34 Mecha
@@ -334,9 +334,9 @@ Source: a:144
 Vetted: s
 Judgment: g
 Phenomena:
-Tera. yoga iryo yo–, otya maika ika maika
-tera i-oga iryo i=o o-tya maika i-ka maika
-NEG.REAL 3m-that 3m.PRO 3mS=fragment 3nm-when now 3nm-quot now
+Tera yoga iryo yo–, otya maika ika maika
+tera yoga iryo i=o otya maika i-ka maika
+NEG.REAL that.3m 3m.PRO 3mS=fragment 3nm.RECENT.PRO now 3nm-quot now
 'No. This one, he-, just recently he said now.'
 
 #35 A (???)
@@ -345,8 +345,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 O– otya maika oka notsi–, notsibuhokake tsitsi oka tsitsi osakake.
-o- o-tya maika o-ka no=tsi no=tsibuhok-ak-i tsitsi o-ka tsitsi o=sak-ak-i
-3nm- 3nm-TEMP now 3nm-QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT fire 3nmS=burn.person-PERF-REALIS.i
+o- otya maika o-ka no=tsi no=tsibuhok-ak-i tsitsi o-ka tsitsi o=sak-ak-i
+3nm- 3nm.RECENT.PRO now 3nm-QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT fire 3nmS=burn.person-PERF-REALIS.i
 'She- she just now she said, I stirred up the fire. She said the fire burned (me).'
 
 #36 A (???)

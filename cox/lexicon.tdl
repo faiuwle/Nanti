@@ -85,6 +85,14 @@ kemari := common-noun-anim-noun-lex &
   [ STEM < "kemari" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
 
+i_npaneki := common-noun-nm-inan-noun-lex &
+  [ STEM < "i_npaneki" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sand_n_rel" ].
+
+i_npaneki2 := common-noun-nm-inan-noun-lex &
+  [ STEM < "i_npaneki" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_glass_n_rel" ].
+
 Bare_ntin := proper-noun-m-noun-lex &
   [ STEM < "Bare_ntin" >,
     SYNSEM.LKEYS.KEYREL.PRED "_Barentin_n_rel" ].
@@ -159,6 +167,10 @@ kitsog := i-intransitive-verb-verb-lex &
   [ STEM < "kitsog" >,
     SYNSEM.LKEYS.KEYREL.PRED "_knot.weave_v_rel" ].
 
+ka_nt := a-intransitive-verb-verb-lex &
+  [ STEM < "ka_nt" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_happen_v_rel" ].
+
 tag := i-transitive-verb-verb-lex &
   [ STEM < "tag" >,
     SYNSEM.LKEYS.KEYREL.PRED "_burn_v_rel" ].
@@ -179,6 +191,10 @@ sure := a-clausal-irrealis-verb-verb-lex &
   [ STEM < "sure" >,
     SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
 
+pi_ntsa := i-clausal-irrealis-verb-verb-lex & 
+  [ STEM < "pi_ntsa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_decide_v_rel" ].
+
 n := copula-verb-lex &
   [ STEM < "n" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cop_v_rel" ].
@@ -186,6 +202,14 @@ n := copula-verb-lex &
 ashi_nt := a-transitive-verb-verb-lex &
   [ STEM < "ashi_nt" >,
     SYNSEM.LKEYS.KEYREL.PRED "_own_v_rel" ].
+
+ogatsi := i-transitive-verb-verb-lex &
+  [ STEM < "ogatsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hurt_v_rel" ].
+
+katsi := i-intransitive-verb-verb-lex &
+  [ STEM < "katsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hurt_v_rel" ].
 
 ;;; REM Added this verb
 
@@ -237,7 +261,27 @@ imarane := adjective-masc-lex &
 
 maika := adverb-lex &
   [ STEM < "maika" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_now_adv_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_now_a_rel" ].
+
+paita := adverb-lex &
+  [ STEM < "paita" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_later_a_rel" ].
+
+arisano := adverb-lex &
+  [ STEM < "arisano" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_indeed_a_rel" ].
+
+ari := adverb-lex &
+  [ STEM < "ari" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_indeed_a_rel" ].
+
+kogapagero := adverb-lex &
+  [ STEM < "kogapagero" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_without.reason_a_rel" ].
+
+i_nkahara := adverb-lex &
+  [ STEM < "i_nkahara" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_earlier_a_rel" ].
 
 ;;; Determiners
 
@@ -278,3 +322,4 @@ o_ntiri2 := conj-lex &
   [ STEM < "o_ntiri" >,
     SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
     CFORM "2" ].
+
