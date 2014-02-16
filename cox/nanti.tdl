@@ -578,6 +578,7 @@ subject-rule-dtr := word-or-lexrule.
 a-verb-reality-prefix-rule-dtr := word-or-lexrule.
 Aspect-rule-dtr := word-or-lexrule.
 direct-ditransitive-object-rule-dtr := word-or-lexrule.
+epistemic-modal-dtr := word-or-lexrule.
 ;copula-overt-subj-rule-dtr := word-or-lexrule.
 
 ;;; Lexical rule types
@@ -595,7 +596,7 @@ distributive-lex-rule := number-lex-rule-super &
 
 ;;; DAI 2/11/14 removing copula-overt-subj-rule-dtr
 
-subject-lex-rule-super := add-only-no-ccont-rule &
+subject-lex-rule-super := add-only-no-ccont-rule & epistemic-modal-dtr &
   [ INFLECTED [ SUBJECT-FLAG +,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                 I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
@@ -992,6 +993,22 @@ deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
                            POSTHEAD - ]]],
     DTR verb-lex &
           [ SYNSEM.LOCAL.CONT.HOOK.XARG #index ]].
+
+;;; REM 2/16/14 Adding this lexical rule
+
+epistemic-modal-lex-rule := infl-add-only-lex-rule &
+  [ C-CONT [ RELS < ! arg1-ev-relation & [ PRED "_can_v_rel",
+                                           LBL #lbl,
+                                           ARG0 #index,
+                                           ARG1 #harg ] ! >,
+             HOOK [ LTOP #lbl,
+                    INDEX #index ],
+             HCONS < ! qeq & [ HARG #harg,
+                               LARG #larg ] ! > ],
+    DTR epistemic-modal-dtr & [ SYNSEM.LOCAL.CONT.HOOK.LTOP #larg,
+                                INFLECTED #infl ],
+    INFLECTED #infl ].
+             
 
 ;;; REM added this lexical rule 2/9/14
 ;;; DAI 2/11/14 ... and removing

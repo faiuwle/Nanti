@@ -118,3 +118,7 @@ perfective-focus-cleft-lex-rule.
 deverbal-adjective-suffix :=
 %suffix (* -ri)
 deverbal-adjective-lex-rule.
+
+epistemic-modal-suffix :=
+%suffix (* =rika)
+epistemic-modal-lex-rule.
