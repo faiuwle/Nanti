@@ -175,3 +175,14 @@
 175@author@@@1@cop@kiraha-ri o=n-0-i@@@@1@2@be.red-ADJZ 3nmS=COP-IMPF-REAL.i'It is red.'@ruth morrison, david inman@january 14, 2014
 176@author@@@1@cop@o=n-0-i sapiro_ntsi@@@@0@2@3nmS=COP-IMPF-REAL.i clothing'The article of clothing is.'@ruth morrison, david inman@january 14, 2014
 177@author@@@1@cop@kiraha-ri n-0-i sapiro_ntsi@@@@0@3@be.red-ADJZ COP-IMPF-REAL.i clothing'The article of clothing is red.'@ruth morrison, david inman@january 14, 2014
+178@a:255@@@1@neg@tera i=_n-pok-0-e@@@@1@2@NEG.REAL 3mS=IRREAL-come-IMPF-IRREAL.i'He did not come.'@ruth morrison, david inman@january 14, 2014
+179@author@@@1@neg@i=_n-pok-0-e tera@@@@0@2@3mS=IRREAL-come-IMPF-IRREAL.i NEG.REAL'He did not come.'@ruth morrison, david inman@january 14, 2014
+180@a:256@@@1@neg@tera i=_n-pok-ak-e@@@@0@2@NEG.REAL 3mS=IRREAL-come-PERF-IRREAL.i'He did not come.'@ruth morrison, david inman@january 14, 2014
+181@a:256@@@1@neg@tera i=_pok-0-i@@@@0@2@NEG.REAL 3mS=come-IMPF-REAL.i'He did not come.'@ruth morrison, david inman@january 14, 2014
+182@a:313@@@1@neg@tera o=_n-kiraha-0-e@@@@1@2@NEG.REAL 3nmS=IRREAL-be.red-IMPF-IRREAL.i'It is not red.'@ruth morrison, david inman@january 14, 2014
+183@a:313@@@1@neg@tera kiraha-ri o=_n-n-0-e@@@@1@3@NEG.REAL be.red-ADJZ 3nmS=IRREAL-COP-IMPF-IRREAL.i'It is not red.'@ruth morrison, david inman@january 14, 2014
+184@a:418@@@1@neg@tera no=_n-kog-0-e no=_n-kamoso-0-e@@@@1@3@NEG.REAL 1S=IRREAL-want-IMPF-IRREAL.i 1S=IRREAL-visit-IMPF-IRREAL.i'I don't want to visit.'@ruth morrison, david inman@january 14, 2014
+185@a:146@@@1@neg@te o=_n-irag-0-e@@@@1@2@NEG.REAL 3nmS=IRREAL-cry-IMPF-IRREAL.i'She didn't cry.'@ruth morrison, david inman@january 14, 2014
+186@author@@@1@neg@o=_n-irag-0-e te@@@@0@2@3nmS=IRREAL-cry-IMPF-IRREAL.i NEG.REAL'She didn't cry.'@ruth morrison, david inman@january 14, 2014
+187@a:375@@@1@neg@te iketyo shig-an-a_nkicha@@@@1@3@NEG.REAL 3m.FIRST.PRO run-ABL-REL.FOC'He did not run away first.'@ruth morrison, david inman@january 14, 2014
+188@author@@@1@neg@te kemari _n-tag-0-e=ro@@@@1@3@NEG.REAL tapir IRREAL-burn-IMPF-IRREAL.i=3nmO'The tapir did not burn it.'@ruth morrison, david inman@january 14, 2014

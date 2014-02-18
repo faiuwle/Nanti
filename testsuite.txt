@@ -1819,3 +1819,113 @@ kirahari ni sapiro_ntsi.
 kiraha-ri n-0-i sapiro_ntsi
 be.red-ADJZ COP-IMPF-REAL.i clothing
 'The article of clothing is red.'
+
+#177 'tera' alone
+Source: a:255
+Vetted: s
+Judgment: g
+Phenomena: neg
+tera i_npoke
+tera i=_n-pok-0-e
+NEG.REAL 3mS=IRREAL-come-IMPF-IRREAL.i
+'He did not come.'
+
+#178 'tera' after verb (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: neg
+i_npoke tera
+i=_n-pok-0-e tera
+3mS=IRREAL-come-IMPF-IRREAL.i NEG.REAL
+'He did not come.'
+
+#179 'tera' does not take perfective
+Source: a:256
+Vetted: s
+Judgment: u
+Phenomena: neg
+tera i_npokake
+tera i=_n-pok-ak-e
+NEG.REAL 3mS=IRREAL-come-PERF-IRREAL.i
+'He did not come.'
+
+#180 'tera' does not take realis
+Source: a:256
+Vetted: s
+Judgment: u
+Phenomena: neg
+tera i_npoki
+tera i=_pok-0-i
+NEG.REAL 3mS=come-IMPF-REAL.i
+'He did not come.'
+
+#181 'tera' alone
+Source: a:313
+Vetted: s
+Judgment: g
+Phenomena: neg
+tera o_nkirahate
+tera o=_n-kiraha-0-e
+NEG.REAL 3nmS=IRREAL-be.red-IMPF-IRREAL.i
+'It is not red.'
+
+#182 'tera' with -n-
+Source: a:313
+Vetted: s
+Judgment: g
+Phenomena: neg
+tera kirahari one
+tera kiraha-ri o=_n-n-0-e
+NEG.REAL be.red-ADJZ 3nmS=IRREAL-COP-IMPF-IRREAL.i
+'It is not red.'
+
+#183 'tera' with clause-taking complement
+Source: a:418
+Vetted: s
+Judgment: g
+Phenomena: neg
+tera no_nkoge no_nkamosote
+tera no=_n-kog-0-e no=_n-kamoso-0-e
+NEG.REAL 1S=IRREAL-want-IMPF-IRREAL.i 1S=IRREAL-visit-IMPF-IRREAL.i
+'I don't want to visit.'
+
+#184 'te' with intransitive
+Source: a:146
+Vetted: s
+Judgment: g
+Phenomena: neg
+te irage
+te o=_n-irag-0-e
+NEG.REAL 3nmS=IRREAL-cry-IMPF-IRREAL.i
+'She didn't cry.'
+
+#185 'te' with intransitive - wrong location
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: neg
+irage te
+o=_n-irag-0-e te
+3nmS=IRREAL-cry-IMPF-IRREAL.i NEG.REAL
+'She didn't cry.'
+
+#186 'te' with overt NP
+Source: a:375
+Vetted: s
+Judgment: g
+Phenomena: neg
+te iketyo shigana_nkicha
+te iketyo shig-an-a_nkicha
+NEG.REAL 3m.FIRST.PRO run-ABL-REL.FOC
+'He did not run away first.'
+
+#187 'te' with overt NP
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: neg
+te kemari tagero
+te kemari _n-tag-0-e=ro
+NEG.REAL tapir IRREAL-burn-IMPF-IRREAL.i=3nmO
+'The tapir did not burn it.'
