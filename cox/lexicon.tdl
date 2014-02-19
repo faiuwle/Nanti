@@ -195,6 +195,10 @@ pi_ntsa := i-clausal-irrealis-verb-verb-lex &
   [ STEM < "pi_ntsa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_decide_v_rel" ].
 
+shine := a-transitive-verb-verb-lex &
+  [ STEM < "shine" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be.happy.about_v_rel" ].
+
 n := copula-verb-lex &
   [ STEM < "n" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cop_v_rel" ].
@@ -315,6 +319,14 @@ oga := speaker-dist-det-NM-determiner-lex &
 
 matsi := neg-adv-lex &
   [ STEM < "matsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+te := neg-adv-lex &
+  [ STEM < "te" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+tera := neg-adv-lex &
+  [ STEM < "tera" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
 i_ntiri1 := conj-lex &

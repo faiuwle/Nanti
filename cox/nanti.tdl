@@ -296,7 +296,7 @@ proper-noun-nm-noun-lex := nm-noun-noun-lex & proper-noun-noun-lex.
 ;;; REM 2/9/14 verb-lex-supertype
 ;;; DAI 2/11/14 setting OBJECT-FLAG - since copula must have adj
 
-verb-lex-supertype := non-mod-lex-item & Aspect-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & i-verb-reality-prefix-rule-dtr & subject-rule-dtr &
+verb-lex-supertype := non-mod-lex-item & Aspect-rule-dtr & aspect-directional-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & i-verb-reality-prefix-rule-dtr & subject-rule-dtr &
   [ SYNSEM.LOCAL.CAT.HEAD verb,
     INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG -,
                 A-VERB-IRREALIS-SUFFIX-FLAG na-or--,
@@ -307,7 +307,7 @@ verb-lex-supertype := non-mod-lex-item & Aspect-rule-dtr & a-verb-reality-prefix
                 ASPECT-FLAG -,
                 OBJECT-FLAG - ]].
 
-verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & object-rule-dtr & subject-rule-dtr &
+verb-lex := basic-verb-lex & non-mod-lex-item & Aspect-rule-dtr & aspect-directional-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & object-rule-dtr & subject-rule-dtr &
   [ ARG-ST.FIRST #subj &
                  [ LOCAL [ CAT.VAL [ SPR < >,
                                        COMPS < > ],
@@ -577,8 +577,9 @@ a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr := word-or-lexrule.
 subject-rule-dtr := word-or-lexrule.
 a-verb-reality-prefix-rule-dtr := word-or-lexrule.
 Aspect-rule-dtr := word-or-lexrule.
+aspect-directional-rule-dtr := word-or-lexrule.
 direct-ditransitive-object-rule-dtr := word-or-lexrule.
-epistemic-modal-dtr := word-or-lexrule.
+;epistemic-modal-dtr := word-or-lexrule.
 ;copula-overt-subj-rule-dtr := word-or-lexrule.
 
 ;;; Lexical rule types
@@ -596,7 +597,7 @@ distributive-lex-rule := number-lex-rule-super &
 
 ;;; DAI 2/11/14 removing copula-overt-subj-rule-dtr
 
-subject-lex-rule-super := add-only-no-ccont-rule & epistemic-modal-dtr &
+subject-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED [ SUBJECT-FLAG +,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                 I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
@@ -742,6 +743,35 @@ object-no-drop-lex-rule := const-lex-rule & object-lex-rule-super &
           SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD +nj ],
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT - ].
 
+aspect-directional-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
+  [ INFLECTED [ ASPECT-FLAG +,
+                A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                SUBJECT-FLAG #subject,
+                A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
+                I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                S-OR-O-CLITIC #s-or-o-clitic,
+                VERB-FLAG #verb,                OBJECT-FLAG #object,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                TRANSITIVE-VERB-FLAG #transitive-verb ],
+    DTR aspect-directional-rule-dtr &
+        [ INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+                      I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
+                      A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
+                      SUBJECT-FLAG #subject,
+                      A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
+                      I-VERB-IRREALIS-SUFFIX-FLAG #i-verb-irrealis-suffix,
+                      A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
+                      A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb,
+                      S-OR-O-CLITIC #s-or-o-clitic,
+                      VERB-FLAG #verb,
+                      OBJECT-FLAG #object,
+                      I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG #i-intransitive-verb-verb-or-i-transitive-verb-verb,
+                      TRANSITIVE-VERB-FLAG #transitive-verb ] ] ].
+
 Aspect-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ ASPECT-FLAG +,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
@@ -777,6 +807,18 @@ imperfective-lex-rule := Aspect-lex-rule-super &
 
 perfective-lex-rule := Aspect-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective ].
+
+abilitive-lex-rule := aspect-directional-lex-rule-super & cont-change-only-lex-rule & 
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective,
+    C-CONT [ RELS < ! arg1-ev-relation & [ PRED "_can_v_rel",
+                                           LBL #lbl,
+                                           ARG0 #index,
+                                           ARG1 #harg ] ! >,
+             HOOK [ LTOP #lbl,
+                    INDEX #index ],
+             HCONS < ! qeq & [ HARG #harg,
+                               LARG #larg ] ! > ],
+    DTR.SYNSEM.LOCAL.CONT.HOOK.LTOP #larg ].
 
 i-verb-reality-suffix-lex-rule-super := add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG +,
@@ -928,7 +970,7 @@ a-verb-realis-prefix-lex-rule := a-verb-reality-prefix-lex-rule-super & const-le
   [ INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
     DTR.INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ].
 
-argument-number-lex-rule-super := Aspect-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
+argument-number-lex-rule-super := Aspect-rule-dtr & aspect-directional-rule-dtr a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED #infl,
     DTR verb-lex &
         [ INFLECTED #infl ] ].
@@ -995,19 +1037,20 @@ deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
           [ SYNSEM.LOCAL.CONT.HOOK.XARG #index ]].
 
 ;;; REM 2/16/14 Adding this lexical rule
+;;; DAI 2/18/14 oops, bye epistemic
 
-epistemic-modal-lex-rule := infl-add-only-lex-rule &
-  [ C-CONT [ RELS < ! arg1-ev-relation & [ PRED "_can_v_rel",
-                                           LBL #lbl,
-                                           ARG0 #index,
-                                           ARG1 #harg ] ! >,
-             HOOK [ LTOP #lbl,
-                    INDEX #index ],
-             HCONS < ! qeq & [ HARG #harg,
-                               LARG #larg ] ! > ],
-    DTR epistemic-modal-dtr & [ SYNSEM.LOCAL.CONT.HOOK.LTOP #larg,
-                                INFLECTED #infl ],
-    INFLECTED #infl ].
+;epistemic-modal-lex-rule := infl-add-only-lex-rule &
+;  [ C-CONT [ RELS < ! arg1-ev-relation & [ PRED "_can_v_rel",
+;                                           LBL #lbl,
+;                                           ARG0 #index,
+;                                           ARG1 #harg ] ! >,
+;             HOOK [ LTOP #lbl,
+;                    INDEX #index ],
+;             HCONS < ! qeq & [ HARG #harg,
+;                               LARG #larg ] ! > ],
+;    DTR epistemic-modal-dtr & [ SYNSEM.LOCAL.CONT.HOOK.LTOP #larg,
+;                                INFLECTED #infl ],
+;    INFLECTED #infl ].
              
 
 ;;; REM added this lexical rule 2/9/14

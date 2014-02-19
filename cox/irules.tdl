@@ -103,6 +103,10 @@ distributive-subject-object-suffix :=
 %suffix (* -ge)
 distributive-subject-object-lex-rule.
 
+abilitive-suffix :=
+%suffix (* -ah)
+abilitive-lex-rule.
+
 imperfective-focus-cleft-suffix :=
 %suffix (* -tsi)
 imperfective-focus-cleft-lex-rule.
@@ -118,7 +122,3 @@ perfective-focus-cleft-lex-rule.
 deverbal-adjective-suffix :=
 %suffix (* -ri)
 deverbal-adjective-lex-rule.
-
-epistemic-modal-suffix :=
-%suffix (* =rika)
-epistemic-modal-lex-rule.
