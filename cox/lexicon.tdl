@@ -321,11 +321,11 @@ matsi := neg-adv-lex &
   [ STEM < "matsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
-te := neg-adv-lex &
+te := neg-irrealis-lex &
   [ STEM < "te" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
-tera := neg-adv-lex &
+tera := neg-irrealis-lex &
   [ STEM < "tera" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 

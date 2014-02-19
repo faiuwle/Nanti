@@ -565,6 +565,10 @@ neg-adv-lex := basic-scopal-adverb-lex &
                                                 VAL [ SUBJ null,
                                                       COMPS null ] ] ] > ] ].
 
+neg-irrealis-lex := neg-adv-lex &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CONT.HOOK.INDEX.E [ MOOD irrealis,
+                                                            ASPECT imperfective ] ] > ].
+
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Rules
 ;;;;;;;;;;;;;;;;;;;

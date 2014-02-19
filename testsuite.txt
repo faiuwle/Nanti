@@ -1855,7 +1855,7 @@ Source: a:256
 Vetted: s
 Judgment: u
 Phenomena: neg
-tera i_npoki
+tera ipoki
 tera i=_pok-0-i
 NEG.REAL 3mS=come-IMPF-REAL.i
 'He did not come.'
