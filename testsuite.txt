@@ -1911,14 +1911,14 @@ o=_n-irag-0-e te
 'She didn't cry.'
 
 #186 'te' with overt NP
-Source: a:375
-Vetted: s
+Source: author
+Vetted: f
 Judgment: g
 Phenomena: neg
-te iketyo shigana_nkicha
-te iketyo shig-an-a_nkicha
-NEG.REAL 3m.FIRST.PRO run-ABL-REL.FOC
-'He did not run away first.'
+te iketyo hata_nkicha
+te iketyo ha-a_nkicha
+NEG.REAL 3m.FIRST.PRO go-REL.FOC
+'He did not go first.'
 
 #187 'te' with overt NP
 Source: author
@@ -1931,41 +1931,41 @@ NEG.REAL tapir IRREAL-burn-IMPF-IRREAL.i=3nmO
 'The tapir did not burn it.'
 
 #188 matsi + te interacting
-Source: a:383
-Vetted: s
+Source: author
+Vetted: f
 Judgment: g
 Phenomena: neg
-matsi te pishinete_nparo oka
-matsi te pi=_n-shine-0-e_npa=ro oka
-NEG.EXT NEG.REAL 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO this
-"It is not the case that you are not happy about this."
+matsi te pishinete_nparo
+matsi te pi=_n-shine-0-e_npa=ro
+NEG.EXT NEG.REAL 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO
+"It is not the case that you are not happy about it."
 
 #189 matsi + te wrong order
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: neg
-te matsi pishinete_nparo oka
-te matsi pi=_n-shine-0-e_npa=ro oka
-NEG.REAL NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO this
-"It is not the case that you are not happy about this."
+te matsi pishinete_nparo
+te matsi pi=_n-shine-0-e_npa=ro
+NEG.REAL NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO
+"It is not the case that you are not happy about it."
 
 #190 matsi + te (te in bad place)
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: neg
-matsi pishinete_nparo te oka
-matsi pi=_n-shine-0-e_npa=ro te oka
-NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO NEG.REAL this
-"It is not the case that you are not happy about this."
+matsi pishinete_nparo te
+matsi pi=_n-shine-0-e_npa=ro te
+NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO NEG.REAL
+"It is not the case that you are not happy about it."
 
 #191 matsi only
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: neg
-matsi pishinete_nparo oka
-matsi pi=_n-shine-0-e_npa=ro oka
-NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO this
-"You are not happy about this."
+matsi pishinete_nparo
+matsi pi=_n-shine-0-e_npa=ro
+NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO
+"You are not happy about it."
