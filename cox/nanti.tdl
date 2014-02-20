@@ -1092,7 +1092,8 @@ direct-ditransitive-object-lex-rule-super := add-only-no-ccont-rule & object-rul
                 NI-FLAG - ] ]].
 
 3rd-person-ditransitive-object-lex-rule := direct-ditransitive-object-lex-rule-super & infl-lex-rule &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS.REST.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 3rd ].
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.REST.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 3rd,
+                                            OPT + ] ].
 
 no-ni-clitic-lex-rule := direct-ditransitive-object-lex-rule-super & nocoord &
   [ INFLECTED.NI-FLAG + ,
