@@ -219,6 +219,10 @@ oog := a-transitive-verb-verb-lex &
   [ STEM < "oog" >,
     SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
+p := i-ditransitive-verb-lex &
+  [ STEM < "p" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+
 ;;; REM Added this verb
 
 kiraha := i-intransitive-verb-verb-lex &

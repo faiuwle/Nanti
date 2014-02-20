@@ -10,5 +10,7 @@ i-verb-realis-prefix-lex := i-verb-realis-prefix-lex-rule.
 
 a-verb-realis-prefix-lex := a-verb-realis-prefix-lex-rule.
 
-no-object-clitic-suffix := no-object-clitic-lex-rule.
+no-object-clitic-lex := no-object-clitic-lex-rule.
+
+no-ni-clitic-lex := no-ni-clitic-lex-rule.
 
