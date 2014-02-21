@@ -358,7 +358,8 @@ main-verb-lex := verb-lex & basic-verb-lex &
                 ASPECT-FLAG - ] ].
 
 aux-lex := verb-lex &
-  [ SYNSEM.LOCAL.CAT [ HEAD.AUX +,
+  [ SYNSEM.LOCAL.CAT [ HEAD [ AUX +,
+                              COPULA - ],
                        VAL.COMPS.FIRST [ OPT -,
                                          MODIFIED notmod ] ],
     INFLECTED infl-satisfied ].

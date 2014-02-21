@@ -145,6 +145,10 @@ Rerisuha := proper-noun-nm-noun-lex &
   [ STEM < "Rerisuha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_Rerisuha_n_rel" ].
 
+otsiko := common-noun-nm-inan-noun-lex &
+  [ STEM < "otsiko" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_otsiko_n_rel" ].
+
 ;;; Verbs
 
 ha := i-intransitive-verb-verb-lex &
