@@ -15,3 +15,5 @@ no-object-clitic-lex := no-object-clitic-lex-rule.
 no-ni-clitic-lex := no-ni-clitic-lex-rule.
 
 ni-no-drop-lex := ni-object-no-drop-lex-rule.
+
+infinitive-aspect-lex := infinitive-aspect-lex-rule.

@@ -59,17 +59,33 @@ i-verb-realis-suffix-suffix :=
 %suffix (* -i)
 i-verb-realis-suffix-lex-rule.
 
+i-verb-unspecified-realis-suffix :=
+%suffix (* -i)
+i-verb-unspecified-realis-suffix-lex-rule.
+
 i-verb-irrealis-suffix-suffix :=
 %suffix (* -e)
 i-verb-irrealis-suffix-lex-rule.
+
+i-verb-unspecified-irrealis-suffix :=
+%suffix (* -e)
+i-verb-unspecified-irrealis-suffix-lex-rule.
 
 a-verb-realis-suffix-suffix :=
 %suffix (* -a)
 a-verb-realis-suffix-lex-rule.
 
+a-verb-unspecified-realis-suffix :=
+%suffix (* -a)
+a-verb-unspecified-realis-suffix-lex-rule.
+
 a-verb-irrealis-suffix-suffix :=
 %suffix (* -e_npa)
 a-verb-irrealis-suffix-lex-rule.
+
+a-verb-unspecified-irrealis-suffix :=
+%suffix (* -e_npa)
+a-verb-unspecified-irrealis-suffix-lex-rule.
 
 i-verb-irrealis-prefix-prefix :=
 %prefix (* _n-)

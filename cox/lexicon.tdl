@@ -325,12 +325,20 @@ matsi := neg-adv-lex &
   [ STEM < "matsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
-te := neg-irrealis-lex &
+te := neg-notionally-realis-aux-lex &
   [ STEM < "te" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
-tera := neg-irrealis-lex &
+tera := neg-notionally-realis-aux-lex &
   [ STEM < "tera" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+ha := neg-notionally-irrealis-aux-lex &
+  [ STEM < "ha" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+hara := neg-notionally-irrealis-aux-lex &
+  [ STEM < "hara" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
 i_ntiri1 := conj-lex &
