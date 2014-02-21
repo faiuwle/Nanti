@@ -925,8 +925,8 @@ Source: a:390
 Vetted: s
 Judgment: g
 Phenomena: wo
-shima opakiNpi?
-shima o=p-ak-i=Npi
+shima opaki_npi?
+shima o=p-ak-i=_npi
 fish 3nmS=give-PERF-REAL.i=2O
 'Did she give you fish?'
 
@@ -935,8 +935,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wo
-opakiNpi shima?
-o=p-ak-i=Npi shima
+opaki_npi shima?
+o=p-ak-i=_npi shima
 3nmS=give-PERF-REAL.i=2O fish
 'Did she give you fish?'
 
@@ -1969,3 +1969,157 @@ matsi pishinete_nparo
 matsi pi=_n-shine-0-e_npa=ro
 NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO
 "You are not happy about it."
+
+# I can eat glass - it doesn't hurt me
+
+#192 i can eat glass irrealis (g)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: m
+noogahae_npa i_npaneki
+no=_n-oog-ah-e_npa i_npaneki
+1S=IRREAL-eat-ABIL-IRREAL.a glass
+'I can eat glass.'
+
+#193 i can eat glass realis (g)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: m
+noogaha i_npaneki
+no=oog-ah-a i_npaneki
+1S=eat-ABIL-REAL.a glass
+'I can eat glass.'
+
+#194 i can eat glass - abilitive with perfective (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: m
+noogahaka i_npaneki
+no=oog-ah-ak-a i_npaneki
+1S=eat-ABIL-PERF-REAL.a glass
+'I can eat glass.'
+
+#195 i can eat glass - abilitive with imperfective (u)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: m
+noogaha i_npaneki
+no=oog-ah-0-a i_npaneki
+1S=eat-ABIL-IMPF-REAL.a glass
+'I can eat glass.'
+
+#196 i can eat GLASS (focused) (g)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: m
+i_npaneki noogahae_npa
+i_npaneki no=_n-oog-ah-e_npa
+glass 1S=IRREAL-eat-ABIL-IRREAL.a
+'I can eat GLASS.'
+
+#197 i can eat it (abil + obj)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: m
+noogahae_nparo
+no=_n-oog-ah-e_npa=ro
+1S=IRREAL-eat-ABIL-IRREAL.a=3nmO
+'I can eat it.'
+
+#198 it doesn't hurt me (realis)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: neg
+te ogatsina
+te o=_n-ogatsi-e=na
+NEG.REAL 3nmS=IRREAL-hurt-IRREAL.i=1O
+'It doesn't hurt me.'
+
+#199 it doesn't hurt me (realis)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: neg
+tera ogatsina
+tera o=_n-ogatsi-e=na
+NEG.REAL 3nmS=IRREAL-hurt-IRREAL.i=1O
+'It doesn't hurt me.'
+
+#200 it doesn't hurt me (irrealis)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: neg
+ha ogatsina
+ha o=ogatsi-i=na
+NEG.IRREAL 3nmS=hurt-REAL.i=1O
+'It doesn't hurt me.'
+
+#201 it doesn't hurt me (irrealis)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: neg
+hara ogatsina
+hara o=ogatsi-i=na
+NEG.IRREAL 3nmS=hurt-REAL.i=1O
+'It doesn't hurt me.'
+
+# TE / HA matching
+
+#202 mismatched te - with realis marking
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: neg
+te ipoki
+te i=pok-i
+NEG.REAL 3mS=come-REAL
+'He didn't come.'
+
+#203 mismatched ha - with irrealis marking
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: neg
+ha i_npoke
+ha i=_n-pok-e
+NEG.IRREAL 3mS=IRREAL-come-IRREAL.i
+'He didn't come.'
+
+#204 te wrong order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: neg
+i_npoke te
+i=_n-pok-e te
+3mS=IRREAL-come-IRREAL.i NEG.REAL
+'He didn't come'
+
+#205 ha wrong order
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: neg
+ipoki ha
+i=pok-i ha
+3mS=come-REAL.i NEG.IRREAL
+'He didn't come'
+
+#206 More ditransitives - overt non-theme
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wo
+iryo o_npakene
+iryo o=_n-p-ak-e=ni
+3M.FOC.PRO 3nmS=IRREAL-give-PERF-IRREAL.i=THM
+'She will give it to HIM.'

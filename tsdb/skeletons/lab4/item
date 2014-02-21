@@ -87,8 +87,8 @@
 87@author@@@1@agr@i=_n-pok-0-i@@@@0@1@3mS=IRREAL-come-IMPF-REAL.i'He will come.'@ruth morrison, david inman@january 14, 2014
 88@author@@@1@agr@i=_n-pok-0-e_npa@@@@0@1@3mS=IRREAL-come-IMPF-IRREAL.a'He will come.'@ruth morrison, david inman@january 14, 2014
 89@author@@@1@agr@o=ashi_nt-0-i=ro@@@@0@1@3nmS=own-IMPF-REAL.i=3nmO'She owns it.'@ruth morrison, david inman@january 14, 2014
-90@a:390@@@1@wo@shima o=p-ak-i=Npi@@@@1@2@fish 3nmS=give-PERF-REAL.i=2O'Did she give you fish?'@ruth morrison, david inman@january 14, 2014
-91@author@@@1@wo@o=p-ak-i=Npi shima@@@@1@2@3nmS=give-PERF-REAL.i=2O fish'Did she give you fish?'@ruth morrison, david inman@january 14, 2014
+90@a:390@@@1@wo@shima o=p-ak-i=_npi@@@@1@2@fish 3nmS=give-PERF-REAL.i=2O'Did she give you fish?'@ruth morrison, david inman@january 14, 2014
+91@author@@@1@wo@o=p-ak-i=_npi shima@@@@1@2@3nmS=give-PERF-REAL.i=2O fish'Did she give you fish?'@ruth morrison, david inman@january 14, 2014
 92@a:368@@@1@wo@no=p-ak-i=ri@@@@1@1@1S=give-PERF-REAL.i=3mO'I gave (it) to him.'@ruth morrison, david inman@january 14, 2014
 93@a:368@@@1@wo@no=p-ak-i=ro@@@@1@1@1S=give-PERF-REAL.i=3nmO'I gave (it) to her.'@ruth morrison, david inman@january 14, 2014
 94@a:368@@@1@wo@i=p-ak-i=na otsiko@@@@1@2@3mS=give-PERF-REAL.i=1O fishhook'He gave me a fishhook.'@ruth morrison, david inman@january 14, 2014
@@ -190,3 +190,18 @@
 190@author@@@1@neg@te matsi pi=_n-shine-0-e_npa=ro@@@@0@3@NEG.REAL NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO"It is not the case that you are not happy about it."@ruth morrison, david inman@january 14, 2014
 191@author@@@1@neg@matsi pi=_n-shine-0-e_npa=ro te@@@@0@3@NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO NEG.REAL"It is not the case that you are not happy about it."@ruth morrison, david inman@january 14, 2014
 192@author@@@1@neg@matsi pi=_n-shine-0-e_npa=ro@@@@1@2@NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO"You are not happy about it."@ruth morrison, david inman@january 14, 2014
+193@author@@@1@m@no=_n-oog-ah-e_npa i_npaneki@@@@1@2@1S=IRREAL-eat-ABIL-IRREAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
+194@author@@@1@m@no=oog-ah-a i_npaneki@@@@1@2@1S=eat-ABIL-REAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
+195@author@@@1@m@no=oog-ah-ak-a i_npaneki@@@@0@2@1S=eat-ABIL-PERF-REAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
+196@author@@@1@m@no=oog-ah-0-a i_npaneki@@@@0@2@1S=eat-ABIL-IMPF-REAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
+197@author@@@1@m@i_npaneki no=_n-oog-ah-e_npa@@@@1@2@glass 1S=IRREAL-eat-ABIL-IRREAL.a'I can eat GLASS.'@ruth morrison, david inman@january 14, 2014
+198@author@@@1@m@no=_n-oog-ah-e_npa=ro@@@@1@1@1S=IRREAL-eat-ABIL-IRREAL.a=3nmO'I can eat it.'@ruth morrison, david inman@january 14, 2014
+199@author@@@1@neg@te o=_n-ogatsi-e=na@@@@1@2@NEG.REAL 3nmS=IRREAL-hurt-IRREAL.i=1O'It doesn't hurt me.'@ruth morrison, david inman@january 14, 2014
+200@author@@@1@neg@tera o=_n-ogatsi-e=na@@@@1@2@NEG.REAL 3nmS=IRREAL-hurt-IRREAL.i=1O'It doesn't hurt me.'@ruth morrison, david inman@january 14, 2014
+201@author@@@1@neg@ha o=ogatsi-i=na@@@@1@2@NEG.IRREAL 3nmS=hurt-REAL.i=1O'It doesn't hurt me.'@ruth morrison, david inman@january 14, 2014
+202@author@@@1@neg@hara o=ogatsi-i=na@@@@1@2@NEG.IRREAL 3nmS=hurt-REAL.i=1O'It doesn't hurt me.'@ruth morrison, david inman@january 14, 2014
+203@author@@@1@neg@te i=pok-i@@@@0@2@NEG.REAL 3mS=come-REAL'He didn't come.'@ruth morrison, david inman@january 14, 2014
+204@author@@@1@neg@ha i=_n-pok-e@@@@0@2@NEG.IRREAL 3mS=IRREAL-come-IRREAL.i'He didn't come.'@ruth morrison, david inman@january 14, 2014
+205@author@@@1@neg@i=_n-pok-e te@@@@0@2@3mS=IRREAL-come-IRREAL.i NEG.REAL'He didn't come'@ruth morrison, david inman@january 14, 2014
+206@author@@@1@neg@i=pok-i ha@@@@0@2@3mS=come-REAL.i NEG.IRREAL'He didn't come'@ruth morrison, david inman@january 14, 2014
+207@author@@@1@wo@iryo o=_n-p-ak-e=ni@@@@1@2@3M.FOC.PRO 3nmS=IRREAL-give-PERF-IRREAL.i=THM'She will give it to HIM.'@ruth morrison, david inman@january 14, 2014
