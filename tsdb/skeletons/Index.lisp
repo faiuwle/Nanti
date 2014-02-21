@@ -22,6 +22,7 @@
 (((:path . "lab2") (:content . "Test suite created in lab 2"))
  ((:path . "lab3") (:content . "Test suite created in lab 3"))
  ((:path . "lab4") (:content . "Test suite created in lab 4"))
+ ((:path . "lab7") (:content . "Test suite created in lab 7"))
  ((:path . "corpus") (:content . "Test suite from discourse corpus")))
 
  

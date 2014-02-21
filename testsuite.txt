@@ -1316,8 +1316,8 @@ Vetted: s
 Judgment: g
 Phenomena: cop
 tera surari one.
-tera surari o=n-0-e
-NEG.REAL man 3nmS=COP-IMPF-IRREAL.i
+tera surari o=_n-n-e
+NEG.REAL man 3nmS=IRREAL-COP-IRREAL.i
 'She is not male.'
 
 #129 'Nti' Copula negative equality (u)
