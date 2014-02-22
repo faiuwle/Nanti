@@ -1977,10 +1977,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: m
-noogahae_npa i_npaneki
+noogahe_npa i_npaneki
 no=_n-oog-ah-e_npa i_npaneki
 1S=IRREAL-eat-ABIL-IRREAL.a glass
-'I can eat glass.'
+'I can eat sand.'
 
 #193 i can eat glass realis (g)
 Source: author
@@ -1990,7 +1990,7 @@ Phenomena: m
 noogaha i_npaneki
 no=oog-ah-a i_npaneki
 1S=eat-ABIL-REAL.a glass
-'I can eat glass.'
+'I can eat sand.'
 
 #194 i can eat glass - abilitive with perfective (u)
 Source: author
@@ -2000,7 +2000,7 @@ Phenomena: m
 noogahaka i_npaneki
 no=oog-ah-ak-a i_npaneki
 1S=eat-ABIL-PERF-REAL.a glass
-'I can eat glass.'
+'I can eat sand.'
 
 #195 i can eat glass - abilitive with imperfective (u)
 Source: author
@@ -2010,7 +2010,7 @@ Phenomena: m
 noogaha i_npaneki
 no=oog-ah-0-a i_npaneki
 1S=eat-ABIL-IMPF-REAL.a glass
-'I can eat glass.'
+'I can eat sand.'
 
 #196 i can eat GLASS (focused) (g)
 Source: author
@@ -2020,7 +2020,7 @@ Phenomena: m
 i_npaneki noogahae_npa
 i_npaneki no=_n-oog-ah-e_npa
 glass 1S=IRREAL-eat-ABIL-IRREAL.a
-'I can eat GLASS.'
+'I can eat SAND.'
 
 #197 i can eat it (abil + obj)
 Source: author
