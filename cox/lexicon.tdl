@@ -223,6 +223,10 @@ oog := a-transitive-verb-verb-lex &
   [ STEM < "oog" >,
     SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
+irag := i-intransitive-verb-verb-lex &
+  [ STEM < "irag" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cry_v_rel" ].
+
 p := i-ditransitive-verb-lex &
   [ STEM < "p" >,
     SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].

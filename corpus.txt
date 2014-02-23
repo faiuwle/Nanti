@@ -365,8 +365,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Ari te pi_nkeme irage?
-ari te pi=_n-kem-e o=irag-e
-really NEG.REAL 2S=IRREAL-hear-IRREAL.i 3nmS=cry-IRREAL.i
+ari te pi=_n-kem-e o=_n-irag-e
+really NEG.REAL 2S=IRREAL-hear-IRREAL.i 3nmS=IRREAL-cry-IRREAL.i
 'Really, you didn’t hear her cry?'
 
 #38 Mecha
@@ -375,8 +375,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Te_nka_nki irage.
-te_nka_nki o=irag-e
-NEG.FOC 3nmS=cry-IRREAL.i
+te_nka_nki o=_n-irag-e
+NEG.FOC 3nmS=IRREAL-cry-IRREAL.i
 'She didn’t cry at all.'
 
 #39 Pasotoro
@@ -385,6 +385,6 @@ Vetted: s
 Judgment: g
 Phenomena:
 Te irage.
-te o=irag-e
-NEG.REAL 3nmS=cry-IRREAL.i
+te o=_n-irag-e
+NEG.REAL 3nmS=IRREAL-cry-IRREAL.i
 'She didn’t cry.'
