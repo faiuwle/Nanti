@@ -72,3 +72,8 @@ E.MOOD : MOOD
   Realis <> Realis
   Irrealis <> Irrealis
   * <> !
+
+E.ASPECT : ASPECT
+  perfective <> perfective
+  imperfective <> imperfective
+  * <> !
