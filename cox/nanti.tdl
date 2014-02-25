@@ -550,8 +550,7 @@ neg-notionally-irrealis-aux-lex := neg-aux-lex &
 ;;; Adjectives
 ;;; REM Added all stuff in this section
 
-adjective-lex := basic-adjective-lex & intersective-mod-lex &
-                 norm-ltop-lex-item &
+adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-hook-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD noun,
                                                     VAL.SPR cons ]]>,
                            VAL [ SPR < >,
@@ -559,7 +558,9 @@ adjective-lex := basic-adjective-lex & intersective-mod-lex &
 
                                  COMPS < >,
                                  SPEC < > ],
-                           POSTHEAD - ]]]].
+                           POSTHEAD - ],
+                     CONT.HOOK.XARG #xarg ],
+             LKEYS.KEYREL.ARG1 #xarg ]].
 
 adjective-inan-lex := adjective-lex &
   [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CONT.HOOK.INDEX.PNG.GEND nm-non-animate ]> ]]]].
