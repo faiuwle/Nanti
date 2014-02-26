@@ -23,7 +23,8 @@ lex-or-phrase-synsem :+ [ INFOSTR-FLAG luk ].
 head :+ [ COPULA bool,
           AUX bool,
           FORM form,
-          SUBJ-OPT bool ].
+          SUBJ-OPT bool,
+          QUOTATIVE bool ].
 
 decl-head-subj-phrase :+ [ SYNSEM.INFOSTR-FLAG -, NON-HEAD-DTR.SYNSEM.INFOSTR-FLAG - ].
 
@@ -343,7 +344,8 @@ main-verb-lex := verb-lex & basic-verb-lex &
                                SUBJ < #subj > ],
                          HC-LIGHT -,
                          HEAD [ COPULA -,
-                                SUBJ-OPT + ]],
+                                SUBJ-OPT +,
+                                QUOTATIVE - ]],
                    CONT.HOOK.XARG #xarg ],
    ARG-ST.FIRST #subj &
      [ LOCAL [ CAT.VAL [ SPR < >,
@@ -432,7 +434,8 @@ nti-copula-verb-lex := basic-verb-lex & non-mod-lex-item & transitive-lex-item &
                            HC-LIGHT -,
                            HEAD [ COPULA -,
                                   AUX -,
-                                  SUBJ-OPT + ]],
+                                  SUBJ-OPT +,
+                                  QUOTATIVE - ]],
                      CONT.HOOK.XARG #xarg ],
              LKEYS.KEYREL.PRED "_be_v_id_rel" ],
     ARG-ST < #subj & 
@@ -468,6 +471,9 @@ clausal-reality-matching-verb-lex := clausal-verb-lex &
 clausal-irrealis-verb-lex := clausal-verb-lex &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL.CONT.HOOK.INDEX.E.MOOD Irrealis ] > ].
 
+clausal-reality-matching-prop-verb-lex := clausal-reality-matching-verb-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF prop ].
+
 i-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
@@ -488,6 +494,9 @@ i-clausal-irrealis-verb-verb-lex := clausal-irrealis-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
+i-clausal-matching-prop-verb-lex := clausal-reality-matching-prop-verb-lex &
+  [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
 a-intransitive-verb-verb-lex := intransitive-verb-lex &
   [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
@@ -508,6 +517,45 @@ a-clausal-matching-verb-verb-lex := clausal-reality-matching-verb-lex &
 a-clausal-irrealis-verb-verb-lex := clausal-irrealis-verb-lex &
   [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
+
+;;; DAI 2/24/14
+;;; verb-type for ka
+clausal-subj-only-verb-lex := verb-lex & basic-verb-lex & clausal-second-arg-trans-lex-item &
+  [ SYNSEM.LOCAL [ CAT [ HEAD [ AUX -,
+                                COPULA -,
+                                SUBJ-OPT +,
+                                QUOTATIVE + ],
+                         VAL [ SPR < >,
+                               SPEC < >,
+                               SUBJ < #subj >,
+                               COMPS < #clause &
+                                [ LOCAL [ CAT [ HEAD verb,
+                                                VAL [ SUBJ < >,
+                                                      SPR < >,
+                                                      COMPS < > ] ],
+                                          CONT.HOOK.INDEX.SF prop-or-ques ] ] >  ],
+                         HC-LIGHT - ],
+                   CONT.HOOK.XARG #xarg ],
+   ARG-ST [ FIRST #subj &
+               [ LOCAL [ CAT.VAL [ SPR < >,
+                                   COMPS < > ],
+                         CONT.HOOK.INDEX #xarg ] ],
+            REST.FIRST #clause ],
+   INFLECTED [  A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG na,
+                A-VERB-IRREALIS-SUFFIX-FLAG na,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na,
+                VERB-FLAG +,
+                I-VERB-IRREALIS-SUFFIX-FLAG na,
+                I-VERB-IRREALIS-PREFIX-FLAG na,
+                A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG na,
+                OBJECT-FLAG na,
+                ASPECT-FLAG na,
+                A-VERB-IRREALIS-PREFIX-FLAG na,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na,
+                NI-FLAG na,
+                TRANSITIVE-VERB-FLAG +,
+                S-OR-O-CLITIC -,
+                SUBJECT-FLAG - ] ].
 
 ;;; DAI 2/20/14
 ;;; Adding AUX stuff
@@ -793,7 +841,8 @@ object-lex-rule-super := add-only-no-ccont-rule & subject-rule-dtr &
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG #ni-flag ],
     DTR object-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
           INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                       I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                       A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
@@ -872,7 +921,8 @@ aspect-directional-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-rea
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG #ni-flag ],
     DTR aspect-directional-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
           INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                       I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                       A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
@@ -905,7 +955,8 @@ Aspect-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG #ni-flag ],
     DTR Aspect-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
           INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                       I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                       A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
@@ -933,7 +984,8 @@ perfective-lex-rule := Aspect-lex-rule-super & infl-lex-rule &
 
 infinitive-aspect-lex-rule := Aspect-lex-rule-super & const-lex-rule &
   [ SYNSEM.LOCAL.CAT.HEAD [ FORM nonfinite,
-                            AUX - ] ].
+                            AUX -,
+                            QUOTATIVE - ] ].
 
 abilitive-lex-rule := aspect-directional-lex-rule-super & cont-change-only-lex-rule & 
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective,
@@ -946,7 +998,8 @@ abilitive-lex-rule := aspect-directional-lex-rule-super & cont-change-only-lex-r
              HCONS < ! qeq & [ HARG #harg,
                                LARG #larg ] ! > ],
     DTR.SYNSEM.LOCAL [ CONT.HOOK.LTOP #larg,
-                       CAT.HEAD.AUX - ]].
+                       CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ]]].
 
 i-verb-reality-suffix-lex-rule-super := add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG +,
@@ -963,7 +1016,8 @@ i-verb-reality-suffix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG #ni-flag ],
     DTR a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
           INFLECTED [ A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-or-i-verb-reality-prefix,
                       A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
                       SUBJECT-FLAG #subject,
@@ -1024,7 +1078,8 @@ a-verb-reality-suffix-lex-rule-super := a-verb-reality-prefix-rule-dtr & add-onl
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG #ni-flag ],
     DTR a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
           INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG #a-intransitive-verb-verb-or-a-transitive-verb-verb & +,
                       I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                       SUBJECT-FLAG #subject,
@@ -1080,8 +1135,9 @@ i-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG #ni-flag ],
     DTR i-verb-reality-prefix-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
-          INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
+          INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix & +,
                       A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
                       SUBJECT-FLAG #subject,
                       ASPECT-FLAG #aspect,
@@ -1104,7 +1160,6 @@ i-verb-irrealis-prefix-lex-rule := i-verb-reality-prefix-lex-rule-super & infl-l
 
 i-verb-realis-prefix-lex-rule := const-lex-rule & i-verb-reality-prefix-lex-rule-super &
   [ INFLECTED.I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
-    SYNSEM.LOCAL.CAT.HEAD.AUX -,
     DTR.INFLECTED.I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix ].
 
 a-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & object-rule-dtr & subject-rule-dtr &
@@ -1123,8 +1178,9 @@ a-verb-reality-prefix-lex-rule-super := add-only-no-ccont-rule & direct-ditransi
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG #ni-flag ],
     DTR a-verb-reality-prefix-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
-          INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
+          INFLECTED [ A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix & +,
                       I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                       A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,
                       SUBJECT-FLAG #subject,
@@ -1144,13 +1200,13 @@ a-verb-irrealis-prefix-lex-rule := a-verb-reality-prefix-lex-rule-super & infl-l
 
 a-verb-realis-prefix-lex-rule := a-verb-reality-prefix-lex-rule-super & const-lex-rule &
   [ INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
-    SYNSEM.LOCAL.CAT.HEAD.AUX -,
     DTR.INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ].
 
 argument-number-lex-rule-super := Aspect-rule-dtr & aspect-directional-rule-dtr a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED #infl,
     DTR verb-lex &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
           INFLECTED #infl ] ].
 
 distributive-subject-object-lex-rule := argument-number-lex-rule-super &
@@ -1182,7 +1238,7 @@ focus-cleft-lex-rule-super := add-only-no-rels-hcons-rule & infl-lex-rule &
     DTR intransitive-verb-lex ].
 
 imperfective-focus-cleft-lex-rule := add-icons-subj-rule & focus-cleft-lex-rule-super &
-  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.ASPECT perfective,
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.ASPECT imperfective,
                    CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.ICONS-KEY focus ] ].
 
 ;;; DAI 2/5/14 removing subject-rule-dtr from type for perfective-focus-cleft-lex-rule (adding too much ambiguity)
@@ -1207,7 +1263,8 @@ direct-ditransitive-object-lex-rule-super := add-only-no-ccont-rule & object-rul
                 TRANSITIVE-VERB-FLAG #transitive-verb,
                 NI-FLAG + ],
     DTR direct-ditransitive-object-rule-dtr &
-        [ SYNSEM.LOCAL.CAT.HEAD.AUX -,
+        [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
+                                  QUOTATIVE - ],
           INFLECTED [ A-VERB-REALITY-PREFIX-OR-I-VERB-REALITY-PREFIX-FLAG #a-verb-reality-prefix-etc,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                 I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,

@@ -133,6 +133,8 @@
 (setf *gen-filtering-p* t)
 (setf *packing-restrictor*  '(RELS HCONS ORTH STEM RULE-NAME))
 
+;;; DAI 2/24/14 lab 8 instructions
+(setf *translate-grid* '(:cox :eng :frr))
 
 ;;; SSH 2012-04-11 MRS Semantic Equivalence Check
 ; prefer results with MRS subsumed by the input

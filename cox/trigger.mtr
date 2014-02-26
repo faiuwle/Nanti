@@ -4,3 +4,7 @@
 n_gr := generator_rule &
   [ CONTEXT.RELS < ! [ PRED "~._a_" ] ! >,
     FLAGS.TRIGGER "n" ].
+
+n_gr2 := generator_rule &
+  [ CONTEXT.RELS < ! [ PRED "~._sv_" ] ! >,
+    FLAGS.TRIGGER "n" ].

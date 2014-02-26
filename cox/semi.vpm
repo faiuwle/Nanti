@@ -47,11 +47,11 @@ PNG.PERNUM : PNG.PER PNG.NUM
   2DSTR <> 2nd DSTR
   3DSTR <> 3rd DSTR
   1st <> 1st !
-  1st << 1st *
+  1SG << 1st *
   2nd <> 2nd !
-  2nd << 2nd *
+  2SG << 2nd *
   3rd <> 3rd !
-  3rd << 3rd *
+  3SG << 3rd *
   SG <> ! SG
   SG << * SG
   PL <> ! PL
@@ -60,6 +60,10 @@ PNG.PERNUM : PNG.PER PNG.NUM
   DSTR << * DSTR
   * >> ! !
   ! << * *
+
+PNG.NUM : PNG. NUM
+  SG << *
+
 
 PNG.GEND : PNG.GEND
   MASC <> MASC

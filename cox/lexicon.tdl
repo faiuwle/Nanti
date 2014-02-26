@@ -85,6 +85,10 @@ kemari := common-noun-anim-noun-lex &
   [ STEM < "kemari" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tapir_n_rel" ].
 
+otsiti := common-noun-anim-noun-lex &
+  [ STEM < "otsiti" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
 i_npaneki := common-noun-nm-inan-noun-lex &
   [ STEM < "i_npaneki" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sand_n_rel" ].
@@ -149,6 +153,10 @@ otsiko := common-noun-nm-inan-noun-lex &
   [ STEM < "otsiko" >,
     SYNSEM.LKEYS.KEYREL.PRED "_otsiko_n_rel" ].
 
+tsitsi := common-noun-nm-inan-noun-lex &
+  [ STEM < "tsitsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fire_n_rel" ].
+
 ;;; Verbs
 
 ha := i-intransitive-verb-verb-lex &
@@ -183,7 +191,7 @@ neh := i-transitive-verb-verb-lex &
   [ STEM < "neh" >,
     SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
 
-neh2 := i-clausal-matching-verb-verb-lex &
+neh2 := i-clausal-matching-prop-verb-lex &
   [ STEM < "neh" >,
     SYNSEM.LKEYS.KEYREL.PRED "_see_v_rel" ].
 
@@ -227,15 +235,27 @@ irag := i-intransitive-verb-verb-lex &
   [ STEM < "irag" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cry_v_rel" ].
 
+sak := i-transitive-verb-verb-lex &
+  [ STEM < "sak" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_burn.person_v_rel" ].
+
 p := i-ditransitive-verb-lex &
   [ STEM < "p" >,
     SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+
+patimat := i-transitive-verb-verb-lex &
+  [ STEM < "patimat" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
+
+ka := clausal-subj-only-verb-lex &
+  [ STEM < "ka" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
 
 ;;; REM Added this verb
 
 kiraha := i-intransitive-verb-verb-lex &
   [ STEM < "kiraha" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_red_v_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_red_sv_rel" ].
 
 ;;; REM Nti copulas
 
