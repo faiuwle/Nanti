@@ -1478,7 +1478,7 @@ topic-subj-phrase-basic := decl-head-subj-phrase &
 topic-obj-phrase-basic := basic-head-1st-comp-phrase &
   [ SYNSEM.LOCAL [ CONT.HOOK #hook ],
     HEAD-DTR.SYNSEM [ LOCAL [ CAT [ HEAD verb & [ OBJ-TOPIC + ],
-				      VAL [ SUBJ < >,
+				      VAL [ ;SUBJ < >,
 				            COMPS < #topic > ] ],
                       CONT.HOOK #hook ] ],
     NON-HEAD-DTR.SYNSEM #topic & [ LOCAL [ CAT.HEAD noun,

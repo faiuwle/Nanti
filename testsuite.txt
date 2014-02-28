@@ -1110,8 +1110,8 @@ Vetted: f
 Judgment: g
 Phenomena: crd
 Ihati Bare_ntin i_ntiri Bisarota i_ntiri Rerpin.
-i=ha-i Bare_ntin i_ntiri Bisarota i_ntiri Rerpin
-1mS=go-REAL.i Bare_ntin COORD.m Bisarota COORD.m Rerpin
+i=ha-0-i Bare_ntin i_ntiri Bisarota i_ntiri Rerpin
+1mS=go-IMPF-REAL.i Bare_ntin COORD.m Bisarota COORD.m Rerpin
 'Bare_ntin and Bisarota and Rerpin went there.'
 
 #109 Coordinated NPs post-verbal, coordinator in wrong position
@@ -1557,12 +1557,12 @@ PRED.FOC tapir 3mS=burn-PERF-REAL.i=3nmO
 #152 topic in the wrong position
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: info, wo
 kemari pitotsi tagakero
 kemari pitotsi tag-ak-i=ro
 tapir boat burn-PERF-REAL.i=3nmO
-'The boat, the tapir burned it.'
+'The tapir, the boat burned it.'
 
 #153 focus in the wrong position
 Source: author

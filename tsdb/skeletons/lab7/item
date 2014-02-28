@@ -105,7 +105,7 @@
 105@author@@@1@wo,neg,info@pitotsi kemari matsi tag-ak-i=ro@@@@0@4@boat tapir NEG.EXT burn-PERF-REAL.i=3nmO'The boat, the tapir didn't burn it.'@ruth morrison, david inman@january 14, 2014
 106@a:371@@@1@crd@no=ha-hig-ak-i iriro o_ntiri naro@@@@1@4@1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.nm 1.TOP.PRO'We went, he and I (fem).'@ruth morrison, david inman@january 14, 2014
 107@author@@@1@crd@no=ha-hig-ak-i iriro i_ntiri naro@@@@1@4@1S=go-PL-PERF-REAL.i 3m.TOP.PRO COORD.m 1.TOP.PRO'We went, he and I (masc).'@ruth morrison, david inman@january 14, 2014
-108@author@@@1@crd@i=ha-i Bare_ntin i_ntiri Bisarota i_ntiri Rerpin@@@@1@6@1mS=go-REAL.i Bare_ntin COORD.m Bisarota COORD.m Rerpin'Bare_ntin and Bisarota and Rerpin went there.'@ruth morrison, david inman@january 14, 2014
+108@author@@@1@crd@i=ha-0-i Bare_ntin i_ntiri Bisarota i_ntiri Rerpin@@@@1@6@1mS=go-IMPF-REAL.i Bare_ntin COORD.m Bisarota COORD.m Rerpin'Bare_ntin and Bisarota and Rerpin went there.'@ruth morrison, david inman@january 14, 2014
 109@author@@@1@crd@no=ha-hig-ak-i iriro naro i_ntiri@@@@0@4@1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO COORD.m'We went, he and I (masc).'@ruth morrison, david inman@january 14, 2014
 110@author@@@1@crd@no=ha-hig-ak-i iriro naro@@@@0@3@1S=go-PL-PERF-REAL.i 3m.TOP.PRO 1.TOP.PRO'We went, he and I (masc).'@ruth morrison, david inman@january 14, 2014
 111@author@@@1@crd@kemari ha-ak-i o_ntiri i=tag-ak-i pitotsi@@@@1@5@tapir go-PERF-REAL.i COORD.S 3mS=burn-PERF-REAL.i boat'The tapir went and he burned the boat.'@ruth morrison, david inman@january 14, 2014
@@ -149,7 +149,7 @@
 149@author@@@1@info,wo@pitotsi o_nti i=tag-ak-i=ro@@@@1@3@boat PRED.FOC 3mS=burn-PERF-REAL.i=3nmO'The boat is the thing that he BURNED.'@ruth morrison, david inman@january 14, 2014
 150@author@@@1@info,wo@kemari o_nti pitotsi i=tag-ak-i@@@@1@4@tapir PRED.FOC boat 3mS=burn-PERF-REAL.i'The boat, the tapir is the one who BURNED it.'@ruth morrison, david inman@january 14, 2014
 151@author@@@1@info@o_nti kemari i=tag-ak-i=ro@@@@1@3@PRED.FOC tapir 3mS=burn-PERF-REAL.i=3nmO'the tapir, he BURNED it.'@ruth morrison, david inman@january 14, 2014
-152@author@@@1@info,wo@kemari pitotsi tag-ak-i=ro@@@@0@3@tapir boat burn-PERF-REAL.i=3nmO'The boat, the tapir burned it.'@ruth morrison, david inman@january 14, 2014
+152@author@@@1@info,wo@kemari pitotsi tag-ak-i=ro@@@@1@3@tapir boat burn-PERF-REAL.i=3nmO'The tapir, the boat burned it.'@ruth morrison, david inman@january 14, 2014
 153@author@@@1@info,wo@tag-ak-i=ro iryo@@@@0@2@burn-PERF-REAL.i=3nmO 3rd.M.FOC'HE burned it.'@ruth morrison, david inman@january 14, 2014
 154@author@@@1@info,wo@iryo i=tag-ak-i=ro@@@@0@2@3rd.M.FOC 3mS=burn-PERF-REAL.i=3nmO'HE burned it.'@ruth morrison, david inman@january 14, 2014
 155@author@@@1@info,wo@iriro tag-ak-i pitotsi@@@@0@3@3m.TOP.PRO burn-PERF-REAL.i boat'He, he burned the boat.'@ruth morrison, david inman@january 14, 2014
@@ -190,11 +190,11 @@
 190@author@@@1@neg@te matsi pi=_n-shine-0-e_npa=ro@@@@0@3@NEG.REAL NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO"It is not the case that you are not happy about it."@ruth morrison, david inman@january 14, 2014
 191@author@@@1@neg@matsi pi=_n-shine-0-e_npa=ro te@@@@0@3@NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO NEG.REAL"It is not the case that you are not happy about it."@ruth morrison, david inman@january 14, 2014
 192@author@@@1@neg@matsi pi=_n-shine-0-e_npa=ro@@@@1@2@NEG.EXT 2S=IRREAL-be.happy-IMPF-IRREAL.a=3nmO"You are not happy about it."@ruth morrison, david inman@january 14, 2014
-193@author@@@1@m@no=_n-oog-ah-e_npa i_npaneki@@@@1@2@1S=IRREAL-eat-ABIL-IRREAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
-194@author@@@1@m@no=oog-ah-a i_npaneki@@@@1@2@1S=eat-ABIL-REAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
-195@author@@@1@m@no=oog-ah-ak-a i_npaneki@@@@0@2@1S=eat-ABIL-PERF-REAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
-196@author@@@1@m@no=oog-ah-0-a i_npaneki@@@@0@2@1S=eat-ABIL-IMPF-REAL.a glass'I can eat glass.'@ruth morrison, david inman@january 14, 2014
-197@author@@@1@m@i_npaneki no=_n-oog-ah-e_npa@@@@1@2@glass 1S=IRREAL-eat-ABIL-IRREAL.a'I can eat GLASS.'@ruth morrison, david inman@january 14, 2014
+193@author@@@1@m@no=_n-oog-ah-e_npa i_npaneki@@@@1@2@1S=IRREAL-eat-ABIL-IRREAL.a glass'I can eat sand.'@ruth morrison, david inman@january 14, 2014
+194@author@@@1@m@no=oog-ah-a i_npaneki@@@@1@2@1S=eat-ABIL-REAL.a glass'I can eat sand.'@ruth morrison, david inman@january 14, 2014
+195@author@@@1@m@no=oog-ah-ak-a i_npaneki@@@@0@2@1S=eat-ABIL-PERF-REAL.a glass'I can eat sand.'@ruth morrison, david inman@january 14, 2014
+196@author@@@1@m@no=oog-ah-0-a i_npaneki@@@@0@2@1S=eat-ABIL-IMPF-REAL.a glass'I can eat sand.'@ruth morrison, david inman@january 14, 2014
+197@author@@@1@m@i_npaneki no=_n-oog-ah-e_npa@@@@1@2@glass 1S=IRREAL-eat-ABIL-IRREAL.a'I can eat SAND.'@ruth morrison, david inman@january 14, 2014
 198@author@@@1@m@no=_n-oog-ah-e_npa=ro@@@@1@1@1S=IRREAL-eat-ABIL-IRREAL.a=3nmO'I can eat it.'@ruth morrison, david inman@january 14, 2014
 199@author@@@1@neg@te o=_n-ogatsi-e=na@@@@1@2@NEG.REAL 3nmS=IRREAL-hurt-IRREAL.i=1O'It doesn't hurt me.'@ruth morrison, david inman@january 14, 2014
 200@author@@@1@neg@tera o=_n-ogatsi-e=na@@@@1@2@NEG.REAL 3nmS=IRREAL-hurt-IRREAL.i=1O'It doesn't hurt me.'@ruth morrison, david inman@january 14, 2014

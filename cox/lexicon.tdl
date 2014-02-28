@@ -71,10 +71,6 @@ a_ntaroni := common-noun-nm-anim-noun-lex &
 
 pitotsi := common-noun-nm-inan-noun-lex &
   [ STEM < "pitotsi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_boat_n_rel" ].
-
-pitotsi := common-noun-nm-inan-noun-lex &
-  [ STEM < "pitotsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
 
 pa_nkotsi := common-noun-nm-inan-noun-lex &
@@ -267,7 +263,7 @@ kiraha := i-intransitive-verb-verb-lex &
 
 taseg := a-intransitive-verb-verb-lex &
   [ STEM < "taseg" >,
-    SYSNEM.LKEYS.KEYREL.PRED "_hungry_sv_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_hungry_sv_rel" ].
 
 ;;; REM Nti copulas
 
