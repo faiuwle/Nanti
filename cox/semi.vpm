@@ -46,20 +46,20 @@ PNG.PERNUM : PNG.PER PNG.NUM
   1DSTR <> 1st DSTR
   2DSTR <> 2nd DSTR
   3DSTR <> 3rd DSTR
-  1st <> 1st !
-  1SG << 1st *
-  2nd <> 2nd !
-  2SG << 2nd *
-  3rd <> 3rd !
-  3SG << 3rd *
+  1st >> 1st !
+  1SG << 1st !
+  2nd >> 2nd !
+  2SG << 2nd !
+  3rd >> 3rd !
+  3SG << 3rd !
   SG <> ! SG
   SG << * SG
   PL <> ! PL
   PL << * PL
   DSTR <> ! DSTR
   DSTR << * DSTR
-  * >> ! !
-  ! << * *
+  ! >> ! !
+  SG << [x] [x]
 
 PNG.NUM : PNG. NUM
   SG << *
@@ -81,3 +81,6 @@ E.ASPECT : ASPECT
   perfective <> perfective
   imperfective <> imperfective
   * <> !
+
+E.ASPECT      E.MOOD : E.TENSE
+imperfective  realis <> present

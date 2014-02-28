@@ -24,7 +24,9 @@ head :+ [ COPULA bool,
           AUX bool,
           FORM form,
           SUBJ-OPT bool,
-          QUOTATIVE bool ].
+          QUOTATIVE bool,
+          SUBJ-TOPIC bool,
+	  OBJ-TOPIC bool].
 
 decl-head-subj-phrase :+ [ SYNSEM.INFOSTR-FLAG -, NON-HEAD-DTR.SYNSEM.INFOSTR-FLAG - ].
 
@@ -376,6 +378,8 @@ copula-verb-lex := verb-lex-supertype & trans-first-arg-raising-lex-item-2 &
                                SPR < >,
                                SPEC < > ],
                          HEAD [ COPULA +,
+				SUBJ-TOPIC -,
+				OBJ-TOPIC -,
                                 MOD < > ]],
                    CONT.HOOK.XARG #xarg ],
     INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
@@ -435,6 +439,8 @@ nti-copula-verb-lex := basic-verb-lex & non-mod-lex-item & transitive-lex-item &
                            HEAD [ COPULA -,
                                   AUX -,
                                   SUBJ-OPT +,
+				  SUBJ-TOPIC -,
+				  OBJ-TOPIC -,
                                   QUOTATIVE - ]],
                      CONT.HOOK.XARG #xarg ],
              LKEYS.KEYREL.PRED "_be_v_id_rel" ],
@@ -785,35 +791,78 @@ subject-lex-rule-super := add-only-no-ccont-rule &
 
 add-1st-subj-lex-rule := infl-lex-rule & subject-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR,
+    SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR,
                                       OPT #opt ],
+		       HEAD.SUBJ-TOPIC - ],
     DTR.SYNSEM.LOCAL.CAT.HEAD.SUBJ-OPT #opt ].
+
+add-1st-subj-topic-lex-rule := infl-lex-rule & subject-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL [ SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 1SG+1PL_excl+1DSTR ],
+                                          OPT - ]],
+                       HEAD [ SUBJ-TOPIC +,
+                              OBJ-TOPIC - ]]].
 
 add-2nd-subj-lex-rule := infl-lex-rule & subject-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd,
+    SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd,
                                       OPT #opt ],
+		       HEAD.SUBJ-TOPIC - ],
     DTR.SYNSEM.LOCAL.CAT.HEAD.SUBJ-OPT #opt ].
+
+add-2nd-subj-topic-lex-rule := infl-lex-rule & subject-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL [ SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 2nd ],
+                                          OPT - ]],
+                       HEAD [ SUBJ-TOPIC +,
+			      OBJ-TOPIC - ]]].
 
 add-3rd-m-subj-lex-rule := infl-lex-rule & subject-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+    SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
                                                                   GEND masc ],
                                       OPT #opt ],
+		       HEAD.SUBJ-TOPIC - ],
     DTR.SYNSEM.LOCAL.CAT.HEAD.SUBJ-OPT #opt ].
+
+add-3rd-m-subj-topic-lex-rule := infl-lex-rule & subject-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL [ SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+                                                                  GEND masc ],
+                                          OPT - ]],
+                       HEAD [ SUBJ-TOPIC +,
+			      OBJ-TOPIC - ]]].
+;    DTR.SYNSEM.LOCAL.CAT.HEAD.SUBJ-OPT #opt ].
 
 add-3rd-nm-subj-lex-rule := infl-lex-rule & subject-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+    SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
                                                                   GEND NON-masc ],
                                       OPT #opt ],
+		       HEAD.SUBJ-TOPIC - ],
     DTR.SYNSEM.LOCAL.CAT.HEAD.SUBJ-OPT #opt ].
+
+add-3rd-nm-subj-topic-lex-rule := infl-lex-rule & subject-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL [ SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+                                                                  GEND NON-masc ],
+                                          OPT - ]],
+                       HEAD [ SUBJ-TOPIC +,
+			      OBJ-TOPIC - ]]].
 
 add-1st-incl-subj-lex-rule := infl-lex-rule & subject-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1PL_incl,
+    SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1PL_incl,
                                       OPT #opt ],
+		       HEAD.SUBJ-TOPIC - ],
     DTR.SYNSEM.LOCAL.CAT.HEAD.SUBJ-OPT #opt ].
+
+add-1st-incl-subj-topic-lex-rule := infl-lex-rule & subject-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL [ SUBJ.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 1PL_incl ],
+                                          OPT - ]],
+                       HEAD [ SUBJ-TOPIC +,
+			      OBJ-TOPIC - ]]].
 
 ;;; DAI 2/11/14 This is a total hack, but we need copulas
 ;;; to necessarily take a subject clitic. This means they can't go
@@ -823,7 +872,8 @@ subject-no-drop-lex-rule := const-lex-rule & subject-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC #s-or-o-clitic,
     DTR [ INFLECTED.S-OR-O-CLITIC #s-or-o-clitic,
           SYNSEM.LOCAL.CAT.HEAD.COPULA - ],
-    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.OPT - ].
+    SYNSEM.LOCAL.CAT [ VAL.SUBJ.FIRST.OPT -,
+		       HEAD.SUBJ-TOPIC - ] ].
 
 object-lex-rule-super := add-only-no-ccont-rule & subject-rule-dtr &
   [ INFLECTED [ OBJECT-FLAG +,
@@ -859,40 +909,78 @@ object-lex-rule-super := add-only-no-ccont-rule & subject-rule-dtr &
 
 add-1st-obj-lex-rule := infl-lex-rule & object-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR,
-                                       OPT + ] ].
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR,
+                                       OPT + ],
+		       HEAD.OBJ-TOPIC - ]].
+
+add-1st-obj-topic-lex-rule := infl-lex-rule & object-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 1SG+1PL_excl+1DSTR,
+                                       OPT - ],
+		       HEAD [ OBJ-TOPIC +,
+			      SUBJ-TOPIC - ]]].
 
 add-3rd-m-obj-lex-rule := infl-lex-rule & object-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
                                                                    GEND masc ],
-                                       OPT + ] ].
+                                       OPT + ],
+		       HEAD.OBJ-TOPIC - ]].
+
+add-3rd-m-obj-topic-lex-rule := infl-lex-rule & object-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+                                                                   GEND masc ],
+                                       OPT - ],
+		       HEAD [ OBJ-TOPIC +,
+			      SUBJ-TOPIC - ]]].
+
 
 add-2nd-obj-lex-rule := infl-lex-rule & object-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd,
-                                       OPT + ] ].
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd,
+                                       OPT + ],
+		       HEAD.OBJ-TOPIC - ]].
+
+add-2nd-obj-topic-lex-rule := infl-lex-rule & object-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG.PERNUM 2nd,
+                                       OPT - ],
+		       HEAD [ OBJ-TOPIC +,
+			      SUBJ-TOPIC - ]]].
 
 add-3rd-nm-obj-lex-rule := infl-lex-rule & object-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
                                                                    GEND NON-masc ],
-                                       OPT + ] ].
+                                       OPT + ],
+		       HEAD.OBJ-TOPIC - ]].
+
+add-3rd-nm-obj-topic-lex-rule := infl-lex-rule & object-lex-rule-super &
+  [ INFLECTED.S-OR-O-CLITIC +,
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ LOCAL.CONT.HOOK.INDEX.PNG [ PERNUM 3rd,
+                                                                   GEND NON-masc ],
+                                       OPT - ],
+		       HEAD [ OBJ-TOPIC +,
+			      SUBJ-TOPIC - ]]].
+
 
 ;;; REM 3rd nm object rule for clausal verbs
 
 3rd-nm-obj-lex-rule-for-clause-verbs := infl-lex-rule & object-lex-rule-super &
-  [ DTR.SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT [ HEAD verb,
+  [ SYNSEM.LOCAL.CAT.HEAD.OBJ-TOPIC -,
+    DTR.SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT [ HEAD verb,
                                                      VAL [ SUBJ < >,
                                                            SPR < >,
                                                            COMPS < > ]]].
 
 ;;; REM Added no-affix lexrule so we can drop objects again.
 
-no-object-clitic-lex-rule := object-lex-rule-super & nocoord &
+no-object-clitic-lex-rule := object-lex-rule-super & const-lex-rule &
   [ INFLECTED.S-OR-O-CLITIC +,
-    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST [ OPT +,
-                                       LOCAL.CONT.HOOK.INDEX.COG-ST in-foc ]].
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST [ OPT +,
+                                       LOCAL.CONT.HOOK.INDEX.COG-ST in-foc ],
+		       HEAD.OBJ-TOPIC - ]].
 
 ;;; REM DTR's complement's head must be noun to prevent clause verbs from going
 ;;; through
@@ -901,7 +989,8 @@ object-no-drop-lex-rule := const-lex-rule & object-lex-rule-super &
   [ INFLECTED.S-OR-O-CLITIC #s-or-o-clitic,
     DTR [ INFLECTED.S-OR-O-CLITIC #s-or-o-clitic, 
           SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD +nj ],
-    SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT - ].
+    SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST.OPT -,
+		       HEAD.OBJ-TOPIC - ]].
 
 aspect-directional-lex-rule-super := a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [  SYNSEM.LOCAL.CAT.HEAD.FORM finite,
@@ -1339,7 +1428,8 @@ deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
 ;;;;;;;;;;;;;;;;;;;
 
 nf-comp-head-phrase := head-nf-comp-phrase-super & head-final &
-  [ HEAD-DTR.SYNSEM.LIGHT +,
+  [ HEAD-DTR.SYNSEM [ LIGHT +,
+		      LOCAL.CAT.HEAD.OBJ-TOPIC - ],
     NON-HEAD-DTR.SYNSEM.LOCAL [ CAT.HEAD +np,
                                 CONT.HOOK.ICONS-KEY focus ] ].
 
@@ -1373,13 +1463,43 @@ narrow-focused-phrase := head-only & no-rels-hcons-rule &
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
 
+;;; DAI 2/27/14 Trying to get topic working
+;;; topic must be SUBJ-TOPIC + inflected by morphology
+;;; msut also have a saturated/satisfied COMPS list (is at edges of clause)
+topic-subj-phrase-basic := decl-head-subj-phrase &
+  [ SYNSEM.LOCAL [ CONT.HOOK #hook ],
+    HEAD-DTR.SYNSEM [ LOCAL [ CAT [ HEAD verb & [ SUBJ-TOPIC + ],
+				      VAL [ SUBJ < #topic >,
+				            COMPS < > ] ],
+                      CONT.HOOK #hook ] ],
+    NON-HEAD-DTR.SYNSEM #topic & [ LOCAL [ CAT.HEAD noun,
+					   CONT.HOOK.ICONS-KEY topic ]]].
+
+topic-obj-phrase-basic := basic-head-1st-comp-phrase &
+  [ SYNSEM.LOCAL [ CONT.HOOK #hook ],
+    HEAD-DTR.SYNSEM [ LOCAL [ CAT [ HEAD verb & [ OBJ-TOPIC + ],
+				      VAL [ SUBJ < >,
+				            COMPS < #topic > ] ],
+                      CONT.HOOK #hook ] ],
+    NON-HEAD-DTR.SYNSEM #topic & [ LOCAL [ CAT.HEAD noun,
+					   CONT.HOOK.ICONS-KEY topic ]]].
+
+topicsubj-head-phrase := topic-subj-phrase-basic & head-final.
+
+head-topicsubj-phrase := topic-subj-phrase-basic & head-initial.
+
+topicobj-head-phrase := topic-obj-phrase-basic & head-final.
+
+head-topicobj-phrase := topic-obj-phrase-basic & head-initial.
+
 ;;; REM added OPT - constraint so that we can drop objects again
 ;;; Also adding head-subj-phrase and comp-head-phrase for adjective copulas
 ;;; 2/9/14
 
 head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
   [ NON-HEAD-DTR.SYNSEM.OPT -,
-    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.COPULA - ].
+    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD [ COPULA -,
+				     OBJ-TOPIC - ]].
 
 head-2nd-comp-phrase := basic-head-2nd-comp-phrase & head-initial &
   [ NON-HEAD-DTR.SYNSEM.OPT -,
@@ -1390,8 +1510,17 @@ comp-head-phrase := basic-head-1st-comp-phrase & head-final &
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.COPULA + ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
-  [ HEAD-DTR.SYNSEM [ LOCAL.CAT [ VAL.COMPS < >,
-                                  HEAD.COPULA - ]]].
+  [ HEAD-DTR.SYNSEM [ LOCAL.CAT [ VAL [ COMPS < >,
+					SPR < > ],
+                                  HEAD [ COPULA -,
+                                         SUBJ-TOPIC -,
+					 OBJ-TOPIC - ]]]].
+
+;;; DAI 2/27/14 this is a hack to get topicalized objects to work
+subj-head-topicobj-phrase := decl-head-subj-phrase & head-final &
+  [ HEAD-DTR.SYNSEM [ LOCAL.CAT [ HEAD [ COPULA -,
+				       OBJ-TOPIC + ],
+				  VAL.COMPS cons ]]].
 
 head-subj-phrase := decl-head-subj-phrase & head-initial &
   [ HEAD-DTR.SYNSEM [ LOCAL.CAT [ VAL.COMPS < >,

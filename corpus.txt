@@ -285,8 +285,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Oka o_nti tsitsi oga.
-o-ka o_nti tsitsi oga
-3nm-QUOT 3nmS.COP fire 3nm.that
+o=ka o_nti tsitsi oga
+3nm=QUOT 3nmS.COP fire 3nm.that
 'She said, this is (due to) fire.'
 
 #30 Mecha
@@ -345,8 +345,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 O– otya maika oka notsi–, notsibuhokake tsitsi oka tsitsi osakake.
-o- otya maika o-ka no=tsi no=tsibuhok-ak-i tsitsi o-ka tsitsi o=sak-ak-i
-3nm- 3nm.RECENT.PRO now 3nm-QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT fire 3nmS=burn.person-PERF-REALIS.i
+o- otya maika o=ka no=tsi no=tsibuhok-ak-i tsitsi o-ka tsitsi o=sak-ak-i
+3nm- 3nm.RECENT.PRO now 3nm=QUOT 1S=fragment 1S=stir.up-PERF-REAL.i fire 3nm-QUOT fire 3nmS=burn.person-PERF-REALIS.i
 'She- she just now she said, I stirred up the fire. She said the fire burned (me).'
 
 #36 A (???)
@@ -355,8 +355,8 @@ Vetted: s
 Judgment: g
 Phenomena:
 Oka tsitsi osakake.
-o-ka tsitsi o=sak-ak-i
-3nm-QUOT fire 3nmS=burn.person-PERF-REAL.i
+o=ka tsitsi o=sak-ak-i
+3nm=QUOT fire 3nmS=burn.person-PERF-REAL.i
 'She said, the fire burned (me).'
 
 #37 Chabera

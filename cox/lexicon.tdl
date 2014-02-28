@@ -73,6 +73,10 @@ pitotsi := common-noun-nm-inan-noun-lex &
   [ STEM < "pitotsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_boat_n_rel" ].
 
+pitotsi := common-noun-nm-inan-noun-lex &
+  [ STEM < "pitotsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
+
 pa_nkotsi := common-noun-nm-inan-noun-lex &
   [ STEM < "pa_nkotsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_house_n_rel" ].
@@ -88,6 +92,10 @@ kemari := common-noun-anim-noun-lex &
 otsiti := common-noun-anim-noun-lex &
   [ STEM < "otsiti" >,
     SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
+mishi := common-noun-anim-noun-lex &
+  [ STEM < "mishi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
 
 i_npaneki := common-noun-nm-inan-noun-lex &
   [ STEM < "i_npaneki" >,
@@ -256,6 +264,10 @@ ka := clausal-subj-only-verb-lex &
 kiraha := i-intransitive-verb-verb-lex &
   [ STEM < "kiraha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_red_sv_rel" ].
+
+taseg := a-intransitive-verb-verb-lex &
+  [ STEM < "taseg" >,
+    SYSNEM.LKEYS.KEYREL.PRED "_hungry_sv_rel" ].
 
 ;;; REM Nti copulas
 
