@@ -161,6 +161,10 @@ tsitsi := common-noun-nm-inan-noun-lex &
   [ STEM < "tsitsi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_fire_n_rel" ].
 
+sekatsi := common-noun-nm-inan-noun-lex &
+  [ STEM < "sekatsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_food_n_rel" ].
+
 ;;; Verbs
 
 ha := i-intransitive-verb-verb-lex &
@@ -330,6 +334,10 @@ kogapagero := adverb-lex &
 i_nkahara := adverb-lex &
   [ STEM < "i_nkahara" >,
     SYNSEM.LKEYS.KEYREL.PRED "_earlier_a_rel" ].
+
+shi_ntsi := adverb-lex &
+  [ STEM < "shi_ntsi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
 
 ;;; Determiners
 

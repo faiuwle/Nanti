@@ -51,8 +51,8 @@ head-adj-int := head-adj-int-phrase.
 ;;; DAI topic stuff
 
 topicsubj-head := topicsubj-head-phrase.
-head-topicsubj := head-topicsubj-phrase.
+;head-topicsubj := head-topicsubj-phrase.
 topicobj-head  := topicobj-head-phrase.
-head-topicobj  := head-topicobj-phrase.
+;head-topicobj  := head-topicobj-phrase.
 
 subj-head-for-topicobj := subj-head-topicobj-phrase.

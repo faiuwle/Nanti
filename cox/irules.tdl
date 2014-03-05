@@ -1,27 +1,27 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
-plural-suffix :=
-%suffix (* -hegi)
-plural-lex-rule.
+;plural-suffix :=
+;%suffix (* -hegi)
+;plural-lex-rule.
 
-distributive-suffix :=
-%suffix (* -page)
-distributive-lex-rule.
+;distributive-suffix :=
+;%suffix (* -page)
+;distributive-lex-rule.
 
 add-1st-subj-prefix :=
 %prefix (* no=)
 add-1st-subj-lex-rule.
 
-add-1st-subj-topic-prefix :=
-%prefix (* no=)
-add-1st-subj-topic-lex-rule.
+;add-1st-subj-topic-prefix :=
+;%prefix (* no=)
+;add-1st-subj-topic-lex-rule.
 
 add-2nd-subj-prefix :=
 %prefix (* pi=)
 add-2nd-subj-lex-rule.
 
-add-2nd-subj-topic-prefix :=
-%prefix (* pi=)
-add-2nd-subj-topic-lex-rule.
+;add-2nd-subj-topic-prefix :=
+;%prefix (* pi=)
+;add-2nd-subj-topic-lex-rule.
 
 add-3rd-m-subj-prefix :=
 %prefix (* i=)
@@ -43,25 +43,25 @@ add-1st-incl-subj-prefix :=
 %prefix (* a=)
 add-1st-incl-subj-lex-rule.
 
-add-1st-incl-subj-topic-prefix :=
-%prefix (* a=)
-add-1st-incl-subj-topic-lex-rule.
+;add-1st-incl-subj-topic-prefix :=
+;%prefix (* a=)
+;add-1st-incl-subj-topic-lex-rule.
 
 add-1st-obj-suffix :=
 %suffix (* =na)
 add-1st-obj-lex-rule.
 
-add-1st-obj-topic-suffix :=
-%suffix (* =na)
-add-1st-obj-topic-lex-rule.
+;add-1st-obj-topic-suffix :=
+;%suffix (* =na)
+;add-1st-obj-topic-lex-rule.
 
 add-2nd-obj-suffix :=
 %suffix (* =_npi)
 add-2nd-obj-lex-rule.
 
-add-2nd-obj-topic-suffix :=
-%suffix (* =_npi)
-add-2nd-obj-topic-lex-rule.
+;add-2nd-obj-topic-suffix :=
+;%suffix (* =_npi)
+;add-2nd-obj-topic-lex-rule.
 
 add-3rd-m-obj-suffix :=
 %suffix (* =ri)
@@ -131,29 +131,29 @@ a-verb-irrealis-prefix-prefix :=
 %prefix (* _n-)
 a-verb-irrealis-prefix-lex-rule.
 
-plural-subject-suffix :=
-%suffix (* -hig)
-plural-subject-lex-rule.
+;plural-subject-suffix :=
+;%suffix (* -hig)
+;plural-subject-lex-rule.
 
-plural-object-suffix :=
-%suffix (* -hig)
-plural-object-lex-rule.
+;plural-object-suffix :=
+;%suffix (* -hig)
+;plural-object-lex-rule.
 
-plural-subject-object-suffix :=
-%suffix (* -hig)
-plural-subject-object-lex-rule.
+;plural-subject-object-suffix :=
+;%suffix (* -hig)
+;plural-subject-object-lex-rule.
 
-distributive-subject-suffix :=
-%suffix (* -ge)
-distributive-subject-lex-rule.
+;distributive-subject-suffix :=
+;%suffix (* -ge)
+;distributive-subject-lex-rule.
 
-distributive-object-suffix :=
-%suffix (* -ge)
-distributive-object-lex-rule.
+;distributive-object-suffix :=
+;%suffix (* -ge)
+;distributive-object-lex-rule.
 
-distributive-subject-object-suffix :=
-%suffix (* -ge)
-distributive-subject-object-lex-rule.
+;distributive-subject-object-suffix :=
+;%suffix (* -ge)
+;distributive-subject-object-lex-rule.
 
 abilitive-suffix :=
 %suffix (* -ah)

@@ -681,7 +681,7 @@ cog-st-activated := no-icons-lex-item &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.COG-ST activated ].
 
 cog-st-uniq-id := no-icons-lex-item &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.COG-ST uniq-id ].
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.COG-ST uniq+fam ].
 
 cog-st-familiar := no-icons-lex-item &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.COG-ST familiar ].
@@ -876,7 +876,8 @@ subject-no-drop-lex-rule := const-lex-rule & subject-lex-rule-super &
 		       HEAD.SUBJ-TOPIC - ] ].
 
 object-lex-rule-super := add-only-no-ccont-rule & subject-rule-dtr &
-  [ INFLECTED [ OBJECT-FLAG +,
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.OPT-CS in-foc,
+    INFLECTED [ OBJECT-FLAG +,
                 A-VERB-REALITY-SUFFIX-OR-I-VERB-REALITY-SUFFIX-FLAG #a-verb-reality-suffix-or-i-verb-reality-suffix,
                 I-VERB-IRREALIS-PREFIX-FLAG #i-verb-irrealis-prefix,
                 A-VERB-IRREALIS-SUFFIX-FLAG #a-verb-irrealis-suffix,

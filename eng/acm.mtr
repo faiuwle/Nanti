@@ -1,2 +1,6 @@
 pro-drop := pronoun-delete-mtr.
+
 hungry-sv := hungry-mtr.
+
+eat-food := eat-ini-mtr.
+

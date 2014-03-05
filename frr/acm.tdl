@@ -7,6 +7,17 @@
 
 ; Pro-drop -!> overt pronouns
 
+hungry-mtr := monotonic_mtr &
+[ INPUT [ RELS <! [ PRED "_hungry_a_rel",
+		   LBL #lbl,
+		   ARG0 #arg0,
+		   ARG1 #arg1 ] !>,
+	  HCONS <! !> ],
+  OUTPUT [ RELS <! [ PRED "_hungry_sv_rel",
+		    LBL #lbl,
+		    ARG0 #arg0,
+		    ARG1 #arg1 ] !> ]].
+
 pro-insert-arg1-mtr := monotonic_mtr &
 [ INPUT.RELS <! !>,
   CONTEXT.RELS <! [ ARG0.SF prop-or-ques,

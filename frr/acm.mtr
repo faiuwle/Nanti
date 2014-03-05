@@ -1,3 +1,4 @@
-;pro-drop := pronoun-delete-mtr.
-;make-harm := make-harm-mtr.
-
+pro-drop := pronoun-delete-mtr.
+make-harm := make-harm-mtr.
+hungry := hungry-mtr.
+eat-food := eat-ini-mtr.
