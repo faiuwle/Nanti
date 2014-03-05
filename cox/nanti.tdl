@@ -566,7 +566,7 @@ clausal-subj-only-verb-lex := verb-lex & basic-verb-lex & clausal-second-arg-tra
 ;;; DAI 2/20/14
 ;;; Adding AUX stuff
 
-s-comp-aux := aux-lex & basic-one-arg 
+s-comp-aux := aux-lex & basic-one-arg & 
   [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
                            SPEC < >,
                            SUBJ < >,
@@ -661,9 +661,9 @@ determiner-lex-supertype := norm-hook-lex-item & basic-zero-arg &
                                 SPR < >,
                                 SUBJ < >,
                                 COMPS < > ] ],
-		     CONT [ HCONS < ! qeq &
+		     CONT [ HCONS <! qeq &
 				 [ HARG #harg,
-				   LARG #larg ] ! >,
+				   LARG #larg ] !>,
                             RELS <! [ PRED "exist_q_rel" ], #lkalt !> ] ],
 	     LKEYS [ KEYREL quant-relation &
 		     [ ARG0 #ind,
@@ -688,10 +688,10 @@ cog-st-familiar := no-icons-lex-item &
 
 ;;; DAI 2/5/14 inheriting from supertype instead of determiner-lex-supertype
 
-masculine-determiner-lex := determiner-lex-supertype
+masculine-determiner-lex := determiner-lex-supertype &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND masc ].
 
-nonmasculine-determiner-lex := determiner-lex-supertype
+nonmasculine-determiner-lex := determiner-lex-supertype &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.GEND NON-masc ].
 
 speaker-addressee-prox-det-M-determiner-lex := masculine-determiner-lex & cog-st-activated.
@@ -1078,14 +1078,14 @@ infinitive-aspect-lex-rule := Aspect-lex-rule-super & const-lex-rule &
 
 abilitive-lex-rule := aspect-directional-lex-rule-super & cont-change-only-lex-rule & 
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective,
-    C-CONT [ RELS < ! arg1-ev-relation & [ PRED "_can_v_rel",
+    C-CONT [ RELS <! arg1-ev-relation & [ PRED "_can_v_rel",
                                            LBL #lbl,
                                            ARG0 #index,
-                                           ARG1 #harg ] ! >,
+                                           ARG1 #harg ] !>,
              HOOK [ LTOP #lbl,
                     INDEX #index ],
-             HCONS < ! qeq & [ HARG #harg,
-                               LARG #larg ] ! > ],
+             HCONS <! qeq & [ HARG #harg,
+                               LARG #larg ] !> ],
     DTR.SYNSEM.LOCAL [ CONT.HOOK.LTOP #larg,
                        CAT.HEAD [ AUX -,
                                   QUOTATIVE - ]]].
@@ -1291,7 +1291,7 @@ a-verb-realis-prefix-lex-rule := a-verb-reality-prefix-lex-rule-super & const-le
   [ INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix,
     DTR.INFLECTED.A-VERB-IRREALIS-PREFIX-FLAG #a-verb-irrealis-prefix ].
 
-argument-number-lex-rule-super := Aspect-rule-dtr & aspect-directional-rule-dtr a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
+argument-number-lex-rule-super := Aspect-rule-dtr & aspect-directional-rule-dtr & a-verb-reality-prefix-rule-dtr & a-verb-reality-suffix-or-i-verb-reality-suffix-rule-dtr & add-only-no-ccont-rule & direct-ditransitive-object-rule-dtr & i-verb-reality-prefix-rule-dtr & infl-lex-rule & object-rule-dtr & subject-rule-dtr &
   [ INFLECTED #infl,
     DTR verb-lex &
         [ SYNSEM.LOCAL.CAT.HEAD [ AUX -,
@@ -1402,14 +1402,14 @@ deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
 ;;; DAI 2/18/14 oops, bye epistemic
 
 ;epistemic-modal-lex-rule := infl-add-only-lex-rule &
-;  [ C-CONT [ RELS < ! arg1-ev-relation & [ PRED "_can_v_rel",
+;  [ C-CONT [ RELS <! arg1-ev-relation & [ PRED "_can_v_rel",
 ;                                           LBL #lbl,
 ;                                           ARG0 #index,
-;                                           ARG1 #harg ] ! >,
+;                                           ARG1 #harg ] !>,
 ;             HOOK [ LTOP #lbl,
 ;                    INDEX #index ],
-;             HCONS < ! qeq & [ HARG #harg,
-;                               LARG #larg ] ! > ],
+;             HCONS <! qeq & [ HARG #harg,
+;                               LARG #larg ] !> ],
 ;    DTR epistemic-modal-dtr & [ SYNSEM.LOCAL.CONT.HOOK.LTOP #larg,
 ;                                INFLECTED #infl ],
 ;    INFLECTED #infl ].
