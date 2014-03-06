@@ -368,7 +368,7 @@ aux-lex := verb-lex &
                                          MODIFIED notmod ] ],
     INFLECTED infl-satisfied ].
 
-;;; REM copula-verb-lex 2/9/14
+;;; rem copula-verb-lex 2/9/14
 ;;; DAI 2/11/14 copula must have an overt object
 ;;; and I-Verb Inflection
 
@@ -426,6 +426,9 @@ ditransitive-verb-lex := main-verb-lex & ditransitive-lex-item &
     INFLECTED [ S-OR-O-CLITIC -,
                 OBJECT-FLAG -,
                 NI-FLAG - ]].
+
+;;; DAI 3/5/14 type for stative verbs
+stative-verb-lex := intransitive-verb-lex.
 
 ;;; REM 2/9/14 Nti copula verb lex
 ;;; DAI 2/20/14 adding AUX -
@@ -488,6 +491,12 @@ i-transitive-verb-verb-lex := transitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
+;;; DAI 3/5/14 +stative verbs
+
+i-stative-verb-lex := stative-verb-lex &
+  [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
+                A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
+
 i-ditransitive-verb-lex := ditransitive-verb-lex &
   [ INFLECTED [ I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG +,
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ]].
@@ -505,6 +514,12 @@ i-clausal-matching-prop-verb-lex := clausal-reality-matching-prop-verb-lex &
                 A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
 a-intransitive-verb-verb-lex := intransitive-verb-lex &
+  [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
+                I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
+
+;;; DAI 3/5/14 stative verb
+
+a-stative-verb-lex := stative-verb-lex &
   [ INFLECTED [ A-INTRANSITIVE-VERB-VERB-OR-A-TRANSITIVE-VERB-VERB-FLAG +,
                 I-INTRANSITIVE-VERB-VERB-OR-I-TRANSITIVE-VERB-VERB-FLAG na-or-- ] ].
 
@@ -1384,6 +1399,7 @@ ni-object-no-drop-lex-rule := const-lex-rule & direct-ditransitive-object-lex-ru
     SYNSEM.LOCAL.CAT.VAL.COMPS.REST.FIRST.OPT - ].
 
 ;;; REM Added this lexical rule
+;;; DAI 3/5/14 making only apply to stative-verbs
 
 deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
   [ SYNSEM [ LOCAL [ CAT [ HEAD adj &
@@ -1395,7 +1411,7 @@ deverbal-adjective-lex-rule := infl-lex-rule & cat-change-only-lex-rule &
                                  COMPS < >,
                                  SPEC < > ],
                            POSTHEAD - ]]],
-    DTR verb-lex &
+    DTR stative-verb-lex &
           [ SYNSEM.LOCAL [ CONT.HOOK.XARG #index,
                            CAT.HEAD.AUX - ]]].
 
@@ -1554,9 +1570,13 @@ np2-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-phrase &
   [ SYNSEM.LOCAL.COORD-STRAT "2" ].
 
 ;;; Coordination Strategy 2
+;;; DAI 3/5/14 constraining coord S to be same FORM
 
 s2-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
-  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+  [ SYNSEM.LOCAL [ COORD-STRAT "2",
+		   CAT.HEAD.FORM #form ],
+    LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.FORM #form,
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.FORM #form ].
 
 s2-bottom-coord-rule := conj-first-bottom-coord-rule & s-bottom-coord-phrase &
   [ SYNSEM.LOCAL.COORD-STRAT "2" ].

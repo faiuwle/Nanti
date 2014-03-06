@@ -14,10 +14,10 @@ SORT : SORT
 
 SF : SF
   prop <> prop
-  ques <> ques
   prop-or-ques >> prop-or-ques
   prop << prop-or-ques
   comm <> comm
+  prop-or-ques << ques
 
 COG-ST : COG-ST
   type-id <> type-id

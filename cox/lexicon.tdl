@@ -261,11 +261,11 @@ ka := clausal-subj-only-verb-lex &
 
 ;;; REM Added this verb
 
-kiraha := i-intransitive-verb-verb-lex &
+kiraha := i-stative-verb-lex &
   [ STEM < "kiraha" >,
     SYNSEM.LKEYS.KEYREL.PRED "_red_sv_rel" ].
 
-taseg := a-intransitive-verb-verb-lex &
+taseg := a-stative-verb-lex &
   [ STEM < "taseg" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hungry_sv_rel" ].
 
