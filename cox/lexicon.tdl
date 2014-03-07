@@ -1,57 +1,57 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-naro_1 := 1st-PRO-FOCUS-noun-lex &
-  [ STEM < "naro" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_focus_rel" ].
+;naro_1 := 1st-PRO-FOCUS-noun-lex &
+;  [ STEM < "naro" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-biro_1 := 2nd-PRO-FOCUS-noun-lex &
-  [ STEM < "biro" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_focus_rel" ].
+;biro_1 := 2nd-PRO-FOCUS-noun-lex &
+;  [ STEM < "biro" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-iryo := 3rd-M-PRO-FOCUS-noun-lex &
-  [ STEM < "iryo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_focus_rel" ].
+;iryo := 3rd-M-PRO-FOCUS-noun-lex &
+;  [ STEM < "iryo" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-iro := 3rd-NM-PRO-FOCUS-noun-lex &
-  [ STEM < "iro" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_focus_rel" ].
+;iro := 3rd-NM-PRO-FOCUS-noun-lex &
+;  [ STEM < "iro" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-haro := 1st-INCL-PRO-FOCUS-noun-lex &
-  [ STEM < "haro" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_focus_rel" ].
+;haro := 1st-INCL-PRO-FOCUS-noun-lex &
+;  [ STEM < "haro" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-natya := 1st-RECENT-PRO-noun-lex &
-  [ STEM < "natya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_recent_rel" ].
+;natya := 1st-RECENT-PRO-noun-lex &
+;  [ STEM < "natya" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-bitya := 2nd-RECENT-PRO-noun-lex &
-  [ STEM < "bitya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_recent_rel" ].
+;bitya := 2nd-RECENT-PRO-noun-lex &
+;  [ STEM < "bitya" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-itya := 3rd-M-RECENT-PRO-noun-lex &
-  [ STEM < "itya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_recent_rel" ].
+;itya := 3rd-M-RECENT-PRO-noun-lex &
+;  [ STEM < "itya" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-otya := 3rd-NM-RECENT-PRO-noun-lex &
-  [ STEM < "otya" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_recent_rel" ].
+;otya := 3rd-NM-RECENT-PRO-noun-lex &
+;  [ STEM < "otya" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-naketyo := 1st-FIRST-PRO-noun-lex &
-  [ STEM < "naketyo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_first_rel" ].
+;naketyo := 1st-FIRST-PRO-noun-lex &
+;  [ STEM < "naketyo" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-biketyo := 2nd-FIRST-PRO-noun-lex &
-  [ STEM < "biketyo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_first_rel" ].
+;biketyo := 2nd-FIRST-PRO-noun-lex &
+;  [ STEM < "biketyo" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-iketyo := 3rd-M-FIRST-PRO-noun-lex &
-  [ STEM < "iketyo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_first_rel" ].
+;iketyo := 3rd-M-FIRST-PRO-noun-lex &
+;  [ STEM < "iketyo" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-oketyo := 3rd-NM-FIRST-PRO-noun-lex &
-  [ STEM < "oketyo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_first_rel" ].
+;oketyo := 3rd-NM-FIRST-PRO-noun-lex &
+;  [ STEM < "oketyo" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
 a_ntarini := common-noun-m-noun-lex &
   [ STEM < "a_ntarini" >,

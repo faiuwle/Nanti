@@ -1556,7 +1556,9 @@ bare-np-phrase := basic-bare-np-phrase &
 ;;; Coordination Strategy 1
 
 np1-top-coord-rule := basic-np-top-coord-rule & apoly-top-coord-rule &
-  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+  [ SYNSEM.LOCAL.COORD-STRAT "1",
+    LCOORD-DTR.SYNSEM.LOCAL.CONT.ICONS <! #icons & topic !>,
+    RCOORD-DTR.SYNSEM.LOCAL.CONT.ICONS <! #icons !> ].
 
 np1-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-phrase &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
