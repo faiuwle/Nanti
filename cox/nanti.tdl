@@ -1459,9 +1459,11 @@ head-nf-comp-phrase-super := basic-head-comp-phrase & narrow-focus &
     NON-HEAD-DTR.SYNSEM #synsem &
                         [ INFOSTR-FLAG + ] ].
 
+;;; DAI 5/6/14 should only be topic (why'd we say focus or topic?)
+
 narrow-focused-phrase := head-only & no-rels-hcons-rule &
   [ C-CONT [ HOOK #hook,
-             ICONS <! focus-or-topic & #icons &
+             ICONS <! focus & #icons &
                       [ TARGET #target ] !> ],
     SYNSEM [ LIGHT -,
              INFOSTR-FLAG +,
@@ -1556,20 +1558,28 @@ bare-np-phrase := basic-bare-np-phrase &
 ;;; Coordination Strategy 1
 
 np1-top-coord-rule := basic-np-top-coord-rule & apoly-top-coord-rule &
-  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
-;    LCOORD-DTR.SYNSEM.LOCAL.CONT.ICONS <! #icons & topic !>,
-;    RCOORD-DTR.SYNSEM.LOCAL.CONT.ICONS <! #icons !> ].
+  [ SYNSEM.LOCAL [ COORD-STRAT "1",
+		   CONT.HOOK.ICONS-KEY #icons ],
+    LCOORD-DTR.SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY #icons,
+    RCOORD-DTR.SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY #icons ].
 
 np1-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-phrase &
-  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+  [ SYNSEM.LOCAL [ COORD-STRAT "1",
+		   CONT.HOOK.ICONS-KEY #icons ],
+    NONCONJ-DTR.SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY #icons ].
 
 ;;; Coordination Strategy 2
 
 np2-top-coord-rule := basic-np-top-coord-rule & apoly-top-coord-rule &
-  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+  [ SYNSEM.LOCAL [ COORD-STRAT "2",
+		   CONT.HOOK.ICONS-KEY #icons ],
+    LCOORD-DTR-SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY #icons,
+    RCOORD-DTR.SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY #icons ].
 
 np2-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-phrase &
-  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+  [ SYNSEM.LOCAL [ COORD-STRAT "2",
+		   CONT.HOOK.ICONS-KEY #icons ],
+    NONCONJ-DTR.SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY #icons ].
 
 ;;; Coordination Strategy 2
 ;;; DAI 3/5/14 constraining coord S to be same FORM
@@ -1581,4 +1591,6 @@ s2-top-coord-rule := basic-s-top-coord-rule & apoly-top-coord-rule &
     RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.FORM #form ].
 
 s2-bottom-coord-rule := conj-first-bottom-coord-rule & s-bottom-coord-phrase &
-  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+  [ SYNSEM.LOCAL [ COORD-STRAT "2",
+		   CAT.HEAD.FORM #form ],
+    NONCONJ-DTR.SYNSEM.LOCAL.CAT.HEAD.FORM #form ].
