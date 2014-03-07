@@ -83,4 +83,4 @@ E.ASPECT : ASPECT
   * <> !
 
 E.ASPECT      E.MOOD : E.TENSE
-imperfective  realis <> present
+imperfective  mood <> present

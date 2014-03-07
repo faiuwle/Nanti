@@ -1,7 +1,7 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
-;plural-suffix :=
-;%suffix (* -hegi)
-;plural-lex-rule.
+plural-suffix :=
+%suffix (* -hegi)
+plural-lex-rule.
 
 ;distributive-suffix :=
 ;%suffix (* -page)
@@ -131,17 +131,17 @@ a-verb-irrealis-prefix-prefix :=
 %prefix (* _n-)
 a-verb-irrealis-prefix-lex-rule.
 
-;plural-subject-suffix :=
-;%suffix (* -hig)
-;plural-subject-lex-rule.
+plural-subject-suffix :=
+%suffix (* -hig)
+plural-subject-lex-rule.
 
-;plural-object-suffix :=
-;%suffix (* -hig)
-;plural-object-lex-rule.
+plural-object-suffix :=
+%suffix (* -hig)
+plural-object-lex-rule.
 
-;plural-subject-object-suffix :=
-;%suffix (* -hig)
-;plural-subject-object-lex-rule.
+plural-subject-object-suffix :=
+%suffix (* -hig)
+plural-subject-object-lex-rule.
 
 ;distributive-subject-suffix :=
 ;%suffix (* -ge)
