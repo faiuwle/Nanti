@@ -26,7 +26,8 @@ head :+ [ COPULA bool,
           SUBJ-OPT bool,
           QUOTATIVE bool,
           SUBJ-TOPIC bool,
-	  OBJ-TOPIC bool].
+	  OBJ-TOPIC bool,
+          NEGATED bool ].
 
 decl-head-subj-phrase :+ [ SYNSEM.INFOSTR-FLAG -, NON-HEAD-DTR.SYNSEM.INFOSTR-FLAG - ].
 
@@ -602,9 +603,11 @@ s-comp-aux-with-pred := s-comp-aux & single-rel-lex-item & norm-ltop-lex-item &
     ARG-ST < [ LOCAL.CONT.HOOK.LTOP #larg ] > ].
 
 neg-aux-lex := s-comp-aux-with-pred &
-  [ SYNSEM.LOCAL [ CAT.VAL.COMPS.FIRST.LOCAL [ CAT.HEAD.FORM nonfinite,
-                                               CONT.HOOK.INDEX #index ],
-                   CONT.HOOK.INDEX #index ]].
+  [ SYNSEM.LOCAL [ CAT [ VAL.COMPS.FIRST.LOCAL [ CAT.HEAD [ FORM nonfinite,
+                                                            NEGATED - ],
+                                                 CONT.HOOK.INDEX #index ],
+                         HEAD.NEGATED + ],
+                   CONT.HOOK.INDEX #index ] ].
 
 neg-notionally-realis-aux-lex := neg-aux-lex &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL [ CONT.HOOK.INDEX.E.MOOD realis,
@@ -731,7 +734,8 @@ neg-adv-lex := basic-scopal-adverb-lex &
                              COMPS < >,
                              SUBJ < > ],
                        POSTHEAD -,
-                       HEAD.MOD < [ LOCAL.CAT [ HEAD verb,
+                       HEAD.MOD < [ LOCAL.CAT [ HEAD verb &
+                                                [ NEGATED + ],
                                                 VAL [ SUBJ null,
                                                       COMPS null ] ] ] > ] ].
 
