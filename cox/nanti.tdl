@@ -365,8 +365,7 @@ main-verb-lex := verb-lex & basic-verb-lex &
 aux-lex := verb-lex &
   [ SYNSEM.LOCAL.CAT [ HEAD [ AUX +,
                               COPULA - ],
-                       VAL.COMPS.FIRST [ OPT -,
-                                         MODIFIED notmod ] ],
+                       VAL.COMPS.FIRST [ OPT - ] ],
     INFLECTED infl-satisfied ].
 
 ;;; rem copula-verb-lex 2/9/14
